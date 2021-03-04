@@ -1,21 +1,19 @@
 navigation:
-- label: "News"
-  url: "/en/news"
-
 - label: "Packages"
   url: "/packages"
 
-cards:
-- label: Follow us
-  icon_type: eye
-  icon_category: fas
-  links:
-    - label: GitHub
-      url: https://github.com/archdroid-org/
-      icon_type: github
-      icon_category: fab
+- label: "Contacts"
+  type: "dropdown"
+  pages:
+  - label: GitHub
+    url: https://github.com/archdroid-org/
+    icon_type: github
+    icon_category: fab
 
-    - label: Feed
-      url: /atom.xml
-      icon_type: rss
-      icon_category: fas
+  - label: Feed
+    url: /atom.xml
+    icon_type: rss
+    icon_category: fas
+
+- label: "News"
+  url: "/news"

@@ -1,33 +1,27 @@
-{%-assign locale_count = 0-%}
-{%-for language in site.data.locale-%}
-	{%-if language[0] == page.lang-%}
-		{%-assign current_locale_dir = language[1]-%}
-	{%-endif-%}
-	{%-assign locale_count = forloop.length-%}
-{%-endfor-%}
-{%-assign default_locale = site.locale.default-%}
-{%-if page.lang == default_locale-%}
-	{%-assign page_path_prefix = "/"-%}
-{%-else-%}
-	{%-assign page_path_prefix = '/' | append: page.lang | append: '/'-%}
-{%-endif-%}
-{% assign t = current_locale_dir.translation %}
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand" href="{{ page_path_prefix | relative_url }}">
-					<img src="{{ '/assets/img/logo.png' | relative_url }}"
-					width="72" height="30" class="d-inline-block align-top" alt="">
-					{%-comment-%}{{ site.name }}{%-endcomment-%}
-				</a>
+{% assign t  = site.data.locale[page.lang].translation %}
+{%-assign lang_size = site.data.locale.size-%}
 
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="{{ '/' | relative_url }}">
+					<img src="{{ '/assets/img/logo.svg' | relative_url }}"
+					height="32" class="d-inline-block align-top" alt="">
+{%-comment-%}
+TODO: {% if site.logo %}
+					<img src="{{ site.logo | relative_url }}"
+					height="32" class="d-inline-block align-top" alt="">
+			{%-else-%}
+					{{ site.name }}
+			{% endif %}
+{%-endcomment-%}
+				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarContent" aria-controls="navbarContent"
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
 				<div class="collapse navbar-collapse" id="navbarContent">
 					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-{% if locale_count > 1 %}
+{% if lang_size > 1 %}
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" id="navbarMenuLang" href="#"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,11 +30,7 @@
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarMenuLang">
 	{% for language in site.data.locale %}
-		{% if language[0] == default_locale %}
-			{% assign path_prefix = "/" %}
-		{% else %}
 			{% assign path_prefix = '/' | append: language[0] | append: '/' %}
-		{% endif %}
 								<a class="dropdown-item" href="{{ path_prefix | relative_url }}">
 									<img border="0" src="{{ '/assets/flags/' | append: language[0] | append: '.png' | relative_url }}"
 										width="16" height="11">
@@ -49,7 +39,7 @@
 							</div>
 						</li>
 {% endif %}
-{% for item in current_locale_dir.layout.navigation %}
+{% for item in site.data.locale[page.lang].layout.navigation %}
 	{% if item.type == "dropdown" %}
 		{% assign item_id = 'navbar' | append: item.label %}
 						<li class="nav-item dropdown">

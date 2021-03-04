@@ -7,18 +7,16 @@
 	<thead class="thead-dark">
 		<tr>
 			<th data-field="opcode" data-sortable="true">Name</th>
-			<th data-field="version" data-sortable="true">Version</th>
+			<th>Version</th>
 			<th>Description</th>
-			<th>Last Updated</th>
 		</tr>
 	</thead>
 	<tbody>
 {%-for pkg in site.data.packages-%}
 		<tr>
-			<td><a href="/packages/{{ pkg.name }}">{{ pkg.name }}</a></td>
-			<td>{{ pkg.version }}-{{ pkg.release }}</td>
+			<td>{{ pkg.name }}</td>
+			<td>{{ pkg.version }}</td>
 			<td>{{ pkg.description }}</td>
-			<td>{{ pkg.last-updated }}</td>
 		</tr>
 {%-endfor-%}
 	</tbody>

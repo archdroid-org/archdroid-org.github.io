@@ -42,13 +42,12 @@ plugins:
 - jekyll-sitemap
 
 name: "ArchDroid"
-baseurl: "/en"
 url: "https://archdroid-org.github.io"
 description: "SFZ File Format Documentation Website"
 spdx_license_id: "CC0-1.0"
 
-#locale:
-#  default: "en"
+locale:
+  default: "en"
 
 authors:
   content: "redtide"

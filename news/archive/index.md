@@ -1,5 +1,5 @@
 ---
-title: News Archive
+title: "News Archive"
 date_fmt: "%F"
 ---
 {% include post-archive.liquid %}

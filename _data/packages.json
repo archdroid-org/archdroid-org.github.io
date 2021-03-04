@@ -2,11 +2,396 @@
 	{
 		"name": "archlinuxdroid-repo",
 		"description": "Repository with additional packages not in alarm.",
-		"version": "1.1",
+		"version": "1.1-1",
 		"release": "1",
 		"url": "http://archlinuxdroid.tk/",
 		"license": "MIT",
 		"depends": ["pacman", "grep", "sed"],
 		"last-updated": "2021-02-24 15:08 UTC"
+	},
+	{
+		"name": "cendric-git",
+		"description": "Cendric combines RPG and Platformer elements in one game, featuring both a sidescroller and top-down view.",
+		"version": "1.1.3.r12.g3dce0091-1"
+	},
+	{
+		"name": "codelite-git",
+		"description": "A cross platform C/C++/PHP and Node.js IDE written in C++",
+		"version": "15.0.r92.gc74ca1454-1"
+	},
+	{
+		"name": "compiz",
+		"description": "Composite manager for Aiglx and Xgl, with plugins and CCSM",
+		"version": "0.9.14.1-5"
+	},
+	{
+		"name": "dkms-8812au",
+		"description": "Driver for Realtek RTL8812AU chipset wireless adaptors.",
+		"version": "5.6.4.2.g3110ad6-1"
+	},
+	{
+		"name": "dkms-mali-bifrost",
+		"description": "Mali kernel driver for bifrost hardware in DKMS format.",
+		"version": "24.0-1"
+	},
+	{
+		"name": "dkms-mali-bifrost-next",
+		"description": "Mali kernel driver for bifrost hardware in DKMS format.",
+		"version": "25.0-1"
+	},
+	{
+		"name": "extremetuxracer",
+		"description": "Downhill racing game starring Tux",
+		"version": "0.8.0-1"
+	},
+	{
+		"name": "glmark2-git",
+		"description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
+		"version": "r955.3b1a2d9-1"
+	},
+	{
+		"name": "kodi-common",
+		"description": "A software media player and entertainment hub for digital media",
+		"version": "19.0-6"
+	},
+	{
+		"name": "kodi-x11",
+		"description": "x11 kodi binary",
+		"version": "19.0-6"
+	},
+	{
+		"name": "kodi-wayland",
+		"description": "wayland kodi binary",
+		"version": "19.0-6"
+	},
+	{
+		"name": "kodi-gbm",
+		"description": "gbm kodi binary",
+		"version": "19.0-6"
+	},
+	{
+		"name": "kodi-eventclients",
+		"description": "Kodi Event Clients",
+		"version": "19.0-6"
+	},
+	{
+		"name": "kodi-tools-texturepacker",
+		"description": "Kodi Texturepacker tool",
+		"version": "19.0-6"
+	},
+	{
+		"name": "kodi-dev",
+		"description": "Kodi dev files",
+		"version": "19.0-6"
+	},
+	{
+		"name": "kodi-addon-inputstream-adaptive",
+		"description": "InputStream client for adaptive streams for Kodi 18+",
+		"version": "2.6.7-1"
+	},
+	{
+		"name": "libxmp",
+		"description": "Library that supports over 90 module formats (Amiga, Atari, ..)",
+		"version": "4.4.1-1"
+	},
+	{
+		"name": "linux-amlogic-511",
+		"description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
+		"version": "5.11-7"
+	},
+	{
+		"name": "linux-amlogic-511-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
+		"version": "5.11-7"
+	},
+	{
+		"name": "linux-amlogic-57",
+		"description": "The Linux Kernel and modules - Amlogic",
+		"version": "5.7.18-1"
+	},
+	{
+		"name": "linux-amlogic-57-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Amlogic",
+		"version": "5.7.18-1"
+	},
+	{
+		"name": "linux-amlogic-58",
+		"description": "The Linux Kernel and modules - Amlogic",
+		"version": "5.8.16-1"
+	},
+	{
+		"name": "linux-amlogic-58-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Amlogic",
+		"version": "5.8.16-1"
+	},
+	{
+		"name": "linux-amlogic-exp",
+		"description": "The Linux Kernel and modules - Amlogic (Experimental)",
+		"version": "5.10.5-1"
+	},
+	{
+		"name": "linux-amlogic-exp-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Amlogic (Experimental)",
+		"version": "5.10.5-1"
+	},
+	{
+		"name": "linux-amlogic-panfrost-510",
+		"description": "The Linux Kernel and modules - Amlogic",
+		"version": "5.10.5-1"
+	},
+	{
+		"name": "linux-amlogic-panfrost-510-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Amlogic",
+		"version": "5.10.5-1"
+	},
+	{
+		"name": "linux-amlogic-panfrost-511",
+		"description": "The Linux Kernel and modules - Amlogic",
+		"version": "5.11-2"
+	},
+	{
+		"name": "linux-amlogic-panfrost-511-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Amlogic",
+		"version": "5.11-2"
+	},
+	{
+		"name": "linux-amlogic-panfrost-59",
+		"description": "The Linux Kernel and modules - Amlogic",
+		"version": "5.9.3-1"
+	},
+	{
+		"name": "linux-amlogic-panfrost-59-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Amlogic",
+		"version": "5.9.3-1"
+	},
+	{
+		"name": "linux-odroid",
+		"description": "The Linux Kernel and modules - Amlogic",
+		"version": "5.10.18-1"
+	},
+	{
+		"name": "linux-odroid-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Amlogic",
+		"version": "5.10.18-1"
+	},
+	{
+		"name": "linux-odroid-511",
+		"description": "The Linux Kernel and modules - Amlogic",
+		"version": "5.11.2-1"
+	},
+	{
+		"name": "linux-odroid-511-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Amlogic",
+		"version": "5.11.2-1"
+	},
+	{
+		"name": "linux-odroid-c4",
+		"description": "",
+		"version": "4.9.230-1"
+	},
+	{
+		"name": "linux-odroid-c4-headers",
+		"description": "",
+		"version": "4.9.230-1"
+	},
+	{
+		"name": "linux-odroid-exp",
+		"description": "The Linux Kernel and modules - Amlogic",
+		"version": "5.11-7"
+	},
+	{
+		"name": "linux-odroid-exp-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Amlogic",
+		"version": "5.11-7"
+	},
+	{
+		"name": "linux-odroid-g12",
+		"description": "The Linux Kernel and modules - ODROID-N2/N2+/C4",
+		"version": "4.9.236-1"
+	},
+	{
+		"name": "linux-odroid-g12-headers",
+		"description": "Header files and scripts for building modules for linux kernel - ODROID-N2/N2+/C4",
+		"version": "4.9.236-1"
+	},
+	{
+		"name": "linux-odroid-panfrost",
+		"description": "The Linux Kernel and modules - Tobetter Panfrost",
+		"version": "5.10.5-1"
+	},
+	{
+		"name": "linux-odroid-panfrost-headers",
+		"description": "Header files and scripts for building modules for linux kernel - Tobetter Panfrost",
+		"version": "5.10.5-1"
+	},
+	{
+		"name": "linux-odroid-rt",
+		"description": "The Linux Kernel and modules - RealTime",
+		"version": "5.10.18-2"
+	},
+	{
+		"name": "linux-odroid-rt-headers",
+		"description": "Header files and scripts for building modules for linux kernel - RealTime",
+		"version": "5.10.18-2"
+	},
+	{
+		"name": "mesa-arm-git",
+		"description": "An open-source implementation of the OpenGL specification",
+		"version": "21.1.0_devel.136005.6f4c4df6c2d-1"
+	},
+	{
+		"name": "mesa-bifrost-git",
+		"description": "An open-source implementation of the OpenGL specification",
+		"version": "21.1.0_devel.135237.35cd2e7bff0-1"
+	},
+	{
+		"name": "mesa-icecream95-git",
+		"description": "An open-source implementation of the OpenGL specification (icrecream95 WIP)",
+		"version": "21.1.0_devel.135959.5df04c07358-1"
+	},
+	{
+		"name": "mesa-panfrost-git",
+		"description": "An open-source implementation of the OpenGL specification",
+		"version": "21.1.0_devel.135662.df5ca9a0b80-1"
+	},
+	{
+		"name": "mpv-sdl",
+		"description": "a free, open source, and cross-platform media player",
+		"version": "1:0.33.0-2"
+	},
+	{
+		"name": "neverball",
+		"description": "3D game similar to Super Monkey Ball or Marble Madness",
+		"version": "1.6.0-4"
+	},
+	{
+		"name": "odroid-alsa",
+		"description": "Alsa audio enablement for Odroid N2/N2+/C4.",
+		"version": "1-5"
+	},
+	{
+		"name": "odroid-c4-dtb",
+		"description": "ODROID-C4 DTB file for mainline kernel",
+		"version": "1.0-1"
+	},
+	{
+		"name": "odroid-c4-libgl-wl",
+		"description": "ODROID-C4 Mali driver (Wayland)",
+		"version": "1.0-2"
+	},
+	{
+		"name": "odroid-c4-libgl-fb",
+		"description": "ODROID-C4 Mali driver (framebuffer)",
+		"version": "1.0-2"
+	},
+	{
+		"name": "odroid-c4-libgl-headers",
+		"description": "ODROID-C4 Mali driver headers",
+		"version": "1.0-2"
+	},
+	{
+		"name": "odroid-gl4es",
+		"description": "OpenGL 2.1/1.5 to GL ES 2.0/1.1 translation library. (Odroid Build)",
+		"version": "1.1.4.69f0392-2"
+	},
+	{
+		"name": "odroid-n2-libgl-wl",
+		"description": "ODROID-N2 Mali driver (Wayland)",
+		"version": "1.0-6"
+	},
+	{
+		"name": "odroid-n2-libgl-fb",
+		"description": "ODROID-N2 Mali driver (framebuffer)",
+		"version": "1.0-6"
+	},
+	{
+		"name": "odroid-n2-libgl-headers",
+		"description": "ODROID-N2 Mali driver headers",
+		"version": "1.0-6"
+	},
+	{
+		"name": "openarena",
+		"description": "A violent, sexy, multiplayer first person shooter based on the ioquake3 engine.",
+		"version": "0.8.8-3"
+	},
+	{
+		"name": "retux",
+		"description": "Action platformer loosely inspired by the Mario games, utilizing the art assets from the SuperTux project.",
+		"version": "1.4.1-1"
+	},
+	{
+		"name": "sauerbraten",
+		"description": "FPS that uses an improved version of the Cube engine",
+		"version": "2020_12_21-1"
+	},
+	{
+		"name": "sauerbraten-data",
+		"description": "Improved version of the Cube engine - datas files",
+		"version": "2020_12_21-1"
+	},
+	{
+		"name": "supertuxkart",
+		"description": "Kart racing game featuring Tux and his friends",
+		"version": "1.2-1"
+	},
+	{
+		"name": "teeworlds",
+		"description": "Fast-paced multiplayer 2D shooter game",
+		"version": "0.7.5-1"
+	},
+	{
+		"name": "trigger-rally-svn",
+		"description": "A fast-paced free software rally racing game",
+		"version": "0.6.7r1013-1"
+	},
+	{
+		"name": "uboot-odroid-c4",
+		"description": "U-Boot for ODROID-C4/HC4",
+		"version": "2015.01.171-1"
+	},
+	{
+		"name": "uboot-odroid-n2plus",
+		"description": "U-Boot for ODROID-N2/N2+",
+		"version": "2015.01.171-1"
+	},
+	{
+		"name": "waybar-git",
+		"description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
+		"version": "r1426.cb1c7ea-1"
+	},
+	{
+		"name": "wayfire",
+		"description": "3D wayland compositor",
+		"version": "0.7.0-2"
+	},
+	{
+		"name": "wayfire-plugins-extra",
+		"description": "Additional plugins for Wayfire",
+		"version": "0.7.0-1"
+	},
+	{
+		"name": "wcm",
+		"description": "Wayfire Configuration Manager",
+		"version": "0.7.0-1"
+	},
+	{
+		"name": "wf-config",
+		"description": "A library for managing configuration files, written for wayfire",
+		"version": "0.7.0-1"
+	},
+	{
+		"name": "wf-shell",
+		"description": "GTK3-based panel for the Wayfire compositor",
+		"version": "0.7.0-3"
+	},
+	{
+		"name": "wlroots-mali-git",
+		"description": "Modular Wayland compositor library (with libMali fix)",
+		"version": "0.11.0.r57.g99f3c643-1"
+	},
+	{
+		"name": "xonotic",
+		"description": "A free, fast-paced crossplatform first-person shooter",
+		"version": "0.8.2-6"
 	}
 ]
