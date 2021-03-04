@@ -7,9 +7,9 @@ source "https://rubygems.org"
 # - https://github.com/travis-ci/travis-web/blob/master/Gemfile
 
 ruby "2.7.1"
-group :development, :test do
-  gem "rake", "~> 12"
-end
+#group :development, :test do
+#  gem "rake", "~> 12"
+#end
 
 gem "jekyll", "3.9.0"
 
