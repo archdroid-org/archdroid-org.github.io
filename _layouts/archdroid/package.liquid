@@ -1,0 +1,18 @@
+---
+layout: "default"
+---
+{%- assign pkgname = page.dir | split: '/' | last -%}
+{%- assign pkg = site.data.packages | where: "name", pkgname | first -%}
+
+<title>{{ site.name }} | {{ pkgname }}</title>
+
+<h1>{{ pkgname }} {{ pkg.version }}-{{ pkg.release }}</h1>
+
+<table id="pkginfo">
+	<tbody>
+		<tr><th>Description:</th><td>{{ pkg.description }}</td></tr>
+		<tr><th>Upstream URL:</th><td><a href="{{ pkg.url }}">{{ pkg.url }}</a></td></tr>
+		<tr><th>License(s):</th><td>{{ pkg.license }}</td></tr>
+		<tr><th>Last Updated:</th><td>{{ pkg.last-updated }}</td></tr>
+	</tbody>
+</table>

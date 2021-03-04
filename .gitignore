@@ -1,0 +1,14 @@
+/.sass-cache
+/_site
+/.jekyll-metadata
+/.vendor
+/assets/css/*.map
+/assets/css/style.css
+/assets/js/*.map
+/node_modules
+/vendor/*
+Gemfile.lock
+package-lock.json
+yarn.lock
+*.code-workspace
+*.log

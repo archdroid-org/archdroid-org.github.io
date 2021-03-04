@@ -1,0 +1,25 @@
+<table
+	class="table table-sm table-bordered table-hover table-striped table-responsive-xl"
+	id="table-packages"
+	data-toggle="table"
+	data-sort-name="name"
+	data-sort-order="asc">
+	<thead class="thead-dark">
+		<tr>
+			<th data-field="opcode" data-sortable="true">Name</th>
+			<th data-field="version" data-sortable="true">Version</th>
+			<th>Description</th>
+			<th>Last Updated</th>
+		</tr>
+	</thead>
+	<tbody>
+{%-for pkg in site.data.packages-%}
+		<tr>
+			<td><a href="/packages/{{ pkg.name }}">{{ pkg.name }}</a></td>
+			<td>{{ pkg.version }}-{{ pkg.release }}</td>
+			<td>{{ pkg.description }}</td>
+			<td>{{ pkg.last-updated }}</td>
+		</tr>
+{%-endfor-%}
+	</tbody>
+</table>

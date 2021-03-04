@@ -1,0 +1,18 @@
+name: "English"
+404_content: "The page you requested could not be found. It seems that the page you were
+trying to reach doesn't exist anymore, or maybe it has just moved. We think the
+the best thing to do is to start again from the home page, or use the site
+search feature below."
+search: "Search"
+search_website: "Search this website:"
+back_to_top: "Back To Top"
+follow_us: "Follow Us"
+posted_on: "Posted on "
+posted_by: "by "
+comments: "Comments"
+news: "News"
+news_archive: " News Archive"
+archive_caption: "Full historical listing of all news posts, sorted by newest first."
+archive_header_post: "Post"
+archive_header_date: "Date"
+archive_header_author: "Author"
