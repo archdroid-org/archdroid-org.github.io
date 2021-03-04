@@ -2,7 +2,10 @@ navigation:
 - label: "Packages"
   url: "/packages"
 
-- label: "Contacts"
+- label: "Mirrors"
+  url: "/mirrors"
+
+- label: "Follow Us"
   type: "dropdown"
   pages:
   - label: GitHub

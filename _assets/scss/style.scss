@@ -6,29 +6,6 @@ $scrollbutton-color:      rgba(0, 0, 0, 0.5);
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "syntax-highlight";
-
-table {
-	width:100%;
-	border-collapse: collapse;
-	margin-bottom: 1em;
-}
-thead > tr > th, tbody > tr > td {
-	text-align: left;
-	padding: 5px 10px;
-	border: $border-width solid $border-color;
-}
-thead > tr > th {
-	color: $white;
-	background-color: $table-dark-bg;
-}
-tbody tr:nth-child(#{$table-striped-order}) {
-	background-color: $table-accent-bg;
-}
-#pkginfo > tbody > tr:nth-child(#{$table-striped-order}),
-#pkginfo > tbody > tr > td {
-	background-color: white;
-	border: 0;
-}
 /*
 pre {
 	padding: 0.5rem 0.75rem;

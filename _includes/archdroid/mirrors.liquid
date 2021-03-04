@@ -1,20 +1,18 @@
 <table
-	id="table-packages"
+	id="table-mirrors"
 	class="table table-sm table-hover table-responsive-xl"
 	data-toggle="table">
 	<thead>
 		<tr>
 			<th data-field="name" data-sortable="true">Name</th>
-			<th>Version</th>
-			<th>Description</th>
+			<th>URL</th>
 		</tr>
 	</thead>
 	<tbody>
-{%-for pkg in site.data.packages-%}
+{%-for mirror in site.data.mirrors-%}
 		<tr>
-			<td>{{ pkg.name }}</td>
-			<td>{{ pkg.version }}</td>
-			<td>{{ pkg.description }}</td>
+			<td>{{ mirror.name }}</td>
+			<td>{{ mirror.url }}</td>
 		</tr>
 {%-endfor-%}
 	</tbody>
