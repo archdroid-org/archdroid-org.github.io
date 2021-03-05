@@ -53,9 +53,22 @@ blockquote:before {
   color: $body-color;
   text-align: center;
 }
+.navbar{
+  border-bottom: 5px #08c solid !important;
+}
 .highlighter-rouge pre.highlight {
   padding: 7px;
   background-color: #EEEEEE;
   width: 100%;
   border: solid 1px #CFCFCF;
+}
+.box {
+  margin-bottom: 1.5em;
+  padding: .65em;
+  background: #ecf2f5;
+  border: 1px solid #bcd;
+}
+.box h2 {
+    margin-bottom: .5em;
+    border-bottom: 1px solid #888;
 }
