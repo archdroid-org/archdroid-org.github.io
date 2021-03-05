@@ -1,0 +1,17 @@
+{%-comment-%} TODO: WIP {%-endcomment-%}
+{%-if include.optional-%}
+	{%-assign suffix = " (optional)"-%}
+	{%-assign dep = include.depend |split:':' |first-%}
+{%-else-%}
+	{%-assign suffix = ""-%}
+	{%-if    include.depend contains '>'-%}{%-assign sep = '>'-%}
+	{%-elsif include.depend contains '<'-%}{%-assign sep = '<'-%}
+	{%-elsif include.depend contains '='-%}{%-assign sep = '='-%}{%-endif-%}
+	{%-if sep != ""-%}
+		{%-assign dep = include.depend |split:sep |first-%}
+	{%-else-%}
+		{%-assign dep = include.depend-%}
+	{%-endif-%}
+{%-endif-%}
+<a href="{{ baseurl | append: dep }}">{{ dep }}</a>{{ suffix }}<br/>
+{%-comment-%} No new line, avoid <p>{%-endcomment-%}
