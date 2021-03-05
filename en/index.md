@@ -1,14 +1,14 @@
 ---
 title: "Home"
 ---
-# Welcome to {{ site.name }}!
-
 **Notice: This site is still under development**
 
-### About
+<div class="box" markdown="1">
+## About {{ site.name }}
 
-ArchDroid is a set of tools and additional packages to provide extended support
-for single board computers that may or may not be supported by ArchLinuxARM.
+Welcome to Archdroid a set of tools and additional packages to provide extended
+support for single board computers that may or may not be supported by
+[ArchLinuxARM](https://archlinuxarm.org).
 Currently additional support is provided for the
 **[Odroid N2/N2+](https://www.hardkernel.com/shop/odroid-n2-with-4gbyte-ram-2/)**
 and
@@ -24,3 +24,4 @@ worked on and to contribute to the various repositories on our
 [GitHub Organization](https://github.com/archdroid-org).
 
 **Enjoy!**
+</div>
