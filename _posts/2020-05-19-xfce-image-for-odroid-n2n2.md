@@ -4,7 +4,7 @@ author: "jgmdev"
 date: "2020-05-05T7:27:24-0400"
 ---
 
-## What is Included?
+### What is Included?
 
 * Latest XFCE Desktop Environment.
 * 4.9.x Kernel with audio and N2+ support or 5.10.x Kernel on the panfrost image
@@ -24,7 +24,7 @@ date: "2020-05-05T7:27:24-0400"
 * Realtime privileges enabled for alarm user for pro-audio.
 * A nice space.jpg wallpaper!
 
-### Here are some basic screenshots:
+#### Here are some basic screenshots:
 
 <img class="img-fluid" src="{{ 'assets/img/xfce-ss01.png' | relative_url }}"/>
 
@@ -32,11 +32,11 @@ date: "2020-05-05T7:27:24-0400"
 
 <img class="img-fluid" src="{{ 'assets/img/xfce-ss02.png' | relative_url }}"/>
 
-## Installation
+### Installation
 
 The process of burning the image into a SD or EMMC card should be the same as
 with other images and is well documented in
-[https://wiki.odroid.com/troubleshooting/odroid_flashing_tools](other places)
+[https://wiki.odroid.com/troubleshooting/odroid_flashing_tools](https://wiki.odroid.com/troubleshooting/odroid_flashing_tools)
 so I will not write about that. Besides that, the image doesn't boots from
 petitboot unless you have an updated petitboot installed (20200721 release
 seems to work) and compatible display (otherwise you will get a blank screen),
@@ -52,13 +52,13 @@ password: root
 
 Don't forget to change the default password for added security.
 
-## Setup
+### Setup
 
 With latest image, after booting to the login manager wait some seconds
 because the system will grow the partition, setup locales, setup the boot
 partition on /etc/fstab and reboot.
 
-## Keyboard Bindings
+### Keyboard Bindings
 
 Note: SuperKey is also known as WinKey
 
@@ -69,9 +69,11 @@ Note: SuperKey is also known as WinKey
 
 For more bindings check the xfce settings.
 
-## What Works?
+### What Works?
 
-### Triple A Games :D
+Some applications that have been tested and work nicely.
+
+#### Triple A Games :D
 
 * OpenArena - sudo pacman -S openarena
 * Cendric - sudo pacman -S cendric-git
@@ -87,12 +89,12 @@ For more bindings check the xfce settings.
 
 and more...
 
-### Video
+#### Video
 
 * MPV - with video acceleration on panfrost image or sdl backend on non-panfrost image.
 * KODI - with opengl and video acceleration support on panfrost image sudo pacman -S kodi-x11.
 
-### Development
+#### Development
 
 codelite IDE for C/C++, PHP, NodeJS development sudo pacman -S codelite-git
 
@@ -102,24 +104,24 @@ For details on what tested applications support GPU Hardware Acceleration
 check the Archlinux: X GPU Acceleration Guide, If you test more OpenGL
 applications that work with GL4ES let me know to update the list.
 
-## Improving System Performance
+### Improving System Performance
 
 If you want better performance try running sudo cpupower frequency-set -g
 performance from the terminal, and to permanently set the CPU governor to
 performance open /etc/default/cpupower and change the line that reads:
 
-```
+```ini
 governor='schedutil'
 ```
 to
-```
+```ini
 governor='performance'
 ```
 
 Then you can just run sudo systemctl restart cpupower to apply the changes
 immediately.
 
-## Download
+### Download
 
 **Newer panfrost based image:**
 
