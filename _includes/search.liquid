@@ -1,5 +1,7 @@
 
+{%-assign t = site.data.locale[page.lang].translation-%}
 
+<h1>{{ t.search }}</h1>
 <script src="/assets/js/lunr.min.js"></script>
 <script>
 {% assign counter = 0 %}

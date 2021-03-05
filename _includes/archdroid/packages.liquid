@@ -1,3 +1,5 @@
+<h1>Packages</h1>
+
 <table
 	id="table-packages"
 	class="table table-sm table-hover table-responsive-xl"
@@ -12,8 +14,8 @@
 	<tbody>
 {%-for pkg in site.data.packages-%}
 		<tr>
-			<td>{{ pkg.name }}</td>
-			<td>{{ pkg.version }}</td>
+			<td><a href="{{ '/packages/' | append: pkg.name | relative_url }}">{{ pkg.name }}</a></td>
+			<td>{{ pkg.version }}-{{ pkg.release }}</td>
 			<td>{{ pkg.description }}</td>
 		</tr>
 {%-endfor-%}

@@ -1,18 +1,39 @@
 ---
 layout: "default"
 ---
-{%- assign pkgname = page.dir | split: '/' | last -%}
-{%- assign pkg = site.data.packages | where: "name", pkgname | first -%}
+{%-assign pkgname = page.dir | split: '/' | last-%}
+{%-assign pkg = site.data.packages | where: "name", pkgname | first-%}
+{%-assign version = pkg.version |append:'-' |append:pkg.release-%}
 
-<title>{{ site.name }} | {{ pkgname }}</title>
-
-<h1>{{ pkgname }} {{ pkg.version }}-{{ pkg.release }}</h1>
+<h1>{{ pkgname |append:' '|append:version }}</h1>
 
 <table id="pkginfo">
 	<tbody>
-		<tr><th>Description:</th><td>{{ pkg.description }}</td></tr>
-		<tr><th>Upstream URL:</th><td><a href="{{ pkg.url }}">{{ pkg.url }}</a></td></tr>
-		<tr><th>License(s):</th><td>{{ pkg.license }}</td></tr>
-		<tr><th>Last Updated:</th><td>{{ pkg.last-updated }}</td></tr>
+		<tr><th>Description:</th>   <td>{{ pkg.description }}</td></tr>
+		<tr><th>Upstream URL:</th>  <td><a href="{{ pkg.url }}">{{ pkg.url }}</a></td></tr>
+		<tr><th>License(s):</th>    <td>{{ pkg.license |join:', ' }}</td></tr>
+{%-if pkg.replaces.size > 0-%}
+		<tr><th>Provides:</th>      <td>{{ pkg.replaces |join:', ' }}</td></tr>{%-endif-%}
+{%-if pkg.conflicts.size > 0-%}
+		<tr><th>Conflicts:</th>     <td>{{ pkg.conflicts |join:', ' }}</td></tr>{%-endif-%}
+		<tr><th>Installed Size:</th><td>{{ pkg.isize }}</td></tr>
+		<tr><th>Build Date:</th>    <td>{{ pkg.builddate |split: 'T' |join: ' ' }} UTC</td></tr>
 	</tbody>
 </table>
+
+{%-if pkg.depends.size > 0 or pkg.optdepends.size > 0-%}
+{%-assign baseurl = "https://archlinuxarm.org/packages/aarch64/"-%}
+<br/>
+<h2>Dependencies</h2>
+
+	{%-for dep in pkg.depends-%}
+	<a href="{{ baseurl| append: dep }}">{{ dep }}</a><br/>
+	{%-endfor-%}
+	{%-for dep in pkg.optdepends-%}
+		{%-assign opt = dep |split: ':' |first-%}
+	<a href="{{ baseurl| append: opt }}">{{ opt }}</a> (optional)<br/>
+	{%-endfor-%}
+{%-endif-%}
+<br/>
+{%-assign baseurl = "https://github.com/archdroid-org/repo/releases/download/aarch64/"-%}
+<a href="{{ baseurl |append: pkg.name |append:'-'|append:version |append: '-aarch64.pkg.tar.zst'}}">Download</a>

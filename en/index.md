@@ -1,4 +1,5 @@
 ---
-title: "Home"
 ---
+# Home
+
 Welcome to {{ site.name }}!
