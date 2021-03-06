@@ -36,7 +36,7 @@ date: "2020-05-05T7:27:24-0400"
 
 The process of burning the image into a SD or EMMC card should be the same as
 with other images and is well documented in
-[https://wiki.odroid.com/troubleshooting/odroid_flashing_tools](https://wiki.odroid.com/troubleshooting/odroid_flashing_tools)
+<https://wiki.odroid.com/troubleshooting/odroid_flashing_tools>
 so I will not write about that. Besides that, the image doesn't boots from
 petitboot unless you have an updated petitboot installed (20200721 release
 seems to work) and compatible display (otherwise you will get a blank screen),
@@ -125,9 +125,9 @@ immediately.
 
 **Newer panfrost based image:**
 
-[https://mega.nz/file/zEkw2Jgb#R14x4WXDvMtn3QaVNHlYIe9bq25kZoH-ddxYGTS5jdM](https://mega.nz/file/zEkw2Jgb#R14x4WXDvMtn3QaVNHlYIe9bq25kZoH-ddxYGTS5jdM)
+<https://mega.nz/file/zEkw2Jgb#R14x4WXDvMtn3QaVNHlYIe9bq25kZoH-ddxYGTS5jdM>
 
 **Latest image with Kernel 4.9.x (supports built-in audio):**
 
-[https://mega.nz/file/uYEWgDoA#qPK4xKSNwbF3cbEextjDsR5o5xHAeCL6lG6UEoZ2nMM](https://mega.nz/file/uYEWgDoA#qPK4xKSNwbF3cbEextjDsR5o5xHAeCL6lG6UEoZ2nMM)
+<https://mega.nz/file/uYEWgDoA#qPK4xKSNwbF3cbEextjDsR5o5xHAeCL6lG6UEoZ2nMM>
 

@@ -1,8 +1,7 @@
 ---
 title: "Website online"
-date: 2021-03-03
-date_fmt: "%F"
-categories: news
+author: "redtide"
+date: "2021-03-03T12:34:56+0100"
 ---
 - Built on [Jekyll].
 - Most content is authored in [Markdown] format.
@@ -10,9 +9,9 @@ categories: news
   making the website available to mobile devices.
 - Utilizes [FontAwesome] and [Favicon Generator] for content and website icons.
 
-[Bootstrap]: http://getbootstrap.com/
+[Bootstrap]:         http://getbootstrap.com/
 [Favicon Generator]: https://realfavicongenerator.net/
-[FontAwesome]: http://fontawesome.io/
-[Jekyll]: http://jekyllrb.com/
-[Markdown]: http://daringfireball.net/projects/markdown/
-[SASS]: https://sass-lang.com/
+[FontAwesome]:       http://fontawesome.io/
+[Jekyll]:            http://jekyllrb.com/
+[Markdown]:          http://daringfireball.net/projects/markdown/
+[SASS]:              https://sass-lang.com/

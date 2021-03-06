@@ -15,7 +15,7 @@ defaults:
     type: "posts"
   values:
     layout:     "post"
-    date_fmt:   "%F"
+    date_fmt:   "%B %d, %Y %R %p"
     categories: "news"
     comments:   false
 
