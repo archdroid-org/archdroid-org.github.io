@@ -41,7 +41,7 @@ exclude:
 plugins:
 - jekyll-sitemap
 
-name: "ArchDroid"
+name: "Archdroid"
 url: "https://archdroid-org.github.io"
 description: "SFZ File Format Documentation Website"
 spdx_license_id: "CC0-1.0"
