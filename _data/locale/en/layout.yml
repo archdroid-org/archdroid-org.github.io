@@ -5,6 +5,9 @@ navigation:
 - label: "Mirrors"
   url: "/mirrors"
 
+- label: "Images"
+  url: "/images"
+
 - label: "Follow Us"
   type: "dropdown"
   pages:
