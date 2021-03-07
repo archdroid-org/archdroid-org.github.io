@@ -1,0 +1,10 @@
+[
+	{
+		"name": "Odroid N2/N2+",
+		"path": "/images/odroidn2"
+	},
+	{
+		"name": "Odroid C4/HC4",
+		"path": "/images/odroidc4"
+	}
+]

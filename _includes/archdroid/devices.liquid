@@ -1,0 +1,21 @@
+<h1>Device Images</h1>
+
+<table
+	id="table-mirrors"
+	class="table table-sm table-hover table-responsive-xl"
+	data-toggle="table">
+	<thead>
+		<tr>
+			<th data-field="name" data-sortable="true">Device</th>
+			<th>Images</th>
+		</tr>
+	</thead>
+	<tbody>
+{%-for device in site.data.devices-%}
+		<tr>
+			<td>{{ device.name }}</td>
+			<td><a href="{{ device.path }}">View</a></td>
+		</tr>
+{%-endfor-%}
+	</tbody>
+</table>
