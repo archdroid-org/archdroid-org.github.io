@@ -1,0 +1,23 @@
+<h1>Team</h1>
+
+<p>People that make the Archdroid project possible:</p>
+
+<table
+	id="table-team"
+	class="table table-sm table-hover table-responsive-xl"
+	data-toggle="table">
+	<thead>
+		<tr>
+			<th data-field="name" data-sortable="true">Name</th>
+			<th>Contributions</th>
+		</tr>
+	</thead>
+	<tbody>
+{%-for team in site.data.team-%}
+		<tr>
+			<td><a target="_blank" href="{{ team.url }}">{{ team.name }}</a></td>
+			<td>{{ team.contributions }}</td>
+		</tr>
+{%-endfor-%}
+	</tbody>
+</table>
