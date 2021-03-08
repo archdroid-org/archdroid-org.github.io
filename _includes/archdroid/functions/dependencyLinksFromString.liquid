@@ -1,0 +1,7 @@
+{%-assign dep_list = depends |split:','-%}
+{%-assign dep_list = dep_list |uniq-%}
+{%-for dep in dep_list-%}
+	{%-assign baseurl = "https://" |append: source |append: ".org/packages/?q="-%}
+	<a href="{{ baseurl | append: dep }}">{{ dep }}</a>{{ suffix }}<br/>
+{%-endfor-%}
+{%-comment-%} No new line, avoid <p>{%-endcomment-%}

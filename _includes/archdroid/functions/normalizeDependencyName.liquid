@@ -1,17 +1,22 @@
 {%-comment-%} TODO: WIP {%-endcomment-%}
 {%-if include.optional-%}
 	{%-assign suffix = " (optional)"-%}
-	{%-assign dep = include.depend |split:':' |first-%}
+	{%-assign depend = include.depend |split:':' |first-%}
+{%-elsif source == "archdroid"-%}
+	{%-assign suffix = " (archdroid)"-%}
+	{%-assign depend = include.depend-%}
 {%-else-%}
-	{%-assign suffix = ""-%}
+	{%-assign suffix = ''-%}
 	{%-if    include.depend contains '>'-%}{%-assign sep = '>'-%}
 	{%-elsif include.depend contains '<'-%}{%-assign sep = '<'-%}
 	{%-elsif include.depend contains '='-%}{%-assign sep = '='-%}{%-endif-%}
-	{%-if sep != ""-%}
-		{%-assign dep = include.depend |split:sep |first-%}
+	{%-if sep-%}
+		{%-assign depend = include.depend |split:sep |first-%}
 	{%-else-%}
-		{%-assign dep = include.depend-%}
+		{%-assign depend = include.depend-%}
 	{%-endif-%}
 {%-endif-%}
-<a href="{{ baseurl | append: dep }}">{{ dep }}</a>{{ suffix }}<br/>
+{%-comment-%}
+{%-assign baseurl = "https://" |append: include.source |append: ".org/packages/?q="-%}
+<a href="{{ baseurl | append: depend }}">{{ depend }}</a>{{ suffix }}<br/>{%-endcomment-%}
 {%-comment-%} No new line, avoid <p>{%-endcomment-%}

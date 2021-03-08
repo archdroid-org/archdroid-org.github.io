@@ -1,0 +1,24 @@
+<h2>Dependencies</h2>
+	{%-for dep in package.depends-%}
+		{%-assign source = "archlinuxarm"-%}
+		{%-include archdroid/functions/normalizeDependencyName.liquid
+			depend = dep-%}
+		{%-assign depends = depends |append: depend |append:','-%}
+	{%-endfor-%}
+	{%-include archdroid/functions/dependencyLinksFromString.liquid -%}
+
+	{%-for dep in package.optdepends-%}
+		{%-include archdroid/functions/normalizeDependencyName.liquid
+			depend   = dep
+			source   = "archlinuxarm"
+			optional = true-%}
+	{%-endfor-%}
+
+	{%-for dep in package.repodepends-%}
+		{%-assign source = "archdroid"-%}
+		{%-include archdroid/functions/normalizeDependencyName.liquid
+			depend = dep-%}
+		{%-assign depends = depends |append: depend |append:','-%}
+	{%-endfor-%}
+	{%-include archdroid/functions/dependencyLinksFromString.liquid -%}
+<br/>

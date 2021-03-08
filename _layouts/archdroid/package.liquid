@@ -1,42 +1,38 @@
 ---
 layout: "default"
 ---
-{%-assign pkgname = page.dir | split: '/' | last-%}
-{%-assign pkg = site.data.packages | where: "name", pkgname | first-%}
-{%-assign version = pkg.version |append:'-' |append:pkg.release-%}
+{%-assign pkgname = page.dir |split: '/' |last-%}
+{%-assign package = site.data.packages |where: "name", pkgname |first-%}
+{%-assign version = package.version |append:'-' |append:package.release-%}
+{%-assign download = "https://github.com/archdroid-org/repo/releases/download/aarch64/"-%}
+{%-comment-%}
+	TODO: Use package.arch in the download URL above when possible
+{%-endcomment-%}
 
 <h1>{{ pkgname |append:' '|append:version }}</h1>
 
 <table id="pkginfo">
 	<tbody>
-		<tr><th>Description:</th>   <td>{{ pkg.description }}</td></tr>
-		<tr><th>Upstream URL:</th>  <td><a href="{{ pkg.url }}">{{ pkg.url }}</a></td></tr>
-		<tr><th>License(s):</th>    <td>{{ pkg.license |join:', ' }}</td></tr>
-{%-if pkg.replaces.size > 0-%}
-		<tr><th>Provides:</th>      <td>{{ pkg.replaces |join:', ' }}</td></tr>{%-endif-%}
-{%-if pkg.conflicts.size > 0-%}
-		<tr><th>Conflicts:</th>     <td>{{ pkg.conflicts |join:', ' }}</td></tr>{%-endif-%}
-		<tr><th>Installed Size:</th><td>{{ pkg.isize }}</td></tr>
-		<tr><th>Build Date:</th>    <td>{{ pkg.builddate |split: 'T' |join: ' ' }} UTC</td></tr>
+		<tr><th>Description:</th>   <td>{{ package.description }}</td></tr>
+		<tr><th>Upstream URL:</th>  <td><a href="{{ package.url }}">{{ package.url }}</a></td></tr>
+		<tr><th>License(s):</th>    <td>{{ package.license |join:', ' }}</td></tr>
+{%-if package.replaces.size > 0-%}
+		<tr><th>Provides:</th>      <td>{{ package.replaces |join:', ' }}</td></tr>
+{%-endif-%}
+{%-if package.conflicts.size > 0-%}
+		<tr><th>Conflicts:</th>     <td>{{ package.conflicts |join:', ' }}</td></tr>
+{%-endif-%}
+		<tr><th>Installed Size:</th><td>{{ package.isize }}</td></tr>
+		<tr><th>Build Date:</th>    <td>{{ package.builddate |split: 'T' |join: ' ' }} UTC</td></tr>
 	</tbody>
 </table>
+<br/>
 {%-comment-%}
-{%-if pkg.depends.size > 0 or pkg.optdepends.size > 0-%}
-	{%-assign baseurl = "https://archlinuxarm.org/packages/aarch64/"-%}
-<br/>
-<h2>Dependencies</h2>
-	{%-for dep in pkg.depends-%}
-		{%-include archdroid/functions/normalizeDependencyName.liquid
-			depend   = dep
-			optional = false-%}
-	{%-endfor-%}
-	{%-for dep in pkg.optdepends-%}
-		{%-include archdroid/functions/normalizeDependencyName.liquid
-			depend   = dep
-			optional = true-%}
-	{%-endfor-%}
+{%-if package.depends.size > 0 or package.optdepends.size > 0 or package.repodepends.size > 0-%}
+	{%- include archdroid/dependencies.liquid -%}
 {%-endif-%}
-<br/>
-{%-assign baseurl = "https://github.com/archdroid-org/repo/releases/download/aarch64/"-%}
-<a href="{{ baseurl |append: pkg.name |append:'-'|append:version |append: '-aarch64.pkg.tar.zst'}}">Download</a>
 {%-endcomment-%}
+<a href="{{ download   |
+	append: package.name |append: '-' |
+	append: version      |append: '-' |
+	append: package.arch |append: '.pkg.tar.zst'}}">Download</a>
