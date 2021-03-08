@@ -1,0 +1,21 @@
+name: "Italiano"
+404_content: "La pagina che stai cercando non è stata trovata.
+Potrebbe essere stata eliminata o spostata altrove. La cosa migliore da fare
+è ripartire dalla pagina principale, o utilizzare la ricerca." # sottostante
+search: "Ricerca"
+search_website: "Cerca in questo sito:"
+back_to_top: "Torna Su"
+follow_us: "Seguici"
+posted_on: "alle "
+posted_by: "da "
+comments: "Commenti"
+news: "News"
+news_archive: "Archivio News"
+archive_caption: "Lista di tutte le news, in ordine cronologico partendo dalla più recente."
+archive_header_post: "Post"
+archive_header_date: "Data"
+archive_header_author: "Autore"
+mirrors_title: "Mirror"
+mirrors_header_name: "Nome"
+mirrors_header_url: "URL"
+packages_title: "Pacchetti"

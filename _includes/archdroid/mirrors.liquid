@@ -1,4 +1,6 @@
-<h1>Mirrors</h1>
+{% assign t  = site.data.locale[page.lang].translation %}
+
+<h1>{{ t.mirrors_title }}</h1>
 
 <table
 	id="table-mirrors"
@@ -6,8 +8,8 @@
 	data-toggle="table">
 	<thead>
 		<tr>
-			<th data-field="name" data-sortable="true">Name</th>
-			<th>URL</th>
+			<th data-field="name" data-sortable="true">{{ t.mirrors_header_name }}</th>
+			<th>{{ t.mirrors_header_url }}</th>
 		</tr>
 	</thead>
 	<tbody>
