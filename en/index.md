@@ -46,7 +46,7 @@ worked on and to contribute to the various repositories on our [GitHub Organizat
 
 <div class="col-md-3">
 <h3 class="box-title">Recent Updates</h3>
-<div class="box" markdown="1">
+<div class="box box-right" markdown="1">
 {% include archdroid/package_updates.liquid %}
 </div>
 </div>

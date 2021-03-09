@@ -1,15 +1,18 @@
 <table
 	id="table-package-updates"
-	class="table table-hover table-responsive table-borderless"
+	class="table table-hover table-responsive-lg table-borderless"
 	data-toggle="table">
 	<tbody>
 {%-for pkg in site.data.package_updates-%}
 		<tr>
 			<td>
-				{{ pkg.name }} {{ pkg.version }}-{{ pkg.release }}
+				{%-assign pkgver = pkg.version |split: '/' |last-%}
+				{{ pkg.name }} {{ pkg.version | append: "-" | append: pkg.release | truncate: 10 }}
 			</td>
 			<td>
-				<a href="{{ '/packages/' | append: pkg.name | relative_url }}">{{ pkg.arch }}</a>
+				<a title="view package info" href="{{ '/packages/' | append: pkg.name | relative_url }}">
+					<i class="fas fa-info-circle"></i>
+				</a>
 			</td>
 		</tr>
 {%-endfor-%}
