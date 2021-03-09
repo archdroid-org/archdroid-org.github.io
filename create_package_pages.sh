@@ -41,5 +41,11 @@ EOF
 	fi
 done < _data/packages.json
 
+echo "Generating package_updates.json..."
+if which jq > /dev/null 2>&1 ; then
+	jq 'sort_by(.builddate) | reverse | [limit(10;.[])]' \
+		_data/packages.json > _data/package_updates.json
+fi
+
 # return false if no changes occurred.
 exit $changes
