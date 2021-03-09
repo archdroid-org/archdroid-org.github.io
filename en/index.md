@@ -26,3 +26,16 @@ worked on and to contribute to the various repositories on our [GitHub Organizat
 [GitHub Organization]: https://github.com/archdroid-org
 [Odroid N2/N2+]:       https://www.hardkernel.com/shop/odroid-n2-with-4gbyte-ram-2/
 [Odroid C4/HC4]:       https://www.hardkernel.com/shop/odroid-c4/
+
+
+<div id="news">
+<h3>
+	<a href="/news/" title="Browse the news archives">Latest News</a>
+	<span class="arrow"></span>
+</h3>
+
+<div markdown="1">
+{% include post_recent.liquid %}
+</div>
+
+</div>
