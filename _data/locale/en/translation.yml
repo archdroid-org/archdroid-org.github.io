@@ -16,3 +16,5 @@ archive_caption: "Full historical listing of all news posts, sorted by newest fi
 archive_header_post: "Post"
 archive_header_date: "Date"
 archive_header_author: "Author"
+mirrors_header_name: "Server"
+mirrors_header_url: "URL"
