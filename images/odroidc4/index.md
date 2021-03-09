@@ -6,7 +6,7 @@ title: "Odroid C4/HC4 Images"
 
 <table
 	id="table-disk-images"
-	class="table table-sm table-hover table-responsive-xl"
+	class="table table-hover"
 	data-toggle="table"
 >
 	<thead>
