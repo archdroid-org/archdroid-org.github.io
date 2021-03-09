@@ -5,6 +5,7 @@ layout: "default"
 {%-assign package = site.data.packages |where: "name", pkgname |first-%}
 {%-assign version = package.version |append:'-' |append:package.release-%}
 {%-assign download = "https://github.com/archdroid-org/repo/releases/download/aarch64/"-%}
+{%-assign sources = "https://github.com/archdroid-org/pkgbuilds/tree/master/"-%}
 {%-comment-%}
 	TODO: Use package.arch in the download URL above when possible
 {%-endcomment-%}
@@ -32,7 +33,10 @@ layout: "default"
 	{%- include archdroid/dependencies.liquid -%}
 {%-endif-%}
 {%-endcomment-%}
-<a href="{{ download   |
+
+<a target="_blank" class="btn btn-dark" href="{{ sources   |
+	append: package.name |}}">Sources</a>
+<a class="btn btn-primary" href="{{ download   |
 	append: package.name |append: '-' |
 	append: version      |append: '-' |
 	append: package.arch |append: '.pkg.tar.zst'}}">Download</a>
