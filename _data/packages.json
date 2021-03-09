@@ -49,14 +49,14 @@
     "description": "A cross platform C/C++/PHP and Node.js IDE written in C++",
     "url": "http://www.codelite.org/",
     "license": "GPL",
-    "version": "15.0.1.r17.gc1de7fb2c",
+    "version": "15.0.1.r19.g1dab0c942",
     "release": "1",
-    "builddate": "2021-03-08T22:02:01",
+    "builddate": "2021-03-09T09:31:55",
     "depends": ["wxgtk3", "libedit", "libssh", "mariadb-libs", "ncurses", "xterm", "wget", "curl", "python2", "clang", "lldb", "hunspell"],
     "optdepends": ["graphviz: callgraph visualization", "cscope: CScope Integration for CodeLite", "clang: compiler", "gcc: compiler", "gdb: debugger", "valgrind: debugger"],
     "conflicts": ["codelite", "codelite-bin"],
-    "csize": 42321450,
-    "isize": 96190119
+    "csize": 42320855,
+    "isize": 96194215
   },
   {
     "base": "compiz",
