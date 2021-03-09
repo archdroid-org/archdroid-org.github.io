@@ -1,5 +1,50 @@
 [
   {
+    "base": "mesa-devel-git",
+    "name": "mesa-devel-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (development version)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.1.0_devel.136141.6905122999b",
+    "release": "1",
+    "builddate": "2021-03-09T10:02:15",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl",
+      "mesa-arm-git"
+    ],
+    "conflicts": [
+      "vulkan-mesa-layers",
+      "opencl-mesa",
+      "vulkan-swrast",
+      "libva-mesa-driver",
+      "mesa-vdpau",
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 27117046,
+    "isize": 80367785
+  },
+  {
     "base": "codelite-git",
     "name": "codelite-git",
     "arch": "aarch64",
@@ -37,51 +82,6 @@
     ],
     "csize": 42320855,
     "isize": 96194215
-  },
-  {
-    "base": "mesa-devel-git",
-    "name": "mesa-devel-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (development version)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.136140.f532202f2d5",
-    "release": "1",
-    "builddate": "2021-03-09T07:02:01",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-arm-git"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 27117161,
-    "isize": 80367785
   },
   {
     "base": "codeblocks-svn",
