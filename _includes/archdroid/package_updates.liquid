@@ -1,0 +1,17 @@
+<table
+	id="table-package-updates"
+	class="table table-hover table-responsive table-borderless"
+	data-toggle="table">
+	<tbody>
+{%-for pkg in site.data.package_updates-%}
+		<tr>
+			<td>
+				{{ pkg.name }} {{ pkg.version }}-{{ pkg.release }}
+			</td>
+			<td>
+				<a href="{{ '/packages/' | append: pkg.name | relative_url }}">{{ pkg.arch }}</a>
+			</td>
+		</tr>
+{%-endfor-%}
+	</tbody>
+</table>
