@@ -43,8 +43,16 @@ done < _data/packages.json
 
 echo "Generating package_updates.json..."
 if which jq > /dev/null 2>&1 ; then
+	current_md5sum=$(md5sum _data/package_updates.json | cut -d" " -f1)
+
 	jq 'sort_by(.builddate) | reverse | [limit(10;.[])]' \
 		_data/packages.json > _data/package_updates.json
+
+	new_md5sum=$(md5sum _data/package_updates.json | cut -d" " -f1)
+
+	if [ "$current_md5sum" != "$new_md5sum" ]; then
+		changes=0
+	fi
 fi
 
 # return false if no changes occurred.
