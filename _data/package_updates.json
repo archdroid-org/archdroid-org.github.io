@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.136160.d978383966d",
+    "version": "21.1.0_devel.136166.dfb0e0d246e",
     "release": "1",
-    "builddate": "2021-03-09T19:36:25",
+    "builddate": "2021-03-09T22:29:06",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 27117754,
-    "isize": 80347305
+    "csize": 27128099,
+    "isize": 80363689
   },
   {
     "base": "codelite-git",
@@ -51,9 +51,9 @@
     "description": "A cross platform C/C++/PHP and Node.js IDE written in C++",
     "url": "http://www.codelite.org/",
     "license": "GPL",
-    "version": "15.0.1.r19.g1dab0c942",
+    "version": "15.0.1.r24.g704e59408",
     "release": "1",
-    "builddate": "2021-03-09T09:31:55",
+    "builddate": "2021-03-09T22:01:48",
     "depends": [
       "wxgtk3",
       "libedit",
@@ -80,8 +80,8 @@
       "codelite",
       "codelite-bin"
     ],
-    "csize": 42320855,
-    "isize": 96194215
+    "csize": 42427524,
+    "isize": 96347847
   },
   {
     "base": "codeblocks-svn",
