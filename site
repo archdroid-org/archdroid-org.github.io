@@ -17,7 +17,7 @@ case $1 in
 			echo "Available Commands:"
 			echo ""
 			for tool in $commands; do
-				echo -e "  ${g}$tool${d} [<command>] [<option>]"
+				echo -e "  ${g}$tool${d}"
 			done
 			echo ""
 			echo "Help Command:"
