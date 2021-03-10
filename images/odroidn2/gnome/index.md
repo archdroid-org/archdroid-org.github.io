@@ -4,8 +4,8 @@ title: "GNOME Image for Odroid N2/N2+"
 
 # GNOME Image for Odroid N2/N2+
 
-Specific details about this environment setup can be see on the [Gnome](/env/gnome)
-environment page.
+Specific details about this environment setup can be seen on the
+[Gnome](/env/gnome) environment page.
 
 ### Distinct features from regular ALARM tarballs
 

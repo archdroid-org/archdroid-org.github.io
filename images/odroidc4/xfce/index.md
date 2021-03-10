@@ -4,8 +4,8 @@ title: "XFCE Image for Odroid C4/HC4"
 
 # XFCE Image for Odroid C4/HC4
 
-Specific details about this environment setup can be see on the [XFCE](/env/xfce)
-environment page.
+Specific details about this environment setup can be seen on the
+[XFCE](/env/xfce) environment page.
 
 ### Distinct features from regular ALARM tarballs
 

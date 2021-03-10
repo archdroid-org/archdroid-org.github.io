@@ -4,8 +4,8 @@ title: "Wayfire Image for Odroid N2/N2+"
 
 # Wayfire Image for Odroid N2/N2+
 
-Specific details about this environment setup can be see on the [Wayfire](/env/wayfire)
-environment page.
+Specific details about this environment setup can be seen on the
+[Wayfire](/env/wayfire) environment page.
 
 ### Distinct features from regular ALARM tarballs
 

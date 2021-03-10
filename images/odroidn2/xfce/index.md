@@ -4,8 +4,8 @@ title: "XFCE Image for Odroid N2/N2+"
 
 # XFCE Image for Odroid N2/N2+
 
-Specific details about this environment setup can be see on the [XFCE](/env/xfce)
-environment page.
+Specific details about this environment setup can be seen on the
+[XFCE](/env/xfce) environment page.
 
 ### Distinct features from regular ALARM tarballs
 

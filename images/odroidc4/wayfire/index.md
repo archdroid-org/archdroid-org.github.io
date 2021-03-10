@@ -4,7 +4,7 @@ title: "Wayfire Image for Odroid C4/HC4"
 
 # Wayfire Image for Odroid C4/HC4
 
-Specific details about this environment setup can be see on the
+Specific details about this environment setup can be seen on the
 [Wayfire](/env/wayfire) environment page.
 
 ### Distinct features from regular ALARM tarballs

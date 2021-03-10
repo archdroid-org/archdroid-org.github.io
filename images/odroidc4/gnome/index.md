@@ -4,8 +4,8 @@ title: "GNOME Image for Odroid C4/HC4"
 
 # GNOME Image for Odroid C4/HC4
 
-Specific details about this environment setup can be see on the [Gnome](/env/gnome)
-environment page.
+Specific details about this environment setup can be seen on the
+[Gnome](/env/gnome) environment page.
 
 ### Distinct features from regular ALARM tarballs
 
