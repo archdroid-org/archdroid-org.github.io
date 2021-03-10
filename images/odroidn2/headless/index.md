@@ -5,7 +5,7 @@ title: "Headless Image for Odroid N2/N2+"
 # Headless Image for Odroid N2/N2+
 
 Specific details about this environment setup can be seen on the
-[Headkess](/env/headless) environment page.
+[Headless](/env/headless) environment page.
 
 ### Distinct features from regular ALARM tarballs
 
