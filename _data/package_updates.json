@@ -1,5 +1,24 @@
 [
   {
+    "base": "retux",
+    "name": "retux",
+    "arch": "aarch64",
+    "description": "Action platformer loosely inspired by the Mario games, utilizing the art assets from the SuperTux project.",
+    "url": "https://retux-game.github.io/",
+    "license": "GPL3",
+    "version": "1.4.1",
+    "release": "2",
+    "builddate": "2021-03-10T19:58:17",
+    "depends": [
+      "python-pygame",
+      "sdl",
+      "sdl_image",
+      "sdl_mixer"
+    ],
+    "csize": 43038134,
+    "isize": 60224808
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -301,33 +320,5 @@
     ],
     "csize": 12676508,
     "isize": 48476711
-  },
-  {
-    "base": "linux-odroid-rt",
-    "name": "linux-odroid-rt",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - RealTime",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.10.y-rt",
-    "license": "GPL2",
-    "version": "5.10.18",
-    "release": "2",
-    "builddate": "2021-03-03T10:13:38",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 69635993,
-    "isize": 122425483
   }
 ]

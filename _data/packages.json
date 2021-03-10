@@ -887,11 +887,11 @@
     "url": "https://retux-game.github.io/",
     "license": "GPL3",
     "version": "1.4.1",
-    "release": "1",
-    "builddate": "2020-10-27T06:00:22",
+    "release": "2",
+    "builddate": "2021-03-10T19:58:17",
     "depends": ["python-pygame", "sdl", "sdl_image", "sdl_mixer"],
-    "csize": 43076487,
-    "isize": 60713108
+    "csize": 43038134,
+    "isize": 60224808
   },
   {
     "base": "sauerbraten",
