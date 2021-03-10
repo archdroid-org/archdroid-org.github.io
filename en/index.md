@@ -28,8 +28,8 @@ worked on and to contribute to the various repositories on our [GitHub Organizat
 
 [ArchLinuxARM]:        https://archlinuxarm.org
 [GitHub Organization]: https://github.com/archdroid-org
-[Odroid N2/N2+]:       https://www.hardkernel.com/shop/odroid-n2-with-4gbyte-ram-2/
-[Odroid C4/HC4]:       https://www.hardkernel.com/shop/odroid-c4/
+[Odroid N2/N2+]:       /images/odroidn2
+[Odroid C4/HC4]:       /images/odroidc4
 </div>
 
 <div id="news">
