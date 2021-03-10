@@ -1,7 +1,6 @@
 ---
 title: "Home"
 ---
-**Notice: This site is still under development**
 
 <div class="container-fluid">
 <div class="row">
