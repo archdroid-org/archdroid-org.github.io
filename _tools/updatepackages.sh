@@ -2,6 +2,12 @@
 
 set -e
 
+if [ "$1" = "help" ]; then
+	echo "No commands required to execute this tool,"
+	echo "just run 'site updatepackages'."
+	exit
+fi
+
 changes=1
 
 echo "Checking for packages that have been removed..."

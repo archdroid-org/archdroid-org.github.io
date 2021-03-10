@@ -1,0 +1,50 @@
+#!/bin/bash
+
+g="\e[32m" # green
+d="\e[0m"  # default
+
+commands=$(ls _tools | grep ".sh" | sed "s/\.sh$//" | sort)
+
+case $1 in
+  "help" | "" )
+		shift
+    script_name=$(basename $0)
+		if [ "$1" = "" ]; then
+			echo "Helper script to administer the site."
+			echo ""
+			echo "Usage: $script_name [COMMAND] [<parameter>]"
+			echo ""
+			echo "Available Commands:"
+			echo ""
+			for tool in $commands; do
+				echo -e "  ${g}$tool${d} [<command>] [<option>]"
+			done
+			echo ""
+			echo "Help Command:"
+			echo ""
+			echo -e "  ${g}help${d} [<command>]"
+			echo "    Print this help when no command is given or a specific"
+			echo "    <command> help if the <command> is given."
+		else
+			if echo "$commands" | grep -E "^$1$" > /dev/null; then
+				tool="_tools/$1.sh"
+				shift
+				$tool help
+				exit $?
+			else
+				echo "Error: The command '$1' doesn't exists."
+				exit 1
+			fi
+		fi
+    ;;
+	* )
+		if echo "$commands" | grep -E "^$1$" > /dev/null; then
+			tool="_tools/$1.sh"
+			shift
+			$tool $@
+			exit $?
+		else
+			echo "Error: The command '$1' doesn't exists."
+			exit 1
+		fi
+esac

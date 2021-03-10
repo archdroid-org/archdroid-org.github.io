@@ -3,7 +3,8 @@
 set -e
 
 if [ ! $2 ]; then
-    echo "Usage: ${0} \"New Post Title\" \"Author\"."
+    script_name=$(basename $0 | sed "s/\.sh$//")
+    echo "Usage: ${script_name} \"New Post Title\" \"Author\"."
     exit 1
 fi
 
