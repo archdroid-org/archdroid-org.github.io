@@ -18,7 +18,7 @@ Icons are provided by [Font Awesome], favicons by [Favicon Generator].
 ## Local Build Quick-start Guide
 
 - Install `ruby` and `yarn`
-- Use the automatic setup via `setup.sh`
+- Use the automatic setup via `site setup`
 
 or manually:
 
