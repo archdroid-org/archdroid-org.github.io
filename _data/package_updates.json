@@ -1,33 +1,14 @@
 [
   {
-    "base": "retux",
-    "name": "retux",
-    "arch": "aarch64",
-    "description": "Action platformer loosely inspired by the Mario games, utilizing the art assets from the SuperTux project.",
-    "url": "https://retux-game.github.io/",
-    "license": "GPL3",
-    "version": "1.4.1",
-    "release": "2",
-    "builddate": "2021-03-10T19:58:17",
-    "depends": [
-      "python-pygame",
-      "sdl",
-      "sdl_image",
-      "sdl_mixer"
-    ],
-    "csize": 43038134,
-    "isize": 60224808
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.136207.6ceb6b509e6",
+    "version": "21.1.0_devel.136208.ea27f2bf092",
     "release": "1",
-    "builddate": "2021-03-10T19:45:05",
+    "builddate": "2021-03-10T22:02:07",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -60,8 +41,27 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 27294641,
+    "csize": 27294493,
     "isize": 84005393
+  },
+  {
+    "base": "retux",
+    "name": "retux",
+    "arch": "aarch64",
+    "description": "Action platformer loosely inspired by the Mario games, utilizing the art assets from the SuperTux project.",
+    "url": "https://retux-game.github.io/",
+    "license": "GPL3",
+    "version": "1.4.1",
+    "release": "2",
+    "builddate": "2021-03-10T19:58:17",
+    "depends": [
+      "python-pygame",
+      "sdl",
+      "sdl_image",
+      "sdl_mixer"
+    ],
+    "csize": 43038134,
+    "isize": 60224808
   },
   {
     "base": "mesa-icecream95-git",
