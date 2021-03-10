@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.136166.dfb0e0d246e",
+    "version": "21.1.0_devel.136207.6ceb6b509e6",
     "release": "1",
-    "builddate": "2021-03-09T22:29:06",
+    "builddate": "2021-03-10T19:45:05",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,52 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 27128099,
-    "isize": 80363689
+    "csize": 27294641,
+    "isize": 84005393
+  },
+  {
+    "base": "mesa-icecream95-git",
+    "name": "mesa-icecream95-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.1.0_devel.136173.7985cc25312",
+    "release": "1",
+    "builddate": "2021-03-10T19:36:19",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "conflicts": [
+      "vulkan-mesa-layers",
+      "opencl-mesa",
+      "vulkan-swrast",
+      "libva-mesa-driver",
+      "mesa-vdpau",
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 27283723,
+    "isize": 83907089
   },
   {
     "base": "codelite-git",
@@ -51,9 +95,9 @@
     "description": "A cross platform C/C++/PHP and Node.js IDE written in C++",
     "url": "http://www.codelite.org/",
     "license": "GPL",
-    "version": "15.0.1.r24.g704e59408",
+    "version": "15.0.1.r33.g08e42248f",
     "release": "1",
-    "builddate": "2021-03-09T22:01:48",
+    "builddate": "2021-03-10T18:54:53",
     "depends": [
       "wxgtk3",
       "libedit",
@@ -80,8 +124,8 @@
       "codelite",
       "codelite-bin"
     ],
-    "csize": 42427524,
-    "isize": 96347847
+    "csize": 42503685,
+    "isize": 96470727
   },
   {
     "base": "codeblocks-svn",
@@ -197,50 +241,6 @@
     ],
     "csize": 4723252,
     "isize": 14264513
-  },
-  {
-    "base": "mesa-icecream95-git",
-    "name": "mesa-icecream95-git",
-    "arch": "aarch64",
-    "description": "An open-source implementation of the OpenGL specification (icrecream95 WIP)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.136096.788fc37f8db",
-    "release": "1",
-    "builddate": "2021-03-08T10:37:58",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 27158459,
-    "isize": 80379749
   },
   {
     "base": "linux-amlogic-512",
