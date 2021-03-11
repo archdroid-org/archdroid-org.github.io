@@ -33,7 +33,7 @@ if(!localStorage.getItem("redirections")){
 }
 if($("#page-not-found").length > 0){
 	var redirections=localStorage.getItem("redirections");
-	if(redirections >= 4){
+	if(redirections >= 3){
 		localStorage.setItem("redirections", 0);
 	} else{
 		redirections++;
@@ -54,6 +54,8 @@ if($("#page-not-found").length > 0){
 			page_loading = true;
 		}
 	}
+} else{
+	localStorage.setItem("redirections", 0);
 }
 
 // Register user language of choice on language menu click.
