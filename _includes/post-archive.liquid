@@ -1,7 +1,8 @@
 {%-assign t = site.data.locale[page.lang].translation-%}
 
 <table class="table table-striped">
-	<caption>{{ t.archive_caption }}</caption>
+	<caption data-localize="news_archive_content">
+		Full historical listing of all news posts, sorted by newest first.</caption>
 	<thead>
 		<tr>
 			<th data-localize="news_post">{{ t.archive_header_post }}</th>

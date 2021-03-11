@@ -22,7 +22,7 @@ if(current_lang != default_lang){
 		"",
 		{
 			language: current_lang,
-			pathPrefix: "/assets/localization"
+			pathPrefix: "/assets/i18n"
 		}
 	);
 }

@@ -1,12 +1,8 @@
 ---
 title: "Home"
 ---
+{% include archdroid/home-top.liquid %}
 
-<div class="container-fluid">
-<div class="row">
-
-<div class="col-md-9">
-<div class="box" markdown="1">
 ## About {{ site.name }}
 
 Welcome to Archdroid a set of tools and additional packages to provide extended
@@ -24,32 +20,9 @@ worked on and to contribute to the various repositories on our [GitHub Organizat
 
 **Enjoy!**
 
-
 [ArchLinuxARM]:        https://archlinuxarm.org
 [GitHub Organization]: https://github.com/archdroid-org
 [Odroid N2/N2+]:       /images/odroidn2
 [Odroid C4/HC4]:       /images/odroidc4
-</div>
 
-<div id="news">
-<h3>
-<a href="/news/" title="Browse the news archives">Latest News</a>
-<span class="arrow"></span>
-</h3>
-
-<div markdown="1">
-{% include post_recent.liquid %}
-</div>
-</div>
-</div>
-
-<div class="col-md-3">
-<h3 class="box-title">Recent Updates</h3>
-<div class="box box-right" markdown="1">
-{% include archdroid/package_updates.liquid %}
-</div>
-</div>
-
-</div>
-</div>
-
+{% include archdroid/home-bottom.liquid %}

@@ -1,4 +1,3 @@
-{% assign t  = site.data.locale[page.lang].translation %}
 
 <table
 	id="table-mirrors"
@@ -7,21 +6,18 @@
 	<thead>
 		<tr>
 			<th
-				data-localize="mirrors_header_name"
 				data-field="name"
 				data-sortable="true"
-			>
-				{{ t.mirrors_header_name }}
-			</th>
-			<th data-localize="mirrors_header_url">{{ t.mirrors_header_url }}</th>
+				data-localize="mirrors_header_name">Name</th>
+			<th data-localize="mirrors_header_url">URL</th>
 		</tr>
 	</thead>
 	<tbody>
-{%-for mirror in site.data.mirrors-%}
+		{%-for mirror in site.data.mirrors-%}
 		<tr>
 			<td>{{ mirror.name }}</td>
 			<td>{{ mirror.url }}</td>
 		</tr>
-{%-endfor-%}
+		{%-endfor-%}
 	</tbody>
 </table>
