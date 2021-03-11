@@ -1,15 +1,19 @@
 {% assign t  = site.data.locale[page.lang].translation %}
 
-<h1>{{ t.mirrors_title }}</h1>
-
 <table
 	id="table-mirrors"
 	class="table table-sm table-hover"
 	data-toggle="table">
 	<thead>
 		<tr>
-			<th data-field="name" data-sortable="true">{{ t.mirrors_header_name }}</th>
-			<th>{{ t.mirrors_header_url }}</th>
+			<th
+				data-localize="mirrors_header_name"
+				data-field="name"
+				data-sortable="true"
+			>
+				{{ t.mirrors_header_name }}
+			</th>
+			<th data-localize="mirrors_header_url">{{ t.mirrors_header_url }}</th>
 		</tr>
 	</thead>
 	<tbody>

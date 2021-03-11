@@ -43,28 +43,45 @@ TODO: {% if site.logo %}
 	{% if item.type == "dropdown" %}
 		{% assign item_id = 'navbar' | append: item.label %}
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle font-weight-bold" href="#" id="{{ item_id }}"
+							<a
+								data-localize="menu_{{ item.label | downcase | replace: " " "_" | replace: "-" "_" }}"
+								class="nav-link dropdown-toggle font-weight-bold"
+								href="#" id="{{ item_id }}"
 								data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false"> {{ item.label }}</a>
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								{{ item.label }}
+							</a>
 							<div class="dropdown-menu" aria-labelledby="{{ item_id }}">
 		{% for subitem in item.pages %}
 			{% if subitem.label == nil %}
 								<div class="dropdown-divider"></div>
 			{% else %}
-								<a class="dropdown-item font-weight-bold"
-									href="{{ subitem.url | relative_url }}">{{ subitem.label }}</a>
+				<a
+					data-localize="menu_{{ subitem.url | replace: "/" "_" | replace: "." "_" | replace: ":" "_" | replace: "-" "_" }}"
+					class="dropdown-item font-weight-bold"
+					href="{{ subitem.url | relative_url }}"
+				>
+					{{ subitem.label }}
+				</a>
 			{% endif %}
 		{% endfor %}
 							</div>
 	{% else %}
 						<li class="nav-item">
-							<a class="nav-link font-weight-bold"
-								href="{{ item.url | relative_url }}"> {{ item.label }}</a>
+							<a
+								data-localize="menu_{{ item.url | replace: "/" "_" }}"
+								class="nav-link font-weight-bold"
+								href="{{ item.url | relative_url }}"
+							>
+								{{ item.label }}
+							</a>
 	{% endif %}
 						</li>
 {% endfor %}
 						<li class="nav-item">
-							<a class="nav-link font-weight-bold"
+							<a data-localize="menu_search" class="nav-link font-weight-bold"
 								href="{{ '/search/' | relative_url }}">
 								{{ t.search }}</a>
 						</li>

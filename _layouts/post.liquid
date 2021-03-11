@@ -3,10 +3,15 @@ layout: "default"
 ---
 {%-assign t = site.data.locale[page.lang].translation-%}
 
-					<p class="text-muted">{{ t.posted_on }}
+					<p class="text-muted">
+						<span data-localize="news_at">{{ t.posted_on }}</span>
 						<time datetime="{{ page.date | datetime | date_to_xmlschema }}">
-						{{ page.date | date: page.date_fmt }}</time>
-						{% if page.author %}by {{ page.author }}{% endif %}
+							{{ page.date | date: page.date_fmt }}
+						</time>
+					{% if page.author %}
+						<span data-localize="news_by">by</span>
+						{{ page.author }}
+					{% endif %}
 					</p>
 {{ content }}
 {% if page.comments and site.disqus_shortname %}
@@ -16,7 +21,9 @@ layout: "default"
 {% endif %}
 				<p class="text-center">
 					<a class="btn btn-lg btn-default" href="/news/archive/">
-						<i class="fa fa-calendar fa-fw"></i>{{ t.news_archive }}</a>
+						<i class="fa fa-calendar fa-fw"></i>
+						<span data-localize="news_archive">{{ t.news_archive }}</span>
+					</a>
 				</p>
 {% if page.comments and site.disqus_shortname %}
 				<script type="text/javascript">
