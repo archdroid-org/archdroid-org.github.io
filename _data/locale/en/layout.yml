@@ -1,12 +1,12 @@
 navigation:
 - label: "Packages"
-  url: "/packages"
+  url: "/packages/"
 
 - label: "Mirrors"
-  url: "/mirrors"
+  url: "/en/mirrors/"
 
 - label: "Images"
-  url: "/images"
+  url: "/en/images/"
 
 - label: "Follow Us"
   type: "dropdown"
@@ -22,4 +22,4 @@ navigation:
     icon_category: fas
 
 - label: "News"
-  url: "/news"
+  url: "/news/"

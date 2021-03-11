@@ -1,12 +1,12 @@
 navigation:
 - label: "Pacchetti"
-  url: "/it/packages"
+  url: "/packages/"
 
 - label: "Mirror"
-  url: "/it/mirrors"
+  url: "/it/mirrors/"
 
 - label: "Immagini"
-  url: "/it/images"
+  url: "/it/images/"
 
 - label: "Seguici"
   type: "dropdown"
@@ -22,4 +22,4 @@ navigation:
     icon_category: fas
 
 - label: "News"
-  url: "/news"
+  url: "/news/"
