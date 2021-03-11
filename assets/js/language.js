@@ -25,6 +25,7 @@ if(current_lang != default_lang){
 			pathPrefix: "/assets/i18n"
 		}
 	);
+	$("#logo-link").attr("href", "/" + current_lang);
 }
 
 // Redirect not found pages to default language or root path
@@ -72,7 +73,7 @@ $(document).ready(function(){
 	if(!page_loading)
 		$("body").css("visibility", "visible").hide().fadeIn("fast");
 
-	$("#language-menu a").click(function(){
+	$("#language-menu a").on("click", function(){
 		localStorage.setItem("language", $(this).attr("data-lang"));
 	});
 
