@@ -25,7 +25,15 @@ if(current_lang != default_lang){
 			pathPrefix: "/assets/i18n"
 		}
 	);
-	$("#logo-link").attr("href", "/" + current_lang);
+
+	$("a[href^='/"+default_lang+"/']").each(function(i, e){
+		var href=$(e).attr("href");
+		if(href != "/"+default_lang+"/"){
+			$(e).attr("href", href.replace("/"+default_lang+"/", "/"+current_lang+"/"));
+		}
+	});
+
+	$("#logo-link").attr("href", "/" + current_lang + "/");
 }
 
 // Redirect not found pages to default language or root path
