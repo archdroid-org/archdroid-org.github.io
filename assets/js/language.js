@@ -1,3 +1,5 @@
+(function(){ // Don't execute code at global scope
+
 // Set default user language if none chosen yet.
 var default_lang=$("#language-menu").attr("data-default");
 if(!localStorage.getItem("language")){
@@ -26,20 +28,31 @@ if(current_lang != default_lang){
 }
 
 // Redirect not found pages to default language or root path
+if(!localStorage.getItem("redirections")){
+	localStorage.setItem("redirections", 0);
+}
 if($("#page-not-found").length > 0){
-	var path_parts=location.pathname.split("/");
-	if(path_parts[1] != default_lang){
-		if(path_parts[1] == current_lang){
-			path_parts[1] = default_lang;
-			location.href = path_parts.join("/");
-		} else{
-			location.href = "/" + default_lang + location.pathname;
-		}
-		page_loading = true;
+	var redirections=localStorage.getItem("redirections");
+	if(redirections >= 4){
+		localStorage.setItem("redirections", 0);
 	} else{
-		path_parts.splice(1, 1);
-		location.href = path_parts.join("/");
-		page_loading = true;
+		redirections++;
+		localStorage.setItem("redirections", redirections);
+
+		var path_parts=location.pathname.split("/");
+		if(path_parts[1] != default_lang){
+			if(path_parts[1] == current_lang){
+				path_parts[1] = default_lang;
+				location.href = path_parts.join("/");
+			} else{
+				location.href = "/" + default_lang + location.pathname;
+			}
+			page_loading = true;
+		} else{
+			path_parts.splice(1, 1);
+			location.href = path_parts.join("/");
+			page_loading = true;
+		}
 	}
 }
 
@@ -56,3 +69,5 @@ $(document).ready(function(){
 	language_image_parts[language_image_parts.length-1] = current_lang + ".png";
 	$("#language-image").attr("src", language_image_parts.join("/"));
 });
+
+})();
