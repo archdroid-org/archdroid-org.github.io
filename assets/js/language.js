@@ -40,7 +40,15 @@ if($("#page-not-found").length > 0){
 		localStorage.setItem("redirections", redirections);
 
 		var path_parts=location.pathname.split("/");
-		if(path_parts[1] != default_lang){
+
+		// Redirect from /path to /user-lang-code/path
+		if(path_parts[1] != default_lang && path_parts[1] != current_lang){
+			location.href = "/" + current_lang + location.pathname;
+			page_loading = true;
+		}
+		// Redirects /user-lang-code/path to /default-lang-code/path
+		// or /default-lang-code/path to /path
+		else if(path_parts[1] != default_lang){
 			if(path_parts[1] == current_lang){
 				path_parts[1] = default_lang;
 				location.href = path_parts.join("/");
@@ -48,6 +56,7 @@ if($("#page-not-found").length > 0){
 				location.href = "/" + default_lang + location.pathname;
 			}
 			page_loading = true;
+		// As last resort from /lang-code/path to /path
 		} else{
 			path_parts.splice(1, 1);
 			location.href = path_parts.join("/");
