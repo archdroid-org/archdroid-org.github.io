@@ -46,7 +46,7 @@ if($("#page-not-found").length > 0){
 // Register user language of choice on language menu click.
 $(document).ready(function(){
 	if(!page_loading)
-		$("body").css("visibility", "visible");
+		$("body").css("visibility", "visible").hide().fadeIn("fast");
 
 	$("#language-menu a").click(function(){
 		localStorage.setItem("language", $(this).attr("data-lang"));
