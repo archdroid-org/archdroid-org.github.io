@@ -25,13 +25,13 @@ TODO: {% if site.logo %}
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle font-weight-bold" id="navbarMenuLang" href="#"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<img border="0" src="{{ '/assets/flags/' | append: page.lang | append: '.png' | relative_url }}"
+								<img id="language-image" border="0" src="{{ '/assets/flags/' | append: page.lang | append: '.png' | relative_url }}"
 									width="16" height="11">
 							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarMenuLang">
+							<div id="language-menu" data-default="{{ site.locale.default }}" class="dropdown-menu" aria-labelledby="navbarMenuLang">
 	{% for language in site.data.locale %}
 			{% assign path_prefix = '/' | append: language[0] | append: '/' %}
-								<a class="dropdown-item font-weight-bold" href="{{ path_prefix | relative_url }}">
+			<a data-lang="{{ language[0] }}" class="dropdown-item font-weight-bold" href="{{ path_prefix | relative_url }}">
 									<img border="0" src="{{ '/assets/flags/' | append: language[0] | append: '.png' | relative_url }}"
 										width="16" height="11">
 									{{ language[1].translation.name }}</a>
