@@ -654,6 +654,22 @@
     "isize": 48476711
   },
   {
+    "base": "mesa-alyssa-git",
+    "name": "mesa-alyssa-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (latest alyssa branch)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.1.0_devel.136297.ee4a19af196",
+    "release": "1",
+    "builddate": "2021-03-12T22:21:47",
+    "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
+    "replaces": ["mesa-dri", "mesa-libgl", "mesa-panfrost-git"],
+    "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
+    "csize": 27292357,
+    "isize": 84066833
+  },
+  {
     "base": "mesa-bbrezillon-git",
     "name": "mesa-bbrezillon-git",
     "arch": "aarch64",
@@ -693,14 +709,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.136272.9d95e1bd79a",
+    "version": "21.1.0_devel.136408.87c85139ea3",
     "release": "1",
-    "builddate": "2021-03-11T19:27:46",
+    "builddate": "2021-03-12T22:07:27",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 27288231,
-    "isize": 83984913
+    "csize": 27322639,
+    "isize": 84148753
   },
   {
     "base": "mesa-icecream95-git",
@@ -709,14 +725,14 @@
     "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.136173.7985cc25312",
+    "version": "21.1.0_devel.136282.b837e953c3b",
     "release": "1",
-    "builddate": "2021-03-10T19:36:19",
+    "builddate": "2021-03-12T22:02:27",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 27283723,
-    "isize": 83907089
+    "csize": 27313719,
+    "isize": 84025873
   },
   {
     "base": "mpv-sdl",
@@ -960,7 +976,7 @@
     "release": "1",
     "builddate": "2021-03-02T13:06:07",
     "depends": ["glu", "glew", "openal", "freealut", "physfs", "sdl2", "sdl2_image", "tinyxml2"],
-    "providedepends": {"opengl-driver": ["mesa-bbrezillon-git", "mesa-devel", "mesa-devel-git", "mesa-icecream95-git"]},
+    "providedepends": {"opengl-driver": ["mesa-alyssa-git", "mesa-bbrezillon-git", "mesa-devel", "mesa-devel-git", "mesa-icecream95-git"]},
     "conflicts": ["trigger-rally"],
     "csize": 331431080,
     "isize": 335744729
@@ -1096,7 +1112,7 @@
     "release": "1",
     "builddate": "2020-10-14T22:48:49",
     "depends": ["libcap", "systemd", "wayland", "libxcb", "xcb-util-errors", "xcb-util-wm", "pixman", "libinput", "libxkbcommon"],
-    "providedepends": {"opengl-driver": ["mesa-bbrezillon-git", "mesa-devel", "mesa-devel-git", "mesa-icecream95-git"]},
+    "providedepends": {"opengl-driver": ["mesa-alyssa-git", "mesa-bbrezillon-git", "mesa-devel", "mesa-devel-git", "mesa-icecream95-git"]},
     "conflicts": ["wlroots"],
     "csize": 372023,
     "isize": 1013553
