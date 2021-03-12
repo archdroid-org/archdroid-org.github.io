@@ -177,10 +177,27 @@ delete_language(){
 	return 1
 }
 
+list_languages(){
+	local languages=$(
+		find _data/locale/ -maxdepth 1 -type d | tail -n+2 | cut -d"/" -f3
+	)
+
+	local language=""
+	for language in $languages; do
+		local name=$(
+			grep -E "^name: " _data/locale/$language/translation.yml \
+				| cut -d":" -f2 | sed 's|"||g;s| ||g'
+		)
+
+		echo "$language:$name"
+	done
+}
+
 check_language(){
 	local lang_code="$1"
 	local languages=$(list_languages | cut -d":" -f1)
 	local interactive="0"
+	local default_lang=$(util_parse_yaml_get _config.yml locale_default)
 
 	if [ "$lang_code" = "" ] || ! echo "$languages" | grep "$lang_code" > /dev/null; then
 		echo "The language code you gave doesn't exists."
@@ -215,7 +232,8 @@ check_language(){
 				esac
 			fi
 			while read -r file <&4; do
-				if [ ! -e "$lang_code/$file" ]; then
+				local file_target=$(echo "$file" | sed "s/^$default_lang\///")
+				if [ ! -e "$lang_code/$file_target" ]; then
 					echo "  Missing translation for '$file'"
 					if [ "$interactive" = "1" ]; then
 						echo "    What do you want to do?"
@@ -223,30 +241,30 @@ check_language(){
 						read answer
 						case $answer in
 							'c' | 'C' )
-								local dirpart=$(dirname $file)
+								local dirpart=$(dirname $file_target)
 								mkdir -p "$lang_code/$dirpart"
 								cp -a "$file" "$lang_code/$dirpart"
 								;;
 							'k' | 'K' )
-								local dirpart=$(dirname $file)
+								local dirpart=$(dirname $file_target)
 								mkdir -p "$lang_code/$dirpart"
 								cp -a "$file" "$lang_code/$dirpart"
-								$EDITOR "$lang_code/$file"
+								$EDITOR "$lang_code/$file_target"
 								;;
 						esac
 					fi
 				else
 					local current_md5=$(md5sum "$file" | cut -d" " -f1)
-					local translation_md5=$(md5sum "$lang_code/$file" | cut -d" " -f1)
+					local translation_md5=$(md5sum "$lang_code/$file_target" | cut -d" " -f1)
 					if [ "$current_md5" = "$translation_md5" ]; then
-						echo "  Warning, '$lang_code/$file' hasn't been translated"
+						echo "  Warning, '$lang_code/$file_target' hasn't been translated"
 						if [ "$interactive" = "1" ]; then
 							echo "    What do you want to do?"
 							echo -n "    (e)dit, (s)kip [e/S]: "
 							read answer
 							case $answer in
 								'e' | 'E' )
-									$EDITOR "$lang_code/$file"
+									$EDITOR "$lang_code/$file_target"
 									;;
 							esac
 						fi
@@ -255,7 +273,7 @@ check_language(){
 			done 4< <(find "$dir" -name "*.md")
 		fi
 	done 3< <(
-		find . -maxdepth 1 -type d \
+		find $default_lang -maxdepth 1 -type d \
 			| sed 's/^\.\///' \
 			| grep -Ev "^_|.git|^images|^assets|^node_modules" \
 			| tail -n+2
@@ -264,26 +282,11 @@ check_language(){
 	return 0
 }
 
-list_languages(){
-	local languages=$(
-		find _data/locale/ -maxdepth 1 -type d | tail -n+2 | cut -d"/" -f3
-	)
-
-	local language=""
-	for language in $languages; do
-		local name=$(
-			grep -E "^name: " _data/locale/$language/translation.yml \
-				| cut -d":" -f2 | sed 's|"||g;s| ||g'
-		)
-
-		echo "$language:$name"
-	done
-}
-
 sync_language(){
 	local lang_code="$1"
 	local languages=$(list_languages | cut -d":" -f1)
 	local interactive="0"
+	local default_lang=$(util_parse_yaml_get _config.yml locale_default)
 
 	if [ "$lang_code" = "" ] || ! echo "$languages" | grep "$lang_code" > /dev/null; then
 		echo "The language code you gave doesn't exists."
@@ -313,21 +316,22 @@ sync_language(){
 				esac
 			fi
 			while read -r file <&4; do
-				if [ ! -e "$lang_code/$file" ]; then
+				local file_target=$(echo "$file" | sed "s/^$default_lang\///")
+				if [ ! -e "$lang_code/$file_target" ]; then
 					if [ "$interactive" = "1" ]; then
 						echo "    What do you want to do?"
 						echo -n "    (c)opy, (s)kip [c/S]: "
 						read answer
 						case $answer in
 							'c' | 'C' )
-								local dirpart=$(dirname $file)
+								local dirpart=$(dirname $file_target)
 								mkdir -p "$lang_code/$dirpart"
 								cp -a "$file" "$lang_code/$dirpart"
 								;;
 						esac
 					else
 						echo "  Copying '$file' to '$lang_code'."
-						local dirpart=$(dirname $file)
+						local dirpart=$(dirname $file_target)
 						mkdir -p "$lang_code/$dirpart"
 						cp -a "$file" "$lang_code/$dirpart"
 					fi
@@ -335,7 +339,7 @@ sync_language(){
 			done 4< <(find "$dir" -name "*.md")
 		fi
 	done 3< <(
-		find . -maxdepth 1 -type d \
+		find $default_lang -maxdepth 1 -type d \
 			| sed 's/^\.\///' \
 			| grep -Ev "^_|.git|^images|^assets|^node_modules" \
 			| tail -n+2
