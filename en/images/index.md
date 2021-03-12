@@ -11,6 +11,4 @@ and [pkgbuilds] repositories.
 [alarm image generator]: https://github.com/archdroid-org/alarm-image-generator
 [PKGBUILDS]: https://github.com/archdroid-org/pkgbuilds
 
-<div markdown="1">
 {%- include archdroid/devices.liquid -%}
-</div>

@@ -1,16 +1,14 @@
 ---
-title: "Device Images"
+title: "Immagini Dispositivo"
 ---
 
-# Device Images
+# Immagini Dispositivo
 
-List of devices currently supported by the Archdroid project. If you wish to
-see your device here you can contribute to the project [alarm image generator]
-and [pkgbuilds] repositories.
+Questa è la lista dei dispositivi attualmente supportati da Archdroid.
+Se il tuo dispositivo non è in elenco, hai la possibilità di poter contribuire
+ai progetti [alarm image generator] e [pkgbuilds].
 
 [alarm image generator]: https://github.com/archdroid-org/alarm-image-generator
 [PKGBUILDS]: https://github.com/archdroid-org/pkgbuilds
 
-<div markdown="1">
 {%- include archdroid/devices.liquid -%}
-</div>

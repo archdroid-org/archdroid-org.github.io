@@ -40,8 +40,3 @@ governor='performance'
 
 Then you can just run `sudo systemctl restart cpupower` to apply the changes
 immediately.
-
-### Changes Log
-
-**Date - 30/12/2020**
-* First release

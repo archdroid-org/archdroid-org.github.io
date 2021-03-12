@@ -44,8 +44,3 @@ netctl list
 # Enable wifi connection on system reboot
 sudo netctl enable connection-name-returned-by-netctl-list
 ```
-
-### Changes Log
-
-**Date - 30/12/2020**
-* First release
