@@ -63,6 +63,12 @@ TODO: {% if site.logo %}
 					class="dropdown-item font-weight-bold"
 					href="{{ subitem.url | relative_url }}"
 				>
+				{%-if subitem.icon_type-%}
+					<i
+						class="{{ subitem.icon_category }} fa-{{ subitem.icon_type }} fa-fw"
+						aria-hidden="true"
+					></i>&nbsp;
+				{%-endif-%}
 					{{ subitem.label }}
 				</a>
 			{% endif %}

@@ -58,7 +58,7 @@ Note: SuperKey is also known as WinKey
 1. Press **SuperKey + a** to open the applications menu.
 2. Press **SuperKey + t** to drop down the terminal
 3. Press **SuperKey + f** to go into fullscreen for applications that support it
-4. Press **SuperKey + q to** quit/close an application
+4. Press **SuperKey + q** to quit/close an application
 
 For more bindings check the gnome settings.
 

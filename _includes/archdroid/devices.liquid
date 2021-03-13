@@ -1,20 +1,28 @@
 
 <table
-	id="table-mirrors"
+	id="table-devices"
 	class="table table-sm table-hover"
 	data-toggle="table">
 	<thead>
 		<tr>
-			<th data-field="name" data-sortable="true">Device</th>
-			<th>Images</th>
+			<th
+				data-field="name"
+				data-sortable="true"
+			>
+				<span data-localize="devices_device">Device</span>
+			</th>
+			<th>
+				<span data-localize="devices_images">Images</span>
+			</th>
 		</tr>
 	</thead>
 	<tbody>
-{%-for device in site.data.devices-%}
+{%- for device in site.data.devices -%}
 		<tr>
-			<td>{{ device.name }}</td>
-			<td><a href="{{ device.path }}">View</a></td>
+			<td><span>{{ device.name }}</span></td>
+			<td><a href="{{ '/en/images/' | append: device.id | relative_url }}">
+				<span data-localize="devices_view">View</span></a></td>
 		</tr>
-{%-endfor-%}
+{%- endfor -%}
 	</tbody>
 </table>

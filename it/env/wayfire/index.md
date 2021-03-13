@@ -1,30 +1,30 @@
 ---
-title: "Wayfire Desktop Environment"
+title: "Ambiente Desktop Wayfire"
 ---
+# Ambiente Desktop Wayfire
 
-# Wayfire Desktop Environment
+[Wayfire] è un ambiente leggero basato su Wayland, paragonabile a Weston
+ma con molte più funzionalità che lo rendono davvero tuo.
+Wayfire è come un Compiz per Wayland, ma è completamente indipendente.
+Inoltre, poiché non è esoso di risorse, funziona alla grande.
 
-[Wayfire] is a lightweight Wayland desktop environment
-comparable to Weston but with much more features that actually make it yours,
-Wayfire is like the Compiz for Wayland but completely stand alone. Also since
-it is lite in resources it runs lovely.
+### Cos'è incluso?
 
-### What is Included?
+* Display manager `lightdm` con `wayfire` preimpostato come gestore di sessione
+* Bluetooth (`blueman`)
+* Collegamento in rete con `NetworkManager`
+* `cpupower` preimpostato
+* Yay e AUR helper
+* Centro software Pamac
+* Temi Arc per il desktop e Papirus per le icone preimpostati
+* Associazioni della tastiera per Wayfire preimpostati (Premi **SuperKey + c**
+  per personalizzarli).
+* SSH abilitato
+* Caratteri shell TTY più larghi e leggibili
+* Lettori video `MPV` e `VLC`
+* Un piacevole sfondo: space.jpg!
 
-* Lightdm display manager with wayfire set as the default session.
-* Bluetooth (blueman)
-* Networking with NetworkManager
-* Pre-configured cpupower.
-* Yay AUR helper.
-* Pamac software center.
-* Use of Arc desktop theme and Papirus icon theme by default.
-* Preconfigured Wayfire bindings (Press **SuperKey + c** to customize).
-* SSH Enabled.
-* Bigger and more readable tty font.
-* MPV and VLC video players.
-* A nice space.jpg wallpaper!
-
-#### Here are some basic screenshots:
+#### Screenshot
 
 <img class="img-fluid" src="{{ 'assets/img/wayfire-ss01.jpg' | relative_url }}"/>
 
@@ -34,55 +34,54 @@ it is lite in resources it runs lovely.
 
 <img class="img-fluid" src="{{ 'assets/img/wayfire-ss04.jpg' | relative_url }}"/>
 
-### Installation
+### Installazione
 
-**Regular user:**
-* username: alarm
+**Utente normale:**
+* nome utente: alarm
 * password: alarm
 
-**Administration:**
-* username: root
+**Amministratore:**
+* nome utente: root
 * password: root
 
-The first boot setup wizard will let you easily change the default passwords
-for added security.
+Il wizard di installazione ti permetterà di modificare le password predefinite
+per una ulteriore sicurezza.
 
-### Setup
+### Impostazioni
 
-With latest image, after booting to the login manager wait some seconds because
-the system will grow the partition and setup locales, then a setup wizard will
-guide you to finish system setup, so make sure to have a display connected
-when booting the image.
+Utilizzando immagini recenti, una volta visualizzato il gestore degli accessi,
+attendere alcuni secondi, in quanto il sistema dovrà aumentare la dimensione
+della partizione e preparare le impostazioni della lingua.
+Successivamente un wizard ti guiderà a terminare le impostazioni di sistema,
+quindi assicurati di aver collegato un display prima di avviare l'installazione.
 
-Connect to a wifi network using the network manager tray applet or by opening
-a terminal with **CTRL + ALT + t** and typing `nmtui-connect`.
+Connettiti a una rete Wi-Fi utilizzando l'applet di `NetworkManager` nella systray
+o aprendo un terminale premendo **CTRL + ALT + t** o digitando `nmtui-connect`.
 
-### Keyboard Bindings
+### Associazioni della tastiera
 
-A list of keyboard bindings can be seen by inspecting the
-**Wayfire Config Manager** which you can launch with **SuperKey + c**, from the
-applications menu or by pressing **SuperKey + a** to launch wofi (similar to
-dmenu but for Wayland) and typing wcm. Here is a partial bindings reference:
+Di seguito solo alcune principali associazioni, puoi trovarle tutte elencate nel
+gestore di configurazione di Wayfire, avviandolo premendo **SuperKey + c**
+dal menu delle applicazioni, o premendo **SuperKey + a** per avviare `wofi`
+(simile a `dmenu` ma per Wayland) e digitando "wcm".
 
-* SuperKey + a - open application with wofi
-* SuperKey + shift + a - execute command with bemenu
-* SuperKey + c - wayfire config manager
-* SuperKey + e - launch file manager/explorer
-* SuperKey + t - drop down terminal
-* Ctrl + Alt + t - launch regular terminal
-* SuperKey + w - launch firefox
-* SuperKey + q - close an open application
-* SuperKey + l - logout, shutdown, reboot, etc... with wlogout
-* SuperKey + Numpad_# - different window positioning shortcuts that make sense
-* SuperKey + ArrowKeys - Move window to different workspaces
-* SuperKey + Alt + ArrowKeys - Move to different workspaces
-* SuperKey + f - make window fullscreen
-* SuperKey + shift + f - force scale a window into fullscreen
-* SuperKey + s - show open windows of current workspace
-* SuperKey + shift + s - show open windows on all workspace
-* SuperKey + MouseScroll - Zoom in or Zoom out
-* SuperKey - Workspaces View
-
-That is are some of the bindings, you can see them all on the Wayfire Config Manager.
+* **SuperKey + a** - apre una applicazione con `wofi`
+* **SuperKey + shift + a** - esegui un comando con `bemenu`
+* **SuperKey + c** - gestore di configurazione Wayfire
+* **SuperKey + e** - avvia file manager/explorer
+* **SuperKey + t** - terminale a discesa
+* **Ctrl + Alt + t** - terminale normale
+* **SuperKey + w** - avvia Firefox
+* **SuperKey + q** - termina una applicazione
+* **SuperKey + l** - termina sessione, spegnimento, riavvio, ecc... con `wlogout`
+* **SuperKey + Numpad_#** - diverse scorciatoie di posizionamento delle finestre
+* **SuperKey + ArrowKeys** - sposta la finestra in aree di lavoro diverse
+* **SuperKey + Alt + ArrowKeys** - sposta in aree di lavoro diverse
+* **SuperKey + f** - ingrandisce la finestra a schermo intero
+* **SuperKey + shift + f** - forza la scala di una finestra a schermo intero
+* **SuperKey + s** - mostra le finestre aperte dell'area di lavoro corrente
+* **SuperKey + shift + s** - mostra le finestre aperte in tutte le aree di lavoro
+* **SuperKey + MouseScroll** - Zoom avanti o Zoom indietro
+* **SuperKey** - Workspaces View
 
 [Wayfire]: https://wayfire.org/

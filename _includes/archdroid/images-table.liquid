@@ -1,0 +1,55 @@
+
+<table
+	id="table-disk-images"
+	class="table table-hover"
+	data-toggle="table"
+>
+	<thead>
+		<tr>
+			<th
+				data-field="name"
+				data-sortable="true"
+			>
+					<span data-localize="images_environment">Environment</span>
+			</th>
+			<th>
+				<span data-localize="images_info_download">Info &amp; Download</span>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+	{%-assign device = site.data.devices | where: "id", include.id | first-%}
+	{%-for image in device.images-%}
+		{%-assign image_name = image.name | downcase-%}
+		{%-assign env_page   = "/en/env/"    | append: image_name | relative_url-%}
+		{%-assign image_page = "/en/images/" | append: device.id | append: '/' |
+			append: image_name | relative_url-%}
+	<tr>
+		<td>
+			<a
+				href="{{ env_page }}"
+				title="Details about this environment"
+				{%comment%}data-localize="images_environment_tooltip"{%endcomment%}
+			>
+				{{ image.name }}
+			</a>
+		</td>
+		<td>
+			<a
+				href="{{ image_page }}"
+				title="Details about this image"
+				{%comment%}data-localize="images_info_download_tooltip"{%endcomment%}
+			>
+				<i class="fas fa-info-circle"></i>
+			</a>
+			<a
+				target="_blank"
+				href="{{ image.url }}"
+			>
+				<i class="fas fa-download"></i>
+			</a>
+		</td>
+	</tr>
+	{%-endfor-%}
+	</tbody>
+</table>

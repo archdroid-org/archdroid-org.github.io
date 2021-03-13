@@ -1,65 +1,69 @@
 ---
-title: "GNOME Desktop Environment"
+title: "Ambiente Desktop GNOME"
 ---
+# Ambiente Desktop GNOME
 
-# GNOME Desktop Environment
+[GNOME] è un ambiente desktop moderno e ricco di funzionalità.
 
-[GNOME] is a modern and featureful desktop environment.
-
-### What is Included?
+### Cos'è incluso?
 
 * Bluetooth
-* Networking with NetworkManager
-* Yay AUR helper.
-* Pamac software center.
-* Use of Arc desktop theme and Papirus icon theme by default.
-* SSH Enabled.
-* Bigger and more readable tty font.
-* Installed archlinuxdroid-repo for easier kernel and custom package upgrades.
-* Firefox with wayland support enabled. (see /etc/profile.d/)
-* Realtime privileges enabled for alarm user for pro-audio.
-* A nice space.jpg wallpaper!
+* Collegamento in rete con `NetworkManager`
+* Yay e AUR helper
+* Centro software Pamac
+* Temi Arc per il desktop e Papirus per le icone preimpostati
+* SSH abilitato
+* Caratteri shell TTY più larghi e leggibili
+* Pacchetto `archlinuxdroid-repo` preinstallato per aggiornamenti facilitati
+  del kernel e dei pacchetti
+* Firefox con supporto Wayland abilitato (vedi `/etc/profile.d/`)
+* Realtime privileges preinstallato per applicazioni audio professionali
+* Un piacevole sfondo: space.jpg!
 
-#### Here are some basic screenshots:
+#### Screenshot
 
 <img class="img-fluid" src="{{ 'assets/img/gnome-ss01.jpg' | relative_url }}"/>
 
-### Credentials
+### Credenziali
 
-**Regular user:**
-* username: alarm
+**Utente normale:**
+* nome utente: alarm
 * password: alarm
 
-**Administration:**
-* username: root
+**Amministratore:**
+* nome utente: root
 * password: root
 
-The first boot setup wizard will let you easily change the default passwords
-for added security.
+Il wizard di installazione ti permetterà di modificare le password predefinite
+per una ulteriore sicurezza.
 
-### Setup
+### Impostazioni
 
-With latest image, after booting to the login manager wait some seconds because
-the system will grow the partition and setup locales, then a setup wizard will
-guide you to finish system setup, so make sure to have a display connected
-when booting the image.
+Utilizzando immagini recenti, una volta visualizzato il gestore degli accessi,
+attendere alcuni secondi, in quanto il sistema dovrà aumentare la dimensione
+della partizione e preparare le impostazioni della lingua.
+Successivamente un wizard ti guiderà a terminare le impostazioni di sistema,
+quindi assicurati di aver collegato un display prima di avviare l'installazione.
 
-### Known Issues
+### Problemi Noti
 
-##### The system automatically turns off
+##### Il sistema si spegne automaticamente
 
-GNOME is set to sleep the device after a predefined amount of inactivity, to
-prevent this disable the feature from the gnome control center / settings.
+GNOME è preimpostato per mettere in pausa il dispositivo dopo un tempo predefinito
+di inattività. Per prevenire ciò, disabilitarne la funzione nelle impostazioni
+o nel Centro di Controllo.
 
-### Keyboard Bindings
+### Associazioni della tastiera
 
-Note: SuperKey is also known as WinKey
+Nota: SuperKey è anche nota come WinKey
 
-1. Press **SuperKey + a** to open the applications menu.
-2. Press **SuperKey + t** to drop down the terminal
-3. Press **SuperKey + f** to go into fullscreen for applications that support it
-4. Press **SuperKey + q to** quit/close an application
+1. Premere **SuperKey + a** per aprire il menu delle applicazioni
+2. Premere **SuperKey + t** per visualizzare il terminale a discesa
+3. Premere **SuperKey + f** per visualizzare a pieno schermo
+   le applicazioni che lo supportano
+4. Premere **SuperKey + q** per chiudere le applicazioni
 
-For more bindings check the gnome settings.
+Per ulteriori associazioni fare riferimento alle impostazioni della tastiera
+di GNOME.
 
 [GNOME]: https://gnome.org

@@ -1,46 +1,48 @@
 ---
-title: "Headless Environment"
+title: "Ambiente Headless"
 ---
+# Ambiente Headless
 
-# Headless Environment
+Immagine minimale con pacchetti sufficienti per usarla facilmente
+anche da una connessione wireless.
 
-Minimal image with enough packages to easily use it even from a wireless
-connection.
+### Cos'è incluso?
 
-### What is Included?
-
-* Most tools to easily configure network including wifi support (wifi-menu, netctl).
+* La maggior parte degli strumenti per configurare facilmente la rete,
+  incluso il supporto Wi-Fi (`wifi-menu`, `netctl`).
 * Bluetooth
-* Yay AUR helper.
-* SSH Enabled.
-* Bigger and more readable tty font.
-* Installed archlinuxdroid-repo for easier kernel and custom package upgrades.
-* Realtime privileges enabled for alarm user for pro-audio.
+* Yay e AUR helper
+* SSH abilitato
+* Caratteri shell TTY più larghi e leggibili
+* Pacchetto `archlinuxdroid-repo` preinstallato per aggiornamenti facilitati
+  del kernel e dei pacchetti
+* Realtime privileges preinstallato per applicazioni audio professionali
 
-### Credentials
+### Credenziali
 
-**Regular user:**
-* username: alarm
+**Utente normale:**
+* nome utente: alarm
 * password: alarm
 
-**Administration:**
-* username: root
+**Amministratore:**
+* nome utente: root
 * password: root
 
-Don't forget to change the default password for added security.
+Non dimenticare di modificare le password predefinite per una ulteriore sicurezza
 
-### Setup
+### Impostazioni
 
-After bootup and login if you don't have a network cable connected and only
-a wifi dongle, you can use wifi-menu to easily setup the wireless connection:
+Dopo l'avvio e l'accesso, se non si dispone di un cavo di rete collegato ma
+solamente di un dongle wifi, è possibile utilizzare il menu wifi per configurare
+facilmente la connessione wireless:
 
 ```sh
-# Follow the connection instructions on screen
+# Segui le istruzioni di connessione sullo schermo
 sudo wifi-menu
 
-# List available connections
+# Elenca le connessioni disponibili
 netctl list
 
-# Enable wifi connection on system reboot
-sudo netctl enable connection-name-returned-by-netctl-list
+# Abilita la connessione Wi-Fi al riavvio del sistema
+sudo netctl enable __connection-name-returned-by-netctl-list__
 ```

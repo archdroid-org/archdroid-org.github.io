@@ -1,66 +1,70 @@
 ---
-title: "XFCE Desktop Environment"
+title: "Ambiente Desktop Xfce"
 ---
 
-# XFCE Desktop Environment
+# Ambiente Desktop Xfce
 
-[Xfce] is a lightweight desktop environment for UNIX-like operating systems.
-It aims to be fast and low on system resources, while still
-being visually appealing and user friendly.
+[Xfce] è un ambiente desktop leggero per sistemi operativi simil-UNIX.
+Mira ad essere veloce e con poche risorse di sistema, pur essendo visivamente
+accattivante e facile da usare.
 
-### What is Included?
+### Cos'è incluso?
 
 * Bluetooth
-* Networking with NetworkManager
-* Pre-configured cpupower with known working settings.
-* Yay AUR helper.
-* Pamac software center.
-* Use of Arc desktop theme and Papirus icon theme by default.
-* Pre-configured bindings that give XFCE tiling functionality
-  (see Keyboard/Window Manager on System Settings).
-* SSH Enabled.
-* Bigger and more readable tty font.
-* Installed archlinuxdroid-repo for easier kernel and custom package upgrades.
-* Realtime privileges enabled for alarm user for pro-audio.
-* A nice space.jpg wallpaper!
+* Collegamento in rete con `NetworkManager`
+* `cpupower` preimpostato con impostazioni di lavoro note
+* Yay e AUR helper
+* Centro software Pamac
+* Temi Arc per il desktop e Papirus per le icone preimpostati
+* Associazioni preimpostate che forniscono funzionalità di affiancamento Xfce
+  (vedi gestione tastiera / finestre nelle impostazioni di sistema).
+* SSH abilitato
+* Caratteri shell TTY più larghi e leggibili
+* Pacchetto `archlinuxdroid-repo` preinstallato per aggiornamenti facilitati
+  del kernel e dei pacchetti
+* Realtime privileges preinstallato per applicazioni audio professionali
+* Un piacevole sfondo: space.jpg!
 
-#### Here are some basic screenshots:
+#### Screenshot
 
 <img class="img-fluid" src="{{ 'assets/img/xfce-ss01.png' | relative_url }}"/>
 
-**Software Center provided by Pamac**
+**Centro Software Pamac**
 
 <img class="img-fluid" src="{{ 'assets/img/xfce-ss02.png' | relative_url }}"/>
 
-### Credentials
+### Credenziali
 
-**Regular user:**
-* username: alarm
+**Utente normale:**
+* nome utente: alarm
 * password: alarm
 
-**Administration:**
-* username: root
+**Amministratore:**
+* nome utente: root
 * password: root
 
-The first boot setup wizard will let you easily change the default passwords
-for added security.
+Il wizard di installazione ti permetterà di modificare le password predefinite
+per una ulteriore sicurezza.
 
-### Setup
+### Impostazioni
 
-With latest image, after booting to the login manager wait some seconds because
-the system will grow the partition and setup locales, then a setup wizard will
-guide you to finish system setup, so make sure to have a display connected
-when booting the image.
+Utilizzando immagini recenti, una volta visualizzato il gestore degli accessi,
+attendere alcuni secondi, in quanto il sistema dovrà aumentare la dimensione
+della partizione e preparare le impostazioni della lingua.
+Successivamente un wizard ti guiderà a terminare le impostazioni di sistema,
+quindi assicurati di aver collegato un display prima di avviare l'installazione.
 
-### Keyboard Bindings
+### Associazioni della tastiera
 
-Note: SuperKey is also known as WinKey
+Nota: SuperKey è anche nota come WinKey
 
-1. Press **SuperKey + a** to open the applications menu.
-2. Press **SuperKey + t** to drop down the terminal
-3. Press **SuperKey + f** to go into fullscreen for applications that support it
-4. Press **SuperKey + q to** quit/close an application
+1. Premere **SuperKey + a** per aprire il menu delle applicazioni
+2. Premere **SuperKey + t** per visualizzare il terminale a discesa
+3. Premere **SuperKey + f** per visualizzare a pieno schermo
+   le applicazioni che lo supportano
+4. Premere **SuperKey + q** per chiudere le applicazioni
 
-For more bindings check the xfce settings.
+Per ulteriori associazioni fare riferimento alle impostazioni della tastiera
+di Xfce.
 
 [Xfce]: https://xfce.org

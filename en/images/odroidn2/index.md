@@ -18,7 +18,7 @@ can be seen on the [Hardkernel wiki].
 
 ### Images
 
-{% include archdroid/images-table-n2.liquid %}
+{% include archdroid/images-table.liquid id="odroidn2" %}
 
 [Mesa OpenGL]:     https://mesa3d.org
 [Hardkernel wiki]: https://wiki.odroid.com/odroid-n2/odroid-n2

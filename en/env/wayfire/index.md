@@ -83,6 +83,6 @@ dmenu but for Wayland) and typing wcm. Here is a partial bindings reference:
 * SuperKey + MouseScroll - Zoom in or Zoom out
 * SuperKey - Workspaces View
 
-That is are some of the bindings, you can see them all on the Wayfire Config Manager.
+These are some of the bindings, you can see them all on the Wayfire Config Manager.
 
 [Wayfire]: https://wayfire.org/

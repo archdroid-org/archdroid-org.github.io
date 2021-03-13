@@ -18,7 +18,7 @@ can be seen on the [C4 hardkernel wiki] or the [HC4 hardkernel wiki].
 
 ### Images
 
-{% include archdroid/images-table-c4.liquid %}
+{% include archdroid/images-table.liquid id="odroidc4" %}
 
 [Ameridroid]:          https://www.ameridroid.com/
 [Hardkernel]:          https://www.hardkernel.com/
