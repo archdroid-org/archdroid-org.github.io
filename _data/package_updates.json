@@ -1,5 +1,50 @@
 [
   {
+    "base": "mesa-alyssa-git",
+    "name": "mesa-alyssa-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (latest alyssa branch)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.1.0_devel.136302.61b837baa4a",
+    "release": "1",
+    "builddate": "2021-03-13T01:01:59",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl",
+      "mesa-panfrost-git"
+    ],
+    "conflicts": [
+      "vulkan-mesa-layers",
+      "opencl-mesa",
+      "vulkan-swrast",
+      "libva-mesa-driver",
+      "mesa-vdpau",
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 27294276,
+    "isize": 84038161
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -43,51 +88,6 @@
     ],
     "csize": 27322553,
     "isize": 84148753
-  },
-  {
-    "base": "mesa-alyssa-git",
-    "name": "mesa-alyssa-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest alyssa branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.136297.ee4a19af196",
-    "release": "1",
-    "builddate": "2021-03-12T22:21:47",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-panfrost-git"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 27292357,
-    "isize": 84066833
   },
   {
     "base": "mesa-icecream95-git",
