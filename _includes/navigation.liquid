@@ -2,9 +2,16 @@
 {%-assign lang_size = site.data.locale.size-%}
 
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a id="logo-link" class="navbar-brand" href="{{ '/' | relative_url }}">
-					<img src="{{ '/assets/img/logo.svg' | relative_url }}"
-					height="32" class="d-inline-block align-top" alt="">
+				<a
+					id="logo-link"
+					class="navbar-brand"
+					href="{{ '/' | relative_url }}"
+				>
+					<img
+						class="d-inline-block align-top"
+						src="{{ '/assets/img/logo.svg' | relative_url }}"
+						height="32" alt=""
+					>
 {%-comment-%}
 TODO: {% if site.logo %}
 					<img src="{{ site.logo | relative_url }}"
@@ -14,53 +21,92 @@ TODO: {% if site.logo %}
 			{% endif %}
 {%-endcomment-%}
 				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbarContent" aria-controls="navbarContent"
-					aria-expanded="false" aria-label="Toggle navigation">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-target="#navbarContent"
+					data-toggle="collapse"
+					aria-controls="navbarContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarContent">
 					<ul class="navbar-nav ml-auto">
 {% if lang_size > 1 %}
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle font-weight-bold" id="navbarMenuLang" href="#"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<img id="language-image" border="0" src="{{ '/assets/flags/' | append: page.lang | append: '.png' | relative_url }}"
-									width="16" height="11">
+							<a
+								id="navbarMenuLang"
+								class="nav-link dropdown-toggle font-weight-bold"
+								data-toggle="dropdown"
+								aria-expanded="false"
+								aria-haspopup="true"
+								href="#"
+							>
+								<img
+									width="16" height="11" style="border:0"
+									id="language-image"
+									src="{{ '/assets/flags/' |
+										append: page.lang | append: '.png' | relative_url }}"
+								>
 							</a>
-							<div id="language-menu" data-default="{{ site.locale.default }}" class="dropdown-menu" aria-labelledby="navbarMenuLang">
+							<div
+								id="language-menu"
+								class="dropdown-menu"
+								data-default="{{ site.locale.default }}"
+								aria-labelledby="navbarMenuLang"
+							>
 	{% for language in site.data.locale %}
 			{% assign path_prefix = '/' | append: language[0] | append: '/' %}
-			<a data-lang="{{ language[0] }}" class="dropdown-item font-weight-bold" href="{{ path_prefix | relative_url }}">
-									<img border="0" src="{{ '/assets/flags/' | append: language[0] | append: '.png' | relative_url }}"
-										width="16" height="11">
-									{{ language[1].translation.name }}</a>
+			<a
+				class="dropdown-item font-weight-bold"
+				data-lang="{{ language[0] }}"
+				href="{{ path_prefix | relative_url }}"
+			>
+				<img
+					src="{{ '/assets/flags/' | append: language[0] |
+						append: '.png' | relative_url }}"
+					width="16" height="11" style="border:0"
+				>
+				{{ language[1].translation.name }}
+			</a>
 	{% endfor %}
 							</div>
 						</li>
 {% endif %}
 {% for item in site.data.locale[page.lang].layout.navigation %}
 	{% if item.type == "dropdown" %}
-		{% assign item_id = 'navbar' | append: item.label %}
+		{% assign menu_suffix = item.label |
+			downcase | replace: " ", "_" | replace: "-", "_"
+		%}
+		{% assign item_id = "navbar_" | append: menu_suffix %}
 						<li class="nav-item dropdown">
 							<a
-								data-localize="menu_{{ item.label | downcase | replace: " " "_" | replace: "-" "_" }}"
+								id="{{ item_id }}"
 								class="nav-link dropdown-toggle font-weight-bold"
-								href="#" id="{{ item_id }}"
+								data-localize="menu_{{ menu_suffix }}"
 								data-toggle="dropdown"
-								aria-haspopup="true"
 								aria-expanded="false"
+								aria-haspopup="true"
+								href="#"
 							>
 								{{ item.label }}
 							</a>
-							<div class="dropdown-menu" aria-labelledby="{{ item_id }}">
+							<div
+								class="dropdown-menu"
+								aria-labelledby="{{ item_id }}"
+							>
 		{% for subitem in item.pages %}
 			{% if subitem.label == nil %}
 								<div class="dropdown-divider"></div>
 			{% else %}
+				{% assign menu_suffix = subitem.label |
+						downcase | replace: " ", "_" | replace: "-", "_"
+				%}
 				<a
-					data-localize="menu_{{ subitem.url | replace: "/" "_" | replace: "." "_" | replace: ":" "_" | replace: "-" "_" }}"
 					class="dropdown-item font-weight-bold"
+					data-localize="menu_{{ menu_suffix }}"
 					href="{{ subitem.url | relative_url }}"
 				>
 				{%-if subitem.icon_type-%}
@@ -75,10 +121,13 @@ TODO: {% if site.logo %}
 		{% endfor %}
 							</div>
 	{% else %}
+		{% assign menu_suffix = item.label |
+				downcase | replace: " ", "_" | replace: "-", "_"
+		%}
 						<li class="nav-item">
 							<a
-								data-localize="menu_{{ item.url | replace: "/" "_" }}"
 								class="nav-link font-weight-bold"
+								data-localize="menu_{{ menu_suffix }}"
 								href="{{ item.url | relative_url }}"
 							>
 								{{ item.label }}
@@ -87,8 +136,11 @@ TODO: {% if site.logo %}
 						</li>
 {% endfor %}
 						<li class="nav-item">
-							<a data-localize="menu_search" class="nav-link font-weight-bold"
-								href="{{ '/search/' | relative_url }}">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_search"
+								href="{{ '/search/' | relative_url }}"
+							>
 								{{ t.search }}</a>
 						</li>
 					</ul>
