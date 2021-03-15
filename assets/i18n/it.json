@@ -5,9 +5,15 @@
   "footer_copyright": "Copyright",
   "footer_team": "Team Archdroid",
   "images_environment": "Ambiente Desktop",
-  "images_environment_tooltip": "Dettagli su questo ambiente desktop",
+  "images_environment_tooltip":
+  {
+    "title": "Dettagli su questo ambiente desktop"
+  },
   "images_info_download": "Info &amp; Scarica",
-  "images_info_download_tooltip": "Dettagli su questa immagine",
+  "images_info_download_tooltip":
+  {
+    "title": "Dettagli su questa immagine"
+  },
   "menu_atomxml": "Feed",
   "menu_follow_us": "Seguici",
   "menu_images": "Immagini",

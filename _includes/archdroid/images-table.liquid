@@ -2,15 +2,11 @@
 <table
 	id="table-disk-images"
 	class="table table-hover"
-	data-toggle="table"
 >
 	<thead>
 		<tr>
-			<th
-				data-field="name"
-				data-sortable="true"
-			>
-					<span data-localize="images_environment">Environment</span>
+			<th>
+				<span data-localize="images_environment">Environment</span>
 			</th>
 			<th>
 				<span data-localize="images_info_download">Info &amp; Download</span>
@@ -29,7 +25,7 @@
 			<a
 				href="{{ env_page }}"
 				title="Details about this environment"
-				{%comment%}data-localize="images_environment_tooltip"{%endcomment%}
+				data-localize="images_environment_tooltip"
 			>
 				{{ image.name }}
 			</a>
@@ -38,7 +34,7 @@
 			<a
 				href="{{ image_page }}"
 				title="Details about this image"
-				{%comment%}data-localize="images_info_download_tooltip"{%endcomment%}
+				data-localize="images_info_download_tooltip"
 			>
 				<i class="fas fa-info-circle"></i>
 			</a>
