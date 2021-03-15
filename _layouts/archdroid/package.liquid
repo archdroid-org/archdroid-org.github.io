@@ -30,11 +30,11 @@ layout: "default"
 {% else %}
 	{%-assign csize = package.csize | append: " Bytes"-%}
 {% endif %}
+
 {%-comment-%}
 	TODO: Use package.arch in the download URL above when possible
-{%-endcomment-%}
-
 <h1>{{ pkgname |append:' '|append:version }}</h1>
+{%-endcomment-%}
 
 <table id="pkginfo">
 	<tbody>

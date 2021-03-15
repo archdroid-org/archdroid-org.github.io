@@ -1,9 +1,6 @@
 ---
 title: "Environments Changes Log"
 ---
-
-# Environments Changes Log
-
 The different available image environments changes log.
 
 ## GNOME

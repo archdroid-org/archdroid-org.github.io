@@ -1,9 +1,6 @@
 ---
 title: "Odroid C4/HC4 Images Changes Log"
 ---
-
-# Odroid C4/HC4 Images Changes Log
-
 Changes Log for the various disk images of this device.
 
 ## GNOME

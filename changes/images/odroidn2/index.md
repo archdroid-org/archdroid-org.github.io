@@ -1,9 +1,6 @@
 ---
 title: "Odroid N2/N2+ Images Changes Log"
 ---
-
-# Odroid N2/N2+ Images Changes Log
-
 Changes Log for the various disk images of this device.
 
 ## GNOME
