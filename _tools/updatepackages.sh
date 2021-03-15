@@ -39,6 +39,7 @@ do
 			echo "  Adding $pkgname."
 			cat <<EOF >${index}
 ---
+title:  "${pkgname}"
 layout: "archdroid/package"
 ---
 EOF

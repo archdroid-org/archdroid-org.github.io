@@ -37,6 +37,7 @@
   "news_post": "Post",
   "pkg_builddate": "Build Date:",
   "pkg_conflicts": "Conflicts:",
+  "pkg_ver": "Version:",
   "pkg_desc": "Description:",
   "pkg_dl": "Download",
   "pkg_isize": "Installed Size:",
