@@ -6,7 +6,6 @@ title: "Odroid C4/HC4 Images Changes Log"
 
 Changes Log for the various disk images of this device.
 
-<a name="gnome"></a>
 ## GNOME
 
 **Date - 30/12/2020**
@@ -32,7 +31,6 @@ Changes Log for the various disk images of this device.
 **Date - 23/10/2020**
 * First release
 
-<a name="xfce"></a>
 ## XFCE
 
 **Date - 29/12/2020**
@@ -89,7 +87,6 @@ Changes Log for the various disk images of this device.
 **Date - 20/05/2020**
 * First release
 
-<a name="wayfire"></a>
 ## Wayfire
 
 **Date - 05/01/2021**

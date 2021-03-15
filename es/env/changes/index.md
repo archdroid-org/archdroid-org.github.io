@@ -6,7 +6,6 @@ title: "Environments Changes Log"
 
 The different available image environments changes log.
 
-<a name="gnome"></a>
 ## GNOME
 
 **Date - 30/12/2020**
@@ -29,13 +28,11 @@ The different available image environments changes log.
 * Added MOZ_ENABLE_WAYLAND=1 environment variable to enable wayland on firefox
   by default.
 
-<a name="headless"></a>
 ## Headless
 
 **Date - 30/12/2020**
 * First release
 
-<a name="xfce"></a>
 ## XFCE
 
 **Date - 29/12/2020**
@@ -56,7 +53,6 @@ The different available image environments changes log.
 * Added latest pamac-aur, xfce4-places-plugin, xfce4-docklike-plugin-git.
 * Added realtime privileges to alarm user for pro-audio.
 
-<a name="wayfire"></a>
 ## Wayfire
 
 **Date - 24/02/2021**

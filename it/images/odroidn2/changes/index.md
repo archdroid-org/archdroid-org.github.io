@@ -6,7 +6,6 @@ title: "Odroid N2/N2+ Images Changes Log"
 
 Changes Log for the various disk images of this device.
 
-<a name="gnome"></a>
 ## GNOME
 
 **Date - 30/12/2020**
@@ -32,13 +31,11 @@ Changes Log for the various disk images of this device.
 **Date - 05/08/2020**
 * First release
 
-<a name="headless"></a>
 ## Headless
 
 **Date - 30/12/2020**
 * First release
 
-<a name="xfce"></a>
 ## XFCE
 
 **Date - 29/12/2020**
@@ -94,7 +91,6 @@ Changes Log for the various disk images of this device.
 **Date - 19/05/2020**
 * First release
 
-<a name="wayfire"></a>
 ## Wayfire
 
 **Date - 24/02/2021**
