@@ -57,7 +57,8 @@ TODO: {% if site.logo %}
 								data-default="{{ site.locale.default }}"
 								aria-labelledby="navbarMenuLang"
 							>
-	{% for language in site.data.locale %}
+	{%-assign languages = site.data.locale | sort-%}
+	{% for language in languages %}
 			{% assign path_prefix = '/' | append: language[0] | append: '/' %}
 			<a
 				class="dropdown-item font-weight-bold"

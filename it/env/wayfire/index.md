@@ -1,8 +1,6 @@
 ---
 title: "Ambiente Desktop Wayfire"
 ---
-# Ambiente Desktop Wayfire
-
 [Wayfire] è un ambiente leggero basato su Wayland, paragonabile a Weston
 ma con molte più funzionalità che lo rendono davvero tuo.
 Wayfire è come un Compiz per Wayland, ma è completamente indipendente.

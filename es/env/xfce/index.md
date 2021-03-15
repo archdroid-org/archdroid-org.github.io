@@ -1,9 +1,6 @@
 ---
 title: "Entorno de Escritorio XFCE"
 ---
-
-# Entorno de Escritorio XFCE
-
 [Xfce] es un entorno liviano de escritorio para sistemas operativos UNIX.
 Su meta es ser rápido y depender de pocos recursos del sistema, manteniendo
 una apariencia visualmente agradable y de uso fácil.

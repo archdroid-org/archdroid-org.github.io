@@ -1,9 +1,6 @@
 ---
-title: "Odroid N2/N2+ Images"
+title: "Odroid N2/N2+ ArchLinuxARM Images"
 ---
-
-# Odroid N2/N2+ ArchLinuxARM Images
-
 The Odroid N2 and N2+ newer variant is a powerful single board computer that
 has 6 cores clocking from 1.8Ghz up to 2.4Ghz for the N2+ variant. It supports
 up to 4GB of ram, has integreted ethernet, USB 3 and USB 2 ports, SDCard slot,
@@ -18,19 +15,17 @@ can be seen on the [Hardkernel wiki].
 
 ### Images
 
-<div markdown="1">
 {% include archdroid/images-table.liquid id="odroidn2" %}
-</div>
 
 ### Distinct features from regular ALARM tarballs
 
 * Linux kernel maintained by [@tobetter] and other people with audio support,
-  hdmi driver fixes, higher cpu frequncy support for
+  hdmi driver fixes, higher cpu frequency support for
   the N2+ and other changes.
 * U-Boot package with hooks to update boot.ini automatically if kernel is
   changed to non mainline which helps prevent bootup failures.
-* More up to date mesa-devel package with more recent panfrost work for better
-  graphics performance on non headless images.
+* More up to date `mesa` package (`mesa-devel` or `mesa-devel-git`) that includes
+  the latest panfrost work for better graphics performance on non headless images.
 
 ### Installation
 
@@ -69,9 +64,10 @@ Some of the graphic applications that have been tested and work nicely.
 
 ### Improving System Performance
 
-If you want better performance try running `sudo cpupower frequency-set -g
-performance` from the terminal, and to permanently set the CPU governor to
-performance open /etc/default/cpupower and change the line that reads:
+If you want better performance try running
+`sudo cpupower frequency-set -g performance` from the terminal,
+and to permanently set the CPU governor to performance open
+`/etc/default/cpupower` and change the line that reads:
 
 ```ini
 governor='schedutil'
@@ -84,8 +80,8 @@ governor='performance'
 Then you can just run `sudo systemctl restart cpupower` to apply the changes
 immediately.
 
-[@tobetter]: https://github.com/tobetter
-[20200721]:  https://forum.odroid.com/viewtopic.php?f=182&t=33873
+[@tobetter]:       https://github.com/tobetter
+[20200721]:        https://forum.odroid.com/viewtopic.php?f=182&t=33873
 [Mesa OpenGL]:     https://mesa3d.org
 [Hardkernel wiki]: https://wiki.odroid.com/odroid-n2/odroid-n2
 [Hardkernel]:      https://www.hardkernel.com/

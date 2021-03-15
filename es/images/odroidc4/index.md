@@ -1,9 +1,6 @@
 ---
-title: "Imagenes Odroid C4/HC4"
+title: "Imagenes de ArchLinuxARM para Odroid C4/HC4"
 ---
-
-# Imagenes de ArchLinuxARM para Odroid C4/HC4
-
 El Odroid C4 y la nueva variante HC4 es una económica y poderosa computadora de
 placa única que tiene una CPU de 4 núcleos con velocidades que llegan a los 2Ghz.
 Soporta hasta 4 GB de memoria ram, tiene adapter de red integrado, Puertos

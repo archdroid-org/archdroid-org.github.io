@@ -1,9 +1,6 @@
 ---
 title: "GNOME Desktop Environment"
 ---
-
-# GNOME Desktop Environment
-
 [GNOME] is a modern and featureful desktop environment.
 ([Changes Log](/changes/env/#gnome))
 

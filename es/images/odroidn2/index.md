@@ -1,9 +1,6 @@
 ---
-title: "Imagenes de Odroid N2/N2+"
+title: "Imagenes de ArchLinuxARM para Odroid N2/N2+"
 ---
-
-# Imagenes de ArchLinuxARM para Odroid N2/N2+
-
 El Odroid N2 y la nueva variante N2+ es una poderosa computadora de placa
 única que tiene una CPU de 6 núcleos con velocidades desde 1.8Ghz a 2.4Ghz
 para la variante N2+. Soporta hasta 4 GB de memoria ram, tiene adapter de

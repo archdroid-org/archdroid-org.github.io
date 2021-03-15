@@ -1,8 +1,6 @@
 ---
 title: "Ambiente Headless"
 ---
-# Ambiente Headless
-
 Immagine minimale con pacchetti sufficienti per usarla facilmente
 anche da una connessione wireless.
 ([Registro Modifiche ](/changes/env/#headless))

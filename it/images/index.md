@@ -1,9 +1,6 @@
 ---
 title: "Immagini Dispositivo"
 ---
-
-# Immagini Dispositivo
-
 Questa è la lista dei dispositivi attualmente supportati da Archdroid.
 Se il tuo dispositivo non è in elenco, hai la possibilità di poter contribuire
 ai progetti [alarm image generator] e [pkgbuilds].

@@ -1,5 +1,6 @@
 ---
 title: "Home"
+no_h1_title: true
 ---
 {% include archdroid/home-top.liquid %}
 

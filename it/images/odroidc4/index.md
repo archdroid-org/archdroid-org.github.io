@@ -1,9 +1,6 @@
 ---
-title: "Odroid C4/HC4 Images"
+title: "Immagini ArchLinuxARM per Odroid C4/HC4"
 ---
-
-# Immagini ArchLinuxARM per Odroid C4/HC4
-
 Odroid C4 e la variante HC4 sono dei computer a singola scheda economici e
 di moderata potenza a 4 core, con una frequenza che arriva sino ai 2GHz.
 Supportano fino a 4GB di RAM, scheda ethernet integrata, porte USB2 e USB3,
@@ -21,24 +18,24 @@ nelle wiki per [C4] e [HC4] di Hardkernel.
 
 {% include archdroid/images-table.liquid id = "odroidc4" %}
 
-### Distinct features from regular ALARM tarballs
+### Caratteristiche uniche rispetto alle tarball ALARM ufficiali
 
-* Support for C4 and HC4.
-* Linux kernel maintained by [@tobetter] and other people with audio support,
-  hdmi driver fixes.
-* U-Boot package with hooks to update boot.ini automatically if kernel is
-  changed to non mainline which helps prevent bootup failures.
-* More up to date mesa-devel package with more recent panfrost work for better
-  graphics performance.
+* Supporto per C4 e HC4.
+* Kernel Linux mantenuto da [@tobetter] e da altre persone per il supporto audio
+  e correzioni dei driver hdmi.
+* Pacchetto U-Boot con hook per aggiornare automaticamente boot.ini se il kernel
+  viene modificato in non mainline, il che aiuta a prevenire errori di avvio.
+* Pacchetti `mesa` (`mesa-devel` o `mesa-devel-git`) con panfrost più aggiornati
+  e migliori prestazioni grafiche.
 
-### Installation
+### Installazione
 
-The process of burning the image into a SD or EMMC is documented in
+Le istruzioni per installare una immagine su SD o EMMC sono documentate su
 <https://wiki.odroid.com/troubleshooting/odroid_flashing_tools>.
 
-### What Works?
+### Cosa funziona?
 
-Some of the graphic applications that have been tested.
+Alcune delle applicazioni grafiche che sono state testate.
 
 #### Triple A Games :D
 
@@ -53,32 +50,34 @@ Some of the graphic applications that have been tested.
 
 #### Video
 
-* MPV with video acceleration - `sudo pacman -S mpv`
-* KODI with opengl support - `sudo pacman -S kodi-x11`
+* MPV con accelerazione grafica - `sudo pacman -S mpv`
+* KODI con supporto OpenGL - `sudo pacman -S kodi-x11`
 
-#### Development
+#### Sviluppo
 
-* CodeLite IDE for C/C++, PHP, NodeJS development - `sudo pacman -S codelite-git`
-* CodeBlocks for C/C++ development - `sudo pacman -S codeblocks-svn`
+* CodeLite IDE per lo sviluppo con C/C++, PHP e NodeJS - `sudo pacman -S codelite-git`
+* CodeBlocks per lo sviluppo con C/C++ - `sudo pacman -S codeblocks-svn`
 
-### Improving System Performance
+### Miglioramento delle prestazioni del sistema
 
-If you want better performance try running `sudo cpupower frequency-set -g
-performance` from the terminal, and to permanently set the CPU governor to
-performance open /etc/default/cpupower and change the line that reads:
+Se desideri prestazioni migliori, prova ad eseguire
+`sudo cpupower frequency-set -g performance` dal terminale.
+Per renderlo permanente, imposta il governatore della CPU a performance applicando
+le seguenti modifiche in `/etc/default/cpupower`:
 
+da
 ```ini
 governor='schedutil'
 ```
-to
+a
 ```ini
 governor='performance'
 ```
 
-Then you can just run `sudo systemctl restart cpupower` to apply the changes
-immediately.
+Quindi riavvia il servizio con `sudo systemctl restart cpupower` per renderle
+immediatamente effettive.
 
-[@tobetter]: https://github.com/tobetter
+[@tobetter]:   https://github.com/tobetter
 [Ameridroid]:  https://www.ameridroid.com/
 [Hardkernel]:  https://www.hardkernel.com/
 [C4]:          https://wiki.odroid.com/odroid-c4/odroid-c4

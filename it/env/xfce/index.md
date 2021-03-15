@@ -1,9 +1,6 @@
 ---
 title: "Ambiente Desktop Xfce"
 ---
-
-# Ambiente Desktop Xfce
-
 [Xfce] è un ambiente desktop leggero per sistemi operativi simil-UNIX.
 Mira ad essere veloce e con poche risorse di sistema, pur essendo visivamente
 accattivante e facile da usare.

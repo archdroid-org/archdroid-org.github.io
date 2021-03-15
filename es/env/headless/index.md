@@ -1,9 +1,6 @@
 ---
 title: "Entorno Headless"
 ---
-
-# Entorno Headless
-
 Entorno mínimo con suficientes paquetes para ser fácilmente utilizada
 inclusive en conexiones inalambricas.
 ([Historial de Cambios](/changes/env/#headless))

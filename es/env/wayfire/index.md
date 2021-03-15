@@ -1,9 +1,6 @@
 ---
 title: "Entorno de Escritorio Wayfire"
 ---
-
-# Entorno de Escritorio Wayfire
-
 [Wayfire] es un entorno de escritorio liviano de Wayland comparable a Weston pero
 con suficientes funcionalidades para hacerlo tuyo. Wayfire es como un Compiz
 para Wayland pero completamente independiente. Además depende de muy pocos

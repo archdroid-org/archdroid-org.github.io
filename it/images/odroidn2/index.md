@@ -1,9 +1,6 @@
 ---
-title: "Immagini per Odroid N2/N2+"
+title: "Immagini ArchLinuxARM per Odroid N2/N2+"
 ---
-
-# Immagini ArchLinuxARM per Odroid N2/N2+
-
 Odroid N2 e la variante N2+ sono dei potenti computer a singola scheda
 a 6 core con una frequenza che parte da 1.8GHz fino a 2.4GHz per la variante.
 Supportano fino a 4GB di RAM, scheda ethernet integrata, porte USB2 e USB3,
@@ -20,28 +17,28 @@ Ulteriori dettagli possono essere consultati nella [wiki Hardkernel].
 
 {% include archdroid/images-table.liquid id = "odroidn2" %}
 
-### Distinct features from regular ALARM tarballs
+### Caratteristiche uniche rispetto alle tarball ALARM ufficiali
 
-* Linux kernel maintained by [@tobetter] and other people with audio support,
-  hdmi driver fixes, higher cpu frequncy support for
-  the N2+ and other changes.
-* U-Boot package with hooks to update boot.ini automatically if kernel is
-  changed to non mainline which helps prevent bootup failures.
-* More up to date mesa-devel package with more recent panfrost work for better
-  graphics performance on non headless images.
+* Kernel Linux mantenuto da [@tobetter] e da altre persone per il supporto audio,
+  correzioni dei driver hdmi, frequenza più elevata della CPU per N2+ e altro
+  ancora.
+* Pacchetto U-Boot con hook per aggiornare automaticamente boot.ini se il kernel
+  viene modificato in non mainline, il che aiuta a prevenire errori di avvio.
+* Pacchetti `mesa` (`mesa-devel` o `mesa-devel-git`) con panfrost più aggiornati
+  e migliori prestazioni grafiche su immagini non headless.
 
-### Installation
+### Installazione
 
-The process of burning the image into a SD or EMMC is documented in
+Le istruzioni per installare una immagine su SD o EMMC sono documentate su
 <https://wiki.odroid.com/troubleshooting/odroid_flashing_tools>.
-The images do not boot from petitboot unless you have an updated petitboot
-installed ([20200721] release or newer seems to work) and compatible display
-(otherwise you will get a blank screen), if not you will need to boot directly
-from emmc or sdcard.
+Le immagini non si avviano da petitboot a meno che non sia installato un petitboot
+aggiornato (la versione [20200721] o più recente sembra funzionare) e un display
+compatibile (altrimenti verrà visualizzata una schermata nera), in caso contrario
+sarà necessario eseguire l'avvio direttamente da EMMC o SD card.
 
-### What Works?
+### Cosa funziona?
 
-Some of the graphic applications that have been tested and work nicely.
+Alcune delle applicazioni grafiche che sono state testate.
 
 #### Triple A Games :D
 
@@ -57,34 +54,36 @@ Some of the graphic applications that have been tested and work nicely.
 
 #### Video
 
-* MPV with video acceleration - `sudo pacman -S mpv`
-* KODI with opengl support - `sudo pacman -S kodi-wayland` or `sudo pacman -S kodi-x11`
+* MPV con accelerazione grafica - `sudo pacman -S mpv`
+* KODI con supporto OpenGL - `sudo pacman -S kodi-wayland` o `sudo pacman -S kodi-x11`
 
-#### Development
+#### Sviluppo
 
-* CodeLite IDE for C/C++, PHP, NodeJS development - `sudo pacman -S codelite-git`
-* CodeBlocks for C/C++ development - `sudo pacman -S codeblocks-svn`
+* CodeLite IDE per lo sviluppo con C/C++, PHP e NodeJS - `sudo pacman -S codelite-git`
+* CodeBlocks per lo sviluppo con C/C++ - `sudo pacman -S codeblocks-svn`
 
-### Improving System Performance
+### Miglioramento delle prestazioni del sistema
 
-If you want better performance try running `sudo cpupower frequency-set -g
-performance` from the terminal, and to permanently set the CPU governor to
-performance open /etc/default/cpupower and change the line that reads:
+Se desideri prestazioni migliori, prova ad eseguire
+`sudo cpupower frequency-set -g performance` dal terminale.
+Per renderlo permanente, imposta il governatore della CPU a performance applicando
+le seguenti modifiche in `/etc/default/cpupower`:
 
+da
 ```ini
 governor='schedutil'
 ```
-to
+a
 ```ini
 governor='performance'
 ```
 
-Then you can just run `sudo systemctl restart cpupower` to apply the changes
-immediately.
+Quindi riavvia il servizio con `sudo systemctl restart cpupower` per renderle
+immediatamente effettive.
 
-[@tobetter]: https://github.com/tobetter
-[20200721]:  https://forum.odroid.com/viewtopic.php?f=182&t=33873
+[@tobetter]:       https://github.com/tobetter
+[20200721]:        https://forum.odroid.com/viewtopic.php?f=182&t=33873
+[Ameridroid]:      https://www.ameridroid.com/
+[Hardkernel]:      https://www.hardkernel.com/
 [Mesa OpenGL]:     https://mesa3d.org
 [wiki Hardkernel]: https://wiki.odroid.com/odroid-n2/odroid-n2
-[Hardkernel]:      https://www.hardkernel.com/
-[Ameridroid]:      https://www.ameridroid.com/

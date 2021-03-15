@@ -1,9 +1,6 @@
 ---
 title: "Wayfire Desktop Environment"
 ---
-
-# Wayfire Desktop Environment
-
 [Wayfire] is a lightweight Wayland desktop environment
 comparable to Weston but with much more features that actually make it yours,
 Wayfire is like the Compiz for Wayland but completely stand alone. Also since

@@ -1,8 +1,6 @@
 ---
 title: "Ambiente Desktop GNOME"
 ---
-# Ambiente Desktop GNOME
-
 [GNOME] è un ambiente desktop moderno e ricco di funzionalità.
 ([Registro Modifiche ](/changes/env/#gnome))
 
