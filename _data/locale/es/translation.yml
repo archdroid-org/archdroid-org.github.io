@@ -1,0 +1,20 @@
+name: "Español"
+404_content: "La página que esta buscando no exists. Parece que la página
+que esta buscando no existe más, o posiblemente fue solo movida. Pensamos
+que la mejor solución es comenzar de nuevo desde la pagina de inicio, o
+utilice la función de búsqueda en la barra superior."
+search: "Buscar"
+search_website: "Buscar en este sitio:"
+back_to_top: "Regresar Arriba"
+follow_us: "Síguenos"
+posted_on: "en "
+posted_by: "por "
+comments: "Comentarios"
+news: "Noticias"
+news_archive: " Archivo de Noticias"
+archive_caption: "Listado histórico completo de noticias, ordenadas por la más reciente."
+archive_header_post: "Publicación"
+archive_header_date: "Fecha"
+archive_header_author: "Autor"
+mirrors_header_name: "Servidor"
+mirrors_header_url: "URL"

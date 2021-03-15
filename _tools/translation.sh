@@ -127,11 +127,16 @@ add_language(){
 		cp "$default_lang/index.md" "$lang_code/"
 	fi
 
+	if [ ! -e "assets/i18n/$lang_code.json" ]; then
+		cp assets/i18n/en.json "assets/i18n/$lang_code.json"
+	fi
+
 	echo "Language successfully added!"
 	echo ""
 	echo "You can start by translating the files:"
 	echo "  _data/locale/$lang_code/layout.yml"
 	echo "  _data/locale/$lang_code/translation.yml"
+	echo "  assets/i18n/$lang_code.json"
 	echo "  $lang_code/index.md"
 	echo ""
 	echo "Then you can run 'site translation check $lang_code'"
@@ -169,6 +174,7 @@ delete_language(){
 		'y' | 'Y' )
 			rm -rf ./_data/locale/"$lang_code"
 			rm -rf "$lang_code"
+			rm -f "assets/i18n/$lang_code.json"
 			echo "Language '$lang_code' removed."
 			return 0
 			;;

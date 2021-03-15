@@ -69,8 +69,8 @@ Some of the graphic applications that have been tested and work nicely.
 
 ### Improving System Performance
 
-If you want better performance try running sudo cpupower frequency-set -g
-performance from the terminal, and to permanently set the CPU governor to
+If you want better performance try running `sudo cpupower frequency-set -g
+performance` from the terminal, and to permanently set the CPU governor to
 performance open /etc/default/cpupower and change the line that reads:
 
 ```ini

@@ -24,7 +24,7 @@ repository sulla nostra [Organizzazione GitHub].
 [ArchLinuxARM]:          https://archlinuxarm.org
 [Organizzazione GitHub]: https://github.com/archdroid-org
 [HardKernel]:            https://www.hardkernel.com/
-[Odroid N2/N2+]:         https://www.hardkernel.com/shop/odroid-n2-with-4gbyte-ram-2/
-[Odroid C4/HC4]:         https://www.hardkernel.com/shop/odroid-c4/
+[Odroid N2/N2+]:       /it/images/odroidn2/
+[Odroid C4/HC4]:       /it/images/odroidc4/
 
 {% include archdroid/home-bottom.liquid %}

@@ -1,0 +1,59 @@
+{
+  "devices_device": "Device",
+  "devices_images": "Images",
+  "devices_view": "View",
+  "footer_copyright": "Copyright",
+  "footer_team": "Team Archdroid",
+  "images_environment": "Environment",
+  "images_environment_tooltip":
+  {
+    "title": "Details about this environment"
+  },
+  "images_info_download": "Info &amp; Download",
+  "images_info_download_tooltip":
+  {
+    "title": "Change log of this image"
+  },
+  "menu_atomxml": "Feed",
+  "menu_follow_us": "Follow Us",
+  "menu_images": "Images",
+  "menu_mirrors": "Mirrors",
+  "menu_news": "News",
+  "menu_packages": "Packages",
+  "menu_search": "Search",
+  "mirrors_header_name": "Name",
+  "mirrors_header_url": "URL",
+  "mirrors_title": "Mirror",
+  "news_archive": "News Archive",
+  "news_archive_content": "Full historical listing of all news posts, sorted by newest first.",
+  "news_at": "at",
+  "news_author": "Author",
+  "news_by": "by",
+  "news_date": "Date",
+  "news_latest": {
+    "text": "Latest News",
+    "title": "Browse the news archives"
+  },
+  "news_post": "Post",
+  "pkg_builddate": "Build Date:",
+  "pkg_conflicts": "Conflicts:",
+  "pkg_desc": "Description:",
+  "pkg_dl": "Download",
+  "pkg_isize": "Installed Size:",
+  "pkg_license": "License(s):",
+  "pkg_provides": "Provides:",
+  "pkg_src": "Sources",
+  "pkg_url": "Upstream URL:",
+  "pkgs_desc": "Description",
+  "pkgs_name": "Name",
+  "pkgs_title": "Pacchetti",
+  "pkgs_updates": "Recent Updates",
+  "pkgs_updates_info": {
+    "title": "view packages info"
+  },
+  "pkgs_ver": "Version",
+  "site_scroll_top": "Top",
+  "site_search": "Search",
+  "team_name": "Name",
+  "team_contrib": "Contributions"
+}

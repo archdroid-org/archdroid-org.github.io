@@ -48,6 +48,9 @@
   "pkgs_name": "Nome",
   "pkgs_title": "Pacchetti",
   "pkgs_updates": "Ultimi Aggiornamenti",
+  "pkgs_updates_info": {
+    "title": "visualizzare le informazioni sui pacchetti"
+  },
   "pkgs_ver": "Versione",
   "site_scroll_top": "Torna Su",
   "site_search": "Ricerca",
