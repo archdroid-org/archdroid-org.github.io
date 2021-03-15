@@ -87,8 +87,10 @@ $(document).ready(function(){
 		var path_parts = location.pathname.split("/");
 		if(path_parts[1] == current_lang){
 			path_parts[1] = $(this).attr("data-lang");
+			location.href = path_parts.join("/") + location.search + location.hash;
+		} else{
+			location.reload();
 		}
-		location.href = path_parts.join("/") + location.search + location.hash;
 		e.preventDefault();
 	});
 
