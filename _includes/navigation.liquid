@@ -106,7 +106,6 @@ TODO: {% if site.logo %}
 				%}
 				<a
 					class="dropdown-item font-weight-bold"
-					data-localize="menu_{{ menu_suffix }}"
 					href="{{ subitem.url | relative_url }}"
 				>
 				{%-if subitem.icon_type-%}
@@ -115,7 +114,7 @@ TODO: {% if site.logo %}
 						aria-hidden="true"
 					></i>&nbsp;
 				{%-endif-%}
-					{{ subitem.label }}
+					<span data-localize="menu_{{ menu_suffix }}">{{ subitem.label }}</span>
 				</a>
 			{% endif %}
 		{% endfor %}
