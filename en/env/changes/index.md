@@ -1,7 +1,64 @@
 ---
-title: "Wayfire Changelog"
-author: "jgmdev"
+title: "Environments Changes Log"
 ---
+
+# Environments Changes Log
+
+The different available image environments changes log.
+
+<a name="gnome"></a>
+## GNOME
+
+**Date - 30/12/2020**
+* A more lite-weight gnome install by using just the minimal amount of packages
+  required to get gnome running.
+* Swapped nautilus with thunar to reduce the amount of required dependencies.
+* Disabled suspend on gnome by default to prevent issues for users without a
+  physical power button.
+* Disabled search services on gnome for better performance.
+* Changed default color theme of gnome-terminal to more readable one.
+* Added **CTRL + ALT + T** keyboard shortcut to launch the terminal.
+* Improved initial setup script to not require a system reboot, so the system
+  doesn't reboots anymore after reaching login manager.
+* Updated pamac package which now includes hooks to fix appstream xml files.
+* Enabled the dhcpcd systemd service.
+
+**Date - 05/08/2020**
+* Blacklisted hid_logitech_hidpp which caused keyboard input to not work on
+  Gnome for wireless logitech keyboards like the K400, K360, etc...
+* Added MOZ_ENABLE_WAYLAND=1 environment variable to enable wayland on firefox
+  by default.
+
+<a name="headless"></a>
+## Headless
+
+**Date - 30/12/2020**
+* First release
+
+<a name="xfce"></a>
+## XFCE
+
+**Date - 29/12/2020**
+* Updated XFCE from 4.14 to 4.16
+* Customized colors on newer CPU Graph XFCE plugin.
+* Added default location to XFCE Weather plugin (can be changed by right
+  click -> properties)
+* Activated Arc-Dark theme globally and for window decorations.
+* Replaced gcolor3 that broke support for X11 when non-GNOME with gcolor2
+  which works properly.
+* Added custom gcolor2.desktop to use more modern icon
+  (~/.local/share/applications/gcolor2.desktop)
+* Enabled the dhcpcd systemd service.
+* Disabled compositing on XFCE for better OpenGL performance, also disabled
+  transparency on whisker menu and bottom dock like panel.
+
+**Date - 27/07/2020**
+* Added latest pamac-aur, xfce4-places-plugin, xfce4-docklike-plugin-git.
+* Added realtime privileges to alarm user for pro-audio.
+
+<a name="wayfire"></a>
+## Wayfire
+
 **Date - 24/02/2021**
 * Reverted from pipewire to pulseaudio because of issues with newest pipewire
   and some built-in audio drivers when starting the system up.

@@ -6,6 +6,7 @@ title: "Headless Environment"
 
 Minimal image with enough packages to easily use it even from a wireless
 connection.
+([Changes Log](/en/env/changes/#headless))
 
 ### What is Included?
 

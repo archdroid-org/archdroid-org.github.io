@@ -12,7 +12,7 @@
   "images_info_download": "Info &amp; Scarica",
   "images_info_download_tooltip":
   {
-    "title": "Dettagli su questa immagine"
+    "title": "Registro modifiche su questa immagine"
   },
   "menu_atomxml": "Feed",
   "menu_follow_us": "Seguici",
@@ -30,7 +30,10 @@
   "news_author": "Autore",
   "news_by": "da",
   "news_date": "Data",
-  "news_latest": "Ultime Notizie",
+  "news_latest": {
+    "text": "Ultime Notizie",
+    "title": "Sfoglia l'archivio delle notizie"
+  },
   "news_post": "Post",
   "pkg_builddate": "Data di Costruzione:",
   "pkg_conflicts": "Conflitti:",
