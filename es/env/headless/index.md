@@ -6,7 +6,7 @@ title: "Entorno Headless"
 
 Entorno mínimo con suficientes paquetes para ser fácilmente utilizada
 inclusive en conexiones inalambricas.
-([Historial de Cambios](/es/env/changes/#headless))
+([Historial de Cambios](/changes/env/#headless))
 
 ### Que está incluido?
 

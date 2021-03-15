@@ -7,7 +7,7 @@ title: "Ambiente Desktop Xfce"
 [Xfce] è un ambiente desktop leggero per sistemi operativi simil-UNIX.
 Mira ad essere veloce e con poche risorse di sistema, pur essendo visivamente
 accattivante e facile da usare.
-([Registro Modifiche ](/en/env/changes/#xfce))
+([Registro Modifiche ](/changes/env/#xfce))
 
 ### Cos'è incluso?
 

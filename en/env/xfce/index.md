@@ -7,7 +7,7 @@ title: "XFCE Desktop Environment"
 [Xfce] is a lightweight desktop environment for UNIX-like operating systems.
 It aims to be fast and low on system resources, while still
 being visually appealing and user friendly.
-([Changes Log](/en/env/changes/#xfce))
+([Changes Log](/changes/env/#xfce))
 
 ### What is Included?
 

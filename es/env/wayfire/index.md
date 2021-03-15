@@ -8,7 +8,7 @@ title: "Entorno de Escritorio Wayfire"
 con suficientes funcionalidades para hacerlo tuyo. Wayfire es como un Compiz
 para Wayland pero completamente independiente. Además depende de muy pocos
 recursos del sistema por lo que corre y funciona de maravilla.
-([Historial de Cambios](/es/env/changes/#wayfire))
+([Historial de Cambios](/changes/env/#wayfire))
 
 ### Que está incluido?
 

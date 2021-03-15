@@ -18,8 +18,8 @@
 	{%-for image in device.images-%}
 		{%-assign image_name = image.name | downcase-%}
 		{%-assign env_page   = "/en/env/"    | append: image_name | relative_url-%}
-		{%-assign image_page = "/en/images/" | append: device.id | append: '/' |
-			 append: "changes/#" | append: image_name | relative_url-%}
+		{%-assign image_page = "/changes/images/" | append: device.id |
+			 append: "/#" | append: image_name | relative_url-%}
 	<tr>
 		<td>
 			<a

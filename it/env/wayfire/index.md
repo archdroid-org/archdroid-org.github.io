@@ -7,7 +7,7 @@ title: "Ambiente Desktop Wayfire"
 ma con molte più funzionalità che lo rendono davvero tuo.
 Wayfire è come un Compiz per Wayland, ma è completamente indipendente.
 Inoltre, poiché non è esoso di risorse, funziona alla grande.
-([Registro Modifiche ](/en/env/changes/#wayfire))
+([Registro Modifiche ](/changes/env/#wayfire))
 
 ### Cos'è incluso?
 

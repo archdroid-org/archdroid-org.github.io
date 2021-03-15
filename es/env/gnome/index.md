@@ -5,7 +5,7 @@ title: "Entorno de Escritorio GNOME"
 # Entorno de Escritorio GNOME
 
 [GNOME] es un moderno y completo entorno de escritorio.
-([Historial de Cambios](/es/env/changes/#gnome))
+([Historial de Cambios](/changes/env/#gnome))
 
 ### Que está incluido?
 
