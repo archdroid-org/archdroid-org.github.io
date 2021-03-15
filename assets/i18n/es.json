@@ -48,7 +48,7 @@
   "pkg_url": "URL del paquete:",
   "pkgs_desc": "Descripción",
   "pkgs_name": "Nombre",
-  "pkgs_title": "Paquete",
+  "pkgs_title": "Paquetes",
   "pkgs_updates": "Actualizaciones Recientes",
   "pkgs_updates_info": {
     "title": "ver info del paquete"
