@@ -6,17 +6,29 @@ layout: "default"
 {%-assign version = package.version |append:'-' |append:package.release-%}
 {%-assign download = "https://github.com/archdroid-org/repo/releases/download/aarch64/"-%}
 {%-assign sources = "https://github.com/archdroid-org/pkgbuilds/tree/master/"-%}
-{%-assign sizekb = package.isize | divided_by: 1024-%}
-{%-assign sizemb = package.isize | divided_by: 1024 | divided_by: 1024-%}
-{%-assign sizegb = package.isize | divided_by: 1024 | divided_by: 1024 | divided_by: 1024-%}
-{%-if sizegb > 0-%}
-	{%-assign isize = sizegb | append: "GB"-%}
-{%-elsif sizemb > 0-%}
-	{%-assign isize = sizemb | append: "MB"-%}
-{%-elsif sizekb > 0-%}
-	{%-assign isize = sizekb | append: "KB"-%}
+{%-assign isizekb = package.isize | divided_by: 1024-%}
+{%-assign isizemb = package.isize | divided_by: 1024 | divided_by: 1024-%}
+{%-assign isizegb = package.isize | divided_by: 1024 | divided_by: 1024 | divided_by: 1024-%}
+{%-assign csizekb = package.csize | divided_by: 1024-%}
+{%-assign csizemb = package.csize | divided_by: 1024 | divided_by: 1024-%}
+{%-assign csizegb = package.csize | divided_by: 1024 | divided_by: 1024 | divided_by: 1024-%}
+{%-if isizegb > 0-%}
+	{%-assign isize = isizegb | append: " GB"-%}
+{%-elsif isizemb > 0-%}
+	{%-assign isize = isizemb | append: " MB"-%}
+{%-elsif isizekb > 0-%}
+	{%-assign isize = isizekb | append: " KB"-%}
 {% else %}
 	{%-assign isize = package.isize | append: " Bytes"-%}
+{% endif %}
+{%-if csizegb > 0-%}
+	{%-assign csize = csizegb | append: " GB"-%}
+{%-elsif csizemb > 0-%}
+	{%-assign csize = csizemb | append: " MB"-%}
+{%-elsif csizekb > 0-%}
+	{%-assign csize = csizekb | append: " KB"-%}
+{% else %}
+	{%-assign csize = package.csize | append: " Bytes"-%}
 {% endif %}
 {%-comment-%}
 	TODO: Use package.arch in the download URL above when possible
@@ -36,6 +48,7 @@ layout: "default"
 {%-if package.conflicts.size > 0-%}
 		<tr><th data-localize="pkg_conflicts">Conflicts:</th>     <td>{{ package.conflicts |join:', ' }}</td></tr>
 {%-endif-%}
+		<tr><th data-localize="pkg_csize">Package Size:</th><td>{{ csize }}</td></tr>
 		<tr><th data-localize="pkg_isize">Installed Size:</th><td>{{ isize }}</td></tr>
 		<tr><th data-localize="pkg_builddate">Build Date:</th>    <td>{{ package.builddate |split: 'T' |join: ' ' }} UTC</td></tr>
 	</tbody>

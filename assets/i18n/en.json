@@ -40,6 +40,7 @@
   "pkg_ver": "Version:",
   "pkg_desc": "Description:",
   "pkg_dl": "Download",
+  "pkg_csize": "Package Size:",
   "pkg_isize": "Installed Size:",
   "pkg_license": "License(s):",
   "pkg_provides": "Provides:",
