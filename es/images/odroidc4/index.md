@@ -26,9 +26,9 @@ detalles pueden ser vistos en la [C4 hardkernel wiki] o [HC4 hardkernel wiki].
 * Paquete de U-boot con ganchos que actualizan el boot.ini automaticamente si
   un kernel distinto es instalado, lo que ayuda a prevenir fallos del inicio de
   sistema.
-* Un paquete de mesa-devel mas actualizado con los cambios más recientes de
-  panfrost para un mejor rendimiento gráfico en las imagenes que incluyen un
-  entorno de escritorio.
+* Un paquete de `mesa` (`mesa-devel`, `mesa-devel-git`) mas actualizado que incluye
+  los cambios más recientes de panfrost para un mejor rendimiento gráfico en las
+  imagenes que incluyen un entorno de escritorio.
 
 ### Instalación
 
