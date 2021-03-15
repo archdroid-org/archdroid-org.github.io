@@ -49,10 +49,11 @@ if($("#page-not-found").length > 0){
 		localStorage.setItem("redirections", redirections);
 
 		var path_parts=location.pathname.split("/");
+		var path_extra = location.search + location.hash;
 
 		// Redirect from /path to /user-lang-code/path
 		if(path_parts[1] != default_lang && path_parts[1] != current_lang){
-			location.href = "/" + current_lang + location.pathname;
+			location.href = "/" + current_lang + location.pathname + path_extra;
 			page_loading = true;
 		}
 		// Redirects /user-lang-code/path to /default-lang-code/path
@@ -60,15 +61,15 @@ if($("#page-not-found").length > 0){
 		else if(path_parts[1] != default_lang){
 			if(path_parts[1] == current_lang){
 				path_parts[1] = default_lang;
-				location.href = path_parts.join("/");
+				location.href = path_parts.join("/") + path_extra;
 			} else{
-				location.href = "/" + default_lang + location.pathname;
+				location.href = "/" + default_lang + location.pathname + path_extra;
 			}
 			page_loading = true;
 		// As last resort from /lang-code/path to /path
 		} else{
 			path_parts.splice(1, 1);
-			location.href = path_parts.join("/");
+			location.href = path_parts.join("/") + path_extra;
 			page_loading = true;
 		}
 	}
@@ -81,8 +82,14 @@ $(document).ready(function(){
 	if(!page_loading)
 		$("body").css("visibility", "visible").hide().fadeIn("fast");
 
-	$("#language-menu a").on("click", function(){
+	$("#language-menu a").on("click", function(e){
 		localStorage.setItem("language", $(this).attr("data-lang"));
+		var path_parts = location.pathname.split("/");
+		if(path_parts[1] == current_lang){
+			path_parts[1] = $(this).attr("data-lang");
+		}
+		location.href = path_parts.join("/") + location.search + location.hash;
+		e.preventDefault();
 	});
 
 	var language_image_parts=$("#language-image").attr("src").split("/");
