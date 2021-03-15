@@ -1,0 +1,26 @@
+</div>
+
+<div id="news">
+<h3>
+<a href="{{ '/news/' | relative_url }}"
+	title="Browse the news archives"
+	data-localize="news_latest">Latest News
+</a>
+<span class="arrow"></span>
+</h3>
+
+<div markdown="1">
+{% include post_recent.liquid %}
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<h3 class="box-title" data-localize="pkgs_updates">Recent Updates</h3>
+<div class="box box-right" markdown="1">
+{% include archdroid/package_updates.liquid %}
+</div>
+</div>
+
+</div>
+</div>

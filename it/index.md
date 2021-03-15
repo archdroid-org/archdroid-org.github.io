@@ -1,10 +1,9 @@
 ---
 title: "Home"
-lang: "it"
+no_h1_title: true
 ---
-**Avviso: questo sito è ancora in fase di sviluppo**
+{% include archdroid/home-top.liquid %}
 
-<div class="box" markdown="1">
 ## {{ site.name }}
 
 Il progetto Archdroid consiste in un set di strumenti e pacchetti aggiuntivi per
@@ -22,10 +21,11 @@ strumenti e i pacchetti su cui abbiamo lavorato e per contribuire ai vari
 repository sulla nostra [Organizzazione GitHub].
 
 **Buon divertimento!**
-</div>
 
 [ArchLinuxARM]:          https://archlinuxarm.org
 [Organizzazione GitHub]: https://github.com/archdroid-org
 [HardKernel]:            https://www.hardkernel.com/
-[Odroid N2/N2+]:         https://www.hardkernel.com/shop/odroid-n2-with-4gbyte-ram-2/
-[Odroid C4/HC4]:         https://www.hardkernel.com/shop/odroid-c4/
+[Odroid N2/N2+]:       /it/images/odroidn2/
+[Odroid C4/HC4]:       /it/images/odroidc4/
+
+{% include archdroid/home-bottom.liquid %}

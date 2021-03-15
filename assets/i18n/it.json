@@ -1,0 +1,59 @@
+{
+  "devices_device": "Dispositivo",
+  "devices_images": "Immagini",
+  "devices_view": "Visualizza",
+  "footer_copyright": "Copyright",
+  "footer_team": "Team Archdroid",
+  "images_environment": "Ambiente Desktop",
+  "images_environment_tooltip":
+  {
+    "title": "Dettagli su questo ambiente desktop"
+  },
+  "images_info_download": "Info &amp; Scarica",
+  "images_info_download_tooltip":
+  {
+    "title": "Registro modifiche su questa immagine"
+  },
+  "menu_feed": "Feed",
+  "menu_follow_us": "Seguici",
+  "menu_images": "Immagini",
+  "menu_mirrors": "Mirror",
+  "menu_news": "Notizie",
+  "menu_packages": "Pacchetti",
+  "menu_search": "Ricerca",
+  "mirrors_header_name": "Nome",
+  "mirrors_header_url": "URL",
+  "mirrors_title": "Mirror",
+  "news_archive": "Archivio Notizie",
+  "news_archive_content": "Lista di tutte le news, in ordine cronologico partendo dalla più recente.",
+  "news_at": "in",
+  "news_author": "Autore",
+  "news_by": "da",
+  "news_date": "Data",
+  "news_latest": {
+    "text": "Ultime Notizie",
+    "title": "Sfoglia l'archivio delle notizie"
+  },
+  "news_post": "Post",
+  "pkg_builddate": "Data di Costruzione:",
+  "pkg_conflicts": "Conflitti:",
+  "pkg_desc": "Descrizione:",
+  "pkg_dl": "Scarica",
+  "pkg_isize": "Dimensioni Installate:",
+  "pkg_license": "Licenza:",
+  "pkg_provides": "Fornisce:",
+  "pkg_src": "Sorgenti",
+  "pkg_url": "URL A Monte:",
+  "pkgs_desc": "Descrizione",
+  "pkgs_name": "Nome",
+  "pkgs_title": "Pacchetti",
+  "pkgs_updates": "Ultimi Aggiornamenti",
+  "pkgs_updates_info": {
+    "title": "visualizzare le informazioni sui pacchetti"
+  },
+  "pkgs_ver": "Versione",
+  "site_scroll_top": "Torna Su",
+  "site_search": "Ricerca",
+  "team_name": "Nome",
+  "team_contrib": "Contributi"
+}

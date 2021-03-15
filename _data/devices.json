@@ -1,10 +1,44 @@
 [
 	{
-		"name": "Odroid N2/N2+",
-		"path": "/images/odroidn2"
+		"name": "Odroid C4/HC4",
+		"id": "odroidc4",
+		"images":
+		[
+			{
+				"name": "Gnome",
+				"url": "https://mega.nz/file/WFlAFRYZ#qznp4Kjn74fimAlb_NMI3RvOD4bKFD7RiIkm1QAbA2o"
+			},
+			{
+				"name": "Xfce",
+				"url": "https://mega.nz/file/3M92mD5K#IeP0HTWSM3Ditp_E6CUDsRoX__P_APOFk4EvE_GUIxA"
+			},
+			{
+				"name": "Wayfire",
+				"url": "https://mega.nz/file/CRll2KjB#0tSyAjs-2a2JZ7oF2XgZIjD1JjF41UT3uLDPKxIyvEY"
+			}
+		]
 	},
 	{
-		"name": "Odroid C4/HC4",
-		"path": "/images/odroidc4"
+		"name": "Odroid N2/N2+",
+		"id": "odroidn2",
+		"images":
+		[
+			{
+				"name": "Headless",
+				"url": "https://mega.nz/file/2Q9lTIbR#Kinzc-vlmI4c7IgUqn4-96E62GYvSH4hHqinzKJxOhw"
+			},
+			{
+				"name": "Gnome",
+				"url": "https://mega.nz/file/iIty1LhY#0DzhzmMhCqOujy1aUceywo8SWan9ox4_Wm23hDztYXM"
+			},
+			{
+				"name": "Xfce",
+				"url": "https://mega.nz/file/zEkw2Jgb#R14x4WXDvMtn3QaVNHlYIe9bq25kZoH-ddxYGTS5jdM"
+			},
+			{
+				"name": "Wayfire",
+				"url": "https://mega.nz/file/HMkEQZRR#ZFGNop8u9x_SIfCF4_wkC91UWfmt2hGPU7MpqA9APZc"
+			}
+		]
 	}
 ]

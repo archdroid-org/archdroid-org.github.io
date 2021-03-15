@@ -33,7 +33,7 @@ exclude:
 - package-lock.json
 - Rakefile
 - README.md
-- setup.sh
+- site
 - TODO.md
 - yarn.lock
 - yarn-error.log

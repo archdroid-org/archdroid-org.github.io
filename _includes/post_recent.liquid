@@ -12,8 +12,12 @@
     </div>
     <div class="col-md text-right">
       <p class="timestamp">
-				{% if post.author %}{{ t.posted_by }}{{ post.author }}{% endif %}
-				{{ t.posted_on }}<time datetime="{{ post.date | datetime | date_to_xmlschema }}"
+			{% if post.author %}
+				<span data-localize="news_by">{{ t.posted_by }}</span>
+				{{ post.author }}
+			{% endif %}
+				<span data-localize="news_at">{{ t.posted_on }}</span>
+				<time datetime="{{ post.date | datetime | date_to_xmlschema }}"
 				{%-if updated-%}data-updated="true"{%-endif-%}>
 				{{ post.date | date: post.date_fmt }}</time>
 			</p>
@@ -29,5 +33,7 @@
 
 <p class="text-center" style="margin-top: 2em;">
 	<a class="btn btn-lg btn-default" href="{{ '/news/archive/' | relative_url }}">
-		<i class="fa fa-calendar fa-fw"></i>{{ t.news_archive }}</a>
+		<i class="fa fa-calendar fa-fw"></i>
+		<span data-localize="news_archive">{{ t.news_archive }}</span>
+	</a>
 </p>

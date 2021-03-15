@@ -1,25 +1,25 @@
 navigation:
 - label: "Packages"
-  url: "/packages"
+  url: "/packages/"
 
 - label: "Mirrors"
-  url: "/mirrors"
+  url: "/en/mirrors/"
 
 - label: "Images"
-  url: "/images"
+  url: "/en/images/"
 
 - label: "Follow Us"
   type: "dropdown"
   pages:
-  - label: GitHub
+  - label: "GitHub"
     url: https://github.com/archdroid-org/
     icon_type: github
     icon_category: fab
 
-  - label: Feed
+  - label: "Feed"
     url: /atom.xml
     icon_type: rss
     icon_category: fas
 
 - label: "News"
-  url: "/news"
+  url: "/news/"

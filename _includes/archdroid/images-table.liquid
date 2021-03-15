@@ -1,0 +1,51 @@
+
+<table
+	id="table-disk-images"
+	class="table table-hover"
+>
+	<thead>
+		<tr>
+			<th>
+				<span data-localize="images_environment">Environment</span>
+			</th>
+			<th>
+				<span data-localize="images_info_download">Info &amp; Download</span>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+	{%-assign device = site.data.devices | where: "id", include.id | first-%}
+	{%-for image in device.images-%}
+		{%-assign image_name = image.name | downcase-%}
+		{%-assign env_page   = "/en/env/"    | append: image_name | relative_url-%}
+		{%-assign image_page = "/changes/images/" | append: device.id |
+			 append: "/#" | append: image_name | relative_url-%}
+	<tr>
+		<td>
+			<a
+				href="{{ env_page }}"
+				title="Details about this environment"
+				data-localize="images_environment_tooltip"
+			>
+				{{ image.name }}
+			</a>
+		</td>
+		<td>
+			<a
+				href="{{ image_page }}"
+				title="Changes log of this image"
+				data-localize="images_info_download_tooltip"
+			>
+				<i class="fas fa-clipboard-list"></i>
+			</a>
+			<a
+				target="_blank"
+				href="{{ image.url }}"
+			>
+				<i class="fas fa-download"></i>
+			</a>
+		</td>
+	</tr>
+	{%-endfor-%}
+	</tbody>
+</table>

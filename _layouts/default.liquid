@@ -8,14 +8,23 @@
 {% else %}
 	<body>
 {% endif %}
-	<button onclick="topFunction()" id="scrollButton" title="Go to top">Top</button>
+	<button
+		data-localize="site_scroll_top"
+		onclick="topFunction()"
+		id="scrollButton"
+		title="Go to top"
+	>
+		Top
+	</button>
 	<a href="#content" class="sr-only">Skip to content</a>
 {% include header.liquid %}
 	<div class="container-fluid">
 		<div id="content">
 			<article>
-				{%comment%}<h1>{{ page.title }}</h1>{%endcomment%}
-{{ content }}
+{% if page.no_h1_title == false %}
+				<h1>{{ page.title }}</h1>
+{% endif %}
+				{{ content }}
 			</article>
 		</div>
 {% include footer.liquid %}

@@ -10,7 +10,7 @@
 				{{ pkg.name }} {{ pkg.version | append: "-" | append: pkg.release | truncate: 10 }}
 			</td>
 			<td>
-				<a title="view package info" href="{{ '/packages/' | append: pkg.name | relative_url }}">
+				<a data-localize="pkgs_updates_info" title="view package info" href="{{ '/packages/' | append: pkg.name | relative_url }}">
 					<i class="fas fa-info-circle"></i>
 				</a>
 			</td>
