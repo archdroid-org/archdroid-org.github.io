@@ -888,10 +888,10 @@
     "license": "GPL",
     "version": "1",
     "release": "1",
-    "builddate": "2021-03-16T05:00:55",
+    "builddate": "2021-03-16T07:02:59",
     "depends": ["python", "python-setuptools", "python-pip", "gcc"],
     "repodepends": ["ttf-dseg"],
-    "csize": 22758,
+    "csize": 22747,
     "isize": 37281
   },
   {
@@ -1005,8 +1005,8 @@
     "license": "OFL",
     "version": "1:0.45",
     "release": "1",
-    "builddate": "2021-03-16T05:01:03",
-    "csize": 118617,
+    "builddate": "2021-03-16T07:03:06",
+    "csize": 118583,
     "isize": 1527103
   },
   {
