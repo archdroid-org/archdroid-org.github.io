@@ -322,14 +322,14 @@
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.12.y",
     "license": "GPL2",
     "version": "5.12",
-    "release": "2",
-    "builddate": "2021-03-08T06:02:02",
+    "release": "3",
+    "builddate": "2021-03-16T10:01:36",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 64879946,
-    "isize": 192300522
+    "csize": 64966860,
+    "isize": 192599772
   },
   {
     "base": "linux-amlogic-512",
@@ -339,11 +339,11 @@
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.12.y",
     "license": "GPL2",
     "version": "5.12",
-    "release": "2",
-    "builddate": "2021-03-08T06:02:02",
+    "release": "3",
+    "builddate": "2021-03-16T10:01:36",
     "conflicts": ["linux-headers"],
-    "csize": 12745034,
-    "isize": 48995328
+    "csize": 12746106,
+    "isize": 48998714
   },
   {
     "base": "linux-amlogic-exp",
