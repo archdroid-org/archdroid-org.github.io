@@ -1,34 +1,14 @@
 [
   {
-    "base": "dkms-mali-bifrost",
-    "name": "dkms-mali-bifrost",
-    "arch": "aarch64",
-    "description": "Mali kernel driver for bifrost hardware in DKMS format.",
-    "url": "http://ppa.linuxfactory.or.kr",
-    "license": "GPL",
-    "version": "24.0",
-    "release": "3",
-    "builddate": "2021-03-16T22:23:33",
-    "depends": [
-      "linux>=5.6",
-      "linux<=5.12",
-      "linux-headers>=5.6",
-      "linux-headers<=5.12",
-      "dkms"
-    ],
-    "csize": 607616,
-    "isize": 2792071
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.136542.8205cce0073",
+    "version": "21.1.0_devel.136544.f3a7a8a4dcb",
     "release": "1",
-    "builddate": "2021-03-16T22:01:43",
+    "builddate": "2021-03-16T22:37:42",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -61,8 +41,28 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 27329707,
+    "csize": 27329887,
     "isize": 84152849
+  },
+  {
+    "base": "dkms-mali-bifrost",
+    "name": "dkms-mali-bifrost",
+    "arch": "aarch64",
+    "description": "Mali kernel driver for bifrost hardware in DKMS format.",
+    "url": "http://ppa.linuxfactory.or.kr",
+    "license": "GPL",
+    "version": "24.0",
+    "release": "3",
+    "builddate": "2021-03-16T22:23:33",
+    "depends": [
+      "linux>=5.6",
+      "linux<=5.12",
+      "linux-headers>=5.6",
+      "linux-headers<=5.12",
+      "dkms"
+    ],
+    "csize": 607616,
+    "isize": 2792071
   },
   {
     "base": "linux-amlogic-512",
