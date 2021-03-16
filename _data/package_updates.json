@@ -1,5 +1,25 @@
 [
   {
+    "base": "dkms-mali-bifrost",
+    "name": "dkms-mali-bifrost",
+    "arch": "aarch64",
+    "description": "Mali kernel driver for bifrost hardware in DKMS format.",
+    "url": "http://ppa.linuxfactory.or.kr",
+    "license": "GPL",
+    "version": "24.0",
+    "release": "3",
+    "builddate": "2021-03-16T22:23:33",
+    "depends": [
+      "linux>=5.6",
+      "linux<=5.12",
+      "linux-headers>=5.6",
+      "linux-headers<=5.12",
+      "dkms"
+    ],
+    "csize": 607616,
+    "isize": 2792071
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -262,33 +282,5 @@
     ],
     "csize": 12743404,
     "isize": 48734503
-  },
-  {
-    "base": "linux-odroid-511",
-    "name": "linux-odroid-511",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.11.y",
-    "license": "GPL2",
-    "version": "5.11.4",
-    "release": "1",
-    "builddate": "2021-03-11T01:01:49",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 70200503,
-    "isize": 124136244
   }
 ]
