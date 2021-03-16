@@ -660,14 +660,14 @@
     "description": "Open-source implementation of the OpenGL specification (latest alyssa branch)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.136302.61b837baa4a",
+    "version": "21.1.0_devel.136300.f003024b810",
     "release": "1",
-    "builddate": "2021-03-13T01:01:59",
+    "builddate": "2021-03-13T04:02:29",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-panfrost-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 27294276,
-    "isize": 84038161
+    "csize": 27292940,
+    "isize": 84029969
   },
   {
     "base": "mesa-bbrezillon-git",
@@ -709,14 +709,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.136409.a04a797b89b",
+    "version": "21.1.0_devel.136502.616720d6aec",
     "release": "1",
-    "builddate": "2021-03-12T22:35:32",
+    "builddate": "2021-03-16T04:03:02",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 27322553,
-    "isize": 84148753
+    "csize": 27323354,
+    "isize": 84124177
   },
   {
     "base": "mesa-icecream95-git",
@@ -880,6 +880,21 @@
     "isize": 18486768
   },
   {
+    "base": "odroid-oled",
+    "name": "odroid-oled",
+    "arch": "any",
+    "description": "Odroid Oled Package for N2, C4 & C4",
+    "url": "https://github.com/tobetter/odroid-homecloud",
+    "license": "GPL",
+    "version": "1",
+    "release": "1",
+    "builddate": "2021-03-16T05:00:55",
+    "depends": ["python", "python-setuptools", "python-pip", "gcc"],
+    "repodepends": ["ttf-dseg"],
+    "csize": 22758,
+    "isize": 37281
+  },
+  {
     "base": "openarena",
     "name": "openarena",
     "arch": "aarch64",
@@ -982,6 +997,19 @@
     "isize": 335744729
   },
   {
+    "base": "ttf-dseg",
+    "name": "ttf-dseg",
+    "arch": "any",
+    "description": "Font family that imitates seven and fourteen segment displays",
+    "url": "http://www.keshikan.net/fonts-e.html",
+    "license": "OFL",
+    "version": "1:0.45",
+    "release": "1",
+    "builddate": "2021-03-16T05:01:03",
+    "csize": 118617,
+    "isize": 1527103
+  },
+  {
     "base": "uboot-odroid-c4",
     "name": "uboot-odroid-c4",
     "arch": "aarch64",
@@ -1018,14 +1046,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1426.cb1c7ea",
+    "version": "r1437.b1dd620",
     "release": "1",
-    "builddate": "2021-02-23T09:04:37",
+    "builddate": "2021-03-15T10:09:25",
     "depends": ["gtkmm3", "libjsoncpp.so=24-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 348863,
-    "isize": 850916
+    "csize": 347752,
+    "isize": 838678
   },
   {
     "base": "wayfire",

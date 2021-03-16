@@ -1,48 +1,38 @@
 [
   {
-    "base": "mesa-alyssa-git",
-    "name": "mesa-alyssa-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest alyssa branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.136302.61b837baa4a",
+    "base": "ttf-dseg",
+    "name": "ttf-dseg",
+    "arch": "any",
+    "description": "Font family that imitates seven and fourteen segment displays",
+    "url": "http://www.keshikan.net/fonts-e.html",
+    "license": "OFL",
+    "version": "1:0.45",
     "release": "1",
-    "builddate": "2021-03-13T01:01:59",
+    "builddate": "2021-03-16T05:01:03",
+    "csize": 118617,
+    "isize": 1527103
+  },
+  {
+    "base": "odroid-oled",
+    "name": "odroid-oled",
+    "arch": "any",
+    "description": "Odroid Oled Package for N2, C4 & C4",
+    "url": "https://github.com/tobetter/odroid-homecloud",
+    "license": "GPL",
+    "version": "1",
+    "release": "1",
+    "builddate": "2021-03-16T05:00:55",
     "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
+      "python",
+      "python-setuptools",
+      "python-pip",
+      "gcc"
     ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-panfrost-git"
+    "repodepends": [
+      "ttf-dseg"
     ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 27294276,
-    "isize": 84038161
+    "csize": 22758,
+    "isize": 37281
   },
   {
     "base": "mesa-devel-git",
@@ -51,9 +41,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.136409.a04a797b89b",
+    "version": "21.1.0_devel.136502.616720d6aec",
     "release": "1",
-    "builddate": "2021-03-12T22:35:32",
+    "builddate": "2021-03-16T04:03:02",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -86,8 +76,88 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 27322553,
-    "isize": 84148753
+    "csize": 27323354,
+    "isize": 84124177
+  },
+  {
+    "base": "waybar-git",
+    "name": "waybar-git",
+    "arch": "aarch64",
+    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
+    "url": "https://github.com/Alexays/Waybar/",
+    "license": "MIT",
+    "version": "r1437.b1dd620",
+    "release": "1",
+    "builddate": "2021-03-15T10:09:25",
+    "depends": [
+      "gtkmm3",
+      "libjsoncpp.so=24-64",
+      "libinput",
+      "libsigc++",
+      "fmt",
+      "wayland",
+      "chrono-date",
+      "libspdlog.so=1-64",
+      "gtk-layer-shell",
+      "libpulse",
+      "libnl",
+      "libappindicator-gtk3",
+      "libdbusmenu-gtk3",
+      "libmpdclient"
+    ],
+    "optdepends": [
+      "otf-font-awesome: Icons in the default configuration"
+    ],
+    "conflicts": [
+      "waybar"
+    ],
+    "csize": 347752,
+    "isize": 838678
+  },
+  {
+    "base": "mesa-alyssa-git",
+    "name": "mesa-alyssa-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (latest alyssa branch)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.1.0_devel.136300.f003024b810",
+    "release": "1",
+    "builddate": "2021-03-13T04:02:29",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl",
+      "mesa-panfrost-git"
+    ],
+    "conflicts": [
+      "vulkan-mesa-layers",
+      "opencl-mesa",
+      "vulkan-swrast",
+      "libva-mesa-driver",
+      "mesa-vdpau",
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 27292940,
+    "isize": 84029969
   },
   {
     "base": "mesa-icecream95-git",
@@ -234,120 +304,5 @@
     ],
     "csize": 42503685,
     "isize": 96470727
-  },
-  {
-    "base": "codeblocks-svn",
-    "name": "codeblocks-svn",
-    "arch": "aarch64",
-    "description": "An open source and cross-platform C/C++ IDE",
-    "url": "http://www.codeblocks.org",
-    "license": "GPL",
-    "version": "20.03.r12302",
-    "release": "1",
-    "builddate": "2021-03-09T05:02:21",
-    "depends": [
-      "wxgtk3",
-      "valgrind",
-      "bzip2",
-      "hicolor-icon-theme",
-      "hunspell",
-      "webkit2gtk"
-    ],
-    "conflicts": [
-      "codeblocks",
-      "codeblocks-svn-noplugins"
-    ],
-    "csize": 16694965,
-    "isize": 50038337
-  },
-  {
-    "base": "mesa-devel",
-    "name": "mesa-devel",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (Development version pinned to a stable and tested commit)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.134821.c7725ad4aa2",
-    "release": "1",
-    "builddate": "2021-03-09T03:24:54",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-arm"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 26549440,
-    "isize": 74979650
-  },
-  {
-    "base": "mesa-bbrezillon-git",
-    "name": "mesa-bbrezillon-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest bbrezillon branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.135237.35cd2e7bff0",
-    "release": "1",
-    "builddate": "2021-03-09T02:41:20",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "optdepends": [
-      "opengl-man-pages: for the OpenGL API man pages",
-      "mesa-vdpau: for accelerated video playback",
-      "libva-mesa-driver: for accelerated video playback"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-bifrost-git"
-    ],
-    "conflicts": [
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 4723252,
-    "isize": 14264513
   }
 ]
