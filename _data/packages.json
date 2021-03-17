@@ -709,14 +709,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.136554.fdbcb58c068",
+    "version": "21.1.0_devel.136559.d9fcf5de55a",
     "release": "1",
-    "builddate": "2021-03-17T01:05:17",
+    "builddate": "2021-03-17T01:28:38",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 27334856,
-    "isize": 84099601
+    "csize": 27329727,
+    "isize": 84103697
   },
   {
     "base": "mesa-icecream95-git",
