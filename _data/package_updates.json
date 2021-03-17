@@ -1,5 +1,49 @@
 [
   {
+    "base": "linux-amlogic-512",
+    "name": "linux-amlogic-512-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.12.y",
+    "license": "GPL2",
+    "version": "5.12",
+    "release": "3",
+    "builddate": "2021-03-17T05:24:35",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 12738985,
+    "isize": 48952616
+  },
+  {
+    "base": "linux-amlogic-512",
+    "name": "linux-amlogic-512",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.12.y",
+    "license": "GPL2",
+    "version": "5.12",
+    "release": "3",
+    "builddate": "2021-03-17T05:24:35",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 58236648,
+    "isize": 162885210
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -222,68 +266,5 @@
     ],
     "csize": 27292940,
     "isize": 84029969
-  },
-  {
-    "base": "mesa-icecream95-git",
-    "name": "mesa-icecream95-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.136282.b837e953c3b",
-    "release": "1",
-    "builddate": "2021-03-12T22:02:27",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 27313719,
-    "isize": 84025873
-  },
-  {
-    "base": "retux",
-    "name": "retux",
-    "arch": "aarch64",
-    "description": "Action platformer loosely inspired by the Mario games, utilizing the art assets from the SuperTux project.",
-    "url": "https://retux-game.github.io/",
-    "license": "GPL3",
-    "version": "1.4.1",
-    "release": "2",
-    "builddate": "2021-03-10T19:58:17",
-    "depends": [
-      "python-pygame",
-      "sdl",
-      "sdl_image",
-      "sdl_mixer"
-    ],
-    "csize": 43038134,
-    "isize": 60224808
   }
 ]
