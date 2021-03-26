@@ -1,59 +1,14 @@
 [
   {
-    "base": "mesa-bbrezillon-git",
-    "name": "mesa-bbrezillon-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest bbrezillon branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.137084.63847e43598",
-    "release": "1",
-    "builddate": "2021-03-26T10:16:37",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "optdepends": [
-      "opengl-man-pages: for the OpenGL API man pages",
-      "mesa-vdpau: for accelerated video playback",
-      "libva-mesa-driver: for accelerated video playback"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-bifrost-git"
-    ],
-    "conflicts": [
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 4812137,
-    "isize": 15304068
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.137106.6298347ec71",
+    "version": "21.1.0_devel.137110.a3ee818b790",
     "release": "1",
-    "builddate": "2021-03-26T10:01:44",
+    "builddate": "2021-03-26T13:04:49",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -86,8 +41,53 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 27464073,
+    "csize": 27464282,
     "isize": 92124274
+  },
+  {
+    "base": "mesa-bbrezillon-git",
+    "name": "mesa-bbrezillon-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (latest bbrezillon branch)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.1.0_devel.137086.b65f440fe7c",
+    "release": "1",
+    "builddate": "2021-03-26T13:01:42",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "optdepends": [
+      "opengl-man-pages: for the OpenGL API man pages",
+      "mesa-vdpau: for accelerated video playback",
+      "libva-mesa-driver: for accelerated video playback"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl",
+      "mesa-bifrost-git"
+    ],
+    "conflicts": [
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 4811970,
+    "isize": 15295876
   },
   {
     "base": "linux-odroid-511",
