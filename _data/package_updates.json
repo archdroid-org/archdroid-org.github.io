@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (latest bbrezillon branch)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.137231.cd15a3a2a30",
+    "version": "21.1.0_devel.137232.cf53673df97",
     "release": "1",
-    "builddate": "2021-03-29T16:17:19",
+    "builddate": "2021-03-29T16:28:36",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 4817591,
-    "isize": 15304068
+    "csize": 4814022,
+    "isize": 15295876
   },
   {
     "base": "mesa-devel-git",
