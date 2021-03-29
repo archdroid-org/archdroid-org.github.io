@@ -1,5 +1,50 @@
 [
   {
+    "base": "mesa-bbrezillon-git",
+    "name": "mesa-bbrezillon-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (latest bbrezillon branch)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.1.0_devel.137231.cd15a3a2a30",
+    "release": "1",
+    "builddate": "2021-03-29T16:17:19",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "optdepends": [
+      "opengl-man-pages: for the OpenGL API man pages",
+      "mesa-vdpau: for accelerated video playback",
+      "libva-mesa-driver: for accelerated video playback"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl",
+      "mesa-bifrost-git"
+    ],
+    "conflicts": [
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 4817591,
+    "isize": 15304068
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -43,51 +88,6 @@
     ],
     "csize": 27479999,
     "isize": 92071026
-  },
-  {
-    "base": "mesa-bbrezillon-git",
-    "name": "mesa-bbrezillon-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest bbrezillon branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.137231.ee4a5b923f2",
-    "release": "1",
-    "builddate": "2021-03-29T16:02:14",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "optdepends": [
-      "opengl-man-pages: for the OpenGL API man pages",
-      "mesa-vdpau: for accelerated video playback",
-      "libva-mesa-driver: for accelerated video playback"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-bifrost-git"
-    ],
-    "conflicts": [
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 4814815,
-    "isize": 15304068
   },
   {
     "base": "waybar-git",
