@@ -660,14 +660,14 @@
     "description": "Open-source implementation of the OpenGL specification (latest alyssa branch)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.137322.70813c1c13b",
+    "version": "21.1.0_devel.136300.f003024b810",
     "release": "1",
-    "builddate": "2021-03-31T13:09:42",
+    "builddate": "2021-03-31T13:29:41",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-panfrost-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 28753681,
-    "isize": 97890578
+    "csize": 27294280,
+    "isize": 84029969
   },
   {
     "base": "mesa-bbrezillon-git",
