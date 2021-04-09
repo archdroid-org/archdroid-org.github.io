@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.137796.76c0217fb01",
+    "version": "21.1.0_devel.137797.cd6f8ce4a79",
     "release": "1",
-    "builddate": "2021-04-09T22:33:25",
+    "builddate": "2021-04-09T23:02:06",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,52 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 28938106,
-    "isize": 98460610
+    "csize": 28937750,
+    "isize": 98456514
+  },
+  {
+    "base": "mesa-icecream95-git",
+    "name": "mesa-icecream95-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.1.0_devel.137566.cc567983671",
+    "release": "1",
+    "builddate": "2021-04-09T22:56:55",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "conflicts": [
+      "vulkan-mesa-layers",
+      "opencl-mesa",
+      "vulkan-swrast",
+      "libva-mesa-driver",
+      "mesa-vdpau",
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 28814302,
+    "isize": 98042130
   },
   {
     "base": "uboot-odroid-n2plus",
@@ -175,50 +219,6 @@
     ],
     "csize": 57923344,
     "isize": 161937866
-  },
-  {
-    "base": "mesa-icecream95-git",
-    "name": "mesa-icecream95-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.137657.f951a70234a",
-    "release": "1",
-    "builddate": "2021-04-08T10:01:12",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 28907393,
-    "isize": 98222130
   },
   {
     "base": "linux-amlogic-512",
