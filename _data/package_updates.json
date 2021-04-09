@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.137781.e11df07e541",
+    "version": "21.1.0_devel.137796.76c0217fb01",
     "release": "1",
-    "builddate": "2021-04-09T16:45:40",
+    "builddate": "2021-04-09T22:33:25",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,140 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 28937843,
-    "isize": 98456514
+    "csize": 28938106,
+    "isize": 98460610
+  },
+  {
+    "base": "uboot-odroid-n2plus",
+    "name": "uboot-odroid-n2plus",
+    "arch": "aarch64",
+    "description": "U-Boot for ODROID-N2/N2+",
+    "url": "https://github.com/hardkernel/u-boot",
+    "license": "GPL",
+    "version": "2015.01.189",
+    "release": "1",
+    "builddate": "2021-04-09T22:33:08",
+    "depends": [
+      "uboot-tools",
+      "util-linux",
+      "gawk",
+      "sed"
+    ],
+    "conflicts": [
+      "uboot-odroid-n2"
+    ],
+    "csize": 581857,
+    "isize": 876022
+  },
+  {
+    "base": "uboot-odroid-c4",
+    "name": "uboot-odroid-c4",
+    "arch": "aarch64",
+    "description": "U-Boot for ODROID-C4/HC4",
+    "url": "https://github.com/hardkernel/u-boot",
+    "license": "GPL",
+    "version": "2015.01.189",
+    "release": "1",
+    "builddate": "2021-04-09T22:32:59",
+    "depends": [
+      "uboot-tools",
+      "util-linux",
+      "gawk",
+      "sed"
+    ],
+    "conflicts": [
+      "uboot-odroid-n2"
+    ],
+    "csize": 590942,
+    "isize": 886081
+  },
+  {
+    "base": "linux-odroid",
+    "name": "linux-odroid-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Amlogic",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.10.y",
+    "license": "GPL2",
+    "version": "5.10.27",
+    "release": "1",
+    "builddate": "2021-04-09T20:49:50",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 12494118,
+    "isize": 48250582
+  },
+  {
+    "base": "linux-odroid",
+    "name": "linux-odroid",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Amlogic",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.10.y",
+    "license": "GPL2",
+    "version": "5.10.27",
+    "release": "1",
+    "builddate": "2021-04-09T20:49:50",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 58790504,
+    "isize": 155234777
+  },
+  {
+    "base": "linux-odroid-511",
+    "name": "linux-odroid-511-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.11.y",
+    "license": "GPL2",
+    "version": "5.11.11",
+    "release": "1",
+    "builddate": "2021-04-09T19:01:59",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 12566499,
+    "isize": 48381871
+  },
+  {
+    "base": "linux-odroid-511",
+    "name": "linux-odroid-511",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.11.y",
+    "license": "GPL2",
+    "version": "5.11.11",
+    "release": "1",
+    "builddate": "2021-04-09T19:01:59",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 57923344,
+    "isize": 161937866
   },
   {
     "base": "mesa-icecream95-git",
@@ -131,183 +263,5 @@
     ],
     "csize": 58207104,
     "isize": 163396576
-  },
-  {
-    "base": "mesa-bbrezillon-git",
-    "name": "mesa-bbrezillon-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest bbrezillon branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.137500.0a34e44c70a",
-    "release": "1",
-    "builddate": "2021-04-02T16:01:28",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "optdepends": [
-      "opengl-man-pages: for the OpenGL API man pages",
-      "mesa-vdpau: for accelerated video playback",
-      "libva-mesa-driver: for accelerated video playback"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-bifrost-git"
-    ],
-    "conflicts": [
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 4816445,
-    "isize": 15283332
-  },
-  {
-    "base": "linux-odroid",
-    "name": "linux-odroid-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Amlogic",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.10.y",
-    "license": "GPL2",
-    "version": "5.10.25",
-    "release": "1",
-    "builddate": "2021-04-02T01:45:09",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 12493020,
-    "isize": 48244703
-  },
-  {
-    "base": "linux-odroid",
-    "name": "linux-odroid",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Amlogic",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.10.y",
-    "license": "GPL2",
-    "version": "5.10.25",
-    "release": "1",
-    "builddate": "2021-04-02T01:45:09",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 58713844,
-    "isize": 155269116
-  },
-  {
-    "base": "linux-odroid-511",
-    "name": "linux-odroid-511-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.11.y",
-    "license": "GPL2",
-    "version": "5.11.9",
-    "release": "1",
-    "builddate": "2021-04-01T23:55:47",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 12565951,
-    "isize": 48376900
-  },
-  {
-    "base": "linux-odroid-511",
-    "name": "linux-odroid-511",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.11.y",
-    "license": "GPL2",
-    "version": "5.11.9",
-    "release": "1",
-    "builddate": "2021-04-01T23:55:47",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 57879756,
-    "isize": 161779654
-  },
-  {
-    "base": "mesa-alyssa-git",
-    "name": "mesa-alyssa-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest alyssa branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.136300.f003024b810",
-    "release": "1",
-    "builddate": "2021-03-31T13:29:41",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-panfrost-git"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 27294280,
-    "isize": 84029969
   }
 ]
