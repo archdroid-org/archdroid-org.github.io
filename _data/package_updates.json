@@ -1,5 +1,49 @@
 [
   {
+    "base": "mesa-icecream95-git",
+    "name": "mesa-icecream95-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.1.0_devel.137569.58b09f18779",
+    "release": "1",
+    "builddate": "2021-04-10T04:13:44",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "conflicts": [
+      "vulkan-mesa-layers",
+      "opencl-mesa",
+      "vulkan-swrast",
+      "libva-mesa-driver",
+      "mesa-vdpau",
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 28812340,
+    "isize": 98046226
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -43,50 +87,6 @@
     ],
     "csize": 28936735,
     "isize": 98448322
-  },
-  {
-    "base": "mesa-icecream95-git",
-    "name": "mesa-icecream95-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.137657.f951a70234a",
-    "release": "1",
-    "builddate": "2021-04-10T01:02:06",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 28907089,
-    "isize": 98222130
   },
   {
     "base": "uboot-odroid-n2plus",
