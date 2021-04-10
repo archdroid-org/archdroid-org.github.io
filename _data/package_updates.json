@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.137797.cd6f8ce4a79",
+    "version": "21.1.0_devel.137800.51a812bb601",
     "release": "1",
-    "builddate": "2021-04-09T23:02:06",
+    "builddate": "2021-04-10T01:06:35",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 28937750,
-    "isize": 98456514
+    "csize": 28937364,
+    "isize": 98448322
   },
   {
     "base": "mesa-icecream95-git",
@@ -51,9 +51,9 @@
     "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.1.0_devel.137566.cc567983671",
+    "version": "21.1.0_devel.137657.f951a70234a",
     "release": "1",
-    "builddate": "2021-04-09T22:56:55",
+    "builddate": "2021-04-10T01:02:06",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -85,8 +85,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 28814302,
-    "isize": 98042130
+    "csize": 28907089,
+    "isize": 98222130
   },
   {
     "base": "uboot-odroid-n2plus",
