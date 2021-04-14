@@ -1,5 +1,93 @@
 [
   {
+    "base": "linux-odroid-511",
+    "name": "linux-odroid-511-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.11.y",
+    "license": "GPL2",
+    "version": "5.11.13",
+    "release": "1",
+    "builddate": "2021-04-14T19:58:15",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 12567905,
+    "isize": 48384904
+  },
+  {
+    "base": "linux-odroid-511",
+    "name": "linux-odroid-511",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.11.y",
+    "license": "GPL2",
+    "version": "5.11.13",
+    "release": "1",
+    "builddate": "2021-04-14T19:58:15",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 57924218,
+    "isize": 161941679
+  },
+  {
+    "base": "linux-amlogic-exp",
+    "name": "linux-amlogic-exp-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch (Experimental)",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.12.y",
+    "license": "GPL2",
+    "version": "5.12",
+    "release": "7",
+    "builddate": "2021-04-14T19:42:22",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 12742153,
+    "isize": 48963319
+  },
+  {
+    "base": "linux-amlogic-exp",
+    "name": "linux-amlogic-exp",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch (Experimental)",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.12.y",
+    "license": "GPL2",
+    "version": "5.12",
+    "release": "7",
+    "builddate": "2021-04-14T19:42:22",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 58270387,
+    "isize": 163443947
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -198,87 +286,5 @@
     ],
     "csize": 581857,
     "isize": 876022
-  },
-  {
-    "base": "uboot-odroid-c4",
-    "name": "uboot-odroid-c4",
-    "arch": "aarch64",
-    "description": "U-Boot for ODROID-C4/HC4",
-    "url": "https://github.com/hardkernel/u-boot",
-    "license": "GPL",
-    "version": "2015.01.189",
-    "release": "1",
-    "builddate": "2021-04-09T22:32:59",
-    "depends": [
-      "uboot-tools",
-      "util-linux",
-      "gawk",
-      "sed"
-    ],
-    "conflicts": [
-      "uboot-odroid-n2"
-    ],
-    "csize": 590942,
-    "isize": 886081
-  },
-  {
-    "base": "linux-odroid",
-    "name": "linux-odroid-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Amlogic",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.10.y",
-    "license": "GPL2",
-    "version": "5.10.27",
-    "release": "1",
-    "builddate": "2021-04-09T20:49:50",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 12494118,
-    "isize": 48250582
-  },
-  {
-    "base": "linux-odroid",
-    "name": "linux-odroid",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Amlogic",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.10.y",
-    "license": "GPL2",
-    "version": "5.10.27",
-    "release": "1",
-    "builddate": "2021-04-09T20:49:50",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 58790504,
-    "isize": 155234777
-  },
-  {
-    "base": "linux-odroid-511",
-    "name": "linux-odroid-511-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.11.y",
-    "license": "GPL2",
-    "version": "5.11.11",
-    "release": "1",
-    "builddate": "2021-04-09T19:01:59",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 12566499,
-    "isize": 48381871
   }
 ]
