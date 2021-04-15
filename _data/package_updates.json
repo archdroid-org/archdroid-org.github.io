@@ -6,9 +6,9 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1453.07f2470",
+    "version": "r1456.5300461",
     "release": "1",
-    "builddate": "2021-04-15T19:15:15",
+    "builddate": "2021-04-15T19:21:16",
     "depends": [
       "gtkmm3",
       "libjsoncpp.so=24-64",
@@ -31,8 +31,8 @@
     "conflicts": [
       "waybar"
     ],
-    "csize": 351945,
-    "isize": 860151
+    "csize": 353226,
+    "isize": 856055
   },
   {
     "base": "mesa-devel-git",
