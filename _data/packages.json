@@ -269,6 +269,20 @@
     "isize": 46580672
   },
   {
+    "base": "libopenmpt",
+    "name": "libopenmpt",
+    "arch": "aarch64",
+    "description": "A cross-platform C++ and C library to decode tracked music files (modules) into a raw PCM audio stream.",
+    "url": "http://lib.openmpt.org/",
+    "license": "BSD",
+    "version": "0.5.8",
+    "release": "1",
+    "builddate": "2021-04-16T05:47:26",
+    "depends": ["zlib", "gcc-libs", "libvorbis", "mpg123"],
+    "csize": 810418,
+    "isize": 1912003
+  },
+  {
     "base": "libxmp",
     "name": "libxmp",
     "arch": "aarch64",
@@ -909,6 +923,20 @@
     "repooptdepends": ["odroid-gl4es: for accelerated graphics"],
     "csize": 411169093,
     "isize": 420060929
+  },
+  {
+    "base": "libopenmpt",
+    "name": "openmpt123",
+    "arch": "aarch64",
+    "description": "A cross-platform command-line or terminal based module file player.",
+    "url": "http://lib.openmpt.org/",
+    "license": "BSD",
+    "version": "0.5.8",
+    "release": "1",
+    "builddate": "2021-04-16T05:47:26",
+    "depends": ["libopenmpt=0.5.8", "portaudio", "libsndfile", "flac", "libpulse"],
+    "csize": 98734,
+    "isize": 233170
   },
   {
     "base": "retux",
