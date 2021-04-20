@@ -1,14 +1,49 @@
 [
   {
+    "base": "waybar-git",
+    "name": "waybar-git",
+    "arch": "aarch64",
+    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
+    "url": "https://github.com/Alexays/Waybar/",
+    "license": "MIT",
+    "version": "r1461.1c9b62d",
+    "release": "1",
+    "builddate": "2021-04-20T08:05:51",
+    "depends": [
+      "gtkmm3",
+      "libjsoncpp.so=24-64",
+      "libinput",
+      "libsigc++",
+      "fmt",
+      "wayland",
+      "chrono-date",
+      "libspdlog.so=1-64",
+      "gtk-layer-shell",
+      "libpulse",
+      "libnl",
+      "libappindicator-gtk3",
+      "libdbusmenu-gtk3",
+      "libmpdclient"
+    ],
+    "optdepends": [
+      "otf-font-awesome: Icons in the default configuration"
+    ],
+    "conflicts": [
+      "waybar"
+    ],
+    "csize": 354942,
+    "isize": 864325
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.138412.fcebdcb3b39",
+    "version": "21.2.0_devel.138420.106da39b19b",
     "release": "1",
-    "builddate": "2021-04-20T07:28:52",
+    "builddate": "2021-04-20T07:59:47",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,43 +76,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31653256,
-    "isize": 107220464
-  },
-  {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r1459.70e67c5",
-    "release": "1",
-    "builddate": "2021-04-18T19:02:59",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=24-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 354602,
-    "isize": 860215
+    "csize": 31656109,
+    "isize": 107232752
   },
   {
     "base": "wayfire",
