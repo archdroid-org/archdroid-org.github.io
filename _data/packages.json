@@ -476,15 +476,15 @@
     "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
     "url": "https://github.com/tobetter/linux/tree/odroid-5.11.y",
     "license": "GPL2",
-    "version": "5.11.13",
+    "version": "5.11.15",
     "release": "1",
-    "builddate": "2021-04-14T19:58:15",
+    "builddate": "2021-04-22T01:01:40",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 57924218,
-    "isize": 161941679
+    "csize": 57969101,
+    "isize": 161954571
   },
   {
     "base": "linux-odroid-511",
@@ -493,12 +493,12 @@
     "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
     "url": "https://github.com/tobetter/linux/tree/odroid-5.11.y",
     "license": "GPL2",
-    "version": "5.11.13",
+    "version": "5.11.15",
     "release": "1",
-    "builddate": "2021-04-14T19:58:15",
+    "builddate": "2021-04-22T01:01:40",
     "conflicts": ["linux-headers"],
-    "csize": 12567905,
-    "isize": 48384904
+    "csize": 12568664,
+    "isize": 48387605
   },
   {
     "base": "linux-odroid-c4",
