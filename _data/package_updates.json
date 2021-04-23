@@ -1,5 +1,50 @@
 [
   {
+    "base": "mesa-devel-git",
+    "name": "mesa-devel-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (development version)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.2.0_devel.138618.a12b844d401",
+    "release": "1",
+    "builddate": "2021-04-23T10:03:47",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl",
+      "mesa-arm-git"
+    ],
+    "conflicts": [
+      "vulkan-mesa-layers",
+      "opencl-mesa",
+      "vulkan-swrast",
+      "libva-mesa-driver",
+      "mesa-vdpau",
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 31697146,
+    "isize": 107319224
+  },
+  {
     "base": "mpv-sdl",
     "name": "mpv-sdl",
     "arch": "aarch64",
@@ -128,51 +173,6 @@
     ],
     "csize": 58242790,
     "isize": 163447348
-  },
-  {
-    "base": "mesa-devel-git",
-    "name": "mesa-devel-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (development version)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.2.0_devel.138617.79790e276f6",
-    "release": "1",
-    "builddate": "2021-04-23T04:03:13",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-arm-git"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 31698500,
-    "isize": 107343800
   },
   {
     "base": "linux-odroid-511",
