@@ -1,5 +1,135 @@
 [
   {
+    "base": "mpv-sdl",
+    "name": "mpv-sdl",
+    "arch": "aarch64",
+    "description": "a free, open source, and cross-platform media player",
+    "url": "https://mpv.io/",
+    "license": "GPL3",
+    "version": "1:0.33.1",
+    "release": "1",
+    "builddate": "2021-04-23T07:54:19",
+    "depends": [
+      "alsa-lib",
+      "libasound.so=2-64",
+      "desktop-file-utils",
+      "ffmpeg",
+      "libavcodec.so=58-64",
+      "libavdevice.so=58-64",
+      "libavfilter.so=7-64",
+      "libavformat.so=58-64",
+      "libavutil.so=56-64",
+      "libswresample.so=3-64",
+      "libswscale.so=5-64",
+      "glibc",
+      "hicolor-icon-theme",
+      "jack",
+      "libjack.so=0-64",
+      "lcms2",
+      "liblcms2.so=2-64",
+      "libarchive",
+      "libarchive.so=13-64",
+      "libass",
+      "libass.so=9-64",
+      "libbluray",
+      "libbluray.so=2-64",
+      "libcaca",
+      "libcdio",
+      "libcdio-paranoia",
+      "libdrm",
+      "libdvdnav",
+      "libdvdread",
+      "libegl",
+      "libgl",
+      "libglvnd",
+      "libjpeg",
+      "libjpeg.so=8-64",
+      "libplacebo",
+      "libplacebo.so=104-64",
+      "libpulse",
+      "libpulse.so=0-64",
+      "libva",
+      "libva.so=2-64",
+      "libva-drm.so=2-64",
+      "libva-wayland.so=2-64",
+      "libva-x11.so=2-64",
+      "libvdpau",
+      "libx11",
+      "libxext",
+      "libxinerama",
+      "libxkbcommon",
+      "libxkbcommon.so=0-64",
+      "libxrandr",
+      "libxss",
+      "libxv",
+      "lua52",
+      "mesa",
+      "mujs",
+      "rubberband",
+      "librubberband.so=2-64",
+      "shaderc",
+      "libshaderc_shared.so=1-64",
+      "uchardet",
+      "vulkan-icd-loader",
+      "wayland",
+      "xdg-utils",
+      "zlib",
+      "sdl2"
+    ],
+    "optdepends": [
+      "youtube-dl: for video-sharing websites playback"
+    ],
+    "conflicts": [
+      "mpv"
+    ],
+    "csize": 2497350,
+    "isize": 5635718
+  },
+  {
+    "base": "linux-amlogic-512",
+    "name": "linux-amlogic-512-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.12.y",
+    "license": "GPL2",
+    "version": "5.12",
+    "release": "9",
+    "builddate": "2021-04-23T07:01:09",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 12741641,
+    "isize": 48964207
+  },
+  {
+    "base": "linux-amlogic-512",
+    "name": "linux-amlogic-512",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.12.y",
+    "license": "GPL2",
+    "version": "5.12",
+    "release": "9",
+    "builddate": "2021-04-23T07:01:09",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 58242790,
+    "isize": 163447348
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -202,68 +332,5 @@
     ],
     "csize": 230163935,
     "isize": 561991360
-  },
-  {
-    "base": "srb2",
-    "name": "srb2",
-    "arch": "aarch64",
-    "description": "A 3D Sonic fan game based off of Doom Legacy (aka \"Sonic Robo Blast 2\")",
-    "url": "http://www.srb2.org",
-    "license": "GPL",
-    "version": "2.2.8",
-    "release": "1",
-    "builddate": "2021-04-16T06:19:25",
-    "depends": [
-      "sdl2_mixer",
-      "libpng",
-      "libgme"
-    ],
-    "repodepends": [
-      "libopenmpt"
-    ],
-    "conflicts": [
-      "srb2-data"
-    ],
-    "csize": 184648397,
-    "isize": 195759046
-  },
-  {
-    "base": "libopenmpt",
-    "name": "openmpt123",
-    "arch": "aarch64",
-    "description": "A cross-platform command-line or terminal based module file player.",
-    "url": "http://lib.openmpt.org/",
-    "license": "BSD",
-    "version": "0.5.8",
-    "release": "1",
-    "builddate": "2021-04-16T05:47:26",
-    "depends": [
-      "libopenmpt=0.5.8",
-      "portaudio",
-      "libsndfile",
-      "flac",
-      "libpulse"
-    ],
-    "csize": 98734,
-    "isize": 233170
-  },
-  {
-    "base": "libopenmpt",
-    "name": "libopenmpt",
-    "arch": "aarch64",
-    "description": "A cross-platform C++ and C library to decode tracked music files (modules) into a raw PCM audio stream.",
-    "url": "http://lib.openmpt.org/",
-    "license": "BSD",
-    "version": "0.5.8",
-    "release": "1",
-    "builddate": "2021-04-16T05:47:26",
-    "depends": [
-      "zlib",
-      "gcc-libs",
-      "libvorbis",
-      "mpg123"
-    ],
-    "csize": 810418,
-    "isize": 1912003
   }
 ]
