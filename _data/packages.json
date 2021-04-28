@@ -756,12 +756,12 @@
     "url": "https://mpv.io/",
     "license": "GPL3",
     "version": "1:0.33.1",
-    "release": "1",
-    "builddate": "2021-04-23T07:54:19",
-    "depends": ["alsa-lib", "libasound.so=2-64", "desktop-file-utils", "ffmpeg", "libavcodec.so=58-64", "libavdevice.so=58-64", "libavfilter.so=7-64", "libavformat.so=58-64", "libavutil.so=56-64", "libswresample.so=3-64", "libswscale.so=5-64", "glibc", "hicolor-icon-theme", "jack", "libjack.so=0-64", "lcms2", "liblcms2.so=2-64", "libarchive", "libarchive.so=13-64", "libass", "libass.so=9-64", "libbluray", "libbluray.so=2-64", "libcaca", "libcdio", "libcdio-paranoia", "libdrm", "libdvdnav", "libdvdread", "libegl", "libgl", "libglvnd", "libjpeg", "libjpeg.so=8-64", "libplacebo", "libplacebo.so=104-64", "libpulse", "libpulse.so=0-64", "libva", "libva.so=2-64", "libva-drm.so=2-64", "libva-wayland.so=2-64", "libva-x11.so=2-64", "libvdpau", "libx11", "libxext", "libxinerama", "libxkbcommon", "libxkbcommon.so=0-64", "libxrandr", "libxss", "libxv", "lua52", "mesa", "mujs", "rubberband", "librubberband.so=2-64", "shaderc", "libshaderc_shared.so=1-64", "uchardet", "vulkan-icd-loader", "wayland", "xdg-utils", "zlib", "sdl2"],
+    "release": "2",
+    "builddate": "2021-04-28T04:57:06",
+    "depends": ["alsa-lib", "libasound.so=2-64", "desktop-file-utils", "ffmpeg", "libavcodec.so=58-64", "libavdevice.so=58-64", "libavfilter.so=7-64", "libavformat.so=58-64", "libavutil.so=56-64", "libswresample.so=3-64", "libswscale.so=5-64", "glibc", "hicolor-icon-theme", "jack", "libjack.so=0-64", "lcms2", "liblcms2.so=2-64", "libarchive", "libarchive.so=13-64", "libass", "libass.so=9-64", "libbluray", "libbluray.so=2-64", "libcaca", "libcdio", "libcdio-paranoia", "libdrm", "libdvdnav", "libdvdread", "libegl", "libgl", "libglvnd", "libjpeg", "libjpeg.so=8-64", "libplacebo", "libplacebo.so=120-64", "libpulse", "libpulse.so=0-64", "libva", "libva.so=2-64", "libva-drm.so=2-64", "libva-wayland.so=2-64", "libva-x11.so=2-64", "libvdpau", "libx11", "libxext", "libxinerama", "libxkbcommon", "libxkbcommon.so=0-64", "libxrandr", "libxss", "libxv", "lua52", "mesa", "mujs", "rubberband", "librubberband.so=2-64", "shaderc", "libshaderc_shared.so=1-64", "uchardet", "vulkan-icd-loader", "wayland", "xdg-utils", "zlib", "sdl2"],
     "optdepends": ["youtube-dl: for video-sharing websites playback"],
     "conflicts": ["mpv"],
-    "csize": 2497350,
+    "csize": 2497600,
     "isize": 5635718
   },
   {
