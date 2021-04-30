@@ -723,14 +723,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.138917.f03da01fe37",
+    "version": "21.2.0_devel.138919.ab8e531cf03",
     "release": "1",
-    "builddate": "2021-04-30T19:16:11",
+    "builddate": "2021-04-30T22:45:14",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31749705,
-    "isize": 107581741
+    "csize": 31754109,
+    "isize": 107606317
   },
   {
     "base": "mesa-icecream95-git",
@@ -739,14 +739,14 @@
     "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.138919.ab8e531cf03",
+    "version": "21.2.0_devel.138496.38f0dd814d0",
     "release": "1",
-    "builddate": "2021-04-30T22:26:03",
+    "builddate": "2021-04-30T22:39:59",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 28982311,
-    "isize": 98412261
+    "csize": 28906248,
+    "isize": 98206936
   },
   {
     "base": "mpv-sdl",
