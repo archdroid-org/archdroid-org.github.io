@@ -36,10 +36,10 @@
     "license": "GPL",
     "version": "20.03.r12302",
     "release": "1",
-    "builddate": "2021-03-09T05:02:21",
+    "builddate": "2021-05-16T04:21:47",
     "depends": ["wxgtk3", "valgrind", "bzip2", "hicolor-icon-theme", "hunspell", "webkit2gtk"],
     "conflicts": ["codeblocks", "codeblocks-svn-noplugins"],
-    "csize": 16694965,
+    "csize": 16694691,
     "isize": 50038337
   },
   {
@@ -754,14 +754,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.139554.4791738d1d0",
+    "version": "21.2.0_devel.139599.6fcf3314d00",
     "release": "1",
-    "builddate": "2021-05-13T10:47:06",
+    "builddate": "2021-05-16T05:17:20",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31853922,
-    "isize": 107744324
+    "csize": 31858940,
+    "isize": 107748677
   },
   {
     "base": "mesa-icecream95-git",
@@ -770,14 +770,14 @@
     "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.139556.c353c730079",
+    "version": "21.2.0_devel.139599.189c2f02169",
     "release": "1",
-    "builddate": "2021-05-12T22:02:10",
+    "builddate": "2021-05-16T05:06:21",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 29059322,
-    "isize": 98524804
+    "csize": 29066876,
+    "isize": 98480005
   },
   {
     "base": "mpv-sdl",

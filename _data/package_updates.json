@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.139554.4791738d1d0",
+    "version": "21.2.0_devel.139599.6fcf3314d00",
     "release": "1",
-    "builddate": "2021-05-13T10:47:06",
+    "builddate": "2021-05-16T05:17:20",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31853922,
-    "isize": 107744324
+    "csize": 31858940,
+    "isize": 107748677
   },
   {
     "base": "mesa-icecream95-git",
@@ -51,9 +51,9 @@
     "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.139556.c353c730079",
+    "version": "21.2.0_devel.139599.189c2f02169",
     "release": "1",
-    "builddate": "2021-05-12T22:02:10",
+    "builddate": "2021-05-16T05:06:21",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -85,8 +85,33 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 29059322,
-    "isize": 98524804
+    "csize": 29066876,
+    "isize": 98480005
+  },
+  {
+    "base": "codeblocks-svn",
+    "name": "codeblocks-svn",
+    "arch": "aarch64",
+    "description": "An open source and cross-platform C/C++ IDE",
+    "url": "http://www.codeblocks.org",
+    "license": "GPL",
+    "version": "20.03.r12302",
+    "release": "1",
+    "builddate": "2021-05-16T04:21:47",
+    "depends": [
+      "wxgtk3",
+      "valgrind",
+      "bzip2",
+      "hicolor-icon-theme",
+      "hunspell",
+      "webkit2gtk"
+    ],
+    "conflicts": [
+      "codeblocks",
+      "codeblocks-svn-noplugins"
+    ],
+    "csize": 16694691,
+    "isize": 50038337
   },
   {
     "base": "waybar-git",
@@ -312,33 +337,5 @@
     ],
     "csize": 12742436,
     "isize": 48964487
-  },
-  {
-    "base": "linux-amlogic-512",
-    "name": "linux-amlogic-512",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.12.y",
-    "license": "GPL2",
-    "version": "5.12.0",
-    "release": "1",
-    "builddate": "2021-04-27T19:00:59",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 58226253,
-    "isize": 163434743
   }
 ]
