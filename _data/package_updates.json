@@ -1,5 +1,31 @@
 [
   {
+    "base": "glmark2-git",
+    "name": "glmark2-git",
+    "arch": "aarch64",
+    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
+    "url": "https://launchpad.net/glmark2",
+    "license": "GPL3",
+    "version": "r958.e5aa936",
+    "release": "1",
+    "builddate": "2021-05-21T07:51:03",
+    "depends": [
+      "libjpeg-turbo",
+      "libpng",
+      "libx11",
+      "libxcb",
+      "wayland",
+      "libgl",
+      "libgles",
+      "wayland-protocols"
+    ],
+    "conflicts": [
+      "glmark2"
+    ],
+    "csize": 8058756,
+    "isize": 15128137
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -321,21 +347,5 @@
     ],
     "csize": 2497600,
     "isize": 5635718
-  },
-  {
-    "base": "linux-amlogic-512",
-    "name": "linux-amlogic-512-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.12.y",
-    "license": "GPL2",
-    "version": "5.12.0",
-    "release": "1",
-    "builddate": "2021-04-27T19:00:59",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 12742436,
-    "isize": 48964487
   }
 ]
