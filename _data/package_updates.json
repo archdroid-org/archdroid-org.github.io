@@ -1,40 +1,14 @@
 [
   {
-    "base": "glmark2-git",
-    "name": "glmark2-git",
-    "arch": "aarch64",
-    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
-    "url": "https://launchpad.net/glmark2",
-    "license": "GPL3",
-    "version": "r958.e5aa936",
-    "release": "1",
-    "builddate": "2021-05-21T07:51:03",
-    "depends": [
-      "libjpeg-turbo",
-      "libpng",
-      "libx11",
-      "libxcb",
-      "wayland",
-      "libgl",
-      "libgles",
-      "wayland-protocols"
-    ],
-    "conflicts": [
-      "glmark2"
-    ],
-    "csize": 8058756,
-    "isize": 15128137
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.139880.8b180ab98b9",
+    "version": "21.2.0_devel.139881.77fcf700826",
     "release": "1",
-    "builddate": "2021-05-21T04:01:04",
+    "builddate": "2021-05-21T10:08:52",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -67,8 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31907850,
-    "isize": 108071203
+    "csize": 31907846,
+    "isize": 108079395
   },
   {
     "base": "mesa-icecream95-git",
@@ -77,9 +51,9 @@
     "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.139558.1d36739172c",
+    "version": "21.2.0_devel.139901.7fa4004260a",
     "release": "1",
-    "builddate": "2021-05-20T22:01:04",
+    "builddate": "2021-05-21T10:01:23",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -111,8 +85,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 29057899,
-    "isize": 98541188
+    "csize": 29134885,
+    "isize": 98971667
+  },
+  {
+    "base": "glmark2-git",
+    "name": "glmark2-git",
+    "arch": "aarch64",
+    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
+    "url": "https://launchpad.net/glmark2",
+    "license": "GPL3",
+    "version": "r958.e5aa936",
+    "release": "1",
+    "builddate": "2021-05-21T07:51:03",
+    "depends": [
+      "libjpeg-turbo",
+      "libpng",
+      "libx11",
+      "libxcb",
+      "wayland",
+      "libgl",
+      "libgles",
+      "wayland-protocols"
+    ],
+    "conflicts": [
+      "glmark2"
+    ],
+    "csize": 8058756,
+    "isize": 15128137
   },
   {
     "base": "codeblocks-svn",
