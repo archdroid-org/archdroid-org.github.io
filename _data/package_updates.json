@@ -1,58 +1,14 @@
 [
   {
-    "base": "mesa-icecream95-git",
-    "name": "mesa-icecream95-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.2.0_devel.139955.fe9d37b0c6e",
-    "release": "1",
-    "builddate": "2021-05-24T13:13:36",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 29164973,
-    "isize": 99037219
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.139954.f1ba85995c2",
+    "version": "21.2.0_devel.139955.fe9d37b0c6e",
     "release": "1",
-    "builddate": "2021-05-24T13:01:09",
+    "builddate": "2021-05-24T13:31:09",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -85,8 +41,52 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31931593,
-    "isize": 108177699
+    "csize": 31931219,
+    "isize": 108165411
+  },
+  {
+    "base": "mesa-icecream95-git",
+    "name": "mesa-icecream95-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "21.2.0_devel.139925.380fa050f23",
+    "release": "1",
+    "builddate": "2021-05-24T13:26:15",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "conflicts": [
+      "vulkan-mesa-layers",
+      "opencl-mesa",
+      "vulkan-swrast",
+      "libva-mesa-driver",
+      "mesa-vdpau",
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 29149540,
+    "isize": 99037219
   },
   {
     "base": "waybar-git",
