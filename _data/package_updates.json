@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.140074.9cb06fca73d",
+    "version": "21.2.0_devel.140080.9984ebf1734",
     "release": "1",
-    "builddate": "2021-05-26T07:01:20",
+    "builddate": "2021-05-26T07:18:09",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31941970,
-    "isize": 108206379
+    "csize": 31934293,
+    "isize": 108189995
   },
   {
     "base": "mesa-icecream95-git",
