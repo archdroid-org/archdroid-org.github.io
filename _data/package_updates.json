@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.140334.08dba3a76b9",
+    "version": "21.2.0_devel.140337.956d9613397",
     "release": "1",
-    "builddate": "2021-06-01T13:33:38",
+    "builddate": "2021-06-01T13:53:05",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,7 +41,7 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31958248,
+    "csize": 31961137,
     "isize": 108261236
   },
   {
@@ -51,9 +51,9 @@
     "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.140337.956d9613397",
+    "version": "21.2.0_devel.140329.2c3e9670bc2",
     "release": "1",
-    "builddate": "2021-06-01T13:29:04",
+    "builddate": "2021-06-01T13:47:49",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -85,7 +85,7 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 29164601,
+    "csize": 29165845,
     "isize": 99038836
   },
   {
