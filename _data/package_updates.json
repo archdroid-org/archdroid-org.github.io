@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.140774.5987f71cb1d",
+    "version": "21.2.0_devel.141003.1a773c00097",
     "release": "1",
-    "builddate": "2021-06-10T16:09:08",
+    "builddate": "2021-06-14T04:45:42",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,52 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31997547,
-    "isize": 108398346
+    "csize": 32041996,
+    "isize": 108447498
+  },
+  {
+    "base": "linux-odroid-512",
+    "name": "linux-odroid-512-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.12.y",
+    "license": "GPL2",
+    "version": "5.12.9",
+    "release": "1",
+    "builddate": "2021-06-14T03:05:07",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 12737913,
+    "isize": 48975305
+  },
+  {
+    "base": "linux-odroid-512",
+    "name": "linux-odroid-512",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.12.y",
+    "license": "GPL2",
+    "version": "5.12.9",
+    "release": "1",
+    "builddate": "2021-06-14T03:05:07",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 58262290,
+    "isize": 162570144
   },
   {
     "base": "waybar-git",
@@ -233,119 +277,5 @@
     ],
     "csize": 12755647,
     "isize": 49360001
-  },
-  {
-    "base": "linux-amlogic-513",
-    "name": "linux-amlogic-513",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.13.y",
-    "license": "GPL2",
-    "version": "5.13",
-    "release": "1",
-    "builddate": "2021-05-07T01:01:16",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 58648781,
-    "isize": 164513989
-  },
-  {
-    "base": "mpv-sdl",
-    "name": "mpv-sdl",
-    "arch": "aarch64",
-    "description": "a free, open source, and cross-platform media player",
-    "url": "https://mpv.io/",
-    "license": "GPL3",
-    "version": "1:0.33.1",
-    "release": "2",
-    "builddate": "2021-04-28T04:57:06",
-    "depends": [
-      "alsa-lib",
-      "libasound.so=2-64",
-      "desktop-file-utils",
-      "ffmpeg",
-      "libavcodec.so=58-64",
-      "libavdevice.so=58-64",
-      "libavfilter.so=7-64",
-      "libavformat.so=58-64",
-      "libavutil.so=56-64",
-      "libswresample.so=3-64",
-      "libswscale.so=5-64",
-      "glibc",
-      "hicolor-icon-theme",
-      "jack",
-      "libjack.so=0-64",
-      "lcms2",
-      "liblcms2.so=2-64",
-      "libarchive",
-      "libarchive.so=13-64",
-      "libass",
-      "libass.so=9-64",
-      "libbluray",
-      "libbluray.so=2-64",
-      "libcaca",
-      "libcdio",
-      "libcdio-paranoia",
-      "libdrm",
-      "libdvdnav",
-      "libdvdread",
-      "libegl",
-      "libgl",
-      "libglvnd",
-      "libjpeg",
-      "libjpeg.so=8-64",
-      "libplacebo",
-      "libplacebo.so=120-64",
-      "libpulse",
-      "libpulse.so=0-64",
-      "libva",
-      "libva.so=2-64",
-      "libva-drm.so=2-64",
-      "libva-wayland.so=2-64",
-      "libva-x11.so=2-64",
-      "libvdpau",
-      "libx11",
-      "libxext",
-      "libxinerama",
-      "libxkbcommon",
-      "libxkbcommon.so=0-64",
-      "libxrandr",
-      "libxss",
-      "libxv",
-      "lua52",
-      "mesa",
-      "mujs",
-      "rubberband",
-      "librubberband.so=2-64",
-      "shaderc",
-      "libshaderc_shared.so=1-64",
-      "uchardet",
-      "vulkan-icd-loader",
-      "wayland",
-      "xdg-utils",
-      "zlib",
-      "sdl2"
-    ],
-    "optdepends": [
-      "youtube-dl: for video-sharing websites playback"
-    ],
-    "conflicts": [
-      "mpv"
-    ],
-    "csize": 2497600,
-    "isize": 5635718
   }
 ]
