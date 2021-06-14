@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.141031.323abf2fb2d",
+    "version": "21.2.0_devel.141034.74abd5df0ed",
     "release": "1",
-    "builddate": "2021-06-14T19:48:51",
+    "builddate": "2021-06-14T22:01:35",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 32042572,
-    "isize": 108472074
+    "csize": 32052599,
+    "isize": 108570378
   },
   {
     "base": "linux-odroid-512",
