@@ -283,6 +283,22 @@
     "isize": 1912003
   },
   {
+    "base": "libpamac-aur",
+    "name": "libpamac-aur",
+    "arch": "aarch64",
+    "description": "Pamac package manager library based on libalpm",
+    "url": "https://gitlab.manjaro.org/applications",
+    "license": "GPL3",
+    "version": "11.0.0",
+    "release": "1",
+    "builddate": "2021-06-15T01:30:33",
+    "depends": ["glib2>=2.42", "json-glib", "libsoup", "dbus-glib", "polkit", "vte3>=0.38", "libnotify", "pacman>=6.0", "pacman<6.1", "gnutls>=3.4", "git", "appstream-glib>=0.7.18-1", "archlinux-appstream-data", "git"],
+    "replaces": ["libpamac"],
+    "conflicts": ["libpamac", "libpamac-all"],
+    "csize": 825531,
+    "isize": 3517111
+  },
+  {
     "base": "libxmp",
     "name": "libxmp",
     "arch": "aarch64",
@@ -999,6 +1015,23 @@
     "depends": ["libopenmpt=0.5.8", "portaudio", "libsndfile", "flac", "libpulse"],
     "csize": 98734,
     "isize": 233170
+  },
+  {
+    "base": "pamac-aur",
+    "name": "pamac-aur",
+    "arch": "aarch64",
+    "description": "A Gtk3 frontend, Package Manager based on libalpm with AUR and Appstream support",
+    "url": "https://gitlab.manjaro.org/applications",
+    "license": "GPL3",
+    "version": "10.1.3",
+    "release": "1",
+    "builddate": "2021-06-15T01:32:55",
+    "depends": ["glib2>=2.42", "json-glib", "libsoup", "dbus-glib", "polkit", "vte3>=0.38", "gtk3>=3.22", "libnotify", "desktop-file-utils", "gnutls>=3.4", "git", "appstream-glib>=0.7.18-1", "archlinux-appstream-data", "libhandy", "git"],
+    "repodepends": ["libpamac-aur"],
+    "optdepends": ["polkit-gnome: needed for authentification in Cinnamon, Gnome", "lxsession: needed for authentification in Xfce, LXDE etc."],
+    "conflicts": ["pamac", "pamac-tray-appindicator"],
+    "csize": 304812,
+    "isize": 958961
   },
   {
     "base": "retux",
