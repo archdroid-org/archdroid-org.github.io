@@ -647,13 +647,13 @@
     "url": "https://github.com/hardkernel/linux/tree/odroidg12-4.9.y",
     "license": "GPL2",
     "version": "4.9.241",
-    "release": "1",
-    "builddate": "2021-03-19T20:50:45",
+    "release": "2",
+    "builddate": "2021-06-17T15:58:42",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "conflicts": ["linux"],
-    "csize": 40378634,
-    "isize": 129117515
+    "csize": 40919473,
+    "isize": 131090068
   },
   {
     "base": "linux-odroid-g12",
@@ -663,11 +663,11 @@
     "url": "https://github.com/hardkernel/linux/tree/odroidg12-4.9.y",
     "license": "GPL2",
     "version": "4.9.241",
-    "release": "1",
-    "builddate": "2021-03-19T20:50:45",
+    "release": "2",
+    "builddate": "2021-06-17T15:58:42",
     "conflicts": ["linux-headers"],
-    "csize": 10155079,
-    "isize": 39001139
+    "csize": 10164949,
+    "isize": 39022425
   },
   {
     "base": "linux-odroid",
