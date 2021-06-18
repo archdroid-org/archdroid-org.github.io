@@ -904,14 +904,14 @@
     "description": "3D wayland compositor",
     "url": "https://wayfire.org",
     "license": "custom:MIT",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "release": "3",
-    "builddate": "2021-04-16T22:00:07",
+    "builddate": "2021-06-18T16:18:35",
     "depends": ["cairo", "wf-config>=0.5", "libjpeg", "libinput"],
-    "repodepends": ["wayfire-wlroots"],
+    "providedepends": {"wlroots": ["wlroots-mali-git"]},
     "conflicts": ["wayfire-git"],
-    "csize": 1277412,
-    "isize": 4521875
+    "csize": 1278097,
+    "isize": 4522450
   },
   {
     "base": "wayfire-plugins-extra",
