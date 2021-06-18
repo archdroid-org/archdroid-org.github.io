@@ -1,5 +1,25 @@
 [
   {
+    "base": "wf-config",
+    "name": "wf-config",
+    "arch": "aarch64",
+    "description": "A library for managing configuration files, written for wayfire",
+    "url": "https://wayfire.org",
+    "license": "custom:MIT",
+    "version": "0.7.1",
+    "release": "3",
+    "builddate": "2021-06-18T04:00:52",
+    "depends": [
+      "libevdev",
+      "libxml2"
+    ],
+    "conflicts": [
+      "wf-config-git"
+    ],
+    "csize": 157171,
+    "isize": 461258
+  },
+  {
     "base": "linux-odroid-g12",
     "name": "linux-odroid-g12-headers",
     "arch": "aarch64",
@@ -240,50 +260,6 @@
     ],
     "csize": 58262290,
     "isize": 162570144
-  },
-  {
-    "base": "mesa-icecream95-git",
-    "name": "mesa-icecream95-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (latest icrecream95 branch)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.2.0_devel.140506.083e1def147",
-    "release": "1",
-    "builddate": "2021-06-07T10:01:40",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 29175740,
-    "isize": 99104570
   },
   {
     "base": "glmark2-git",
