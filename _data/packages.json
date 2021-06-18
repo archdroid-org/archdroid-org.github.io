@@ -951,12 +951,15 @@
     "description": "Wayfire Configuration Manager",
     "url": "https://wayfire.org",
     "license": "custom:MIT",
-    "version": "0.7.0",
+    "version": "0.7.0.r6.g33772f0",
     "release": "1",
-    "builddate": "2021-02-07T04:40:00",
-    "depends": ["wayfire>=0.7", "wf-shell>=0.7", "gtk3"],
-    "csize": 309651,
-    "isize": 1266129
+    "builddate": "2021-06-18T16:44:37",
+    "depends": ["gtkmm3"],
+    "repodepends": ["wayfire", "wf-shell"],
+    "repooptdepends": ["wayfire-plugins-extra: configuration for extra Wayfire plugins"],
+    "conflicts": ["wdisplays"],
+    "csize": 386545,
+    "isize": 1586171
   },
   {
     "base": "wf-config",

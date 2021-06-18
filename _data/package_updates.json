@@ -1,5 +1,31 @@
 [
   {
+    "base": "wcm",
+    "name": "wcm",
+    "arch": "aarch64",
+    "description": "Wayfire Configuration Manager",
+    "url": "https://wayfire.org",
+    "license": "custom:MIT",
+    "version": "0.7.0.r6.g33772f0",
+    "release": "1",
+    "builddate": "2021-06-18T16:44:37",
+    "depends": [
+      "gtkmm3"
+    ],
+    "repodepends": [
+      "wayfire",
+      "wf-shell"
+    ],
+    "repooptdepends": [
+      "wayfire-plugins-extra: configuration for extra Wayfire plugins"
+    ],
+    "conflicts": [
+      "wdisplays"
+    ],
+    "csize": 386545,
+    "isize": 1586171
+  },
+  {
     "base": "wayfire",
     "name": "wayfire",
     "arch": "aarch64",
@@ -259,33 +285,5 @@
     ],
     "csize": 12737913,
     "isize": 48975305
-  },
-  {
-    "base": "linux-odroid-512",
-    "name": "linux-odroid-512",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.12.y",
-    "license": "GPL2",
-    "version": "5.12.9",
-    "release": "1",
-    "builddate": "2021-06-14T03:05:07",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 58262290,
-    "isize": 162570144
   }
 ]
