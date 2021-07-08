@@ -1,5 +1,61 @@
 [
   {
+    "base": "wayfire",
+    "name": "wayfire",
+    "arch": "aarch64",
+    "description": "3D wayland compositor",
+    "url": "https://wayfire.org",
+    "license": "custom:MIT",
+    "version": "0.7.1",
+    "release": "4",
+    "builddate": "2021-07-08T04:48:16",
+    "depends": [
+      "cairo",
+      "wf-config>=0.5",
+      "libjpeg",
+      "libinput"
+    ],
+    "repodepends": [
+      "wayfire-wlroots"
+    ],
+    "conflicts": [
+      "wayfire-git"
+    ],
+    "csize": 1278390,
+    "isize": 4526546
+  },
+  {
+    "base": "wayfire-wlroots",
+    "name": "wayfire-wlroots",
+    "arch": "aarch64",
+    "description": "Modular Wayland compositor library",
+    "url": "https://github.com/swaywm/wlroots",
+    "license": "MIT",
+    "version": "0.13.0",
+    "release": "1",
+    "builddate": "2021-07-08T04:47:33",
+    "depends": [
+      "libinput",
+      "libxkbcommon",
+      "pixman",
+      "xcb-util-errors",
+      "xcb-util-renderutil",
+      "xcb-util-wm"
+    ],
+    "providedepends": {
+      "opengl-driver": [
+        "mesa-devel",
+        "mesa-devel-git",
+        "mesa-icecream95-git"
+      ]
+    },
+    "optdepends": [
+      "xorg-xwayland: Xwayland support"
+    ],
+    "csize": 389446,
+    "isize": 1075141
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -104,33 +160,6 @@
     ],
     "csize": 386545,
     "isize": 1586171
-  },
-  {
-    "base": "wayfire",
-    "name": "wayfire",
-    "arch": "aarch64",
-    "description": "3D wayland compositor",
-    "url": "https://wayfire.org",
-    "license": "custom:MIT",
-    "version": "0.7.1",
-    "release": "3",
-    "builddate": "2021-06-18T16:18:35",
-    "depends": [
-      "cairo",
-      "wf-config>=0.5",
-      "libjpeg",
-      "libinput"
-    ],
-    "providedepends": {
-      "wlroots": [
-        "wlroots-mali-git"
-      ]
-    },
-    "conflicts": [
-      "wayfire-git"
-    ],
-    "csize": 1278097,
-    "isize": 4522450
   },
   {
     "base": "wf-config",
@@ -269,21 +298,5 @@
     ],
     "csize": 825531,
     "isize": 3517111
-  },
-  {
-    "base": "linux-odroid-512",
-    "name": "linux-odroid-512-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.12.y",
-    "license": "GPL2",
-    "version": "5.12.9",
-    "release": "1",
-    "builddate": "2021-06-14T03:05:07",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 12737913,
-    "isize": 48975305
   }
 ]
