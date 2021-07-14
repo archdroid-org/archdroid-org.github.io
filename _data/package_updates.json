@@ -1,14 +1,40 @@
 [
   {
+    "base": "glmark2-git",
+    "name": "glmark2-git",
+    "arch": "aarch64",
+    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
+    "url": "https://launchpad.net/glmark2",
+    "license": "GPL3",
+    "version": "r960.ca8de51",
+    "release": "1",
+    "builddate": "2021-07-14T01:13:02",
+    "depends": [
+      "libjpeg-turbo",
+      "libpng",
+      "libx11",
+      "libxcb",
+      "wayland",
+      "libgl",
+      "libgles",
+      "wayland-protocols"
+    ],
+    "conflicts": [
+      "glmark2"
+    ],
+    "csize": 8061379,
+    "isize": 15128137
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.142548.eefd93c176f",
+    "version": "21.2.0_devel.142569.67f9cde84d6",
     "release": "1",
-    "builddate": "2021-07-13T22:01:50",
+    "builddate": "2021-07-14T01:01:36",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +67,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 34249647,
-    "isize": 117361283
+    "csize": 34250974,
+    "isize": 117267075
   },
   {
     "base": "wayfire",
@@ -262,41 +288,5 @@
     ],
     "csize": 304812,
     "isize": 958961
-  },
-  {
-    "base": "libpamac-aur",
-    "name": "libpamac-aur",
-    "arch": "aarch64",
-    "description": "Pamac package manager library based on libalpm",
-    "url": "https://gitlab.manjaro.org/applications",
-    "license": "GPL3",
-    "version": "11.0.0",
-    "release": "1",
-    "builddate": "2021-06-15T01:30:33",
-    "depends": [
-      "glib2>=2.42",
-      "json-glib",
-      "libsoup",
-      "dbus-glib",
-      "polkit",
-      "vte3>=0.38",
-      "libnotify",
-      "pacman>=6.0",
-      "pacman<6.1",
-      "gnutls>=3.4",
-      "git",
-      "appstream-glib>=0.7.18-1",
-      "archlinux-appstream-data",
-      "git"
-    ],
-    "replaces": [
-      "libpamac"
-    ],
-    "conflicts": [
-      "libpamac",
-      "libpamac-all"
-    ],
-    "csize": 825531,
-    "isize": 3517111
   }
 ]
