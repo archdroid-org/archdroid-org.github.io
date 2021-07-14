@@ -1,40 +1,14 @@
 [
   {
-    "base": "glmark2-git",
-    "name": "glmark2-git",
-    "arch": "aarch64",
-    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
-    "url": "https://launchpad.net/glmark2",
-    "license": "GPL3",
-    "version": "r960.ca8de51",
-    "release": "1",
-    "builddate": "2021-07-14T01:13:02",
-    "depends": [
-      "libjpeg-turbo",
-      "libpng",
-      "libx11",
-      "libxcb",
-      "wayland",
-      "libgl",
-      "libgles",
-      "wayland-protocols"
-    ],
-    "conflicts": [
-      "glmark2"
-    ],
-    "csize": 8061379,
-    "isize": 15128137
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.2.0_devel.142569.67f9cde84d6",
+    "version": "21.2.0_devel.142590.f5946354d3e",
     "release": "1",
-    "builddate": "2021-07-14T01:01:36",
+    "builddate": "2021-07-14T04:01:38",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -67,8 +41,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 34250974,
-    "isize": 117267075
+    "csize": 34258745,
+    "isize": 117336707
+  },
+  {
+    "base": "glmark2-git",
+    "name": "glmark2-git",
+    "arch": "aarch64",
+    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
+    "url": "https://launchpad.net/glmark2",
+    "license": "GPL3",
+    "version": "r960.ca8de51",
+    "release": "1",
+    "builddate": "2021-07-14T01:13:02",
+    "depends": [
+      "libjpeg-turbo",
+      "libpng",
+      "libx11",
+      "libxcb",
+      "wayland",
+      "libgl",
+      "libgles",
+      "wayland-protocols"
+    ],
+    "conflicts": [
+      "glmark2"
+    ],
+    "csize": 8061379,
+    "isize": 15128137
   },
   {
     "base": "wayfire",
