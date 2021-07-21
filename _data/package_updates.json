@@ -167,8 +167,7 @@
     "providedepends": {
       "opengl-driver": [
         "mesa-devel",
-        "mesa-devel-git",
-        "mesa-icecream95-git"
+        "mesa-devel-git"
       ]
     },
     "optdepends": [
