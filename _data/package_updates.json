@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.142868.0972b0f7547",
+    "version": "21.3.0_devel.142888.890b1c0f2ab",
     "release": "1",
-    "builddate": "2021-07-23T16:01:25",
+    "builddate": "2021-07-23T19:12:27",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,24 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 34448479,
-    "isize": 117756911
+    "csize": 34474809,
+    "isize": 117896175
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r101.g754ac5a83",
+    "release": "1",
+    "builddate": "2021-07-23T19:06:23",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9704073,
+    "isize": 30462513
   },
   {
     "base": "waybar-git",
@@ -247,46 +263,5 @@
     ],
     "csize": 41099455,
     "isize": 131378983
-  },
-  {
-    "base": "pamac-aur",
-    "name": "pamac-aur",
-    "arch": "aarch64",
-    "description": "A Gtk3 frontend, Package Manager based on libalpm with AUR and Appstream support",
-    "url": "https://gitlab.manjaro.org/applications",
-    "license": "GPL3",
-    "version": "10.1.3",
-    "release": "1",
-    "builddate": "2021-06-15T01:32:55",
-    "depends": [
-      "glib2>=2.42",
-      "json-glib",
-      "libsoup",
-      "dbus-glib",
-      "polkit",
-      "vte3>=0.38",
-      "gtk3>=3.22",
-      "libnotify",
-      "desktop-file-utils",
-      "gnutls>=3.4",
-      "git",
-      "appstream-glib>=0.7.18-1",
-      "archlinux-appstream-data",
-      "libhandy",
-      "git"
-    ],
-    "repodepends": [
-      "libpamac-aur"
-    ],
-    "optdepends": [
-      "polkit-gnome: needed for authentification in Cinnamon, Gnome",
-      "lxsession: needed for authentification in Xfce, LXDE etc."
-    ],
-    "conflicts": [
-      "pamac",
-      "pamac-tray-appindicator"
-    ],
-    "csize": 304812,
-    "isize": 958961
   }
 ]
