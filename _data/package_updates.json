@@ -1,5 +1,56 @@
 [
   {
+    "base": "waybar-git",
+    "name": "waybar-git",
+    "arch": "aarch64",
+    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
+    "url": "https://github.com/Alexays/Waybar/",
+    "license": "MIT",
+    "version": "r1570.bad72de",
+    "release": "1",
+    "builddate": "2021-07-25T13:06:05",
+    "depends": [
+      "gtkmm3",
+      "libjsoncpp.so=24-64",
+      "libinput",
+      "libsigc++",
+      "fmt",
+      "wayland",
+      "chrono-date",
+      "libspdlog.so=1-64",
+      "gtk-layer-shell",
+      "libpulse",
+      "libnl",
+      "libappindicator-gtk3",
+      "libdbusmenu-gtk3",
+      "libmpdclient"
+    ],
+    "optdepends": [
+      "otf-font-awesome: Icons in the default configuration"
+    ],
+    "conflicts": [
+      "waybar"
+    ],
+    "csize": 451656,
+    "isize": 1166622
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r112.g3a34f59ae",
+    "release": "1",
+    "builddate": "2021-07-25T13:01:41",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9702814,
+    "isize": 30481471
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -43,57 +94,6 @@
     ],
     "csize": 34465427,
     "isize": 117945327
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r104.g46009499a",
-    "release": "1",
-    "builddate": "2021-07-24T10:01:18",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9704409,
-    "isize": 30462513
-  },
-  {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r1563.1b4ddbc",
-    "release": "1",
-    "builddate": "2021-07-23T13:07:19",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=24-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 451913,
-    "isize": 1158416
   },
   {
     "base": "glmark2-git",

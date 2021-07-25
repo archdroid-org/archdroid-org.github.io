@@ -537,12 +537,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r104.g46009499a",
+    "version": "0.5.0.r112.g3a34f59ae",
     "release": "1",
-    "builddate": "2021-07-24T10:01:18",
+    "builddate": "2021-07-25T13:01:41",
     "conflicts": ["neovim"],
-    "csize": 9704409,
-    "isize": 30462513
+    "csize": 9702814,
+    "isize": 30481471
   },
   {
     "base": "neverball",
@@ -902,14 +902,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1563.1b4ddbc",
+    "version": "r1570.bad72de",
     "release": "1",
-    "builddate": "2021-07-23T13:07:19",
+    "builddate": "2021-07-25T13:06:05",
     "depends": ["gtkmm3", "libjsoncpp.so=24-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 451913,
-    "isize": 1158416
+    "csize": 451656,
+    "isize": 1166622
   },
   {
     "base": "wayfire",
