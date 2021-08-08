@@ -1,5 +1,49 @@
 [
   {
+    "base": "linux-odroid-513",
+    "name": "linux-odroid-513-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.13.y",
+    "license": "GPL2",
+    "version": "5.13.5",
+    "release": "1",
+    "builddate": "2021-08-08T19:15:12",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 12774250,
+    "isize": 49415674
+  },
+  {
+    "base": "linux-odroid-513",
+    "name": "linux-odroid-513",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.13.y",
+    "license": "GPL2",
+    "version": "5.13.5",
+    "release": "1",
+    "builddate": "2021-08-08T19:15:12",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 58754627,
+    "isize": 163795751
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -221,46 +265,5 @@
     ],
     "csize": 157171,
     "isize": 461258
-  },
-  {
-    "base": "linux-odroid-g12",
-    "name": "linux-odroid-g12-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - ODROID-N2/N2+/C4",
-    "url": "https://github.com/hardkernel/linux/tree/odroidg12-4.9.y",
-    "license": "GPL2",
-    "version": "4.9.241",
-    "release": "3",
-    "builddate": "2021-06-17T18:04:38",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 10164595,
-    "isize": 39023365
-  },
-  {
-    "base": "linux-odroid-g12",
-    "name": "linux-odroid-g12",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - ODROID-N2/N2+/C4",
-    "url": "https://github.com/hardkernel/linux/tree/odroidg12-4.9.y",
-    "license": "GPL2",
-    "version": "4.9.241",
-    "release": "3",
-    "builddate": "2021-06-17T18:04:38",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 41099455,
-    "isize": 131378983
   }
 ]
