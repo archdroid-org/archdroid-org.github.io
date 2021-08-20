@@ -520,14 +520,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.143892.2b4b31044de",
+    "version": "21.3.0_devel.143893.8bb9e9e76fa",
     "release": "1",
-    "builddate": "2021-08-20T04:02:07",
+    "builddate": "2021-08-20T19:01:16",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 34996530,
-    "isize": 120155156
+    "csize": 34991232,
+    "isize": 120151060
   },
   {
     "base": "mpv-sdl",
