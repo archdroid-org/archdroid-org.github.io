@@ -6,9 +6,9 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1586.ab38f13",
+    "version": "r1590.4e256cf",
     "release": "1",
-    "builddate": "2021-08-20T22:05:38",
+    "builddate": "2021-08-24T08:47:00",
     "depends": [
       "gtkmm3",
       "libjsoncpp.so=24-64",
@@ -31,8 +31,8 @@
     "conflicts": [
       "waybar"
     ],
-    "csize": 448909,
-    "isize": 1105272
+    "csize": 449672,
+    "isize": 1121825
   },
   {
     "base": "mesa-devel-git",
@@ -41,9 +41,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.143939.31fdd26d011",
+    "version": "21.3.0_devel.143944.4d6e18b6cbd",
     "release": "1",
-    "builddate": "2021-08-09T19:01:37",
+    "builddate": "2021-08-24T08:39:14",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -76,8 +76,52 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 35004078,
-    "isize": 120243068
+    "csize": 35005751,
+    "isize": 120251260
+  },
+  {
+    "base": "linux-odroid-513",
+    "name": "linux-odroid-513-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.13.y",
+    "license": "GPL2",
+    "version": "5.13.12",
+    "release": "1",
+    "builddate": "2021-08-24T07:01:13",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 12776269,
+    "isize": 49421903
+  },
+  {
+    "base": "linux-odroid-513",
+    "name": "linux-odroid-513",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.13.y",
+    "license": "GPL2",
+    "version": "5.13.12",
+    "release": "1",
+    "builddate": "2021-08-24T07:01:13",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 58743518,
+    "isize": 163813960
   },
   {
     "base": "neovim-git",
@@ -94,50 +138,6 @@
     ],
     "csize": 9776838,
     "isize": 30726829
-  },
-  {
-    "base": "linux-odroid-513",
-    "name": "linux-odroid-513-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.13.y",
-    "license": "GPL2",
-    "version": "5.13.5",
-    "release": "1",
-    "builddate": "2021-08-08T19:15:12",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 12774250,
-    "isize": 49415674
-  },
-  {
-    "base": "linux-odroid-513",
-    "name": "linux-odroid-513",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.13.y",
-    "license": "GPL2",
-    "version": "5.13.5",
-    "release": "1",
-    "builddate": "2021-08-08T19:15:12",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 58754627,
-    "isize": 163795751
   },
   {
     "base": "glmark2-git",
