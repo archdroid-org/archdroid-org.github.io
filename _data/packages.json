@@ -520,14 +520,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.144150.19e29960e92",
+    "version": "21.3.0_devel.144159.4a5dfabb125",
     "release": "1",
-    "builddate": "2021-08-27T10:01:34",
+    "builddate": "2021-08-27T13:06:52",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 35195782,
-    "isize": 122130548
+    "csize": 35196200,
+    "isize": 122138740
   },
   {
     "base": "mpv-sdl",
@@ -552,12 +552,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r347.g274a3504a",
+    "version": "0.5.0.r350.g32024787b",
     "release": "1",
-    "builddate": "2021-08-26T16:04:48",
+    "builddate": "2021-08-27T13:02:01",
     "conflicts": ["neovim"],
-    "csize": 9781345,
-    "isize": 30710534
+    "csize": 9782410,
+    "isize": 30736242
   },
   {
     "base": "neverball",
