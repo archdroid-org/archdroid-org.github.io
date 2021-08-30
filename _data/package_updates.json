@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.144227.a6a89aaa2f2",
+    "version": "21.3.0_devel.144233.66fa676e8db",
     "release": "1",
-    "builddate": "2021-08-30T16:01:42",
+    "builddate": "2021-08-30T20:45:37",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,68 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 35208311,
-    "isize": 122171508
+    "csize": 35216956,
+    "isize": 122200180
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r373.g9695691ee",
+    "release": "1",
+    "builddate": "2021-08-30T20:41:02",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9790022,
+    "isize": 30772874
+  },
+  {
+    "base": "linux-odroid-514",
+    "name": "linux-odroid-514-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.14.y",
+    "license": "GPL2",
+    "version": "5.14",
+    "release": "7",
+    "builddate": "2021-08-30T19:02:01",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 12829576,
+    "isize": 49655018
+  },
+  {
+    "base": "linux-odroid-514",
+    "name": "linux-odroid-514",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.14.y",
+    "license": "GPL2",
+    "version": "5.14",
+    "release": "7",
+    "builddate": "2021-08-30T19:02:01",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 58935839,
+    "isize": 164435202
   },
   {
     "base": "glmark2-git",
@@ -69,22 +129,6 @@
     ],
     "csize": 8078756,
     "isize": 15095369
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r371.gc52ec8f9e",
-    "release": "1",
-    "builddate": "2021-08-30T13:02:03",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9781100,
-    "isize": 30723026
   },
   {
     "base": "linux-odroid-513",
@@ -219,51 +263,5 @@
     ],
     "csize": 389446,
     "isize": 1075141
-  },
-  {
-    "base": "wcm",
-    "name": "wcm",
-    "arch": "aarch64",
-    "description": "Wayfire Configuration Manager",
-    "url": "https://wayfire.org",
-    "license": "custom:MIT",
-    "version": "0.7.0.r6.g33772f0",
-    "release": "1",
-    "builddate": "2021-06-18T16:44:37",
-    "depends": [
-      "gtkmm3"
-    ],
-    "repodepends": [
-      "wayfire",
-      "wf-shell"
-    ],
-    "repooptdepends": [
-      "wayfire-plugins-extra: configuration for extra Wayfire plugins"
-    ],
-    "conflicts": [
-      "wdisplays"
-    ],
-    "csize": 386545,
-    "isize": 1586171
-  },
-  {
-    "base": "wf-config",
-    "name": "wf-config",
-    "arch": "aarch64",
-    "description": "A library for managing configuration files, written for wayfire",
-    "url": "https://wayfire.org",
-    "license": "custom:MIT",
-    "version": "0.7.1",
-    "release": "3",
-    "builddate": "2021-06-18T04:00:52",
-    "depends": [
-      "libevdev",
-      "libxml2"
-    ],
-    "conflicts": [
-      "wf-config-git"
-    ],
-    "csize": 157171,
-    "isize": 461258
   }
 ]
