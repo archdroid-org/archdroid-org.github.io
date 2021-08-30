@@ -1,5 +1,47 @@
 [
   {
+    "base": "glmark2-git",
+    "name": "glmark2-git",
+    "arch": "aarch64",
+    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
+    "url": "https://launchpad.net/glmark2",
+    "license": "GPL3",
+    "version": "r962.06e78b6",
+    "release": "1",
+    "builddate": "2021-08-30T13:05:54",
+    "depends": [
+      "libjpeg-turbo",
+      "libpng",
+      "libx11",
+      "libxcb",
+      "wayland",
+      "libgl",
+      "libgles",
+      "wayland-protocols"
+    ],
+    "conflicts": [
+      "glmark2"
+    ],
+    "csize": 8078756,
+    "isize": 15095369
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r371.gc52ec8f9e",
+    "release": "1",
+    "builddate": "2021-08-30T13:02:03",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9781100,
+    "isize": 30723026
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -43,22 +85,6 @@
     ],
     "csize": 35205890,
     "isize": 122138740
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r369.g3ab73ff81",
-    "release": "1",
-    "builddate": "2021-08-30T10:02:10",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9780948,
-    "isize": 30722957
   },
   {
     "base": "linux-odroid-513",
@@ -138,32 +164,6 @@
     ],
     "csize": 449672,
     "isize": 1121825
-  },
-  {
-    "base": "glmark2-git",
-    "name": "glmark2-git",
-    "arch": "aarch64",
-    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
-    "url": "https://launchpad.net/glmark2",
-    "license": "GPL3",
-    "version": "r960.ca8de51",
-    "release": "1",
-    "builddate": "2021-07-14T01:13:02",
-    "depends": [
-      "libjpeg-turbo",
-      "libpng",
-      "libx11",
-      "libxcb",
-      "wayland",
-      "libgl",
-      "libgles",
-      "wayland-protocols"
-    ],
-    "conflicts": [
-      "glmark2"
-    ],
-    "csize": 8061379,
-    "isize": 15128137
   },
   {
     "base": "wayfire",
