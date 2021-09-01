@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.144366.e8cbfa95a3a",
+    "version": "21.3.0_devel.144373.71556766187",
     "release": "1",
-    "builddate": "2021-09-01T13:06:34",
+    "builddate": "2021-09-01T16:06:50",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,7 +41,7 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 35246115,
+    "csize": 35245892,
     "isize": 122461516
   },
   {
@@ -51,14 +51,14 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r378.g5c643dee7",
+    "version": "0.5.0.r379.g0603eba6e",
     "release": "1",
-    "builddate": "2021-09-01T13:02:29",
+    "builddate": "2021-09-01T16:02:29",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9787470,
-    "isize": 30762172
+    "csize": 9794524,
+    "isize": 30741164
   },
   {
     "base": "astromenace",
