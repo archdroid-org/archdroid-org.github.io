@@ -14,6 +14,20 @@
     "isize": 429
   },
   {
+    "base": "astromenace",
+    "name": "astromenace",
+    "arch": "aarch64",
+    "description": "Hardcore 3D space shooter with spaceship upgrade possibilities",
+    "url": "http://www.viewizard.com/astromenace/index_linux.php",
+    "license": "GPL3",
+    "version": "1.4.1",
+    "release": "2",
+    "builddate": "2021-09-01T04:02:16",
+    "depends": ["sdl2", "freealut", "libjpeg", "libvorbis", "glu", "freetype2", "libxinerama"],
+    "csize": 64197199,
+    "isize": 117621488
+  },
+  {
     "base": "cendric-git",
     "name": "cendric-git",
     "arch": "aarch64",
@@ -551,14 +565,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.144292.4a2adb36ae4",
+    "version": "21.3.0_devel.144350.70f1337f63a",
     "release": "1",
-    "builddate": "2021-08-31T22:02:14",
+    "builddate": "2021-09-01T04:07:28",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 35218762,
-    "isize": 122253428
+    "csize": 35246767,
+    "isize": 122424652
   },
   {
     "base": "mpv-sdl",
