@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.144473.268158a7585",
+    "version": "21.3.0_devel.144484.1cc8523c5cc",
     "release": "1",
-    "builddate": "2021-09-03T16:01:19",
+    "builddate": "2021-09-03T19:14:37",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,52 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 35297065,
-    "isize": 123197676
+    "csize": 35294980,
+    "isize": 123189516
+  },
+  {
+    "base": "compiz",
+    "name": "compiz",
+    "arch": "aarch64",
+    "description": "Composite manager for Aiglx and Xgl, with plugins and CCSM",
+    "url": "https://launchpad.net/compiz",
+    "license": [
+      "GPL",
+      "LGPL",
+      "MIT"
+    ],
+    "version": "0.9.14.1",
+    "release": "6",
+    "builddate": "2021-09-03T19:02:27",
+    "depends": [
+      "boost-libs",
+      "xorg-server",
+      "fuse2",
+      "glibmm",
+      "libwnck3",
+      "python-gobject",
+      "python-cairo",
+      "protobuf",
+      "metacity",
+      "glu"
+    ],
+    "optdepends": [
+      "xorg-xprop: grab various window properties for use in window matching rules"
+    ],
+    "conflicts": [
+      "compiz-core",
+      "compiz-gtk",
+      "compiz-bcop",
+      "ccsm",
+      "compiz-fusion-plugins-main",
+      "compiz-fusion-plugins-extra",
+      "compiz-fusion-plugins-experimental",
+      "compizconfig-python",
+      "libcompizconfig",
+      "simple-ccsm"
+    ],
+    "csize": 6501394,
+    "isize": 26375153
   },
   {
     "base": "neovim-git",
@@ -230,30 +274,5 @@
     ],
     "csize": 449672,
     "isize": 1121825
-  },
-  {
-    "base": "wayfire",
-    "name": "wayfire",
-    "arch": "aarch64",
-    "description": "3D wayland compositor",
-    "url": "https://wayfire.org",
-    "license": "custom:MIT",
-    "version": "0.7.1",
-    "release": "4",
-    "builddate": "2021-07-08T04:48:16",
-    "depends": [
-      "cairo",
-      "wf-config>=0.5",
-      "libjpeg",
-      "libinput"
-    ],
-    "repodepends": [
-      "wayfire-wlroots"
-    ],
-    "conflicts": [
-      "wayfire-git"
-    ],
-    "csize": 1278390,
-    "isize": 4526546
   }
 ]

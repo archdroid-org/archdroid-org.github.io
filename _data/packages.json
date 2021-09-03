@@ -80,13 +80,13 @@
     "url": "https://launchpad.net/compiz",
     "license": ["GPL", "LGPL", "MIT"],
     "version": "0.9.14.1",
-    "release": "5",
-    "builddate": "2021-02-01T03:30:07",
+    "release": "6",
+    "builddate": "2021-09-03T19:02:27",
     "depends": ["boost-libs", "xorg-server", "fuse2", "glibmm", "libwnck3", "python-gobject", "python-cairo", "protobuf", "metacity", "glu"],
     "optdepends": ["xorg-xprop: grab various window properties for use in window matching rules"],
     "conflicts": ["compiz-core", "compiz-gtk", "compiz-bcop", "ccsm", "compiz-fusion-plugins-main", "compiz-fusion-plugins-extra", "compiz-fusion-plugins-experimental", "compizconfig-python", "libcompizconfig", "simple-ccsm"],
-    "csize": 6504461,
-    "isize": 26391753
+    "csize": 6501394,
+    "isize": 26375153
   },
   {
     "base": "dkms-8812au",
@@ -565,14 +565,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.144473.268158a7585",
+    "version": "21.3.0_devel.144484.1cc8523c5cc",
     "release": "1",
-    "builddate": "2021-09-03T16:01:19",
+    "builddate": "2021-09-03T19:14:37",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 35297065,
-    "isize": 123197676
+    "csize": 35294980,
+    "isize": 123189516
   },
   {
     "base": "mpv-sdl",
