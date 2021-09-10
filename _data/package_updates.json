@@ -1,5 +1,21 @@
 [
   {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r424.g8f0c843c1",
+    "release": "1",
+    "builddate": "2021-09-10T07:02:25",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9812481,
+    "isize": 30824728
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -43,22 +59,6 @@
     ],
     "csize": 35278223,
     "isize": 123149228
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r423.ga422f2136",
-    "release": "1",
-    "builddate": "2021-09-10T04:02:29",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9811861,
-    "isize": 30823691
   },
   {
     "base": "linux-odroid-514",
