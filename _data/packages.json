@@ -565,13 +565,13 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.145031.592aa9375c5",
+    "version": "21.3.0_devel.145032.6b5e9352ef7",
     "release": "1",
-    "builddate": "2021-09-18T01:06:27",
+    "builddate": "2021-09-18T13:05:32",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 35317500,
+    "csize": 35317468,
     "isize": 123261524
   },
   {
@@ -597,12 +597,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r581.g1f49268c4",
+    "version": "0.5.0.r586.g8ef2b56ca",
     "release": "1",
-    "builddate": "2021-09-18T01:02:08",
+    "builddate": "2021-09-18T13:01:18",
     "conflicts": ["neovim"],
-    "csize": 9849338,
-    "isize": 30916196
+    "csize": 9849410,
+    "isize": 30916355
   },
   {
     "base": "neverball",
@@ -962,14 +962,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1607.ce9e8ae",
+    "version": "r1621.cee08ec",
     "release": "1",
-    "builddate": "2021-09-17T19:13:54",
+    "builddate": "2021-09-18T13:13:35",
     "depends": ["gtkmm3", "libjsoncpp.so=24-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 451492,
-    "isize": 1117799
+    "csize": 451581,
+    "isize": 1126054
   },
   {
     "base": "wayfire",
