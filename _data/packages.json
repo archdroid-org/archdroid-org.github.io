@@ -457,15 +457,15 @@
     "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
     "url": "https://github.com/tobetter/linux/tree/odroid-5.14.y",
     "license": "GPL2",
-    "version": "5.14.1",
+    "version": "5.14.7",
     "release": "1",
-    "builddate": "2021-09-13T22:02:31",
+    "builddate": "2021-09-26T19:01:43",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 58900087,
-    "isize": 164291871
+    "csize": 58937071,
+    "isize": 164311404
   },
   {
     "base": "linux-odroid-514",
@@ -474,12 +474,12 @@
     "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
     "url": "https://github.com/tobetter/linux/tree/odroid-5.14.y",
     "license": "GPL2",
-    "version": "5.14.1",
+    "version": "5.14.7",
     "release": "1",
-    "builddate": "2021-09-13T22:02:31",
+    "builddate": "2021-09-26T19:01:43",
     "conflicts": ["linux-headers"],
-    "csize": 12832766,
-    "isize": 49672256
+    "csize": 12834588,
+    "isize": 49678021
   },
   {
     "base": "linux-odroid-exp",
@@ -597,12 +597,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r670.gb3b02eb52",
+    "version": "0.5.0.r683.g68c65b773",
     "release": "1",
-    "builddate": "2021-09-26T04:02:22",
+    "builddate": "2021-09-26T20:45:29",
     "conflicts": ["neovim"],
-    "csize": 9890153,
-    "isize": 31038434
+    "csize": 9911961,
+    "isize": 31081274
   },
   {
     "base": "neverball",
