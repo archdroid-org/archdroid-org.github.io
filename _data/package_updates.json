@@ -1,30 +1,14 @@
 [
   {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r724.g79fb9ed08",
-    "release": "1",
-    "builddate": "2021-10-02T16:01:26",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9918694,
-    "isize": 31098017
-  },
-  {
     "base": "waybar-git",
     "name": "waybar-git",
     "arch": "aarch64",
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1629.7af6e84",
+    "version": "r1631.8b4dafd",
     "release": "1",
-    "builddate": "2021-10-02T10:08:59",
+    "builddate": "2021-10-02T19:01:27",
     "depends": [
       "gtkmm3",
       "libjsoncpp.so=24-64",
@@ -47,8 +31,24 @@
     "conflicts": [
       "waybar"
     ],
-    "csize": 455219,
+    "csize": 455207,
     "isize": 1130319
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r724.g79fb9ed08",
+    "release": "1",
+    "builddate": "2021-10-02T16:01:26",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9918694,
+    "isize": 31098017
   },
   {
     "base": "mesa-devel-git",
