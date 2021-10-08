@@ -154,13 +154,13 @@
     "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
     "url": "https://launchpad.net/glmark2",
     "license": "GPL3",
-    "version": "r962.06e78b6",
+    "version": "r964.e359bb0",
     "release": "1",
-    "builddate": "2021-08-30T13:05:54",
+    "builddate": "2021-10-08T10:08:39",
     "depends": ["libjpeg-turbo", "libpng", "libx11", "libxcb", "wayland", "libgl", "libgles", "wayland-protocols"],
     "conflicts": ["glmark2"],
-    "csize": 8078756,
-    "isize": 15095369
+    "csize": 8142011,
+    "isize": 15139727
   },
   {
     "base": "kodi-addon-inputstream-adaptive",
@@ -565,14 +565,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.145988.f5eba77e2ed",
+    "version": "21.3.0_devel.145992.ee1f0451a8d",
     "release": "1",
-    "builddate": "2021-10-08T07:02:11",
+    "builddate": "2021-10-08T10:02:02",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 35816241,
-    "isize": 124614619
+    "csize": 35815969,
+    "isize": 124618715
   },
   {
     "base": "mpv-sdl",
