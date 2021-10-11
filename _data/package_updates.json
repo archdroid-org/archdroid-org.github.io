@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "21.3.0_devel.146031.6b9e12ea256",
+    "version": "21.3.0_devel.146044.77e5f149ebb",
     "release": "1",
-    "builddate": "2021-10-11T10:01:29",
+    "builddate": "2021-10-11T13:02:02",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 35821489,
-    "isize": 124614619
+    "csize": 35815347,
+    "isize": 124610523
   },
   {
     "base": "neovim-git",
