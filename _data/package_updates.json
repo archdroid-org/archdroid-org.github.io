@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.146427.996e81fb704",
+    "version": "22.0.0_devel.146431.b83c9b21a6a",
     "release": "1",
-    "builddate": "2021-10-21T16:12:52",
+    "builddate": "2021-10-21T19:08:54",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 35906826,
-    "isize": 124978807
+    "csize": 35910962,
+    "isize": 124986999
   },
   {
     "base": "neovim-git",
@@ -51,14 +51,66 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r922.geaa03b718",
+    "version": "0.5.0.r924.gcb15055c2",
     "release": "1",
-    "builddate": "2021-10-21T16:07:50",
+    "builddate": "2021-10-21T19:04:12",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9968723,
-    "isize": 31289048
+    "csize": 9969983,
+    "isize": 31285836
+  },
+  {
+    "base": "wayfire-wlroots",
+    "name": "wayfire-wlroots",
+    "arch": "aarch64",
+    "description": "Modular Wayland compositor library",
+    "url": "https://github.com/swaywm/wlroots",
+    "license": "MIT",
+    "version": "0.13.0",
+    "release": "2",
+    "builddate": "2021-10-21T19:03:16",
+    "depends": [
+      "libinput",
+      "libxkbcommon",
+      "pixman",
+      "xcb-util-errors",
+      "xcb-util-renderutil",
+      "xcb-util-wm"
+    ],
+    "providedepends": {
+      "opengl-driver": [
+        "mesa-devel",
+        "mesa-devel-git"
+      ]
+    },
+    "optdepends": [
+      "xorg-xwayland: Xwayland support"
+    ],
+    "csize": 389320,
+    "isize": 1083381
+  },
+  {
+    "base": "wayfire-plugins-extra",
+    "name": "wayfire-plugins-extra",
+    "arch": "aarch64",
+    "description": "Additional plugins for Wayfire",
+    "url": "https://wayfire.org",
+    "license": "custom:MIT",
+    "version": "0.7.0",
+    "release": "2",
+    "builddate": "2021-10-21T19:02:31",
+    "depends": [
+      "wayfire>=0.7",
+      "cairo",
+      "glibmm",
+      "iio-sensor-proxy"
+    ],
+    "conflicts": [
+      "wayfire-plugins-extra-git"
+    ],
+    "csize": 207636,
+    "isize": 834093
   },
   {
     "base": "linux-odroid-514",
@@ -208,71 +260,5 @@
     ],
     "csize": 455112,
     "isize": 1113979
-  },
-  {
-    "base": "compiz",
-    "name": "compiz",
-    "arch": "aarch64",
-    "description": "Composite manager for Aiglx and Xgl, with plugins and CCSM",
-    "url": "https://launchpad.net/compiz",
-    "license": [
-      "GPL",
-      "LGPL",
-      "MIT"
-    ],
-    "version": "0.9.14.1",
-    "release": "6",
-    "builddate": "2021-09-03T19:02:27",
-    "depends": [
-      "boost-libs",
-      "xorg-server",
-      "fuse2",
-      "glibmm",
-      "libwnck3",
-      "python-gobject",
-      "python-cairo",
-      "protobuf",
-      "metacity",
-      "glu"
-    ],
-    "optdepends": [
-      "xorg-xprop: grab various window properties for use in window matching rules"
-    ],
-    "conflicts": [
-      "compiz-core",
-      "compiz-gtk",
-      "compiz-bcop",
-      "ccsm",
-      "compiz-fusion-plugins-main",
-      "compiz-fusion-plugins-extra",
-      "compiz-fusion-plugins-experimental",
-      "compizconfig-python",
-      "libcompizconfig",
-      "simple-ccsm"
-    ],
-    "csize": 6501394,
-    "isize": 26375153
-  },
-  {
-    "base": "astromenace",
-    "name": "astromenace",
-    "arch": "aarch64",
-    "description": "Hardcore 3D space shooter with spaceship upgrade possibilities",
-    "url": "http://www.viewizard.com/astromenace/index_linux.php",
-    "license": "GPL3",
-    "version": "1.4.1",
-    "release": "2",
-    "builddate": "2021-09-01T04:02:16",
-    "depends": [
-      "sdl2",
-      "freealut",
-      "libjpeg",
-      "libvorbis",
-      "glu",
-      "freetype2",
-      "libxinerama"
-    ],
-    "csize": 64197199,
-    "isize": 117621488
   }
 ]

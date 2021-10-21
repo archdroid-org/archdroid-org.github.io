@@ -565,14 +565,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.146427.996e81fb704",
+    "version": "22.0.0_devel.146431.b83c9b21a6a",
     "release": "1",
-    "builddate": "2021-10-21T16:12:52",
+    "builddate": "2021-10-21T19:08:54",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 35906826,
-    "isize": 124978807
+    "csize": 35910962,
+    "isize": 124986999
   },
   {
     "base": "mpv-sdl",
@@ -597,12 +597,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r922.geaa03b718",
+    "version": "0.5.0.r924.gcb15055c2",
     "release": "1",
-    "builddate": "2021-10-21T16:07:50",
+    "builddate": "2021-10-21T19:04:12",
     "conflicts": ["neovim"],
-    "csize": 9968723,
-    "isize": 31289048
+    "csize": 9969983,
+    "isize": 31285836
   },
   {
     "base": "neverball",
@@ -995,11 +995,11 @@
     "url": "https://wayfire.org",
     "license": "custom:MIT",
     "version": "0.7.0",
-    "release": "1",
-    "builddate": "2021-02-07T04:31:56",
+    "release": "2",
+    "builddate": "2021-10-21T19:02:31",
     "depends": ["wayfire>=0.7", "cairo", "glibmm", "iio-sensor-proxy"],
     "conflicts": ["wayfire-plugins-extra-git"],
-    "csize": 207122,
+    "csize": 207636,
     "isize": 834093
   },
   {
@@ -1010,13 +1010,13 @@
     "url": "https://github.com/swaywm/wlroots",
     "license": "MIT",
     "version": "0.13.0",
-    "release": "1",
-    "builddate": "2021-07-08T04:47:33",
+    "release": "2",
+    "builddate": "2021-10-21T19:03:16",
     "depends": ["libinput", "libxkbcommon", "pixman", "xcb-util-errors", "xcb-util-renderutil", "xcb-util-wm"],
     "providedepends": {"opengl-driver": ["mesa-devel", "mesa-devel-git"]},
     "optdepends": ["xorg-xwayland: Xwayland support"],
-    "csize": 389446,
-    "isize": 1075141
+    "csize": 389320,
+    "isize": 1083381
   },
   {
     "base": "wcm",
