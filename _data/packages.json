@@ -565,14 +565,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.146686.1776d741c53",
+    "version": "22.0.0_devel.146696.8bfa146b805",
     "release": "1",
-    "builddate": "2021-10-29T10:02:51",
+    "builddate": "2021-10-29T13:07:43",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 35995213,
-    "isize": 125306971
+    "csize": 35996605,
+    "isize": 125335643
   },
   {
     "base": "mpv-sdl",
@@ -597,12 +597,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r959.g1dbbaf89b",
+    "version": "0.5.0.r960.gd1c470957",
     "release": "1",
-    "builddate": "2021-10-29T04:02:15",
+    "builddate": "2021-10-29T13:02:58",
     "conflicts": ["neovim"],
-    "csize": 9964330,
-    "isize": 31340611
+    "csize": 9970446,
+    "isize": 31356244
   },
   {
     "base": "neverball",
@@ -962,14 +962,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1639.562e415",
+    "version": "r1645.b511103",
     "release": "1",
-    "builddate": "2021-10-22T10:09:38",
+    "builddate": "2021-10-29T13:23:21",
     "depends": ["gtkmm3", "libjsoncpp.so=24-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 455537,
-    "isize": 1130425
+    "csize": 457299,
+    "isize": 1130447
   },
   {
     "base": "wayfire",
