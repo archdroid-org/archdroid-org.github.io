@@ -457,15 +457,15 @@
     "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
     "url": "https://github.com/tobetter/linux/tree/odroid-5.14.y",
     "license": "GPL2",
-    "version": "5.14.13",
+    "version": "5.14.15",
     "release": "1",
-    "builddate": "2021-10-20T02:59:25",
+    "builddate": "2021-11-03T07:02:49",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 58943281,
-    "isize": 164477598
+    "csize": 58947560,
+    "isize": 164476509
   },
   {
     "base": "linux-odroid-514",
@@ -474,12 +474,12 @@
     "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
     "url": "https://github.com/tobetter/linux/tree/odroid-5.14.y",
     "license": "GPL2",
-    "version": "5.14.13",
+    "version": "5.14.15",
     "release": "1",
-    "builddate": "2021-10-20T02:59:25",
+    "builddate": "2021-11-03T07:02:49",
     "conflicts": ["linux-headers"],
-    "csize": 12834657,
-    "isize": 49679832
+    "csize": 12834812,
+    "isize": 49679617
   },
   {
     "base": "linux-odroid-exp",
@@ -565,13 +565,13 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.146764.d863e62b32b",
+    "version": "22.0.0_devel.146766.e15e3a8e863",
     "release": "1",
-    "builddate": "2021-11-03T04:03:03",
+    "builddate": "2021-11-03T08:31:55",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 35851393,
+    "csize": 35851408,
     "isize": 124413629
   },
   {
