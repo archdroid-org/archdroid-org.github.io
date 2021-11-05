@@ -99,7 +99,7 @@
     "release": "1",
     "builddate": "2020-10-14T20:21:15",
     "depends": ["dkms"],
-    "providedepends": {"linux-headers": ["linux-amlogic-512-headers", "linux-amlogic-exp-headers", "linux-odroid-512-headers", "linux-odroid-513-headers", "linux-odroid-514-headers", "linux-odroid-exp-headers", "linux-odroid-g12-headers"]},
+    "providedepends": {"linux-headers": ["linux-amlogic-512-headers", "linux-amlogic-515-headers", "linux-amlogic-exp-headers", "linux-odroid-512-headers", "linux-odroid-513-headers", "linux-odroid-514-headers", "linux-odroid-exp-headers", "linux-odroid-g12-headers"]},
     "csize": 2556081,
     "isize": 13801804
   },
@@ -356,6 +356,37 @@
     "conflicts": ["linux-headers"],
     "csize": 12742436,
     "isize": 48964487
+  },
+  {
+    "base": "linux-amlogic-515",
+    "name": "linux-amlogic-515",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.15.y",
+    "license": "GPL2",
+    "version": "5.15.0",
+    "release": "1",
+    "builddate": "2021-11-05T16:06:07",
+    "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
+    "optdepends": ["crda: to set the correct wireless channels of your country"],
+    "replaces": ["linux-armv8"],
+    "conflicts": ["linux"],
+    "csize": 47106612,
+    "isize": 134204641
+  },
+  {
+    "base": "linux-amlogic-515",
+    "name": "linux-amlogic-515-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.15.y",
+    "license": "GPL2",
+    "version": "5.15.0",
+    "release": "1",
+    "builddate": "2021-11-05T16:06:07",
+    "conflicts": ["linux-headers"],
+    "csize": 26562400,
+    "isize": 87177241
   },
   {
     "base": "linux-amlogic-exp",
@@ -954,6 +985,21 @@
     "conflicts": ["uboot-odroid-n2"],
     "csize": 581857,
     "isize": 876022
+  },
+  {
+    "base": "uboot-odroid-n2plus-mainline",
+    "name": "uboot-odroid-n2plus-mainline",
+    "arch": "aarch64",
+    "description": "Mainline U-Boot for ODROID-N2/N2+",
+    "url": "http://www.denx.de/wiki/U-Boot/WebHome",
+    "license": "GPL",
+    "version": "2022.01.bc18582a",
+    "release": "1",
+    "builddate": "2021-11-05T17:45:02",
+    "depends": ["coreutils", "uboot-tools", "util-linux", "gawk", "sed"],
+    "conflicts": ["uboot-odroid-n2", "uboot-odroid-n2plus"],
+    "csize": 626234,
+    "isize": 2142214
   },
   {
     "base": "waybar-git",
