@@ -45,6 +45,104 @@
     "isize": 124787068
   },
   {
+    "base": "x86_64-glibc",
+    "name": "x86_64-glibc",
+    "arch": "aarch64",
+    "description": "GNU C Library x86_64 target",
+    "url": "https://www.gnu.org/software/libc/",
+    "license": [
+      "GPL",
+      "LGPL"
+    ],
+    "version": "2.34",
+    "release": "1",
+    "builddate": "2021-11-12T00:18:26",
+    "repodepends": [
+      "x86_64-gcc",
+      "x86_64-linux-api-headers"
+    ],
+    "csize": 4233233,
+    "isize": 14733571
+  },
+  {
+    "base": "x86_64-gcc",
+    "name": "x86_64-gcc",
+    "arch": "aarch64",
+    "description": "The GNU Compiler Collection - cross compiler for x86_64 target",
+    "url": "https://gcc.gnu.org/",
+    "license": [
+      "GPL",
+      "LGPL",
+      "FDL"
+    ],
+    "version": "11.2.0",
+    "release": "1",
+    "builddate": "2021-11-11T23:38:33",
+    "depends": [
+      "libmpc",
+      "zstd"
+    ],
+    "replaces": [
+      "x86_64-gcc-bootstrap"
+    ],
+    "csize": 73986545,
+    "isize": 210966636
+  },
+  {
+    "base": "x86_64-gcc-bootstrap",
+    "name": "x86_64-gcc-bootstrap",
+    "arch": "aarch64",
+    "description": "The GNU Compiler Collection - cross compiler for x86_64 target - bootstrap compiler",
+    "url": "https://gcc.gnu.org/",
+    "license": [
+      "GPL",
+      "LGPL",
+      "FDL"
+    ],
+    "version": "11.2.0",
+    "release": "1",
+    "builddate": "2021-11-11T22:34:17",
+    "depends": [
+      "libmpc",
+      "zstd"
+    ],
+    "conflicts": [
+      "x86_64-gcc"
+    ],
+    "csize": 53009432,
+    "isize": 148716421
+  },
+  {
+    "base": "x86_64-linux-api-headers",
+    "name": "x86_64-linux-api-headers",
+    "arch": "any",
+    "description": "Kernel headers sanitized for use in userspace (x86_64)",
+    "url": "https://www.kernel.org",
+    "license": "GPL2",
+    "version": "5.12.3",
+    "release": "1",
+    "builddate": "2021-11-11T22:32:38",
+    "csize": 1590200,
+    "isize": 5568693
+  },
+  {
+    "base": "x86_64-binutils",
+    "name": "x86_64-binutils",
+    "arch": "aarch64",
+    "description": "A set of programs to assemble and manipulate binary and object files for the x86_64 target",
+    "url": "https://www.gnu.org/software/binutils/",
+    "license": "GPL",
+    "version": "2.37",
+    "release": "1",
+    "builddate": "2021-11-11T22:23:18",
+    "depends": [
+      "zlib",
+      "elfutils"
+    ],
+    "csize": 8455246,
+    "isize": 30890408
+  },
+  {
     "base": "neovim-git",
     "name": "neovim-git",
     "arch": "aarch64",
@@ -127,136 +225,5 @@
     ],
     "csize": 47106612,
     "isize": 134204641
-  },
-  {
-    "base": "linux-odroid-514",
-    "name": "linux-odroid-514-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.14.y",
-    "license": "GPL2",
-    "version": "5.14.15",
-    "release": "1",
-    "builddate": "2021-11-03T07:02:49",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 12834812,
-    "isize": 49679617
-  },
-  {
-    "base": "linux-odroid-514",
-    "name": "linux-odroid-514",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.14.y",
-    "license": "GPL2",
-    "version": "5.14.15",
-    "release": "1",
-    "builddate": "2021-11-03T07:02:49",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 58947560,
-    "isize": 164476509
-  },
-  {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r1645.b511103",
-    "release": "1",
-    "builddate": "2021-10-29T13:23:21",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=24-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 457299,
-    "isize": 1130447
-  },
-  {
-    "base": "wayfire-wlroots",
-    "name": "wayfire-wlroots",
-    "arch": "aarch64",
-    "description": "Modular Wayland compositor library",
-    "url": "https://github.com/swaywm/wlroots",
-    "license": "MIT",
-    "version": "0.13.0",
-    "release": "2",
-    "builddate": "2021-10-21T19:03:16",
-    "depends": [
-      "libinput",
-      "libxkbcommon",
-      "pixman",
-      "xcb-util-errors",
-      "xcb-util-renderutil",
-      "xcb-util-wm"
-    ],
-    "providedepends": {
-      "opengl-driver": [
-        "mesa-devel",
-        "mesa-devel-git"
-      ]
-    },
-    "optdepends": [
-      "xorg-xwayland: Xwayland support"
-    ],
-    "csize": 389320,
-    "isize": 1083381
-  },
-  {
-    "base": "wayfire-plugins-extra",
-    "name": "wayfire-plugins-extra",
-    "arch": "aarch64",
-    "description": "Additional plugins for Wayfire",
-    "url": "https://wayfire.org",
-    "license": "custom:MIT",
-    "version": "0.7.0",
-    "release": "2",
-    "builddate": "2021-10-21T19:02:31",
-    "depends": [
-      "wayfire>=0.7",
-      "cairo",
-      "glibmm",
-      "iio-sensor-proxy"
-    ],
-    "conflicts": [
-      "wayfire-plugins-extra-git"
-    ],
-    "csize": 207636,
-    "isize": 834093
   }
 ]
