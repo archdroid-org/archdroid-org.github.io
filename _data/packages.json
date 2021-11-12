@@ -148,6 +148,38 @@
     "isize": 44053791
   },
   {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3351.d3cd354c",
+    "release": "1",
+    "builddate": "2021-11-12T07:59:16",
+    "depends": ["sdl2", "libepoxy"],
+    "optdepends": ["squashfs-tools: For squashfs rootfs support"],
+    "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
+    "conflicts": ["fex-emu"],
+    "csize": 2532420,
+    "isize": 8741010
+  },
+  {
+    "base": "fex-emu-thunks-git",
+    "name": "fex-emu-thunks-git",
+    "arch": "aarch64",
+    "description": "Fex special guest libraries that call out to host code for speed and compatibility",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3351.d3cd354c",
+    "release": "1",
+    "builddate": "2021-11-12T08:08:58",
+    "depends": ["mesa"],
+    "conflicts": ["fex-emu-thunks"],
+    "csize": 1909875,
+    "isize": 8216152
+  },
+  {
     "base": "glmark2-git",
     "name": "glmark2-git",
     "arch": "aarch64",
