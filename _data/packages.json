@@ -154,15 +154,15 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3387.977d92b7",
+    "version": "r3391.c63c5fb6",
     "release": "1",
-    "builddate": "2021-11-16T16:51:28",
+    "builddate": "2021-11-17T10:17:12",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 2504348,
-    "isize": 8727352
+    "csize": 2505681,
+    "isize": 8727353
   },
   {
     "base": "fex-emu-thunks-git",
@@ -171,12 +171,12 @@
     "description": "Fex special guest libraries that call out to host code for speed and compatibility",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3387.977d92b7",
+    "version": "r3391.c63c5fb6",
     "release": "1",
-    "builddate": "2021-11-16T16:33:00",
+    "builddate": "2021-11-17T10:07:03",
     "depends": ["mesa"],
     "conflicts": ["fex-emu-thunks"],
-    "csize": 1893875,
+    "csize": 1893859,
     "isize": 8216152
   },
   {
@@ -628,13 +628,13 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.147234.8ee7309e577",
+    "version": "22.0.0_devel.147236.ffbad81305b",
     "release": "1",
-    "builddate": "2021-11-17T04:53:27",
+    "builddate": "2021-11-17T10:22:50",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 36054018,
+    "csize": 36054003,
     "isize": 125147995
   },
   {
@@ -660,12 +660,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1075.geba317d7a9",
+    "version": "0.5.0.r1076.gc0efe49e78",
     "release": "1",
-    "builddate": "2021-11-16T22:08:57",
+    "builddate": "2021-11-17T10:12:29",
     "conflicts": ["neovim"],
-    "csize": 9908261,
-    "isize": 31063469
+    "csize": 9901283,
+    "isize": 31042870
   },
   {
     "base": "neverball",
