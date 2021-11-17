@@ -154,15 +154,15 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3391.c63c5fb6",
+    "version": "r3412.a04cc4dc",
     "release": "1",
-    "builddate": "2021-11-17T10:17:12",
+    "builddate": "2021-11-17T16:13:39",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 2505681,
-    "isize": 8727353
+    "csize": 2515147,
+    "isize": 8744390
   },
   {
     "base": "fex-emu-thunks-git",
@@ -171,12 +171,12 @@
     "description": "Fex special guest libraries that call out to host code for speed and compatibility",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3391.c63c5fb6",
+    "version": "r3412.a04cc4dc",
     "release": "1",
-    "builddate": "2021-11-17T10:07:03",
+    "builddate": "2021-11-17T16:08:19",
     "depends": ["mesa"],
     "conflicts": ["fex-emu-thunks"],
-    "csize": 1893859,
+    "csize": 1893858,
     "isize": 8216152
   },
   {
@@ -628,14 +628,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.147241.ee2e14b352b",
+    "version": "22.0.0_devel.147251.58a0d8d0ded",
     "release": "1",
-    "builddate": "2021-11-17T13:08:36",
+    "builddate": "2021-11-17T16:23:11",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 36054008,
-    "isize": 125147995
+    "csize": 36048485,
+    "isize": 125061979
   },
   {
     "base": "mpv-sdl",
