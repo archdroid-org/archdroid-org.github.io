@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.147227.02e5f4fb10d",
+    "version": "22.0.0_devel.147234.8ee7309e577",
     "release": "1",
-    "builddate": "2021-11-17T01:09:00",
+    "builddate": "2021-11-17T04:53:27",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,52 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 36038202,
-    "isize": 125107035
+    "csize": 36054018,
+    "isize": 125147995
+  },
+  {
+    "base": "linux-amlogic-515",
+    "name": "linux-amlogic-515-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.15.y",
+    "license": "GPL2",
+    "version": "5.15.0",
+    "release": "2",
+    "builddate": "2021-11-17T04:09:26",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 26562354,
+    "isize": 87177242
+  },
+  {
+    "base": "linux-amlogic-515",
+    "name": "linux-amlogic-515",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.15.y",
+    "license": "GPL2",
+    "version": "5.15.0",
+    "release": "2",
+    "builddate": "2021-11-17T04:09:26",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 47097364,
+    "isize": 134200584
   },
   {
     "base": "neovim-git",
@@ -196,46 +240,5 @@
     ],
     "csize": 73986545,
     "isize": 210966636
-  },
-  {
-    "base": "x86_64-gcc-bootstrap",
-    "name": "x86_64-gcc-bootstrap",
-    "arch": "aarch64",
-    "description": "The GNU Compiler Collection - cross compiler for x86_64 target - bootstrap compiler",
-    "url": "https://gcc.gnu.org/",
-    "license": [
-      "GPL",
-      "LGPL",
-      "FDL"
-    ],
-    "version": "11.2.0",
-    "release": "1",
-    "builddate": "2021-11-11T22:34:17",
-    "depends": [
-      "libmpc",
-      "zstd"
-    ],
-    "conflicts": [
-      "x86_64-gcc"
-    ],
-    "csize": 53009432,
-    "isize": 148716421
-  },
-  {
-    "base": "x86_64-binutils",
-    "name": "x86_64-binutils",
-    "arch": "aarch64",
-    "description": "A set of programs to assemble and manipulate binary and object files for the x86_64 target",
-    "url": "https://www.gnu.org/software/binutils/",
-    "license": "GPL",
-    "version": "2.37",
-    "release": "1",
-    "builddate": "2021-11-11T22:23:18",
-    "depends": [
-      "zlib",
-      "elfutils"
-    ],
-    "csize": 8455246,
-    "isize": 30890408
   }
 ]
