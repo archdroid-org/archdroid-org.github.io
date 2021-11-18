@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.147272.68ec8671812",
+    "version": "22.0.0_devel.147275.df8aeb45984",
     "release": "1",
-    "builddate": "2021-11-18T04:13:37",
+    "builddate": "2021-11-18T10:22:47",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,24 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 36058173,
+    "csize": 36054466,
     "isize": 125135783
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r1081.g36538417f0",
-    "release": "1",
-    "builddate": "2021-11-18T04:08:59",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9899513,
-    "isize": 31064570
   },
   {
     "base": "fex-emu-git",
@@ -67,9 +51,9 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3412.a04cc4dc",
+    "version": "r3416.d47182b6",
     "release": "1",
-    "builddate": "2021-11-17T16:13:39",
+    "builddate": "2021-11-18T10:17:50",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -83,8 +67,24 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 2515147,
-    "isize": 8744390
+    "csize": 2516038,
+    "isize": 8748486
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r1081.g36538417f",
+    "release": "1",
+    "builddate": "2021-11-18T10:13:04",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9904709,
+    "isize": 31068762
   },
   {
     "base": "fex-emu-thunks-git",
@@ -93,16 +93,16 @@
     "description": "Fex special guest libraries that call out to host code for speed and compatibility",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3412.a04cc4dc",
+    "version": "r3416.d47182b6",
     "release": "1",
-    "builddate": "2021-11-17T16:08:19",
+    "builddate": "2021-11-18T10:07:32",
     "depends": [
       "mesa"
     ],
     "conflicts": [
       "fex-emu-thunks"
     ],
-    "csize": 1893858,
+    "csize": 1893881,
     "isize": 8216152
   },
   {
