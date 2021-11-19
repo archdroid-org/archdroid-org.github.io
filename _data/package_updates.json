@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.147314.cee1dd92bd8",
+    "version": "22.0.0_devel.147315.04c90f292e1",
     "release": "1",
-    "builddate": "2021-11-19T04:17:48",
+    "builddate": "2021-11-19T11:27:38",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 36104850,
-    "isize": 125250471
+    "csize": 36105114,
+    "isize": 125148071
   },
   {
     "base": "fex-emu-git",
@@ -51,9 +51,9 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3423.a92233c7",
+    "version": "r3427.3dc938b8",
     "release": "1",
-    "builddate": "2021-11-19T04:13:20",
+    "builddate": "2021-11-19T11:22:56",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -67,7 +67,7 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 2514753,
+    "csize": 2515079,
     "isize": 8744390
   },
   {
@@ -77,17 +77,61 @@
     "description": "Fex special guest libraries that call out to host code for speed and compatibility",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3423.a92233c7",
+    "version": "r3427.3dc938b8",
     "release": "1",
-    "builddate": "2021-11-19T04:08:02",
+    "builddate": "2021-11-19T11:17:41",
     "depends": [
       "mesa"
     ],
     "conflicts": [
       "fex-emu-thunks"
     ],
-    "csize": 1893877,
+    "csize": 1893913,
     "isize": 8216152
+  },
+  {
+    "base": "linux-odroid-515",
+    "name": "linux-odroid-515-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.15.y",
+    "license": "GPL2",
+    "version": "5.15.2",
+    "release": "1",
+    "builddate": "2021-11-19T10:07:56",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 26418357,
+    "isize": 86951195
+  },
+  {
+    "base": "linux-odroid-515",
+    "name": "linux-odroid-515",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.15.y",
+    "license": "GPL2",
+    "version": "5.15.2",
+    "release": "1",
+    "builddate": "2021-11-19T10:07:56",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 46975700,
+    "isize": 133492601
   },
   {
     "base": "neovim-git",
@@ -196,49 +240,5 @@
     "builddate": "2021-11-12T10:10:33",
     "csize": 1577708,
     "isize": 5568693
-  },
-  {
-    "base": "x86_64-glibc",
-    "name": "x86_64-glibc",
-    "arch": "aarch64",
-    "description": "GNU C Library x86_64 target",
-    "url": "https://www.gnu.org/software/libc/",
-    "license": [
-      "GPL",
-      "LGPL"
-    ],
-    "version": "2.34",
-    "release": "1",
-    "builddate": "2021-11-12T00:18:26",
-    "repodepends": [
-      "x86_64-gcc",
-      "x86_64-linux-api-headers"
-    ],
-    "csize": 4233233,
-    "isize": 14733571
-  },
-  {
-    "base": "x86_64-gcc",
-    "name": "x86_64-gcc",
-    "arch": "aarch64",
-    "description": "The GNU Compiler Collection - cross compiler for x86_64 target",
-    "url": "https://gcc.gnu.org/",
-    "license": [
-      "GPL",
-      "LGPL",
-      "FDL"
-    ],
-    "version": "11.2.0",
-    "release": "1",
-    "builddate": "2021-11-11T23:38:33",
-    "depends": [
-      "libmpc",
-      "zstd"
-    ],
-    "replaces": [
-      "x86_64-gcc-bootstrap"
-    ],
-    "csize": 73986545,
-    "isize": 210966636
   }
 ]
