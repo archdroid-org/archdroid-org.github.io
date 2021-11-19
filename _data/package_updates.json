@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.147313.e277b131825",
+    "version": "22.0.0_devel.147314.cee1dd92bd8",
     "release": "1",
-    "builddate": "2021-11-19T01:27:44",
+    "builddate": "2021-11-19T04:17:48",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,7 +41,7 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 36104833,
+    "csize": 36104850,
     "isize": 125250471
   },
   {
@@ -51,9 +51,9 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3418.61ccec37",
+    "version": "r3423.a92233c7",
     "release": "1",
-    "builddate": "2021-11-19T01:22:02",
+    "builddate": "2021-11-19T04:13:20",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -67,8 +67,27 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 2513435,
+    "csize": 2514753,
     "isize": 8744390
+  },
+  {
+    "base": "fex-emu-thunks-git",
+    "name": "fex-emu-thunks-git",
+    "arch": "aarch64",
+    "description": "Fex special guest libraries that call out to host code for speed and compatibility",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3423.a92233c7",
+    "release": "1",
+    "builddate": "2021-11-19T04:08:02",
+    "depends": [
+      "mesa"
+    ],
+    "conflicts": [
+      "fex-emu-thunks"
+    ],
+    "csize": 1893877,
+    "isize": 8216152
   },
   {
     "base": "neovim-git",
@@ -85,25 +104,6 @@
     ],
     "csize": 9900999,
     "isize": 31080301
-  },
-  {
-    "base": "fex-emu-thunks-git",
-    "name": "fex-emu-thunks-git",
-    "arch": "aarch64",
-    "description": "Fex special guest libraries that call out to host code for speed and compatibility",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3418.61ccec37",
-    "release": "1",
-    "builddate": "2021-11-19T01:10:19",
-    "depends": [
-      "mesa"
-    ],
-    "conflicts": [
-      "fex-emu-thunks"
-    ],
-    "csize": 1893867,
-    "isize": 8216152
   },
   {
     "base": "linux-amlogic-515",
