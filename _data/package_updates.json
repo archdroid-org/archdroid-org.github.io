@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.147359.cdeecadcb6e",
+    "version": "22.0.0_devel.147362.df005c2a65f",
     "release": "1",
-    "builddate": "2021-11-20T01:07:23",
+    "builddate": "2021-11-20T04:19:18",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 36110009,
-    "isize": 125152167
+    "csize": 36112365,
+    "isize": 125205415
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3433.fbd14b65",
+    "release": "1",
+    "builddate": "2021-11-20T04:08:23",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 2521061,
+    "isize": 8753422
   },
   {
     "base": "neovim-git",
@@ -94,32 +120,6 @@
     ],
     "csize": 459788,
     "isize": 1138791
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3427.3dc938b8",
-    "release": "1",
-    "builddate": "2021-11-19T11:22:56",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 2515079,
-    "isize": 8744390
   },
   {
     "base": "fex-emu-thunks-git",
