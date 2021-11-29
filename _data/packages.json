@@ -154,15 +154,15 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3498.b45603d1",
+    "version": "r3523.82ebdf52",
     "release": "1",
-    "builddate": "2021-11-25T22:27:38",
+    "builddate": "2021-11-29T22:21:26",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 2477783,
-    "isize": 8661500
+    "csize": 2481794,
+    "isize": 8707926
   },
   {
     "base": "fex-emu-thunks-git",
@@ -171,12 +171,12 @@
     "description": "Fex special guest libraries that call out to host code for speed and compatibility",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3498.b45603d1",
+    "version": "r3523.82ebdf52",
     "release": "1",
-    "builddate": "2021-11-25T22:14:48",
+    "builddate": "2021-11-29T22:10:01",
     "depends": ["mesa"],
     "conflicts": ["fex-emu-thunks"],
-    "csize": 1901264,
+    "csize": 1901277,
     "isize": 8385672
   },
   {
@@ -659,14 +659,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.147483.1df7c0ce7e0",
+    "version": "22.0.0_devel.147532.34a75ce15ce",
     "release": "1",
-    "builddate": "2021-11-26T13:12:34",
+    "builddate": "2021-11-29T22:29:04",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 35230653,
-    "isize": 122766408
+    "csize": 35245712,
+    "isize": 122831944
   },
   {
     "base": "mpv-sdl",
@@ -691,12 +691,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1159.ga31e7523f",
+    "version": "0.5.0.r1180.gb16b7021e",
     "release": "1",
-    "builddate": "2021-11-26T13:07:27",
+    "builddate": "2021-11-29T22:16:12",
     "conflicts": ["neovim"],
-    "csize": 9905937,
-    "isize": 31112733
+    "csize": 9895762,
+    "isize": 31092422
   },
   {
     "base": "neverball",
@@ -1071,14 +1071,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1683.9fa7bfc",
+    "version": "r1690.b6e24bd",
     "release": "1",
-    "builddate": "2021-11-25T22:59:46",
+    "builddate": "2021-11-29T22:42:27",
     "depends": ["gtkmm3", "libjsoncpp.so=24-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 475524,
-    "isize": 1176757
+    "csize": 477223,
+    "isize": 1189269
   },
   {
     "base": "wayfire",
