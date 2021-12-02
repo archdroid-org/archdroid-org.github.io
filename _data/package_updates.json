@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.147600.7c57346dfdb",
+    "version": "22.0.0_devel.147605.47ed98f5407",
     "release": "1",
-    "builddate": "2021-12-02T16:12:13",
+    "builddate": "2021-12-02T23:07:44",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,53 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 35246091,
+    "csize": 35246143,
     "isize": 122762320
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3547.8ef02783",
+    "release": "1",
+    "builddate": "2021-12-02T22:50:50",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 2911952,
+    "isize": 9820423
+  },
+  {
+    "base": "fex-emu-thunks-git",
+    "name": "fex-emu-thunks-git",
+    "arch": "aarch64",
+    "description": "Fex special guest libraries that call out to host code for speed and compatibility",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3544.919e2bc3",
+    "release": "1",
+    "builddate": "2021-12-02T22:36:04",
+    "depends": [
+      "mesa"
+    ],
+    "conflicts": [
+      "fex-emu-thunks"
+    ],
+    "csize": 1900882,
+    "isize": 8385672
   },
   {
     "base": "neovim-git",
@@ -94,51 +139,6 @@
     ],
     "csize": 490976,
     "isize": 1214118
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3529.d5bf6414",
-    "release": "1",
-    "builddate": "2021-12-01T04:17:32",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 2482014,
-    "isize": 8707926
-  },
-  {
-    "base": "fex-emu-thunks-git",
-    "name": "fex-emu-thunks-git",
-    "arch": "aarch64",
-    "description": "Fex special guest libraries that call out to host code for speed and compatibility",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3529.d5bf6414",
-    "release": "1",
-    "builddate": "2021-12-01T04:07:17",
-    "depends": [
-      "mesa"
-    ],
-    "conflicts": [
-      "fex-emu-thunks"
-    ],
-    "csize": 1900781,
-    "isize": 8385672
   },
   {
     "base": "linux-odroid-515",
