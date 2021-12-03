@@ -6,9 +6,9 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3549.597e4e1d",
+    "version": "r3559.db0740be",
     "release": "1",
-    "builddate": "2021-12-03T04:57:24",
+    "builddate": "2021-12-03T09:04:56",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -22,8 +22,27 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 2911908,
-    "isize": 9820423
+    "csize": 2909647,
+    "isize": 9813250
+  },
+  {
+    "base": "fex-emu-thunks-git",
+    "name": "fex-emu-thunks-git",
+    "arch": "aarch64",
+    "description": "Fex special guest libraries that call out to host code for speed and compatibility",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3554.8c38f936",
+    "release": "1",
+    "builddate": "2021-12-03T08:21:14",
+    "depends": [
+      "mesa"
+    ],
+    "conflicts": [
+      "fex-emu-thunks"
+    ],
+    "csize": 1900782,
+    "isize": 8385672
   },
   {
     "base": "mesa-devel-git",
@@ -69,25 +88,6 @@
     ],
     "csize": 35246147,
     "isize": 122762320
-  },
-  {
-    "base": "fex-emu-thunks-git",
-    "name": "fex-emu-thunks-git",
-    "arch": "aarch64",
-    "description": "Fex special guest libraries that call out to host code for speed and compatibility",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3547.8ef02783",
-    "release": "1",
-    "builddate": "2021-12-03T01:46:58",
-    "depends": [
-      "mesa"
-    ],
-    "conflicts": [
-      "fex-emu-thunks"
-    ],
-    "csize": 1900563,
-    "isize": 8385672
   },
   {
     "base": "neovim-git",
