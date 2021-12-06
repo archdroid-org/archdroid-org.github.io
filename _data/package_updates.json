@@ -1,19 +1,64 @@
 [
   {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3560.d0943322",
+    "release": "1",
+    "builddate": "2021-12-06T07:21:22",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 2906902,
+    "isize": 9813250
+  },
+  {
     "base": "neovim-git",
     "name": "neovim-git",
     "arch": "aarch64",
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1229.g1e6eeca9d1",
+    "version": "0.5.0.r1234.g523f03b506",
     "release": "1",
-    "builddate": "2021-12-04T23:37:06",
+    "builddate": "2021-12-06T07:14:39",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9905712,
-    "isize": 31083355
+    "csize": 9901477,
+    "isize": 31071348
+  },
+  {
+    "base": "fex-emu-thunks-git",
+    "name": "fex-emu-thunks-git",
+    "arch": "aarch64",
+    "description": "Fex special guest libraries that call out to host code for speed and compatibility",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3560.d0943322",
+    "release": "1",
+    "builddate": "2021-12-06T06:07:07",
+    "depends": [
+      "mesa"
+    ],
+    "conflicts": [
+      "fex-emu-thunks"
+    ],
+    "csize": 1900771,
+    "isize": 8385672
   },
   {
     "base": "mesa-devel-git",
@@ -59,51 +104,6 @@
     ],
     "csize": 35245177,
     "isize": 122651040
-  },
-  {
-    "base": "fex-emu-thunks-git",
-    "name": "fex-emu-thunks-git",
-    "arch": "aarch64",
-    "description": "Fex special guest libraries that call out to host code for speed and compatibility",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3559.db0740be",
-    "release": "1",
-    "builddate": "2021-12-03T11:30:18",
-    "depends": [
-      "mesa"
-    ],
-    "conflicts": [
-      "fex-emu-thunks"
-    ],
-    "csize": 1900758,
-    "isize": 8385672
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3559.db0740be",
-    "release": "1",
-    "builddate": "2021-12-03T09:04:56",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 2909647,
-    "isize": 9813250
   },
   {
     "base": "waybar-git",
