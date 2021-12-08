@@ -154,15 +154,15 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3560.d0943322",
+    "version": "r3563.e8670bba",
     "release": "1",
-    "builddate": "2021-12-06T07:21:22",
+    "builddate": "2021-12-08T10:12:11",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 2906902,
-    "isize": 9813250
+    "csize": 2868576,
+    "isize": 9731552
   },
   {
     "base": "fex-emu-thunks-git",
@@ -171,12 +171,12 @@
     "description": "Fex special guest libraries that call out to host code for speed and compatibility",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3560.d0943322",
+    "version": "r3563.e8670bba",
     "release": "1",
-    "builddate": "2021-12-06T06:07:07",
+    "builddate": "2021-12-08T10:07:01",
     "depends": ["mesa"],
     "conflicts": ["fex-emu-thunks"],
-    "csize": 1900771,
+    "csize": 1900775,
     "isize": 8385672
   },
   {
@@ -1071,14 +1071,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1725.9e8a71c",
+    "version": "r1727.39f42cd",
     "release": "1",
-    "builddate": "2021-12-01T13:15:56",
+    "builddate": "2021-12-08T10:18:30",
     "depends": ["gtkmm3", "libjsoncpp.so=24-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 490976,
-    "isize": 1214118
+    "csize": 492782,
+    "isize": 1246908
   },
   {
     "base": "wayfire",
