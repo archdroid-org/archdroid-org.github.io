@@ -154,15 +154,15 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3606.d4655fbb",
+    "version": "r3608.c65be9f5",
     "release": "1",
-    "builddate": "2021-12-09T22:46:41",
+    "builddate": "2021-12-10T04:45:16",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 2880401,
-    "isize": 9744273
+    "csize": 2787781,
+    "isize": 9317841
   },
   {
     "base": "fex-emu-thunks-git",
@@ -171,12 +171,12 @@
     "description": "Fex special guest libraries that call out to host code for speed and compatibility",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3606.d4655fbb",
+    "version": "r3608.c65be9f5",
     "release": "1",
-    "builddate": "2021-12-09T22:37:09",
+    "builddate": "2021-12-10T04:35:48",
     "depends": ["mesa"],
     "conflicts": ["fex-emu-thunks"],
-    "csize": 1900546,
+    "csize": 1900754,
     "isize": 8385672
   },
   {
@@ -691,12 +691,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1290.g8e64b21fe",
+    "version": "0.5.0.r1311.gac2d140a3",
     "release": "1",
-    "builddate": "2021-12-09T22:41:56",
+    "builddate": "2021-12-10T04:40:38",
     "conflicts": ["neovim"],
-    "csize": 9907675,
-    "isize": 31070983
+    "csize": 9909251,
+    "isize": 31084529
   },
   {
     "base": "neverball",
