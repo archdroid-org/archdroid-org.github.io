@@ -1,30 +1,14 @@
 [
   {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r1321.g53c95ccd1",
-    "release": "1",
-    "builddate": "2021-12-10T22:07:42",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9908257,
-    "isize": 31072231
-  },
-  {
     "base": "fex-emu-git",
     "name": "fex-emu-git",
     "arch": "aarch64",
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3651.e99a23cf",
+    "version": "r3654.91984003",
     "release": "1",
-    "builddate": "2021-12-10T19:12:45",
+    "builddate": "2021-12-11T01:12:34",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -38,8 +22,24 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 2770726,
-    "isize": 9321937
+    "csize": 2776129,
+    "isize": 9328395
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r1329.g3f8703093",
+    "release": "1",
+    "builddate": "2021-12-11T01:07:44",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9907493,
+    "isize": 31088743
   },
   {
     "base": "fex-emu-thunks-git",
