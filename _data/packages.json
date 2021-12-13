@@ -154,15 +154,15 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3656.9394e49c",
+    "version": "r3658.c43af0e1",
     "release": "1",
-    "builddate": "2021-12-13T04:06:41",
+    "builddate": "2021-12-13T13:07:23",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 2784607,
-    "isize": 9344939
+    "csize": 2782957,
+    "isize": 9353131
   },
   {
     "base": "fex-emu-thunks-git",
