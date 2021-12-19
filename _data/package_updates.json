@@ -1,19 +1,178 @@
 [
   {
+    "base": "mesa-devel-git",
+    "name": "mesa-devel-git",
+    "arch": "aarch64",
+    "description": "Open-source implementation of the OpenGL specification (development version)",
+    "url": "https://www.mesa3d.org/",
+    "license": "custom",
+    "version": "22.0.0_devel.148175.e9cc1633a22",
+    "release": "1",
+    "builddate": "2021-12-19T23:02:42",
+    "depends": [
+      "libdrm",
+      "libxxf86vm",
+      "libxdamage",
+      "libxshmfence",
+      "libelf",
+      "libomxil-bellagio",
+      "libunwind",
+      "libglvnd",
+      "llvm",
+      "lm_sensors",
+      "libclc",
+      "glslang",
+      "vulkan-icd-loader",
+      "wayland",
+      "zstd"
+    ],
+    "replaces": [
+      "mesa-dri",
+      "mesa-libgl",
+      "mesa-arm-git"
+    ],
+    "conflicts": [
+      "vulkan-mesa-layers",
+      "opencl-mesa",
+      "vulkan-swrast",
+      "libva-mesa-driver",
+      "mesa-vdpau",
+      "mesa",
+      "mesa-dri",
+      "mesa-libgl"
+    ],
+    "csize": 31018382,
+    "isize": 96243681
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3692.565d1e27",
+    "release": "1",
+    "builddate": "2021-12-19T22:53:08",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 2793359,
+    "isize": 9373046
+  },
+  {
     "base": "neovim-git",
     "name": "neovim-git",
     "arch": "aarch64",
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1342.gbdfea9d9ae",
+    "version": "0.5.0.r1385.g67bb01ae2",
     "release": "1",
-    "builddate": "2021-12-14T16:07:30",
+    "builddate": "2021-12-19T22:48:14",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9906596,
-    "isize": 31072503
+    "csize": 9914295,
+    "isize": 31047006
+  },
+  {
+    "base": "linux-odroid-516",
+    "name": "linux-odroid-516-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
+    "license": "GPL2",
+    "version": "5.16",
+    "release": "4",
+    "builddate": "2021-12-19T20:49:48",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 26673807,
+    "isize": 87771935
+  },
+  {
+    "base": "linux-odroid-516",
+    "name": "linux-odroid-516",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
+    "license": "GPL2",
+    "version": "5.16",
+    "release": "4",
+    "builddate": "2021-12-19T20:49:48",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 47263650,
+    "isize": 134338422
+  },
+  {
+    "base": "linux-amlogic-516",
+    "name": "linux-amlogic-516-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
+    "license": "GPL2",
+    "version": "5.16",
+    "release": "5",
+    "builddate": "2021-12-19T19:11:14",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 26803635,
+    "isize": 87931328
+  },
+  {
+    "base": "linux-amlogic-516",
+    "name": "linux-amlogic-516",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
+    "license": "GPL2",
+    "version": "5.16",
+    "release": "5",
+    "builddate": "2021-12-19T19:11:14",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 47336353,
+    "isize": 134799925
   },
   {
     "base": "waybar-git",
@@ -51,32 +210,6 @@
     "isize": 1239744
   },
   {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3662.0a3a270a",
-    "release": "1",
-    "builddate": "2021-12-14T01:07:10",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 2785236,
-    "isize": 9359589
-  },
-  {
     "base": "fex-emu-thunks-git",
     "name": "fex-emu-thunks-git",
     "arch": "aarch64",
@@ -96,51 +229,6 @@
     "isize": 8385672
   },
   {
-    "base": "mesa-devel-git",
-    "name": "mesa-devel-git",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (development version)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "22.0.0_devel.147646.1abd6375c96",
-    "release": "1",
-    "builddate": "2021-12-03T23:47:18",
-    "depends": [
-      "libdrm",
-      "libxxf86vm",
-      "libxdamage",
-      "libxshmfence",
-      "libelf",
-      "libomxil-bellagio",
-      "libunwind",
-      "libglvnd",
-      "llvm",
-      "lm_sensors",
-      "libclc",
-      "glslang",
-      "vulkan-icd-loader",
-      "wayland",
-      "zstd"
-    ],
-    "replaces": [
-      "mesa-dri",
-      "mesa-libgl",
-      "mesa-arm-git"
-    ],
-    "conflicts": [
-      "vulkan-mesa-layers",
-      "opencl-mesa",
-      "vulkan-swrast",
-      "libva-mesa-driver",
-      "mesa-vdpau",
-      "mesa",
-      "mesa-dri",
-      "mesa-libgl"
-    ],
-    "csize": 35245177,
-    "isize": 122651040
-  },
-  {
     "base": "linux-odroid-515",
     "name": "linux-odroid-515-headers",
     "arch": "aarch64",
@@ -155,90 +243,5 @@
     ],
     "csize": 26418357,
     "isize": 86951195
-  },
-  {
-    "base": "linux-odroid-515",
-    "name": "linux-odroid-515",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.15.y",
-    "license": "GPL2",
-    "version": "5.15.2",
-    "release": "1",
-    "builddate": "2021-11-19T10:07:56",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 46975700,
-    "isize": 133492601
-  },
-  {
-    "base": "linux-amlogic-515",
-    "name": "linux-amlogic-515-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.15.y",
-    "license": "GPL2",
-    "version": "5.15.0",
-    "release": "2",
-    "builddate": "2021-11-17T04:09:26",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 26562354,
-    "isize": 87177242
-  },
-  {
-    "base": "linux-amlogic-515",
-    "name": "linux-amlogic-515",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.15.y",
-    "license": "GPL2",
-    "version": "5.15.0",
-    "release": "2",
-    "builddate": "2021-11-17T04:09:26",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 47097364,
-    "isize": 134200584
-  },
-  {
-    "base": "x86_64-linux-api-headers",
-    "name": "x86_64-linux-api-headers",
-    "arch": "any",
-    "description": "Kernel headers sanitized for use in userspace (x86_64)",
-    "url": "https://www.kernel.org",
-    "license": "GPL2",
-    "version": "5.12.3",
-    "release": "1",
-    "builddate": "2021-11-12T10:10:33",
-    "csize": 1577708,
-    "isize": 5568693
   }
 ]
