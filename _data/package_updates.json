@@ -1,19 +1,29 @@
 [
   {
-    "base": "neovim-git",
-    "name": "neovim-git",
+    "base": "glmark2-git",
+    "name": "glmark2-git",
     "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r1398.gbc27d807f3",
+    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
+    "url": "https://launchpad.net/glmark2",
+    "license": "GPL3",
+    "version": "r966.0858b45",
     "release": "1",
-    "builddate": "2021-12-23T13:08:41",
-    "conflicts": [
-      "neovim"
+    "builddate": "2021-12-23T16:21:13",
+    "depends": [
+      "libjpeg-turbo",
+      "libpng",
+      "libx11",
+      "libxcb",
+      "wayland",
+      "libgl",
+      "libgles",
+      "wayland-protocols"
     ],
-    "csize": 9913645,
-    "isize": 31049648
+    "conflicts": [
+      "glmark2"
+    ],
+    "csize": 8187038,
+    "isize": 15152016
   },
   {
     "base": "mesa-devel-git",
@@ -22,9 +32,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148282.f0f6aec5459",
+    "version": "22.0.0_devel.148283.944c8907ba8",
     "release": "1",
-    "builddate": "2021-12-23T10:07:31",
+    "builddate": "2021-12-23T16:13:50",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -57,8 +67,24 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31021468,
-    "isize": 96264161
+    "csize": 31021473,
+    "isize": 96260065
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r1399.g0d7a97224f",
+    "release": "1",
+    "builddate": "2021-12-23T16:09:03",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9909606,
+    "isize": 31066504
   },
   {
     "base": "fex-emu-git",
@@ -227,21 +253,5 @@
     ],
     "csize": 1900754,
     "isize": 8385672
-  },
-  {
-    "base": "linux-odroid-515",
-    "name": "linux-odroid-515-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.15.y",
-    "license": "GPL2",
-    "version": "5.15.2",
-    "release": "1",
-    "builddate": "2021-11-19T10:07:56",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 26418357,
-    "isize": 86951195
   }
 ]

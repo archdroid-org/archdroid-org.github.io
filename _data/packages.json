@@ -186,13 +186,13 @@
     "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
     "url": "https://launchpad.net/glmark2",
     "license": "GPL3",
-    "version": "r964.e359bb0",
+    "version": "r966.0858b45",
     "release": "1",
-    "builddate": "2021-10-08T10:08:39",
+    "builddate": "2021-12-23T16:21:13",
     "depends": ["libjpeg-turbo", "libpng", "libx11", "libxcb", "wayland", "libgl", "libgles", "wayland-protocols"],
     "conflicts": ["glmark2"],
-    "csize": 8142011,
-    "isize": 15139727
+    "csize": 8187038,
+    "isize": 15152016
   },
   {
     "base": "kodi-addon-inputstream-adaptive",
@@ -721,14 +721,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148282.f0f6aec5459",
+    "version": "22.0.0_devel.148283.944c8907ba8",
     "release": "1",
-    "builddate": "2021-12-23T10:07:31",
+    "builddate": "2021-12-23T16:13:50",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31021468,
-    "isize": 96264161
+    "csize": 31021473,
+    "isize": 96260065
   },
   {
     "base": "mpv-sdl",
@@ -753,12 +753,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1398.gbc27d807f3",
+    "version": "0.5.0.r1399.g0d7a97224f",
     "release": "1",
-    "builddate": "2021-12-23T13:08:41",
+    "builddate": "2021-12-23T16:09:03",
     "conflicts": ["neovim"],
-    "csize": 9913645,
-    "isize": 31049648
+    "csize": 9909606,
+    "isize": 31066504
   },
   {
     "base": "neverball",
