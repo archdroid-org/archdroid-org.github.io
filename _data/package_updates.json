@@ -6,9 +6,9 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3715.c691d709",
+    "version": "r3717.b72245a2",
     "release": "1",
-    "builddate": "2021-12-25T04:05:56",
+    "builddate": "2021-12-25T07:11:41",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -22,8 +22,24 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 3021136,
+    "csize": 3021385,
     "isize": 10321765
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r1401.gd2f62b3164",
+    "release": "1",
+    "builddate": "2021-12-25T07:06:54",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9909273,
+    "isize": 31074736
   },
   {
     "base": "mesa-devel-git",
@@ -130,22 +146,6 @@
     ],
     "csize": 8187038,
     "isize": 15152016
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r1399.g0d7a97224f",
-    "release": "1",
-    "builddate": "2021-12-23T16:09:03",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9909606,
-    "isize": 31066504
   },
   {
     "base": "linux-odroid-516",
