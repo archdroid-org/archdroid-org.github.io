@@ -6,14 +6,14 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1433.g1dcdf86849",
+    "version": "0.5.0.r1439.g9dd8557921",
     "release": "1",
-    "builddate": "2021-12-26T04:07:14",
+    "builddate": "2021-12-26T07:07:27",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9911252,
-    "isize": 31061297
+    "csize": 9911662,
+    "isize": 31061516
   },
   {
     "base": "fex-emu-git",
