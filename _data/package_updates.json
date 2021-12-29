@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148342.0357a2e0129",
+    "version": "22.0.0_devel.148345.b249e700ac6",
     "release": "1",
-    "builddate": "2021-12-29T13:07:27",
+    "builddate": "2021-12-29T16:11:49",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,7 +41,7 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31003214,
+    "csize": 31003238,
     "isize": 96354273
   },
   {
@@ -51,9 +51,9 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3732.98210fdf",
+    "version": "r3734.b078f511",
     "release": "1",
-    "builddate": "2021-12-29T10:06:33",
+    "builddate": "2021-12-29T16:07:37",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -67,7 +67,7 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 3013897,
+    "csize": 3013952,
     "isize": 10329957
   },
   {
