@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148340.eca7b24e74d",
+    "version": "22.0.0_devel.148341.cafca76fa2c",
     "release": "1",
-    "builddate": "2021-12-29T02:51:01",
+    "builddate": "2021-12-29T04:13:45",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -41,8 +41,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31003279,
+    "csize": 31003244,
     "isize": 96354273
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3724.d4b31cd4",
+    "release": "1",
+    "builddate": "2021-12-29T04:08:51",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 3015986,
+    "isize": 10329957
   },
   {
     "base": "neovim-git",
@@ -103,32 +129,6 @@
     ],
     "csize": 47333030,
     "isize": 134814940
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3722.bc120b9f",
-    "release": "1",
-    "builddate": "2021-12-28T04:07:39",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 3017765,
-    "isize": 10329957
   },
   {
     "base": "waybar-git",
