@@ -1,14 +1,49 @@
 [
   {
+    "base": "waybar-git",
+    "name": "waybar-git",
+    "arch": "aarch64",
+    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
+    "url": "https://github.com/Alexays/Waybar/",
+    "license": "MIT",
+    "version": "r1761.d9b5c25",
+    "release": "1",
+    "builddate": "2022-01-07T16:34:32",
+    "depends": [
+      "gtkmm3",
+      "libjsoncpp.so=25-64",
+      "libinput",
+      "libsigc++",
+      "fmt",
+      "wayland",
+      "chrono-date",
+      "libspdlog.so=1-64",
+      "gtk-layer-shell",
+      "libpulse",
+      "libnl",
+      "libappindicator-gtk3",
+      "libdbusmenu-gtk3",
+      "libmpdclient"
+    ],
+    "optdepends": [
+      "otf-font-awesome: Icons in the default configuration"
+    ],
+    "conflicts": [
+      "waybar"
+    ],
+    "csize": 500360,
+    "isize": 1239953
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148543.05a5e5a2bce",
+    "version": "22.0.0_devel.148609.1756930a79d",
     "release": "1",
-    "builddate": "2022-01-06T19:35:08",
+    "builddate": "2022-01-07T16:20:23",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +80,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31004841,
-    "isize": 96223802
+    "csize": 31009828,
+    "isize": 96313914
   },
   {
     "base": "neovim-git",
@@ -55,14 +90,14 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1533.gb43575545",
+    "version": "0.5.0.r1538.gb4fbb9dcf",
     "release": "1",
-    "builddate": "2022-01-06T19:29:35",
+    "builddate": "2022-01-07T16:10:20",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9908431,
-    "isize": 31173311
+    "csize": 9910478,
+    "isize": 31170114
   },
   {
     "base": "fex-emu-git",
@@ -89,41 +124,6 @@
     ],
     "csize": 3025267,
     "isize": 10543523
-  },
-  {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r1759.621d686",
-    "release": "1",
-    "builddate": "2022-01-05T14:59:29",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=25-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 500501,
-    "isize": 1248180
   },
   {
     "base": "linux-amlogic-516",
