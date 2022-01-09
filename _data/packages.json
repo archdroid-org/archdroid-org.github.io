@@ -154,14 +154,14 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3764.e36beb8d",
+    "version": "r3766.eb17edec",
     "release": "1",
-    "builddate": "2022-01-06T01:20:18",
+    "builddate": "2022-01-09T13:07:06",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 3025267,
+    "csize": 3030637,
     "isize": 10543523
   },
   {
@@ -1134,14 +1134,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1768.18cbd2a",
+    "version": "r1770.5d8bc35",
     "release": "1",
-    "builddate": "2022-01-08T13:11:17",
+    "builddate": "2022-01-09T13:12:42",
     "depends": ["gtkmm3", "libjsoncpp.so=25-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 500395,
-    "isize": 1239954
+    "csize": 500465,
+    "isize": 1239990
   },
   {
     "base": "wayfire",
