@@ -154,15 +154,15 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3766.eb17edec",
+    "version": "r3787.a2aa9f3f",
     "release": "1",
-    "builddate": "2022-01-09T13:07:06",
+    "builddate": "2022-01-11T07:41:26",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 3030637,
-    "isize": 10543523
+    "csize": 3020399,
+    "isize": 10543522
   },
   {
     "base": "fex-emu-thunks-git",
@@ -428,14 +428,14 @@
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
     "version": "5.16",
-    "release": "7",
-    "builddate": "2021-12-29T01:03:34",
+    "release": "8",
+    "builddate": "2022-01-11T07:09:17",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 47333030,
-    "isize": 134814940
+    "csize": 47246571,
+    "isize": 134841376
   },
   {
     "base": "linux-amlogic-516",
@@ -445,11 +445,11 @@
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
     "version": "5.16",
-    "release": "7",
-    "builddate": "2021-12-29T01:03:34",
+    "release": "8",
+    "builddate": "2022-01-11T07:09:17",
     "conflicts": ["linux-headers"],
-    "csize": 26797447,
-    "isize": 87933552
+    "csize": 26680228,
+    "isize": 87934392
   },
   {
     "base": "linux-amlogic-exp",
@@ -721,15 +721,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148624.b8f0459d6f4",
+    "version": "22.0.0_devel.148688.a5bc8c4be99",
     "release": "1",
-    "builddate": "2022-01-09T16:11:16",
+    "builddate": "2022-01-11T07:48:00",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31008630,
-    "isize": 96346682
+    "csize": 31025355,
+    "isize": 96404282
   },
   {
     "base": "mpv-sdl",
@@ -754,12 +754,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1563.g8f27c4a041",
+    "version": "0.5.0.r1571.g25eb7692d8",
     "release": "1",
-    "builddate": "2022-01-09T22:07:11",
+    "builddate": "2022-01-11T07:37:07",
     "conflicts": ["neovim"],
-    "csize": 9908755,
-    "isize": 31183779
+    "csize": 9906971,
+    "isize": 31172987
   },
   {
     "base": "neverball",

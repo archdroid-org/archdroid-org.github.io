@@ -1,30 +1,14 @@
 [
   {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r1563.g8f27c4a041",
-    "release": "1",
-    "builddate": "2022-01-09T22:07:11",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9908755,
-    "isize": 31183779
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148624.b8f0459d6f4",
+    "version": "22.0.0_devel.148688.a5bc8c4be99",
     "release": "1",
-    "builddate": "2022-01-09T16:11:16",
+    "builddate": "2022-01-11T07:48:00",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -61,8 +45,94 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31008630,
-    "isize": 96346682
+    "csize": 31025355,
+    "isize": 96404282
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3787.a2aa9f3f",
+    "release": "1",
+    "builddate": "2022-01-11T07:41:26",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 3020399,
+    "isize": 10543522
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r1571.g25eb7692d8",
+    "release": "1",
+    "builddate": "2022-01-11T07:37:07",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9906971,
+    "isize": 31172987
+  },
+  {
+    "base": "linux-amlogic-516",
+    "name": "linux-amlogic-516-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
+    "license": "GPL2",
+    "version": "5.16",
+    "release": "8",
+    "builddate": "2022-01-11T07:09:17",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 26680228,
+    "isize": 87934392
+  },
+  {
+    "base": "linux-amlogic-516",
+    "name": "linux-amlogic-516",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
+    "license": "GPL2",
+    "version": "5.16",
+    "release": "8",
+    "builddate": "2022-01-11T07:09:17",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 47246571,
+    "isize": 134841376
   },
   {
     "base": "waybar-git",
@@ -98,76 +168,6 @@
     ],
     "csize": 500465,
     "isize": 1239990
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3766.eb17edec",
-    "release": "1",
-    "builddate": "2022-01-09T13:07:06",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 3030637,
-    "isize": 10543523
-  },
-  {
-    "base": "linux-amlogic-516",
-    "name": "linux-amlogic-516-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
-    "license": "GPL2",
-    "version": "5.16",
-    "release": "7",
-    "builddate": "2021-12-29T01:03:34",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 26797447,
-    "isize": 87933552
-  },
-  {
-    "base": "linux-amlogic-516",
-    "name": "linux-amlogic-516",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
-    "license": "GPL2",
-    "version": "5.16",
-    "release": "7",
-    "builddate": "2021-12-29T01:03:34",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 47333030,
-    "isize": 134814940
   },
   {
     "base": "glmark2-git",
