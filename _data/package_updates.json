@@ -1,40 +1,14 @@
 [
   {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3792.7768f696",
-    "release": "1",
-    "builddate": "2022-01-11T10:10:07",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 3023269,
-    "isize": 10543871
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148688.a5bc8c4be99",
+    "version": "22.0.0_devel.148695.7650e6fc4cc",
     "release": "1",
-    "builddate": "2022-01-11T07:48:00",
+    "builddate": "2022-01-11T13:08:55",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -71,8 +45,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31025355,
-    "isize": 96404282
+    "csize": 31023530,
+    "isize": 96408378
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3792.7768f696",
+    "release": "1",
+    "builddate": "2022-01-11T10:10:07",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 3023269,
+    "isize": 10543871
   },
   {
     "base": "neovim-git",
