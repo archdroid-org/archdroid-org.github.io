@@ -1,14 +1,49 @@
 [
   {
+    "base": "waybar-git",
+    "name": "waybar-git",
+    "arch": "aarch64",
+    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
+    "url": "https://github.com/Alexays/Waybar/",
+    "license": "MIT",
+    "version": "r1771.1540797",
+    "release": "1",
+    "builddate": "2022-01-12T01:22:52",
+    "depends": [
+      "gtkmm3",
+      "libjsoncpp.so=25-64",
+      "libinput",
+      "libsigc++",
+      "fmt",
+      "wayland",
+      "chrono-date",
+      "libspdlog.so=1-64",
+      "gtk-layer-shell",
+      "libpulse",
+      "libnl",
+      "libappindicator-gtk3",
+      "libdbusmenu-gtk3",
+      "libmpdclient"
+    ],
+    "optdepends": [
+      "otf-font-awesome: Icons in the default configuration"
+    ],
+    "conflicts": [
+      "waybar"
+    ],
+    "csize": 516587,
+    "isize": 1285029
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148712.16192792193",
+    "version": "22.0.0_devel.148721.b6499dff37d",
     "release": "1",
-    "builddate": "2022-01-11T22:11:57",
+    "builddate": "2022-01-12T01:07:36",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +80,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31025037,
-    "isize": 96400186
+    "csize": 31033412,
+    "isize": 96314170
   },
   {
     "base": "neovim-git",
@@ -133,41 +168,6 @@
     ],
     "csize": 47246571,
     "isize": 134841376
-  },
-  {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r1770.5d8bc35",
-    "release": "1",
-    "builddate": "2022-01-09T13:12:42",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=25-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 500465,
-    "isize": 1239990
   },
   {
     "base": "glmark2-git",
