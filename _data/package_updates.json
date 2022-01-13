@@ -6,9 +6,9 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1771.1540797",
+    "version": "r1776.81f0bcb",
     "release": "1",
-    "builddate": "2022-01-12T01:22:52",
+    "builddate": "2022-01-13T03:26:03",
     "depends": [
       "gtkmm3",
       "libjsoncpp.so=25-64",
@@ -31,8 +31,8 @@
     "conflicts": [
       "waybar"
     ],
-    "csize": 516587,
-    "isize": 1285029
+    "csize": 517062,
+    "isize": 1276868
   },
   {
     "base": "mesa-devel-git",
@@ -41,9 +41,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148721.b6499dff37d",
+    "version": "22.0.0_devel.148774.17b753459ec",
     "release": "1",
-    "builddate": "2022-01-12T01:07:36",
+    "builddate": "2022-01-13T03:19:32",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -80,8 +80,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31033412,
-    "isize": 96314170
+    "csize": 31039120,
+    "isize": 96424821
   },
   {
     "base": "neovim-git",
@@ -90,14 +90,102 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1576.g70fe3ce004",
+    "version": "0.5.0.r1585.g39a35dd006",
     "release": "1",
-    "builddate": "2022-01-11T22:08:03",
+    "builddate": "2022-01-13T03:14:07",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9910755,
-    "isize": 31182194
+    "csize": 9912988,
+    "isize": 31182700
+  },
+  {
+    "base": "linux-odroid-516",
+    "name": "linux-odroid-516-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
+    "license": "GPL2",
+    "version": "5.16.0",
+    "release": "1",
+    "builddate": "2022-01-13T02:20:18",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 26563959,
+    "isize": 87775010
+  },
+  {
+    "base": "linux-odroid-516",
+    "name": "linux-odroid-516",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
+    "license": "GPL2",
+    "version": "5.16.0",
+    "release": "1",
+    "builddate": "2022-01-13T02:20:18",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 47196623,
+    "isize": 134327292
+  },
+  {
+    "base": "linux-amlogic-516",
+    "name": "linux-amlogic-516-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
+    "license": "GPL2",
+    "version": "5.16.0",
+    "release": "1",
+    "builddate": "2022-01-13T01:15:13",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 26673561,
+    "isize": 87934950
+  },
+  {
+    "base": "linux-amlogic-516",
+    "name": "linux-amlogic-516",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
+    "license": "GPL2",
+    "version": "5.16.0",
+    "release": "1",
+    "builddate": "2022-01-13T01:15:13",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 47259118,
+    "isize": 134834394
   },
   {
     "base": "fex-emu-git",
@@ -126,50 +214,6 @@
     "isize": 10543871
   },
   {
-    "base": "linux-amlogic-516",
-    "name": "linux-amlogic-516-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
-    "license": "GPL2",
-    "version": "5.16",
-    "release": "8",
-    "builddate": "2022-01-11T07:09:17",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 26680228,
-    "isize": 87934392
-  },
-  {
-    "base": "linux-amlogic-516",
-    "name": "linux-amlogic-516",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
-    "license": "GPL2",
-    "version": "5.16",
-    "release": "8",
-    "builddate": "2022-01-11T07:09:17",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 47246571,
-    "isize": 134841376
-  },
-  {
     "base": "glmark2-git",
     "name": "glmark2-git",
     "arch": "aarch64",
@@ -194,50 +238,6 @@
     ],
     "csize": 8187038,
     "isize": 15152016
-  },
-  {
-    "base": "linux-odroid-516",
-    "name": "linux-odroid-516-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
-    "license": "GPL2",
-    "version": "5.16",
-    "release": "4",
-    "builddate": "2021-12-19T20:49:48",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 26673807,
-    "isize": 87771935
-  },
-  {
-    "base": "linux-odroid-516",
-    "name": "linux-odroid-516",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
-    "license": "GPL2",
-    "version": "5.16",
-    "release": "4",
-    "builddate": "2021-12-19T20:49:48",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 47263650,
-    "isize": 134338422
   },
   {
     "base": "fex-emu-thunks-git",
