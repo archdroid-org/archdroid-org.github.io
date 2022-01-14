@@ -1,30 +1,14 @@
 [
   {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r1605.ga88046fe2d",
-    "release": "1",
-    "builddate": "2022-01-14T04:27:37",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9916970,
-    "isize": 31182056
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148811.307cdb71470",
+    "version": "22.0.0_devel.148818.fbe4d7ccf49",
     "release": "1",
-    "builddate": "2022-01-13T22:26:14",
+    "builddate": "2022-01-14T10:46:38",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -61,8 +45,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31064399,
-    "isize": 96503019
+    "csize": 31064753,
+    "isize": 96519403
   },
   {
     "base": "fex-emu-git",
@@ -71,9 +55,9 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3795.0a8717d9",
+    "version": "r3797.140e9824",
     "release": "1",
-    "builddate": "2022-01-13T10:29:58",
+    "builddate": "2022-01-14T10:26:10",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -87,8 +71,24 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 3024848,
-    "isize": 10543872
+    "csize": 2985196,
+    "isize": 10323029
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r1605.ga88046fe2d",
+    "release": "1",
+    "builddate": "2022-01-14T04:27:37",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9916970,
+    "isize": 31182056
   },
   {
     "base": "waybar-git",
