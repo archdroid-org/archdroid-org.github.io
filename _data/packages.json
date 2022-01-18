@@ -428,14 +428,14 @@
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
     "version": "5.16.0",
-    "release": "1",
-    "builddate": "2022-01-13T01:15:13",
+    "release": "2",
+    "builddate": "2022-01-18T20:18:11",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 47259118,
-    "isize": 134834394
+    "csize": 47267350,
+    "isize": 134909120
   },
   {
     "base": "linux-amlogic-516",
@@ -445,11 +445,11 @@
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
     "version": "5.16.0",
-    "release": "1",
-    "builddate": "2022-01-13T01:15:13",
+    "release": "2",
+    "builddate": "2022-01-18T20:18:11",
     "conflicts": ["linux-headers"],
-    "csize": 26673561,
-    "isize": 87934950
+    "csize": 26679188,
+    "isize": 87937743
   },
   {
     "base": "linux-amlogic-exp",
@@ -721,15 +721,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.148909.e4c582ee71e",
+    "version": "22.0.0_devel.148957.279cc37ac09",
     "release": "1",
-    "builddate": "2022-01-18T01:13:26",
+    "builddate": "2022-01-18T21:10:05",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31086629,
-    "isize": 96617707
+    "csize": 31108776,
+    "isize": 96621803
   },
   {
     "base": "mpv-sdl",
@@ -754,12 +754,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1637.gfcf5dd34f",
+    "version": "0.5.0.r1638.gde6f9233e",
     "release": "1",
-    "builddate": "2022-01-18T01:08:29",
+    "builddate": "2022-01-18T21:05:34",
     "conflicts": ["neovim"],
-    "csize": 9921437,
-    "isize": 31171800
+    "csize": 9915364,
+    "isize": 31176150
   },
   {
     "base": "neverball",
@@ -1134,14 +1134,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1776.81f0bcb",
+    "version": "r1778.d575646",
     "release": "1",
-    "builddate": "2022-01-13T03:26:03",
+    "builddate": "2022-01-18T21:28:42",
     "depends": ["gtkmm3", "libjsoncpp.so=25-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 517062,
-    "isize": 1276868
+    "csize": 517849,
+    "isize": 1268696
   },
   {
     "base": "wayfire",
