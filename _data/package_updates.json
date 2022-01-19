@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.149017.a35c5540e42",
+    "version": "22.0.0_devel.149025.f83f72be8eb",
     "release": "1",
-    "builddate": "2022-01-19T21:10:19",
+    "builddate": "2022-01-19T22:51:00",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31177193,
-    "isize": 96797931
+    "csize": 31182622,
+    "isize": 96883947
   },
   {
     "base": "neovim-git",
@@ -55,14 +55,33 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1640.g96aa7dd097",
+    "version": "0.5.0.r1641.g431915fe6a",
     "release": "1",
-    "builddate": "2022-01-19T18:37:43",
+    "builddate": "2022-01-19T22:45:41",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9916683,
+    "csize": 9916749,
     "isize": 31163710
+  },
+  {
+    "base": "kodi-addon-inputstream-adaptive",
+    "name": "kodi-addon-inputstream-adaptive",
+    "arch": "aarch64",
+    "description": "InputStream client for adaptive streams for Kodi 18+.",
+    "url": "https://github.com/peak3d/inputstream.adaptive",
+    "license": "GPL2",
+    "version": "19.0.1",
+    "release": "1",
+    "builddate": "2022-01-19T22:28:14",
+    "depends": [
+      "kodi-platform"
+    ],
+    "repodepends": [
+      "kodi"
+    ],
+    "csize": 942891,
+    "isize": 2977413
   },
   {
     "base": "kodi-addon-inputstream-rtmp",
@@ -241,40 +260,5 @@
     ],
     "csize": 47194758,
     "isize": 134327610
-  },
-  {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r1778.d575646",
-    "release": "1",
-    "builddate": "2022-01-18T21:28:42",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=25-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 517849,
-    "isize": 1268696
   }
 ]
