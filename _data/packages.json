@@ -396,15 +396,15 @@
     "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
-    "version": "5.16.0",
-    "release": "2",
-    "builddate": "2022-01-18T20:18:11",
+    "version": "5.16.1",
+    "release": "1",
+    "builddate": "2022-01-20T21:56:06",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 47267350,
-    "isize": 134909120
+    "csize": 47322300,
+    "isize": 135219365
   },
   {
     "base": "linux-amlogic-516",
@@ -413,12 +413,12 @@
     "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
-    "version": "5.16.0",
-    "release": "2",
-    "builddate": "2022-01-18T20:18:11",
+    "version": "5.16.1",
+    "release": "1",
+    "builddate": "2022-01-20T21:56:06",
     "conflicts": ["linux-headers"],
-    "csize": 26679188,
-    "isize": 87937743
+    "csize": 26678448,
+    "isize": 87935836
   },
   {
     "base": "linux-amlogic-exp",
@@ -690,15 +690,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.149105.a4c9276de21",
+    "version": "22.0.0_devel.149109.945fb51fb59",
     "release": "1",
-    "builddate": "2022-01-20T16:26:18",
+    "builddate": "2022-01-20T23:08:54",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31216956,
-    "isize": 96974059
+    "csize": 31217946,
+    "isize": 96965867
   },
   {
     "base": "mpv-sdl",
