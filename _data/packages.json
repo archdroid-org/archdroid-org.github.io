@@ -396,15 +396,15 @@
     "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
-    "version": "5.16.1",
+    "version": "5.16.2",
     "release": "1",
-    "builddate": "2022-01-20T21:56:06",
+    "builddate": "2022-01-24T20:55:36",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 47322300,
-    "isize": 135219365
+    "csize": 47313060,
+    "isize": 135100735
   },
   {
     "base": "linux-amlogic-516",
@@ -413,12 +413,12 @@
     "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
-    "version": "5.16.1",
+    "version": "5.16.2",
     "release": "1",
-    "builddate": "2022-01-20T21:56:06",
+    "builddate": "2022-01-24T20:55:36",
     "conflicts": ["linux-headers"],
-    "csize": 26678448,
-    "isize": 87935836
+    "csize": 26689206,
+    "isize": 87944573
   },
   {
     "base": "linux-amlogic-exp",
@@ -583,14 +583,14 @@
     "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
     "license": "GPL2",
     "version": "5.16.1",
-    "release": "1",
-    "builddate": "2022-01-18T21:43:52",
+    "release": "2",
+    "builddate": "2022-01-24T21:41:39",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 47194758,
-    "isize": 134327610
+    "csize": 47278130,
+    "isize": 134236077
   },
   {
     "base": "linux-odroid-516",
@@ -600,11 +600,11 @@
     "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
     "license": "GPL2",
     "version": "5.16.1",
-    "release": "1",
-    "builddate": "2022-01-18T21:43:52",
+    "release": "2",
+    "builddate": "2022-01-24T21:41:39",
     "conflicts": ["linux-headers"],
-    "csize": 26545775,
-    "isize": 87775419
+    "csize": 26686464,
+    "isize": 87936346
   },
   {
     "base": "linux-odroid-exp",
