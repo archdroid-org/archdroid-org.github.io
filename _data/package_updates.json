@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.149314.a429b3dd33a",
+    "version": "22.0.0_devel.149323.047992821b9",
     "release": "1",
-    "builddate": "2022-01-25T16:08:38",
+    "builddate": "2022-01-25T19:23:22",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31295142,
-    "isize": 98064262
+    "csize": 31317025,
+    "isize": 98191238
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3816.13f35f7b",
+    "release": "1",
+    "builddate": "2022-01-25T19:16:03",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 3013599,
+    "isize": 10441814
   },
   {
     "base": "neovim-git",
@@ -186,32 +212,6 @@
     ],
     "csize": 517917,
     "isize": 1280964
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3805.8e3893df",
-    "release": "1",
-    "builddate": "2022-01-21T01:32:52",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 3006066,
-    "isize": 10441813
   },
   {
     "base": "kodi-addon-inputstream-adaptive",
