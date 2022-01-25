@@ -154,14 +154,14 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3816.13f35f7b",
+    "version": "r3818.ea76de0f",
     "release": "1",
-    "builddate": "2022-01-25T19:16:03",
+    "builddate": "2022-01-25T22:08:35",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 3013599,
+    "csize": 3013232,
     "isize": 10441814
   },
   {
@@ -690,15 +690,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.149323.047992821b9",
+    "version": "22.0.0_devel.149327.4ab66319496",
     "release": "1",
-    "builddate": "2022-01-25T19:23:22",
+    "builddate": "2022-01-25T22:13:13",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31317025,
-    "isize": 98191238
+    "csize": 31308193,
+    "isize": 98207622
   },
   {
     "base": "mpv-sdl",
@@ -1103,14 +1103,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1791.8974bbf",
+    "version": "r1793.96caa9f",
     "release": "1",
-    "builddate": "2022-01-24T10:17:07",
+    "builddate": "2022-01-25T22:21:31",
     "depends": ["gtkmm3", "libjsoncpp.so=25-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 517917,
-    "isize": 1280964
+    "csize": 517698,
+    "isize": 1280966
   },
   {
     "base": "wayfire",
