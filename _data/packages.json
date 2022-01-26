@@ -397,14 +397,14 @@
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
     "version": "5.16.2",
-    "release": "1",
-    "builddate": "2022-01-24T20:55:36",
+    "release": "2",
+    "builddate": "2022-01-25T23:30:21",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 47313060,
-    "isize": 135100735
+    "csize": 47303590,
+    "isize": 135105023
   },
   {
     "base": "linux-amlogic-516",
@@ -414,11 +414,11 @@
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
     "version": "5.16.2",
-    "release": "1",
-    "builddate": "2022-01-24T20:55:36",
+    "release": "2",
+    "builddate": "2022-01-25T23:30:21",
     "conflicts": ["linux-headers"],
-    "csize": 26689206,
-    "isize": 87944573
+    "csize": 26707539,
+    "isize": 87946637
   },
   {
     "base": "linux-amlogic-exp",
@@ -690,15 +690,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.149327.4ab66319496",
+    "version": "22.0.0_devel.149341.5e748770b9c",
     "release": "1",
-    "builddate": "2022-01-25T22:13:13",
+    "builddate": "2022-01-26T00:16:16",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31308193,
-    "isize": 98207622
+    "csize": 31307373,
+    "isize": 98240390
   },
   {
     "base": "mpv-sdl",
