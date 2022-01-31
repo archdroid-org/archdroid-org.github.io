@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.149562.f14cae43ac4",
+    "version": "22.0.0_devel.149583.9eb1592e57a",
     "release": "1",
-    "builddate": "2022-01-31T16:20:02",
+    "builddate": "2022-01-31T19:25:15",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31318156,
-    "isize": 98229925
+    "csize": 31324486,
+    "isize": 98209445
   },
   {
     "base": "fex-emu-git",
@@ -55,9 +55,9 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3824.9d084519",
+    "version": "r3840.334a8ef8",
     "release": "1",
-    "builddate": "2022-01-31T16:13:12",
+    "builddate": "2022-01-31T19:13:45",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -71,8 +71,8 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 3010642,
-    "isize": 10441813
+    "csize": 3009982,
+    "isize": 10452538
   },
   {
     "base": "neovim-git",
@@ -81,14 +81,14 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1805.g79b92da0d2",
+    "version": "0.5.0.r1808.gc00b844988",
     "release": "1",
-    "builddate": "2022-01-31T16:08:45",
+    "builddate": "2022-01-31T19:09:06",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9924145,
-    "isize": 31230908
+    "csize": 9926422,
+    "isize": 31244533
   },
   {
     "base": "linux-amlogic-516",
