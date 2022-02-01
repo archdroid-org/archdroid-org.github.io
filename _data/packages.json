@@ -690,14 +690,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.149679.12853193949",
+    "version": "22.0.0_devel.149680.ea0fa5c6bc3",
     "release": "1",
-    "builddate": "2022-02-01T19:12:47",
+    "builddate": "2022-02-01T22:16:23",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31385597,
+    "csize": 31385583,
     "isize": 98270885
   },
   {
@@ -1103,14 +1103,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1793.96caa9f",
+    "version": "r1795.2b42872",
     "release": "1",
-    "builddate": "2022-01-25T22:21:31",
+    "builddate": "2022-02-01T22:23:45",
     "depends": ["gtkmm3", "libjsoncpp.so=25-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 517698,
-    "isize": 1280966
+    "csize": 518198,
+    "isize": 1272742
   },
   {
     "base": "wayfire",

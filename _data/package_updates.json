@@ -1,14 +1,49 @@
 [
   {
+    "base": "waybar-git",
+    "name": "waybar-git",
+    "arch": "aarch64",
+    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
+    "url": "https://github.com/Alexays/Waybar/",
+    "license": "MIT",
+    "version": "r1795.2b42872",
+    "release": "1",
+    "builddate": "2022-02-01T22:23:45",
+    "depends": [
+      "gtkmm3",
+      "libjsoncpp.so=25-64",
+      "libinput",
+      "libsigc++",
+      "fmt",
+      "wayland",
+      "chrono-date",
+      "libspdlog.so=1-64",
+      "gtk-layer-shell",
+      "libpulse",
+      "libnl",
+      "libappindicator-gtk3",
+      "libdbusmenu-gtk3",
+      "libmpdclient"
+    ],
+    "optdepends": [
+      "otf-font-awesome: Icons in the default configuration"
+    ],
+    "conflicts": [
+      "waybar"
+    ],
+    "csize": 518198,
+    "isize": 1272742
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.149679.12853193949",
+    "version": "22.0.0_devel.149680.ea0fa5c6bc3",
     "release": "1",
-    "builddate": "2022-02-01T19:12:47",
+    "builddate": "2022-02-01T22:16:23",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,7 +80,7 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31385597,
+    "csize": 31385583,
     "isize": 98270885
   },
   {
@@ -133,41 +168,6 @@
     ],
     "csize": 47303590,
     "isize": 135105023
-  },
-  {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r1793.96caa9f",
-    "release": "1",
-    "builddate": "2022-01-25T22:21:31",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=25-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 517698,
-    "isize": 1280966
   },
   {
     "base": "linux-odroid-516",
