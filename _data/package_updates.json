@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.0.0_devel.149681.965d58b0581",
+    "version": "22.0.0_devel.149683.d4b6d03408a",
     "release": "1",
-    "builddate": "2022-02-02T01:11:01",
+    "builddate": "2022-02-02T04:16:23",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,50 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31385646,
+    "csize": 31385643,
     "isize": 98270885
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3846.d308a438",
+    "release": "1",
+    "builddate": "2022-02-02T04:11:03",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 2925117,
+    "isize": 10231351
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r1825.g2559359035",
+    "release": "1",
+    "builddate": "2022-02-02T04:06:26",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9931860,
+    "isize": 31240266
   },
   {
     "base": "waybar-git",
@@ -82,48 +124,6 @@
     ],
     "csize": 518198,
     "isize": 1272742
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r1823.g5be2cdd913",
-    "release": "1",
-    "builddate": "2022-02-01T19:08:12",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9935774,
-    "isize": 31257042
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3840.334a8ef8",
-    "release": "1",
-    "builddate": "2022-01-31T19:13:45",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 3009982,
-    "isize": 10452538
   },
   {
     "base": "linux-amlogic-516",
