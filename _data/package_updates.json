@@ -1,30 +1,14 @@
 [
   {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r1868.gdcbf9f93e",
-    "release": "1",
-    "builddate": "2022-02-04T16:10:18",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9925955,
-    "isize": 31240790
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.149811.3abe9ccbd4c",
+    "version": "22.1.0_devel.149816.538356e3e62",
     "release": "1",
-    "builddate": "2022-02-04T13:13:55",
+    "builddate": "2022-02-04T19:09:08",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -61,8 +45,24 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31383513,
-    "isize": 98283173
+    "csize": 31380642,
+    "isize": 98246795
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r1868.gdcbf9f93e",
+    "release": "1",
+    "builddate": "2022-02-04T16:10:18",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9925955,
+    "isize": 31240790
   },
   {
     "base": "fex-emu-git",
