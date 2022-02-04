@@ -1,56 +1,14 @@
 [
   {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3850.caffad85",
-    "release": "1",
-    "builddate": "2022-02-04T04:13:12",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 2967342,
-    "isize": 10333754
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r1860.g6bee2bf79",
-    "release": "1",
-    "builddate": "2022-02-04T04:08:41",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9934200,
-    "isize": 31240723
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.149792.3affb69eaaa",
+    "version": "22.1.0_devel.149802.c4b400285ac",
     "release": "1",
-    "builddate": "2022-02-04T01:15:15",
+    "builddate": "2022-02-04T07:15:08",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -87,8 +45,50 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31383322,
-    "isize": 98287269
+    "csize": 31381581,
+    "isize": 98283173
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3853.1c242061",
+    "release": "1",
+    "builddate": "2022-02-04T07:09:07",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 2971384,
+    "isize": 10333760
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r1860.g6bee2bf79",
+    "release": "1",
+    "builddate": "2022-02-04T04:08:41",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9934200,
+    "isize": 31240723
   },
   {
     "base": "waybar-git",
