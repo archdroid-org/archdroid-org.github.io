@@ -154,15 +154,15 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3853.1c242061",
+    "version": "r3855.832d013c",
     "release": "1",
-    "builddate": "2022-02-04T07:09:07",
+    "builddate": "2022-02-05T01:10:07",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 2971384,
-    "isize": 10333760
+    "csize": 2971119,
+    "isize": 10341952
   },
   {
     "base": "fex-emu-thunks-git",
@@ -690,15 +690,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.149836.183bc15bdbe",
+    "version": "22.1.0_devel.149848.9da3d714b87",
     "release": "1",
-    "builddate": "2022-02-04T22:09:46",
+    "builddate": "2022-02-05T01:17:30",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31376564,
-    "isize": 98279563
+    "csize": 31383327,
+    "isize": 98271371
   },
   {
     "base": "mpv-sdl",
