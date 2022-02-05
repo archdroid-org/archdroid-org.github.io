@@ -6,14 +6,14 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r1872.g806a7c976",
+    "version": "0.5.0.r1876.g7c8ef809e",
     "release": "1",
-    "builddate": "2022-02-05T10:08:38",
+    "builddate": "2022-02-05T13:09:52",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9939163,
-    "isize": 31287158
+    "csize": 9936568,
+    "isize": 31266110
   },
   {
     "base": "mesa-devel-git",
