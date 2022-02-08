@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.149884.388f23eabe5",
+    "version": "22.1.0_devel.149886.a52e4871fe9",
     "release": "1",
-    "builddate": "2022-02-08T04:15:25",
+    "builddate": "2022-02-08T07:17:30",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31384248,
+    "csize": 31384307,
     "isize": 98250938
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3868.ffcaf294",
+    "release": "1",
+    "builddate": "2022-02-08T07:10:30",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 2965614,
+    "isize": 10343085
   },
   {
     "base": "neovim-git",
@@ -63,32 +89,6 @@
     ],
     "csize": 9941102,
     "isize": 31270468
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3866.287c65dc",
-    "release": "1",
-    "builddate": "2022-02-07T01:14:40",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 2965993,
-    "isize": 10343085
   },
   {
     "base": "waybar-git",
