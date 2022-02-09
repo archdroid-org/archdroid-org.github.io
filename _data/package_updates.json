@@ -1,65 +1,14 @@
 [
   {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r1983.gaff0ddd784",
-    "release": "1",
-    "builddate": "2022-02-09T19:09:10",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9944418,
-    "isize": 31267624
-  },
-  {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r1809.e066e30",
-    "release": "1",
-    "builddate": "2022-02-09T16:18:25",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=25-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 518654,
-    "isize": 1260564
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.149981.7955df28a66",
+    "version": "22.1.0_devel.149986.aabc7034d7e",
     "release": "1",
-    "builddate": "2022-02-09T16:10:38",
+    "builddate": "2022-02-09T22:13:36",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -96,8 +45,59 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31385825,
-    "isize": 98418978
+    "csize": 31390007,
+    "isize": 98435362
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r1985.g90f2a851c7",
+    "release": "1",
+    "builddate": "2022-02-09T22:08:56",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9945563,
+    "isize": 31272112
+  },
+  {
+    "base": "waybar-git",
+    "name": "waybar-git",
+    "arch": "aarch64",
+    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
+    "url": "https://github.com/Alexays/Waybar/",
+    "license": "MIT",
+    "version": "r1809.e066e30",
+    "release": "1",
+    "builddate": "2022-02-09T16:18:25",
+    "depends": [
+      "gtkmm3",
+      "libjsoncpp.so=25-64",
+      "libinput",
+      "libsigc++",
+      "fmt",
+      "wayland",
+      "chrono-date",
+      "libspdlog.so=1-64",
+      "gtk-layer-shell",
+      "libpulse",
+      "libnl",
+      "libappindicator-gtk3",
+      "libdbusmenu-gtk3",
+      "libmpdclient"
+    ],
+    "optdepends": [
+      "otf-font-awesome: Icons in the default configuration"
+    ],
+    "conflicts": [
+      "waybar"
+    ],
+    "csize": 518654,
+    "isize": 1260564
   },
   {
     "base": "fex-emu-git",
