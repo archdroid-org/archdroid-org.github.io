@@ -1,40 +1,14 @@
 [
   {
-    "base": "glmark2-git",
-    "name": "glmark2-git",
-    "arch": "aarch64",
-    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
-    "url": "https://launchpad.net/glmark2",
-    "license": "GPL3",
-    "version": "r971.af498f4",
-    "release": "1",
-    "builddate": "2022-02-14T16:09:26",
-    "depends": [
-      "libjpeg-turbo",
-      "libpng",
-      "libx11",
-      "libxcb",
-      "wayland",
-      "libgl",
-      "libgles",
-      "wayland-protocols"
-    ],
-    "conflicts": [
-      "glmark2"
-    ],
-    "csize": 8118604,
-    "isize": 15013040
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150149.32155851f10",
+    "version": "22.1.0_devel.150151.e6cfd1ed642",
     "release": "1",
-    "builddate": "2022-02-14T10:08:05",
+    "builddate": "2022-02-14T19:23:10",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -71,8 +45,76 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31064774,
-    "isize": 98203044
+    "csize": 31058766,
+    "isize": 98268580
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3893.64d1840f",
+    "release": "1",
+    "builddate": "2022-02-14T19:16:01",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 2974761,
+    "isize": 10343245
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r2071.g758d7726d",
+    "release": "1",
+    "builddate": "2022-02-14T19:11:21",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9905113,
+    "isize": 29889491
+  },
+  {
+    "base": "glmark2-git",
+    "name": "glmark2-git",
+    "arch": "aarch64",
+    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
+    "url": "https://launchpad.net/glmark2",
+    "license": "GPL3",
+    "version": "r971.af498f4",
+    "release": "1",
+    "builddate": "2022-02-14T16:09:26",
+    "depends": [
+      "libjpeg-turbo",
+      "libpng",
+      "libx11",
+      "libxcb",
+      "wayland",
+      "libgl",
+      "libgles",
+      "wayland-protocols"
+    ],
+    "conflicts": [
+      "glmark2"
+    ],
+    "csize": 8118604,
+    "isize": 15013040
   },
   {
     "base": "waybar-git",
@@ -108,48 +150,6 @@
     ],
     "csize": 514968,
     "isize": 1297435
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r2069.g046950f63",
-    "release": "1",
-    "builddate": "2022-02-13T16:10:29",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9905576,
-    "isize": 29859531
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3889.e9c7c761",
-    "release": "1",
-    "builddate": "2022-02-11T07:09:35",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 2975108,
-    "isize": 10343245
   },
   {
     "base": "linux-amlogic-516",
