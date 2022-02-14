@@ -186,13 +186,13 @@
     "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
     "url": "https://launchpad.net/glmark2",
     "license": "GPL3",
-    "version": "r966.0858b45",
+    "version": "r971.af498f4",
     "release": "1",
-    "builddate": "2021-12-23T16:21:13",
+    "builddate": "2022-02-14T16:09:26",
     "depends": ["libjpeg-turbo", "libpng", "libx11", "libxcb", "wayland", "libgl", "libgles", "wayland-protocols"],
     "conflicts": ["glmark2"],
-    "csize": 8187038,
-    "isize": 15152016
+    "csize": 8118604,
+    "isize": 15013040
   },
   {
     "base": "kodi",

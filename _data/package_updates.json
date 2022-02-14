@@ -1,5 +1,31 @@
 [
   {
+    "base": "glmark2-git",
+    "name": "glmark2-git",
+    "arch": "aarch64",
+    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
+    "url": "https://launchpad.net/glmark2",
+    "license": "GPL3",
+    "version": "r971.af498f4",
+    "release": "1",
+    "builddate": "2022-02-14T16:09:26",
+    "depends": [
+      "libjpeg-turbo",
+      "libpng",
+      "libx11",
+      "libxcb",
+      "wayland",
+      "libgl",
+      "libgles",
+      "wayland-protocols"
+    ],
+    "conflicts": [
+      "glmark2"
+    ],
+    "csize": 8118604,
+    "isize": 15013040
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -231,25 +257,5 @@
     ],
     "csize": 942891,
     "isize": 2977413
-  },
-  {
-    "base": "kodi-addon-inputstream-rtmp",
-    "name": "kodi-addon-inputstream-rtmp",
-    "arch": "aarch64",
-    "description": "RTMP input stream add-on for Kodi.",
-    "url": "https://github.com/xbmc/inputstream.rtmp",
-    "license": "GPL2",
-    "version": "19.0.1",
-    "release": "1",
-    "builddate": "2022-01-19T18:25:08",
-    "depends": [
-      "rtmpdump",
-      "p8-platform"
-    ],
-    "repodepends": [
-      "kodi"
-    ],
-    "csize": 95677,
-    "isize": 188365
   }
 ]
