@@ -302,16 +302,15 @@
     "name": "libpamac-aur",
     "arch": "aarch64",
     "description": "Pamac package manager library based on libalpm",
-    "url": "https://gitlab.manjaro.org/applications",
+    "url": "https://gitlab.manjaro.org/applications/libpamac",
     "license": "GPL3",
-    "version": "11.0.0",
-    "release": "1",
-    "builddate": "2021-06-15T01:30:33",
+    "version": "11.2.0",
+    "release": "5",
+    "builddate": "2022-02-15T19:06:55",
     "depends": ["glib2>=2.42", "json-glib", "libsoup", "dbus-glib", "polkit", "vte3>=0.38", "libnotify", "pacman>=6.0", "pacman<6.1", "gnutls>=3.4", "git", "appstream-glib>=0.7.18-1", "archlinux-appstream-data", "git"],
-    "replaces": ["libpamac"],
     "conflicts": ["libpamac", "libpamac-all"],
-    "csize": 825531,
-    "isize": 3517111
+    "csize": 869105,
+    "isize": 3746856
   },
   {
     "base": "libxmp",
@@ -690,14 +689,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150182.ffdac8bfa78",
+    "version": "22.1.0_devel.150186.3652ff2fa1d",
     "release": "1",
-    "builddate": "2022-02-15T13:14:36",
+    "builddate": "2022-02-15T19:13:10",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31057084,
+    "csize": 31056906,
     "isize": 98289060
   },
   {
@@ -993,20 +992,6 @@
     "conflicts": ["srb2kart-data"],
     "csize": 230163935,
     "isize": 561991360
-  },
-  {
-    "base": "supertuxkart",
-    "name": "supertuxkart",
-    "arch": "aarch64",
-    "description": "Kart racing game featuring Tux and his friends",
-    "url": "https://supertuxkart.net",
-    "license": "GPL3",
-    "version": "1.2",
-    "release": "1",
-    "builddate": "2020-10-25T21:50:02",
-    "depends": ["openal", "libvorbis", "fribidi", "curl", "bluez-libs", "libxrandr", "glu", "wayland", "libxkbcommon-x11", "sqlite", "libjpeg-turbo", "libraqm", "hicolor-icon-theme", "sdl2"],
-    "csize": 614684847,
-    "isize": 689055765
   },
   {
     "base": "teeworlds",
