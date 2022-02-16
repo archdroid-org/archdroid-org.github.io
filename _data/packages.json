@@ -154,15 +154,15 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3900.b65194f4",
+    "version": "r3902.a5fb7e73",
     "release": "1",
-    "builddate": "2022-02-14T22:15:38",
+    "builddate": "2022-02-16T01:15:17",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 2980284,
-    "isize": 10354635
+    "csize": 2979655,
+    "isize": 10354636
   },
   {
     "base": "fex-emu-thunks-git",
@@ -689,15 +689,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150187.9dd15295e30",
+    "version": "22.1.0_devel.150190.9cbcdfb514e",
     "release": "1",
-    "builddate": "2022-02-15T23:59:32",
+    "builddate": "2022-02-16T01:22:59",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31057059,
-    "isize": 98289060
+    "csize": 31058001,
+    "isize": 98284964
   },
   {
     "base": "mpv-sdl",
@@ -722,12 +722,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2094.g238b944e58",
+    "version": "0.5.0.r2096.g9ef5696132",
     "release": "1",
-    "builddate": "2022-02-15T23:54:28",
+    "builddate": "2022-02-16T01:10:28",
     "conflicts": ["neovim"],
-    "csize": 9912561,
-    "isize": 29885271
+    "csize": 9904137,
+    "isize": 29897631
   },
   {
     "base": "neverball",
