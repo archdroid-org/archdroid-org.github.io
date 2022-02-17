@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150218.81f97905c3b",
+    "version": "22.1.0_devel.150229.b805d3e6abc",
     "release": "1",
-    "builddate": "2022-02-16T22:10:37",
+    "builddate": "2022-02-17T01:31:07",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,24 +45,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31065816,
-    "isize": 98326194
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r2106.g8ab5ec4aaa",
-    "release": "1",
-    "builddate": "2022-02-16T19:11:42",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9919053,
-    "isize": 29872615
+    "csize": 31074623,
+    "isize": 98297522
   },
   {
     "base": "fex-emu-git",
@@ -71,9 +55,9 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3902.a5fb7e73",
+    "version": "r3904.252dcfe2",
     "release": "1",
-    "builddate": "2022-02-16T01:15:17",
+    "builddate": "2022-02-17T01:15:53",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -87,8 +71,24 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 2979655,
-    "isize": 10354636
+    "csize": 2981496,
+    "isize": 10354635
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r2112.g3230b31486",
+    "release": "1",
+    "builddate": "2022-02-17T01:10:49",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9908110,
+    "isize": 29856361
   },
   {
     "base": "pamac-aur",
