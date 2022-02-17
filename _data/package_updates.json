@@ -1,30 +1,14 @@
 [
   {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r2117.g3b5d456d3c",
-    "release": "1",
-    "builddate": "2022-02-17T19:10:38",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9911291,
-    "isize": 29889729
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150240.768930a73a4",
+    "version": "22.1.0_devel.150242.aa2652958a5",
     "release": "1",
-    "builddate": "2022-02-17T16:13:50",
+    "builddate": "2022-02-17T22:20:53",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -61,7 +45,7 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31074608,
+    "csize": 31074588,
     "isize": 98297522
   },
   {
@@ -71,9 +55,9 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3906.0db7205f",
+    "version": "r3908.5ec6ee5b",
     "release": "1",
-    "builddate": "2022-02-17T04:08:13",
+    "builddate": "2022-02-17T22:13:55",
     "depends": [
       "sdl2",
       "libepoxy"
@@ -87,8 +71,24 @@
     "conflicts": [
       "fex-emu"
     ],
-    "csize": 2981838,
+    "csize": 2981829,
     "isize": 10354636
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r2122.g1fd106ca88",
+    "release": "1",
+    "builddate": "2022-02-17T22:09:15",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9916909,
+    "isize": 29877286
   },
   {
     "base": "pamac-aur",
