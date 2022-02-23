@@ -1,5 +1,31 @@
 [
   {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3910.30803c66",
+    "release": "1",
+    "builddate": "2022-02-23T04:11:01",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 2980806,
+    "isize": 10354635
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -63,32 +89,6 @@
     ],
     "csize": 9904234,
     "isize": 29915098
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3908.5ec6ee5b",
-    "release": "1",
-    "builddate": "2022-02-17T22:13:55",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 2981829,
-    "isize": 10354636
   },
   {
     "base": "pamac-aur",
