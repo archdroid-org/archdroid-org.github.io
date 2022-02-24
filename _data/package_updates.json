@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150492.a5fa7e04d7a",
+    "version": "22.1.0_devel.150494.f692bda4843",
     "release": "1",
-    "builddate": "2022-02-24T04:10:22",
+    "builddate": "2022-02-24T10:17:40",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31093231,
+    "csize": 31093272,
     "isize": 98293646
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3913.fa554d30",
+    "release": "1",
+    "builddate": "2022-02-24T10:09:40",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 2980807,
+    "isize": 10354635
   },
   {
     "base": "neovim-git",
@@ -98,32 +124,6 @@
     ],
     "csize": 568148,
     "isize": 1412164
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3910.30803c66",
-    "release": "1",
-    "builddate": "2022-02-23T04:11:01",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 2980806,
-    "isize": 10354635
   },
   {
     "base": "pamac-aur",
