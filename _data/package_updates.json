@@ -1,37 +1,14 @@
 [
   {
-    "base": "lite-xl-git",
-    "name": "lite-xl-git",
-    "arch": "aarch64",
-    "description": "A lightweight text editor written in Lua",
-    "url": "https://lite-xl.github.io/",
-    "license": "MIT",
-    "version": "testing.2.0.4.r406.gfeaa3b2",
-    "release": "1",
-    "builddate": "2022-02-25T19:01:33",
-    "depends": [
-      "lua",
-      "sdl2",
-      "freetype2",
-      "pcre2",
-      "hicolor-icon-theme"
-    ],
-    "conflicts": [
-      "lite-xl"
-    ],
-    "csize": 350099,
-    "isize": 899328
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150545.f030b75b7d2",
+    "version": "22.1.0_devel.150554.216da26b3f3",
     "release": "1",
-    "builddate": "2022-02-25T16:13:32",
+    "builddate": "2022-02-25T22:15:09",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -68,8 +45,47 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31116916,
-    "isize": 98288617
+    "csize": 31124051,
+    "isize": 98345961
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r2189.g005a7aa167",
+    "release": "1",
+    "builddate": "2022-02-25T22:05:40",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9911271,
+    "isize": 29873609
+  },
+  {
+    "base": "lite-xl-git",
+    "name": "lite-xl-git",
+    "arch": "aarch64",
+    "description": "A lightweight text editor written in Lua",
+    "url": "https://lite-xl.github.io/",
+    "license": "MIT",
+    "version": "testing.2.0.4.r406.gfeaa3b2",
+    "release": "1",
+    "builddate": "2022-02-25T19:01:33",
+    "depends": [
+      "lua",
+      "sdl2",
+      "freetype2",
+      "pcre2",
+      "hicolor-icon-theme"
+    ],
+    "conflicts": [
+      "lite-xl"
+    ],
+    "csize": 350099,
+    "isize": 899328
   },
   {
     "base": "fex-emu-git",
@@ -96,22 +112,6 @@
     ],
     "csize": 2980807,
     "isize": 10354635
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r2181.g15004473b5",
-    "release": "1",
-    "builddate": "2022-02-24T01:10:05",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9913256,
-    "isize": 29885606
   },
   {
     "base": "waybar-git",
