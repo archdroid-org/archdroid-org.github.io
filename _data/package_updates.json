@@ -1,5 +1,28 @@
 [
   {
+    "base": "lite-xl-git",
+    "name": "lite-xl-git",
+    "arch": "aarch64",
+    "description": "A lightweight text editor written in Lua",
+    "url": "https://lite-xl.github.io/",
+    "license": "MIT",
+    "version": "testing.2.0.4.r406.gfeaa3b2",
+    "release": "1",
+    "builddate": "2022-02-25T19:01:33",
+    "depends": [
+      "lua",
+      "sdl2",
+      "freetype2",
+      "pcre2",
+      "hicolor-icon-theme"
+    ],
+    "conflicts": [
+      "lite-xl"
+    ],
+    "csize": 350099,
+    "isize": 899328
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -268,21 +291,5 @@
     ],
     "csize": 8118604,
     "isize": 15013040
-  },
-  {
-    "base": "linux-amlogic-516",
-    "name": "linux-amlogic-516-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
-    "license": "GPL2",
-    "version": "5.16.2",
-    "release": "2",
-    "builddate": "2022-01-25T23:30:21",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 26707539,
-    "isize": 87946637
   }
 ]
