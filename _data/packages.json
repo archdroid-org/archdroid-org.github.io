@@ -704,15 +704,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150589.fba13486df5",
+    "version": "22.1.0_devel.150596.473f4886390",
     "release": "1",
-    "builddate": "2022-02-28T16:23:53",
+    "builddate": "2022-02-28T19:09:31",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31127285,
-    "isize": 98341865
+    "csize": 31125372,
+    "isize": 98350057
   },
   {
     "base": "mpv-sdl",
