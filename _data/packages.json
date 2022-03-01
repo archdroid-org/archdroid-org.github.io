@@ -395,15 +395,15 @@
     "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
-    "version": "5.16.2",
-    "release": "2",
-    "builddate": "2022-01-25T23:30:21",
+    "version": "5.16.7",
+    "release": "1",
+    "builddate": "2022-03-01T01:05:50",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 47303590,
-    "isize": 135105023
+    "csize": 47190941,
+    "isize": 134974191
   },
   {
     "base": "linux-amlogic-516",
@@ -412,12 +412,12 @@
     "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
     "url": "https://github.com/chewitt/linux/tree/amlogic-5.16.y",
     "license": "GPL2",
-    "version": "5.16.2",
-    "release": "2",
-    "builddate": "2022-01-25T23:30:21",
+    "version": "5.16.7",
+    "release": "1",
+    "builddate": "2022-03-01T01:05:50",
     "conflicts": ["linux-headers"],
-    "csize": 26707539,
-    "isize": 87946637
+    "csize": 26638084,
+    "isize": 87862032
   },
   {
     "base": "linux-amlogic-exp",
@@ -582,14 +582,14 @@
     "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
     "license": "GPL2",
     "version": "5.16.4",
-    "release": "1",
-    "builddate": "2022-02-15T22:05:18",
+    "release": "2",
+    "builddate": "2022-03-01T02:48:25",
     "depends": ["coreutils", "linux-firmware", "kmod", "mkinitcpio>=0.7"],
     "optdepends": ["crda: to set the correct wireless channels of your country"],
     "replaces": ["linux-armv8"],
     "conflicts": ["linux"],
-    "csize": 47166400,
-    "isize": 134147358
+    "csize": 47121685,
+    "isize": 134060147
   },
   {
     "base": "linux-odroid-516",
@@ -599,11 +599,11 @@
     "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
     "license": "GPL2",
     "version": "5.16.4",
-    "release": "1",
-    "builddate": "2022-02-15T22:05:18",
+    "release": "2",
+    "builddate": "2022-03-01T02:48:25",
     "conflicts": ["linux-headers"],
-    "csize": 26633797,
-    "isize": 87910275
+    "csize": 26637313,
+    "isize": 87848843
   },
   {
     "base": "linux-odroid-exp",
@@ -673,13 +673,13 @@
     "description": "A lightweight text editor written in Lua",
     "url": "https://lite-xl.github.io/",
     "license": "MIT",
-    "version": "testing.2.0.4.r406.gfeaa3b2",
+    "version": "testing.2.0.4.r417.gbe5f94e",
     "release": "1",
-    "builddate": "2022-02-25T19:01:33",
+    "builddate": "2022-03-01T04:21:45",
     "depends": ["lua", "sdl2", "freetype2", "pcre2", "hicolor-icon-theme"],
     "conflicts": ["lite-xl"],
-    "csize": 350099,
-    "isize": 899328
+    "csize": 354516,
+    "isize": 925139
   },
   {
     "base": "mesa-devel",
@@ -704,15 +704,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150596.473f4886390",
+    "version": "22.1.0_devel.150609.d3196bac510",
     "release": "1",
-    "builddate": "2022-02-28T19:09:31",
+    "builddate": "2022-03-01T04:28:31",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31125372,
-    "isize": 98350057
+    "csize": 31121551,
+    "isize": 98391017
   },
   {
     "base": "mpv-sdl",
