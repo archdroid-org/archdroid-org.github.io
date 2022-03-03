@@ -1,49 +1,14 @@
 [
   {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r1816.4635e8c",
-    "release": "1",
-    "builddate": "2022-03-03T19:24:11",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=25-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 568195,
-    "isize": 1412149
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150751.539fae796a5",
+    "version": "22.1.0_devel.150762.bbbbf395594",
     "release": "1",
-    "builddate": "2022-03-03T19:16:12",
+    "builddate": "2022-03-03T22:16:58",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -80,7 +45,7 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31215382,
+    "csize": 31215413,
     "isize": 98687133
   },
   {
@@ -90,14 +55,72 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2289.g13cabfedb2",
+    "version": "0.5.0.r2291.ge23af71d35",
     "release": "1",
-    "builddate": "2022-03-03T19:11:34",
+    "builddate": "2022-03-03T22:12:12",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9671111,
-    "isize": 29381087
+    "csize": 9671920,
+    "isize": 29355753
+  },
+  {
+    "base": "lite-xl-git",
+    "name": "lite-xl-git",
+    "arch": "aarch64",
+    "description": "A lightweight text editor written in Lua",
+    "url": "https://lite-xl.github.io/",
+    "license": "MIT",
+    "version": "testing.2.0.4.r419.g2736072",
+    "release": "1",
+    "builddate": "2022-03-03T22:06:41",
+    "depends": [
+      "lua",
+      "sdl2",
+      "freetype2",
+      "pcre2",
+      "hicolor-icon-theme"
+    ],
+    "conflicts": [
+      "lite-xl"
+    ],
+    "csize": 354577,
+    "isize": 925159
+  },
+  {
+    "base": "waybar-git",
+    "name": "waybar-git",
+    "arch": "aarch64",
+    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
+    "url": "https://github.com/Alexays/Waybar/",
+    "license": "MIT",
+    "version": "r1816.4635e8c",
+    "release": "1",
+    "builddate": "2022-03-03T19:24:11",
+    "depends": [
+      "gtkmm3",
+      "libjsoncpp.so=25-64",
+      "libinput",
+      "libsigc++",
+      "fmt",
+      "wayland",
+      "chrono-date",
+      "libspdlog.so=1-64",
+      "gtk-layer-shell",
+      "libpulse",
+      "libnl",
+      "libappindicator-gtk3",
+      "libdbusmenu-gtk3",
+      "libmpdclient"
+    ],
+    "optdepends": [
+      "otf-font-awesome: Icons in the default configuration"
+    ],
+    "conflicts": [
+      "waybar"
+    ],
+    "csize": 568195,
+    "isize": 1412149
   },
   {
     "base": "fex-emu-git",
@@ -124,29 +147,6 @@
     ],
     "csize": 2985181,
     "isize": 10355600
-  },
-  {
-    "base": "lite-xl-git",
-    "name": "lite-xl-git",
-    "arch": "aarch64",
-    "description": "A lightweight text editor written in Lua",
-    "url": "https://lite-xl.github.io/",
-    "license": "MIT",
-    "version": "testing.2.0.4.r417.gbe5f94e",
-    "release": "1",
-    "builddate": "2022-03-01T04:21:45",
-    "depends": [
-      "lua",
-      "sdl2",
-      "freetype2",
-      "pcre2",
-      "hicolor-icon-theme"
-    ],
-    "conflicts": [
-      "lite-xl"
-    ],
-    "csize": 354516,
-    "isize": 925139
   },
   {
     "base": "linux-odroid-516",

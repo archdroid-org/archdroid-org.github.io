@@ -673,13 +673,13 @@
     "description": "A lightweight text editor written in Lua",
     "url": "https://lite-xl.github.io/",
     "license": "MIT",
-    "version": "testing.2.0.4.r417.gbe5f94e",
+    "version": "testing.2.0.4.r419.g2736072",
     "release": "1",
-    "builddate": "2022-03-01T04:21:45",
+    "builddate": "2022-03-03T22:06:41",
     "depends": ["lua", "sdl2", "freetype2", "pcre2", "hicolor-icon-theme"],
     "conflicts": ["lite-xl"],
-    "csize": 354516,
-    "isize": 925139
+    "csize": 354577,
+    "isize": 925159
   },
   {
     "base": "mesa-devel",
@@ -704,14 +704,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150751.539fae796a5",
+    "version": "22.1.0_devel.150762.bbbbf395594",
     "release": "1",
-    "builddate": "2022-03-03T19:16:12",
+    "builddate": "2022-03-03T22:16:58",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31215382,
+    "csize": 31215413,
     "isize": 98687133
   },
   {
@@ -737,12 +737,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2289.g13cabfedb2",
+    "version": "0.5.0.r2291.ge23af71d35",
     "release": "1",
-    "builddate": "2022-03-03T19:11:34",
+    "builddate": "2022-03-03T22:12:12",
     "conflicts": ["neovim"],
-    "csize": 9671111,
-    "isize": 29381087
+    "csize": 9671920,
+    "isize": 29355753
   },
   {
     "base": "neverball",
