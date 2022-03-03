@@ -704,15 +704,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150745.516aee64cca",
+    "version": "22.1.0_devel.150751.539fae796a5",
     "release": "1",
-    "builddate": "2022-03-03T16:13:06",
+    "builddate": "2022-03-03T19:16:12",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31210396,
-    "isize": 98760861
+    "csize": 31215382,
+    "isize": 98687133
   },
   {
     "base": "mpv-sdl",
@@ -737,12 +737,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2287.g0733f72616",
+    "version": "0.5.0.r2289.g13cabfedb2",
     "release": "1",
-    "builddate": "2022-03-03T16:08:14",
+    "builddate": "2022-03-03T19:11:34",
     "conflicts": ["neovim"],
-    "csize": 9670065,
-    "isize": 29338911
+    "csize": 9671111,
+    "isize": 29381087
   },
   {
     "base": "neverball",
@@ -1103,14 +1103,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1814.91339f6",
+    "version": "r1816.4635e8c",
     "release": "1",
-    "builddate": "2022-02-23T10:08:56",
+    "builddate": "2022-03-03T19:24:11",
     "depends": ["gtkmm3", "libjsoncpp.so=25-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 568148,
-    "isize": 1412164
+    "csize": 568195,
+    "isize": 1412149
   },
   {
     "base": "wayfire",
