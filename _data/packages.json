@@ -673,13 +673,13 @@
     "description": "A lightweight text editor written in Lua",
     "url": "https://lite-xl.github.io/",
     "license": "MIT",
-    "version": "testing.2.0.4.r432.gf85612e",
+    "version": "testing.2.0.4.r434.g1be425d",
     "release": "1",
-    "builddate": "2022-03-06T07:06:09",
+    "builddate": "2022-03-07T01:06:32",
     "depends": ["lua", "sdl2", "freetype2", "pcre2", "hicolor-icon-theme"],
     "conflicts": ["lite-xl"],
-    "csize": 349884,
-    "isize": 915412
+    "csize": 349907,
+    "isize": 915467
   },
   {
     "base": "mesa-devel",
@@ -737,12 +737,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2324.g8e7446b3cb",
+    "version": "0.5.0.r2336.g5760cf87b6",
     "release": "1",
-    "builddate": "2022-03-06T22:07:22",
+    "builddate": "2022-03-07T01:11:29",
     "conflicts": ["neovim"],
-    "csize": 9939753,
-    "isize": 29983559
+    "csize": 9938593,
+    "isize": 29979407
   },
   {
     "base": "neverball",
