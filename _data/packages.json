@@ -673,13 +673,13 @@
     "description": "A lightweight text editor written in Lua",
     "url": "https://lite-xl.github.io/",
     "license": "MIT",
-    "version": "testing.2.0.4.r437.g6386bac",
+    "version": "testing.2.0.4.r441.g52a47e0",
     "release": "1",
-    "builddate": "2022-03-07T04:04:50",
+    "builddate": "2022-03-08T01:06:28",
     "depends": ["lua", "sdl2", "freetype2", "pcre2", "hicolor-icon-theme"],
     "conflicts": ["lite-xl"],
-    "csize": 349985,
-    "isize": 915768
+    "csize": 350025,
+    "isize": 915921
   },
   {
     "base": "mesa-devel",
@@ -704,15 +704,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150842.8860ff33105",
+    "version": "22.1.0_devel.150843.4a03619d811",
     "release": "1",
-    "builddate": "2022-03-07T22:16:01",
+    "builddate": "2022-03-08T01:15:42",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31236922,
-    "isize": 98691518
+    "csize": 31236725,
+    "isize": 98679230
   },
   {
     "base": "mpv-sdl",
@@ -737,12 +737,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2346.gc40068875",
+    "version": "0.5.0.r2349.gbcda54b30",
     "release": "1",
-    "builddate": "2022-03-07T22:11:23",
+    "builddate": "2022-03-08T01:10:53",
     "conflicts": ["neovim"],
-    "csize": 9686365,
-    "isize": 29364796
+    "csize": 9683107,
+    "isize": 29373260
   },
   {
     "base": "neverball",
