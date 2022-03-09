@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150877.711f0d1df4f",
+    "version": "22.1.0_devel.150879.204ea77b067",
     "release": "1",
-    "builddate": "2022-03-09T01:16:35",
+    "builddate": "2022-03-09T04:16:25",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31244243,
-    "isize": 98740670
+    "csize": 31246092,
+    "isize": 98769342
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r3990.fad91bb8",
+    "release": "1",
+    "builddate": "2022-03-09T04:09:33",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 3001185,
+    "isize": 10359154
   },
   {
     "base": "neovim-git",
@@ -121,32 +147,6 @@
     ],
     "csize": 571322,
     "isize": 1440993
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3988.5de6c866",
-    "release": "1",
-    "builddate": "2022-03-06T22:11:47",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 2997497,
-    "isize": 10359154
   },
   {
     "base": "linux-odroid-516",
