@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.150875.165a880f1ae",
+    "version": "22.1.0_devel.150877.711f0d1df4f",
     "release": "1",
-    "builddate": "2022-03-08T22:15:23",
+    "builddate": "2022-03-09T01:16:35",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31242208,
-    "isize": 98728382
+    "csize": 31244243,
+    "isize": 98740670
   },
   {
     "base": "neovim-git",
@@ -55,14 +55,37 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2358.gf24121ad9",
+    "version": "0.5.0.r2363.g205b3765f",
     "release": "1",
-    "builddate": "2022-03-08T22:10:34",
+    "builddate": "2022-03-09T01:11:45",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9684859,
-    "isize": 29365744
+    "csize": 9679860,
+    "isize": 29357284
+  },
+  {
+    "base": "lite-xl-git",
+    "name": "lite-xl-git",
+    "arch": "aarch64",
+    "description": "A lightweight text editor written in Lua",
+    "url": "https://lite-xl.github.io/",
+    "license": "MIT",
+    "version": "testing.2.0.4.r442.g960b482",
+    "release": "1",
+    "builddate": "2022-03-09T01:06:51",
+    "depends": [
+      "lua",
+      "sdl2",
+      "freetype2",
+      "pcre2",
+      "hicolor-icon-theme"
+    ],
+    "conflicts": [
+      "lite-xl"
+    ],
+    "csize": 350182,
+    "isize": 915335
   },
   {
     "base": "waybar-git",
@@ -98,29 +121,6 @@
     ],
     "csize": 571322,
     "isize": 1440993
-  },
-  {
-    "base": "lite-xl-git",
-    "name": "lite-xl-git",
-    "arch": "aarch64",
-    "description": "A lightweight text editor written in Lua",
-    "url": "https://lite-xl.github.io/",
-    "license": "MIT",
-    "version": "testing.2.0.4.r441.g52a47e0",
-    "release": "1",
-    "builddate": "2022-03-08T01:06:28",
-    "depends": [
-      "lua",
-      "sdl2",
-      "freetype2",
-      "pcre2",
-      "hicolor-icon-theme"
-    ],
-    "conflicts": [
-      "lite-xl"
-    ],
-    "csize": 350025,
-    "isize": 915921
   },
   {
     "base": "fex-emu-git",
