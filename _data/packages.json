@@ -154,14 +154,14 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3990.fad91bb8",
+    "version": "r3996.91665fdf",
     "release": "1",
-    "builddate": "2022-03-09T04:09:33",
+    "builddate": "2022-03-10T04:13:49",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 3001185,
+    "csize": 2996088,
     "isize": 10359154
   },
   {
@@ -737,12 +737,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2376.ga978d7689",
+    "version": "0.5.0.r2378.gd6fe06b0a",
     "release": "1",
-    "builddate": "2022-03-09T13:09:40",
+    "builddate": "2022-03-10T04:09:14",
     "conflicts": ["neovim"],
-    "csize": 9685073,
-    "isize": 29365728
+    "csize": 9681874,
+    "isize": 29357864
   },
   {
     "base": "neverball",
