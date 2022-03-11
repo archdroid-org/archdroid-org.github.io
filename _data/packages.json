@@ -154,14 +154,14 @@
     "description": "A fast usermode x86 and x86-64 emulator for Arm64",
     "url": "https://fex-emu.org/",
     "license": "MIT",
-    "version": "r3996.91665fdf",
+    "version": "r3998.d39df8d3",
     "release": "1",
-    "builddate": "2022-03-10T04:13:49",
+    "builddate": "2022-03-11T01:14:47",
     "depends": ["sdl2", "libepoxy"],
     "optdepends": ["squashfs-tools: For squashfs rootfs support"],
     "repooptdepends": ["fex-emu-thunks-git: guest to host libraries for speed and compatibility"],
     "conflicts": ["fex-emu"],
-    "csize": 2996088,
+    "csize": 3000286,
     "isize": 10359154
   },
   {
@@ -704,15 +704,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.151006.f7175bf416d",
+    "version": "22.1.0_devel.151007.42e78ba1257",
     "release": "1",
-    "builddate": "2022-03-10T22:10:32",
+    "builddate": "2022-03-11T01:23:00",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31304030,
-    "isize": 98867638
+    "csize": 31298394,
+    "isize": 98896310
   },
   {
     "base": "mpv-sdl",
@@ -737,12 +737,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2391.g6170574d2f",
+    "version": "0.5.0.r2399.gabbc9148db",
     "release": "1",
-    "builddate": "2022-03-10T16:11:01",
+    "builddate": "2022-03-11T01:09:33",
     "conflicts": ["neovim"],
-    "csize": 9677347,
-    "isize": 29349211
+    "csize": 9684648,
+    "isize": 29383043
   },
   {
     "base": "neverball",
