@@ -1,14 +1,49 @@
 [
   {
+    "base": "waybar-git",
+    "name": "waybar-git",
+    "arch": "aarch64",
+    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
+    "url": "https://github.com/Alexays/Waybar/",
+    "license": "MIT",
+    "version": "r1851.5c1c07a",
+    "release": "1",
+    "builddate": "2022-03-13T22:34:26",
+    "depends": [
+      "gtkmm3",
+      "libjsoncpp.so=25-64",
+      "libinput",
+      "libsigc++",
+      "fmt",
+      "wayland",
+      "chrono-date",
+      "libspdlog.so=1-64",
+      "gtk-layer-shell",
+      "libpulse",
+      "libnl",
+      "libappindicator-gtk3",
+      "libdbusmenu-gtk3",
+      "libmpdclient"
+    ],
+    "optdepends": [
+      "otf-font-awesome: Icons in the default configuration"
+    ],
+    "conflicts": [
+      "waybar"
+    ],
+    "csize": 570954,
+    "isize": 1432842
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.151055.16cb957e8bd",
+    "version": "22.1.0_devel.151056.816ad5ede8e",
     "release": "1",
-    "builddate": "2022-03-13T16:14:32",
+    "builddate": "2022-03-13T22:26:51",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +80,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31296767,
+    "csize": 31296788,
     "isize": 99043766
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r4018.7b0265ff",
+    "release": "1",
+    "builddate": "2022-03-13T22:13:31",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 3010518,
+    "isize": 10379832
   },
   {
     "base": "neovim-git",
@@ -55,49 +116,14 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2447.gce537bb232",
+    "version": "0.5.0.r2448.gf9f843e02e",
     "release": "1",
-    "builddate": "2022-03-13T16:09:58",
+    "builddate": "2022-03-13T22:08:41",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9691541,
-    "isize": 29385478
-  },
-  {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r1849.2b3fc3a",
-    "release": "1",
-    "builddate": "2022-03-12T16:07:43",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=25-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 571340,
-    "isize": 1441032
+    "csize": 9691005,
+    "isize": 29393958
   },
   {
     "base": "lite-xl-git",
@@ -121,32 +147,6 @@
     ],
     "csize": 351180,
     "isize": 920253
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r3998.d39df8d3",
-    "release": "1",
-    "builddate": "2022-03-11T01:14:47",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 3000286,
-    "isize": 10359154
   },
   {
     "base": "linux-odroid-516",
