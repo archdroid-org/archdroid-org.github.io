@@ -737,12 +737,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2503.g746a29c58",
+    "version": "0.5.0.r2504.gd238b8f60",
     "release": "1",
-    "builddate": "2022-03-16T22:11:18",
+    "builddate": "2022-03-17T07:09:44",
     "conflicts": ["neovim"],
-    "csize": 9701218,
-    "isize": 29412096
+    "csize": 9697322,
+    "isize": 29416302
   },
   {
     "base": "neverball",
