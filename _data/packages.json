@@ -673,13 +673,13 @@
     "description": "A lightweight text editor written in Lua",
     "url": "https://lite-xl.github.io/",
     "license": "MIT",
-    "version": "testing.2.0.4.r474.ga7fc7b4",
+    "version": "testing.2.0.4.r475.g2d5af22",
     "release": "1",
-    "builddate": "2022-03-18T10:06:30",
+    "builddate": "2022-03-18T16:05:22",
     "depends": ["lua", "sdl2", "freetype2", "pcre2", "hicolor-icon-theme"],
     "conflicts": ["lite-xl"],
-    "csize": 352772,
-    "isize": 928878
+    "csize": 352790,
+    "isize": 928873
   },
   {
     "base": "mesa-devel",
@@ -704,15 +704,15 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.151286.9e20d687855",
+    "version": "22.1.0_devel.151296.a3e9388953f",
     "release": "1",
-    "builddate": "2022-03-18T13:15:19",
+    "builddate": "2022-03-18T16:13:56",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31398135,
-    "isize": 99138204
+    "csize": 31399362,
+    "isize": 99134108
   },
   {
     "base": "mpv-sdl",
@@ -737,12 +737,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2516.g0a81a33a9d",
+    "version": "0.5.0.r2517.g9e66d27d37",
     "release": "1",
-    "builddate": "2022-03-18T13:10:19",
+    "builddate": "2022-03-18T16:09:20",
     "conflicts": ["neovim"],
-    "csize": 9699149,
-    "isize": 29435340
+    "csize": 9709160,
+    "isize": 29414212
   },
   {
     "base": "neverball",
