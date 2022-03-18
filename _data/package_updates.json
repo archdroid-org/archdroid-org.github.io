@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.151258.f452317849d",
+    "version": "22.1.0_devel.151262.19330eeb1d6",
     "release": "1",
-    "builddate": "2022-03-17T22:16:42",
+    "builddate": "2022-03-18T01:14:54",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,7 +45,7 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31393316,
+    "csize": 31393267,
     "isize": 99105436
   },
   {
@@ -55,14 +55,14 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2511.gcac90d2de",
+    "version": "0.5.0.r2513.gc1b98cfa5",
     "release": "1",
-    "builddate": "2022-03-17T22:11:25",
+    "builddate": "2022-03-18T01:10:12",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9708874,
-    "isize": 29430348
+    "csize": 9704896,
+    "isize": 29417612
   },
   {
     "base": "lite-xl-git",
@@ -71,9 +71,9 @@
     "description": "A lightweight text editor written in Lua",
     "url": "https://lite-xl.github.io/",
     "license": "MIT",
-    "version": "testing.2.0.4.r457.g120c769",
+    "version": "testing.2.0.4.r463.g0e323f4",
     "release": "1",
-    "builddate": "2022-03-17T19:06:31",
+    "builddate": "2022-03-18T01:05:34",
     "depends": [
       "lua",
       "sdl2",
@@ -84,8 +84,8 @@
     "conflicts": [
       "lite-xl"
     ],
-    "csize": 351121,
-    "isize": 920261
+    "csize": 352016,
+    "isize": 925351
   },
   {
     "base": "waybar-git",
