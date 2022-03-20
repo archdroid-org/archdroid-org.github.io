@@ -1,53 +1,14 @@
 [
   {
-    "base": "lite-xl-git",
-    "name": "lite-xl-git",
-    "arch": "aarch64",
-    "description": "A lightweight text editor written in Lua",
-    "url": "https://lite-xl.github.io/",
-    "license": "MIT",
-    "version": "testing.2.0.4.r479.gb741c20",
-    "release": "1",
-    "builddate": "2022-03-20T04:05:35",
-    "depends": [
-      "lua",
-      "sdl2",
-      "freetype2",
-      "pcre2",
-      "hicolor-icon-theme"
-    ],
-    "conflicts": [
-      "lite-xl"
-    ],
-    "csize": 352956,
-    "isize": 929745
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r2525.gbe35d3c5ad",
-    "release": "1",
-    "builddate": "2022-03-20T01:10:40",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9703656,
-    "isize": 29405716
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.151348.4de13d53fee",
+    "version": "22.1.0_devel.151350.c36f3f2db82",
     "release": "1",
-    "builddate": "2022-03-19T10:08:29",
+    "builddate": "2022-03-20T07:12:57",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -84,8 +45,47 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31428921,
-    "isize": 99330788
+    "csize": 31420838,
+    "isize": 99334884
+  },
+  {
+    "base": "neovim-git",
+    "name": "neovim-git",
+    "arch": "aarch64",
+    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
+    "url": "https://neovim.io",
+    "license": "custom:neovim",
+    "version": "0.5.0.r2528.g54f15a9e47",
+    "release": "1",
+    "builddate": "2022-03-20T07:08:16",
+    "conflicts": [
+      "neovim"
+    ],
+    "csize": 9710667,
+    "isize": 29438412
+  },
+  {
+    "base": "lite-xl-git",
+    "name": "lite-xl-git",
+    "arch": "aarch64",
+    "description": "A lightweight text editor written in Lua",
+    "url": "https://lite-xl.github.io/",
+    "license": "MIT",
+    "version": "testing.2.0.4.r487.gbbac4d1",
+    "release": "1",
+    "builddate": "2022-03-20T07:04:29",
+    "depends": [
+      "lua",
+      "sdl2",
+      "freetype2",
+      "pcre2",
+      "hicolor-icon-theme"
+    ],
+    "conflicts": [
+      "lite-xl"
+    ],
+    "csize": 353059,
+    "isize": 930192
   },
   {
     "base": "fex-emu-git",
