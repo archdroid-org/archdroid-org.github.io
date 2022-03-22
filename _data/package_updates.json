@@ -1,40 +1,14 @@
 [
   {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r4028.ebd0edba",
-    "release": "1",
-    "builddate": "2022-03-21T22:11:21",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 3004849,
-    "isize": 10379362
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.151411.d9c3601e29c",
+    "version": "22.1.0_devel.151423.b219e9a96e4",
     "release": "1",
-    "builddate": "2022-03-21T19:11:22",
+    "builddate": "2022-03-22T01:11:36",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -71,8 +45,34 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31426215,
+    "csize": 31426187,
     "isize": 99326692
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r4028.ebd0edba",
+    "release": "1",
+    "builddate": "2022-03-21T22:11:21",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 3004849,
+    "isize": 10379362
   },
   {
     "base": "neovim-git",
