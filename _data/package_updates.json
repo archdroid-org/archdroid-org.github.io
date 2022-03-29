@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.151725.408f114830f",
+    "version": "22.1.0_devel.151742.65ec846f777",
     "release": "1",
-    "builddate": "2022-03-29T19:15:28",
+    "builddate": "2022-03-29T22:14:21",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31465513,
-    "isize": 99441503
+    "csize": 31470088,
+    "isize": 99445599
   },
   {
     "base": "neovim-git",
@@ -55,14 +55,37 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2624.g7a6978ba29",
+    "version": "0.5.0.r2627.ge7ac16425c",
     "release": "1",
-    "builddate": "2022-03-29T19:10:31",
+    "builddate": "2022-03-29T22:09:44",
     "conflicts": [
       "neovim"
     ],
-    "csize": 9706292,
-    "isize": 29445723
+    "csize": 9709468,
+    "isize": 29428795
+  },
+  {
+    "base": "lite-xl-git",
+    "name": "lite-xl-git",
+    "arch": "aarch64",
+    "description": "A lightweight text editor written in Lua",
+    "url": "https://lite-xl.github.io/",
+    "license": "MIT",
+    "version": "testing.2.0.4.r503.g7372d2f",
+    "release": "1",
+    "builddate": "2022-03-29T22:05:25",
+    "depends": [
+      "lua",
+      "sdl2",
+      "freetype2",
+      "pcre2",
+      "hicolor-icon-theme"
+    ],
+    "conflicts": [
+      "lite-xl"
+    ],
+    "csize": 354181,
+    "isize": 937525
   },
   {
     "base": "fex-emu-git",
@@ -89,29 +112,6 @@
     ],
     "csize": 3009522,
     "isize": 10379625
-  },
-  {
-    "base": "lite-xl-git",
-    "name": "lite-xl-git",
-    "arch": "aarch64",
-    "description": "A lightweight text editor written in Lua",
-    "url": "https://lite-xl.github.io/",
-    "license": "MIT",
-    "version": "testing.2.0.4.r493.g3e1fdc4",
-    "release": "1",
-    "builddate": "2022-03-28T22:05:00",
-    "depends": [
-      "lua",
-      "sdl2",
-      "freetype2",
-      "pcre2",
-      "hicolor-icon-theme"
-    ],
-    "conflicts": [
-      "lite-xl"
-    ],
-    "csize": 353150,
-    "isize": 930479
   },
   {
     "base": "linux-odroid-516",
