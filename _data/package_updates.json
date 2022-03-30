@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.1.0_devel.151745.4525d7ed859",
+    "version": "22.1.0_devel.151758.6cfde0abe9a",
     "release": "1",
-    "builddate": "2022-03-30T01:15:44",
+    "builddate": "2022-03-30T04:24:14",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,57 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31470073,
-    "isize": 99445599
+    "csize": 31470395,
+    "isize": 99461983
+  },
+  {
+    "base": "fex-emu-git",
+    "name": "fex-emu-git",
+    "arch": "aarch64",
+    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
+    "url": "https://fex-emu.org/",
+    "license": "MIT",
+    "version": "r4040.b43937a7",
+    "release": "1",
+    "builddate": "2022-03-30T04:11:25",
+    "depends": [
+      "sdl2",
+      "libepoxy"
+    ],
+    "optdepends": [
+      "squashfs-tools: For squashfs rootfs support"
+    ],
+    "repooptdepends": [
+      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
+    ],
+    "conflicts": [
+      "fex-emu"
+    ],
+    "csize": 3011074,
+    "isize": 10379641
+  },
+  {
+    "base": "lite-xl-git",
+    "name": "lite-xl-git",
+    "arch": "aarch64",
+    "description": "A lightweight text editor written in Lua",
+    "url": "https://lite-xl.github.io/",
+    "license": "MIT",
+    "version": "testing.2.0.4.r505.g693bf2c",
+    "release": "1",
+    "builddate": "2022-03-30T04:06:33",
+    "depends": [
+      "lua",
+      "sdl2",
+      "freetype2",
+      "pcre2",
+      "hicolor-icon-theme"
+    ],
+    "conflicts": [
+      "lite-xl"
+    ],
+    "csize": 354319,
+    "isize": 937438
   },
   {
     "base": "neovim-git",
@@ -63,55 +112,6 @@
     ],
     "csize": 9707255,
     "isize": 29472103
-  },
-  {
-    "base": "lite-xl-git",
-    "name": "lite-xl-git",
-    "arch": "aarch64",
-    "description": "A lightweight text editor written in Lua",
-    "url": "https://lite-xl.github.io/",
-    "license": "MIT",
-    "version": "testing.2.0.4.r503.g7372d2f",
-    "release": "1",
-    "builddate": "2022-03-29T22:05:25",
-    "depends": [
-      "lua",
-      "sdl2",
-      "freetype2",
-      "pcre2",
-      "hicolor-icon-theme"
-    ],
-    "conflicts": [
-      "lite-xl"
-    ],
-    "csize": 354181,
-    "isize": 937525
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r4038.5cc0c0a3",
-    "release": "1",
-    "builddate": "2022-03-29T10:09:44",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 3009522,
-    "isize": 10379625
   },
   {
     "base": "linux-odroid-516",
