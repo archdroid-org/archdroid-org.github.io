@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.2.0_devel.152676.3532c374de2",
+    "version": "22.2.0_devel.152692.5e84335fb57",
     "release": "1",
-    "builddate": "2022-04-22T01:01:53",
+    "builddate": "2022-04-22T04:02:50",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31684399,
-    "isize": 99791099
+    "csize": 31686747,
+    "isize": 99815675
   },
   {
     "base": "lite-xl-git",
