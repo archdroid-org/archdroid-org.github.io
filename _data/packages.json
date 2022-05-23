@@ -735,13 +735,13 @@
     "description": "A lightweight text editor written in Lua",
     "url": "https://lite-xl.github.io/",
     "license": "MIT",
-    "version": "testing.2.0.4.r574.g26e47f75",
+    "version": "testing.2.0.4.r597.gb9bb64a2",
     "release": "1",
-    "builddate": "2022-05-15T22:05:40",
+    "builddate": "2022-05-23T04:07:12",
     "depends": ["lua", "sdl2", "freetype2", "pcre2", "hicolor-icon-theme"],
     "conflicts": ["lite-xl"],
-    "csize": 398901,
-    "isize": 1060756
+    "csize": 403543,
+    "isize": 1086578
   },
   {
     "base": "mesa-devel",
