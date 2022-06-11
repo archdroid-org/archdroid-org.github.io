@@ -1,37 +1,14 @@
 [
   {
-    "base": "lite-xl-git",
-    "name": "lite-xl-git",
-    "arch": "aarch64",
-    "description": "A lightweight text editor written in Lua",
-    "url": "https://lite-xl.github.io/",
-    "license": "MIT",
-    "version": "testing.2.0.4.r657.g99d328cf",
-    "release": "1",
-    "builddate": "2022-06-11T04:06:20",
-    "depends": [
-      "lua",
-      "sdl2",
-      "freetype2",
-      "pcre2",
-      "hicolor-icon-theme"
-    ],
-    "conflicts": [
-      "lite-xl"
-    ],
-    "csize": 408717,
-    "isize": 1102931
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.2.0_devel.155252.cbcdcc412c9",
+    "version": "22.2.0_devel.155253.1592921c599",
     "release": "1",
-    "builddate": "2022-06-11T01:07:10",
+    "builddate": "2022-06-11T10:05:45",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -68,8 +45,31 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31803589,
+    "csize": 31802238,
     "isize": 99709454
+  },
+  {
+    "base": "lite-xl-git",
+    "name": "lite-xl-git",
+    "arch": "aarch64",
+    "description": "A lightweight text editor written in Lua",
+    "url": "https://lite-xl.github.io/",
+    "license": "MIT",
+    "version": "testing.2.0.4.r657.g99d328cf",
+    "release": "1",
+    "builddate": "2022-06-11T04:06:20",
+    "depends": [
+      "lua",
+      "sdl2",
+      "freetype2",
+      "pcre2",
+      "hicolor-icon-theme"
+    ],
+    "conflicts": [
+      "lite-xl"
+    ],
+    "csize": 408717,
+    "isize": 1102931
   },
   {
     "base": "linux-odroid-518",
