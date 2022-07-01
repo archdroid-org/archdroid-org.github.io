@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.2.0_devel.156116.4faf8fa5b80",
+    "version": "22.2.0_devel.156142.f533dfff55b",
     "release": "1",
-    "builddate": "2022-06-30T19:03:52",
+    "builddate": "2022-07-01T04:49:15",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,155 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 31936123,
+    "csize": 31931333,
     "isize": 100189334
+  },
+  {
+    "base": "neverball",
+    "name": "neverball",
+    "arch": "aarch64",
+    "description": "3D game similar to Super Monkey Ball or Marble Madness",
+    "url": "http://neverball.org/",
+    "license": "GPL",
+    "version": "1.6.0",
+    "release": "5",
+    "builddate": "2022-07-01T04:43:46",
+    "depends": [
+      "sdl2_ttf",
+      "libgl",
+      "libpng",
+      "libjpeg",
+      "libvorbis",
+      "physfs",
+      "hicolor-icon-theme",
+      "xdg-utils"
+    ],
+    "csize": 75411115,
+    "isize": 259730081
+  },
+  {
+    "base": "libpamac-aur",
+    "name": "libpamac-aur",
+    "arch": "aarch64",
+    "description": "Pamac package manager library based on libalpm",
+    "url": "https://gitlab.manjaro.org/applications/libpamac",
+    "license": "GPL3",
+    "version": "11.3.1",
+    "release": "0",
+    "builddate": "2022-07-01T04:41:48",
+    "depends": [
+      "glib2>=2.42",
+      "json-glib",
+      "libsoup",
+      "dbus-glib",
+      "polkit",
+      "vte3>=0.38",
+      "libnotify",
+      "pacman>=6.0",
+      "pacman<6.1",
+      "gnutls>=3.4",
+      "git",
+      "appstream-glib>=0.7.18-1",
+      "archlinux-appstream-data",
+      "git"
+    ],
+    "conflicts": [
+      "libpamac",
+      "libpamac-all"
+    ],
+    "csize": 916950,
+    "isize": 4190135
+  },
+  {
+    "base": "kodi-addon-inputstream-rtmp",
+    "name": "kodi-addon-inputstream-rtmp-debug",
+    "arch": "aarch64",
+    "description": "Detached debugging symbols for kodi-addon-inputstream-rtmp",
+    "url": "https://github.com/xbmc/inputstream.rtmp",
+    "license": "GPL2",
+    "version": "19.0.1",
+    "release": "6",
+    "builddate": "2022-07-01T03:47:29",
+    "csize": 309129,
+    "isize": 912348
+  },
+  {
+    "base": "kodi-addon-inputstream-rtmp",
+    "name": "kodi-addon-inputstream-rtmp",
+    "arch": "aarch64",
+    "description": "RTMP input stream add-on for Kodi",
+    "url": "https://github.com/xbmc/inputstream.rtmp",
+    "license": "GPL2",
+    "version": "19.0.1",
+    "release": "6",
+    "builddate": "2022-07-01T03:47:29",
+    "depends": [
+      "rtmpdump",
+      "p8-platform"
+    ],
+    "repodepends": [
+      "kodi"
+    ],
+    "csize": 95606,
+    "isize": 192581
+  },
+  {
+    "base": "kodi-addon-inputstream-adaptive",
+    "name": "kodi-addon-inputstream-adaptive-debug",
+    "arch": "aarch64",
+    "description": "Detached debugging symbols for kodi-addon-inputstream-adaptive",
+    "url": "https://github.com/peak3d/inputstream.adaptive",
+    "license": "GPL2",
+    "version": "19.0.5",
+    "release": "1",
+    "builddate": "2022-07-01T02:05:03",
+    "csize": 7250159,
+    "isize": 21742460
+  },
+  {
+    "base": "kodi-addon-inputstream-adaptive",
+    "name": "kodi-addon-inputstream-adaptive",
+    "arch": "aarch64",
+    "description": "InputStream client for adaptive streams for Kodi 18+",
+    "url": "https://github.com/peak3d/inputstream.adaptive",
+    "license": "GPL2",
+    "version": "19.0.5",
+    "release": "1",
+    "builddate": "2022-07-01T02:05:03",
+    "depends": [
+      "kodi-platform"
+    ],
+    "repodepends": [
+      "kodi"
+    ],
+    "csize": 933593,
+    "isize": 2944008
+  },
+  {
+    "base": "extremetuxracer",
+    "name": "extremetuxracer",
+    "arch": "aarch64",
+    "description": "Downhill racing game starring Tux",
+    "url": "https://sourceforge.net/projects/extremetuxracer",
+    "license": "GPL",
+    "version": "0.8.2",
+    "release": "1",
+    "builddate": "2022-06-30T22:07:18",
+    "depends": [
+      "sfml",
+      "glu",
+      "freetype2"
+    ],
+    "replaces": [
+      "ppracer",
+      "etracer"
+    ],
+    "conflicts": [
+      "ppracer",
+      "etracer"
+    ],
+    "csize": 41533298,
+    "isize": 44085760
   },
   {
     "base": "linux-odroid-518",
@@ -91,158 +238,5 @@
     ],
     "csize": 47024052,
     "isize": 133593310
-  },
-  {
-    "base": "lite-xl-git",
-    "name": "lite-xl-git",
-    "arch": "aarch64",
-    "description": "A lightweight text editor written in Lua",
-    "url": "https://lite-xl.github.io/",
-    "license": "MIT",
-    "version": "testing.2.0.4.r709.g79dd8779",
-    "release": "1",
-    "builddate": "2022-06-29T04:06:25",
-    "depends": [
-      "lua",
-      "sdl2",
-      "freetype2",
-      "pcre2",
-      "hicolor-icon-theme"
-    ],
-    "conflicts": [
-      "lite-xl"
-    ],
-    "csize": 411474,
-    "isize": 1115320
-  },
-  {
-    "base": "linux-odroid-517",
-    "name": "linux-odroid-517-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.17.y",
-    "license": "GPL2",
-    "version": "5.17.4",
-    "release": "1",
-    "builddate": "2022-04-28T04:02:24",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 26842889,
-    "isize": 88630315
-  },
-  {
-    "base": "linux-odroid-517",
-    "name": "linux-odroid-517",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.17.y",
-    "license": "GPL2",
-    "version": "5.17.4",
-    "release": "1",
-    "builddate": "2022-04-28T04:02:24",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 47286654,
-    "isize": 134463592
-  },
-  {
-    "base": "neovim-git",
-    "name": "neovim-git",
-    "arch": "aarch64",
-    "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
-    "url": "https://neovim.io",
-    "license": "custom:neovim",
-    "version": "0.5.0.r2651.gb2bd80041",
-    "release": "1",
-    "builddate": "2022-03-31T10:09:30",
-    "conflicts": [
-      "neovim"
-    ],
-    "csize": 9706994,
-    "isize": 29447604
-  },
-  {
-    "base": "fex-emu-git",
-    "name": "fex-emu-git",
-    "arch": "aarch64",
-    "description": "A fast usermode x86 and x86-64 emulator for Arm64",
-    "url": "https://fex-emu.org/",
-    "license": "MIT",
-    "version": "r4040.b43937a7",
-    "release": "1",
-    "builddate": "2022-03-30T04:11:25",
-    "depends": [
-      "sdl2",
-      "libepoxy"
-    ],
-    "optdepends": [
-      "squashfs-tools: For squashfs rootfs support"
-    ],
-    "repooptdepends": [
-      "fex-emu-thunks-git: guest to host libraries for speed and compatibility"
-    ],
-    "conflicts": [
-      "fex-emu"
-    ],
-    "csize": 3011074,
-    "isize": 10379641
-  },
-  {
-    "base": "linux-odroid-516",
-    "name": "linux-odroid-516-headers",
-    "arch": "aarch64",
-    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
-    "license": "GPL2",
-    "version": "5.16.6",
-    "release": "1",
-    "builddate": "2022-03-27T05:46:10",
-    "conflicts": [
-      "linux-headers"
-    ],
-    "csize": 26739043,
-    "isize": 88128245
-  },
-  {
-    "base": "linux-odroid-516",
-    "name": "linux-odroid-516",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
-    "url": "https://github.com/tobetter/linux/tree/odroid-5.16.y",
-    "license": "GPL2",
-    "version": "5.16.6",
-    "release": "1",
-    "builddate": "2022-03-27T05:46:10",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 47283579,
-    "isize": 134329579
   }
 ]
