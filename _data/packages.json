@@ -559,14 +559,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.2.0_devel.156154.de8c769d116",
+    "version": "22.2.0_devel.156156.66bd470922d",
     "release": "1",
-    "builddate": "2022-07-01T16:01:32",
+    "builddate": "2022-07-01T18:24:20",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 31934863,
+    "csize": 31934893,
     "isize": 100177046
   },
   {
@@ -797,12 +797,12 @@
     "description": "Action platformer loosely inspired by the Mario games, utilizing the art assets from the SuperTux project.",
     "url": "https://retux-game.github.io/",
     "license": "GPL3",
-    "version": "1.4.1",
+    "version": "1.6.1",
     "release": "2",
-    "builddate": "2021-03-10T19:58:17",
+    "builddate": "2022-07-01T18:22:14",
     "depends": ["python-pygame", "sdl", "sdl_image", "sdl_mixer"],
-    "csize": 43038134,
-    "isize": 60224808
+    "csize": 43125270,
+    "isize": 60660365
   },
   {
     "base": "sauerbraten",
