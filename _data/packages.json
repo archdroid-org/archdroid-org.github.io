@@ -183,16 +183,16 @@
     "base": "glmark2-git",
     "name": "glmark2-git",
     "arch": "aarch64",
-    "description": "OpenGL (ES) 2.0 benchmark (X11, Wayland, DRM)",
-    "url": "https://launchpad.net/glmark2",
-    "license": "GPL3",
-    "version": "r971.af498f4",
+    "description": "An OpenGL 2.0 and ES 2.0 benchmark (X11, Wayland, DRM)",
+    "url": "https://github.com/glmark2/glmark2",
+    "license": ["GPL", "custom"],
+    "version": "r975.3f1104d",
     "release": "1",
-    "builddate": "2022-02-14T16:09:26",
-    "depends": ["libjpeg-turbo", "libpng", "libx11", "libxcb", "wayland", "libgl", "libgles", "wayland-protocols"],
+    "builddate": "2022-07-01T07:01:51",
+    "depends": ["libjpeg-turbo", "libpng", "libx11", "mesa", "systemd-libs", "libgl", "libgles", "wayland", "egl-wayland"],
     "conflicts": ["glmark2"],
-    "csize": 8118604,
-    "isize": 15013040
+    "csize": 8222472,
+    "isize": 15077364
   },
   {
     "base": "kodi",
@@ -553,22 +553,6 @@
     "isize": 1115320
   },
   {
-    "base": "mesa-devel",
-    "name": "mesa-devel",
-    "arch": "aarch64",
-    "description": "Open-source implementation of the OpenGL specification (Development version pinned to a stable and tested commit)",
-    "url": "https://www.mesa3d.org/",
-    "license": "custom",
-    "version": "21.1.0_devel.137845.0dfc5b51967",
-    "release": "1",
-    "builddate": "2021-04-12T21:53:49",
-    "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
-    "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm"],
-    "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 28736623,
-    "isize": 94954562
-  },
-  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -608,12 +592,12 @@
     "description": "Fork of Vim aiming to improve user experience, plugins, and GUIs.",
     "url": "https://neovim.io",
     "license": "custom:neovim",
-    "version": "0.5.0.r2651.gb2bd80041",
+    "version": "0.5.0.r2638.g7fb2310ed",
     "release": "1",
-    "builddate": "2022-03-31T10:09:30",
+    "builddate": "2022-03-30T16:12:42",
     "conflicts": ["neovim"],
-    "csize": 9706994,
-    "isize": 29447604
+    "csize": 9707990,
+    "isize": 29485395
   },
   {
     "base": "neverball",
@@ -855,14 +839,14 @@
     "description": "A 3D Sonic fan game based off of Doom Legacy (aka \"Sonic Robo Blast 2\")",
     "url": "http://www.srb2.org",
     "license": "GPL",
-    "version": "2.2.8",
+    "version": "2.2.10",
     "release": "1",
-    "builddate": "2021-04-16T06:19:25",
+    "builddate": "2022-07-01T07:05:44",
     "depends": ["sdl2_mixer", "libpng", "libgme"],
     "repodepends": ["libopenmpt"],
     "conflicts": ["srb2-data"],
-    "csize": 184648397,
-    "isize": 195759046
+    "csize": 150881199,
+    "isize": 178865682
   },
   {
     "base": "srb2kart",
@@ -904,7 +888,7 @@
     "release": "1",
     "builddate": "2021-03-02T13:06:07",
     "depends": ["glu", "glew", "openal", "freealut", "physfs", "sdl2", "sdl2_image", "tinyxml2"],
-    "providedepends": {"opengl-driver": ["mesa-devel", "mesa-devel-git"]},
+    "providedepends": {"opengl-driver": ["mesa-devel-git"]},
     "conflicts": ["trigger-rally"],
     "csize": 331431080,
     "isize": 335744729
@@ -974,14 +958,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r1856.a37ef74",
+    "version": "r2003.5128a5d",
     "release": "1",
-    "builddate": "2022-03-15T10:09:12",
+    "builddate": "2022-07-01T07:10:16",
     "depends": ["gtkmm3", "libjsoncpp.so=25-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 573190,
-    "isize": 1424651
+    "csize": 651941,
+    "isize": 1658776
   },
   {
     "base": "wayfire",
@@ -1025,7 +1009,7 @@
     "release": "2",
     "builddate": "2021-10-21T19:03:16",
     "depends": ["libinput", "libxkbcommon", "pixman", "xcb-util-errors", "xcb-util-renderutil", "xcb-util-wm"],
-    "providedepends": {"opengl-driver": ["mesa-devel", "mesa-devel-git"]},
+    "providedepends": {"opengl-driver": ["mesa-devel-git"]},
     "optdepends": ["xorg-xwayland: Xwayland support"],
     "csize": 389320,
     "isize": 1083381
@@ -1088,7 +1072,7 @@
     "release": "1",
     "builddate": "2020-10-14T22:48:49",
     "depends": ["libcap", "systemd", "wayland", "libxcb", "xcb-util-errors", "xcb-util-wm", "pixman", "libinput", "libxkbcommon"],
-    "providedepends": {"opengl-driver": ["mesa-devel", "mesa-devel-git"]},
+    "providedepends": {"opengl-driver": ["mesa-devel-git"]},
     "conflicts": ["wlroots"],
     "csize": 372023,
     "isize": 1013553
