@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.2.0_devel.156188.053312ab87a",
+    "version": "22.2.0_devel.156189.fb2266631fe",
     "release": "1",
-    "builddate": "2022-07-04T16:01:21",
+    "builddate": "2022-07-04T19:34:39",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,55 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 32027193,
+    "csize": 32026331,
     "isize": 100414630
+  },
+  {
+    "base": "xonotic",
+    "name": "xonotic",
+    "arch": "aarch64",
+    "description": "A free, fast-paced crossplatform first-person shooter",
+    "url": "https://xonotic.org",
+    "license": "GPL",
+    "version": "0.8.5",
+    "release": "1",
+    "builddate": "2022-07-04T19:30:03",
+    "depends": [
+      "alsa-lib",
+      "curl",
+      "libjpeg-turbo",
+      "libmodplug",
+      "libvorbis",
+      "libxpm",
+      "libxxf86vm",
+      "sdl2",
+      "libpng>=1.4.0",
+      "hicolor-icon-theme",
+      "gtk-update-icon-cache",
+      "desktop-file-utils"
+    ],
+    "repodepends": [
+      "xonotic-data"
+    ],
+    "csize": 4853396,
+    "isize": 11281551
+  },
+  {
+    "base": "xonotic-data",
+    "name": "xonotic-data",
+    "arch": "any",
+    "description": "A free, fast-paced crossplatform first-person shooter (data files)",
+    "url": "http://xonotic.org",
+    "license": "GPL",
+    "version": "0.8.5",
+    "release": "1",
+    "builddate": "2022-07-04T19:14:15",
+    "depends": [
+      "bash",
+      "perl"
+    ],
+    "csize": 1163343204,
+    "isize": 1170008386
   },
   {
     "base": "lite-xl-git",
@@ -296,61 +343,5 @@
     ],
     "csize": 8222472,
     "isize": 15077364
-  },
-  {
-    "base": "neverball",
-    "name": "neverball",
-    "arch": "aarch64",
-    "description": "3D game similar to Super Monkey Ball or Marble Madness",
-    "url": "http://neverball.org/",
-    "license": "GPL",
-    "version": "1.6.0",
-    "release": "5",
-    "builddate": "2022-07-01T04:43:46",
-    "depends": [
-      "sdl2_ttf",
-      "libgl",
-      "libpng",
-      "libjpeg",
-      "libvorbis",
-      "physfs",
-      "hicolor-icon-theme",
-      "xdg-utils"
-    ],
-    "csize": 75411115,
-    "isize": 259730081
-  },
-  {
-    "base": "libpamac-aur",
-    "name": "libpamac-aur",
-    "arch": "aarch64",
-    "description": "Pamac package manager library based on libalpm",
-    "url": "https://gitlab.manjaro.org/applications/libpamac",
-    "license": "GPL3",
-    "version": "11.3.1",
-    "release": "0",
-    "builddate": "2022-07-01T04:41:48",
-    "depends": [
-      "glib2>=2.42",
-      "json-glib",
-      "libsoup",
-      "dbus-glib",
-      "polkit",
-      "vte3>=0.38",
-      "libnotify",
-      "pacman>=6.0",
-      "pacman<6.1",
-      "gnutls>=3.4",
-      "git",
-      "appstream-glib>=0.7.18-1",
-      "archlinux-appstream-data",
-      "git"
-    ],
-    "conflicts": [
-      "libpamac",
-      "libpamac-all"
-    ],
-    "csize": 916950,
-    "isize": 4190135
   }
 ]

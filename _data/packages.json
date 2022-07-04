@@ -559,14 +559,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.2.0_devel.156188.053312ab87a",
+    "version": "22.2.0_devel.156189.fb2266631fe",
     "release": "1",
-    "builddate": "2022-07-04T16:01:21",
+    "builddate": "2022-07-04T19:34:39",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 32027193,
+    "csize": 32026331,
     "isize": 100414630
   },
   {
@@ -1154,13 +1154,13 @@
     "description": "A free, fast-paced crossplatform first-person shooter",
     "url": "https://xonotic.org",
     "license": "GPL",
-    "version": "0.8.2",
-    "release": "6",
-    "builddate": "2021-01-13T08:01:42",
+    "version": "0.8.5",
+    "release": "1",
+    "builddate": "2022-07-04T19:30:03",
     "depends": ["alsa-lib", "curl", "libjpeg-turbo", "libmodplug", "libvorbis", "libxpm", "libxxf86vm", "sdl2", "libpng>=1.4.0", "hicolor-icon-theme", "gtk-update-icon-cache", "desktop-file-utils"],
     "repodepends": ["xonotic-data"],
-    "csize": 4909046,
-    "isize": 11294783
+    "csize": 4853396,
+    "isize": 11281551
   },
   {
     "base": "xonotic-data",
@@ -1169,11 +1169,11 @@
     "description": "A free, fast-paced crossplatform first-person shooter (data files)",
     "url": "http://xonotic.org",
     "license": "GPL",
-    "version": "0.8.2",
-    "release": "3",
-    "builddate": "2021-01-19T17:16:40",
+    "version": "0.8.5",
+    "release": "1",
+    "builddate": "2022-07-04T19:14:15",
     "depends": ["bash", "perl"],
-    "csize": 921925060,
-    "isize": 931841880
+    "csize": 1163343204,
+    "isize": 1170008386
   }
 ]
