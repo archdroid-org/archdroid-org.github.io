@@ -1,5 +1,49 @@
 [
   {
+    "base": "linux-amlogic-519",
+    "name": "linux-amlogic-519-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.19.y",
+    "license": "GPL2",
+    "version": "5.19",
+    "release": "5",
+    "builddate": "2022-07-08T03:54:26",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 27142471,
+    "isize": 89929556
+  },
+  {
+    "base": "linux-amlogic-519",
+    "name": "linux-amlogic-519",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
+    "url": "https://github.com/chewitt/linux/tree/amlogic-5.19.y",
+    "license": "GPL2",
+    "version": "5.19",
+    "release": "5",
+    "builddate": "2022-07-08T03:54:26",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 47555475,
+    "isize": 135108282
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
@@ -289,59 +333,5 @@
     ],
     "csize": 651941,
     "isize": 1658776
-  },
-  {
-    "base": "srb2",
-    "name": "srb2",
-    "arch": "aarch64",
-    "description": "A 3D Sonic fan game based off of Doom Legacy (aka \"Sonic Robo Blast 2\")",
-    "url": "http://www.srb2.org",
-    "license": "GPL",
-    "version": "2.2.10",
-    "release": "1",
-    "builddate": "2022-07-01T07:05:44",
-    "depends": [
-      "sdl2_mixer",
-      "libpng",
-      "libgme"
-    ],
-    "repodepends": [
-      "libopenmpt"
-    ],
-    "conflicts": [
-      "srb2-data"
-    ],
-    "csize": 150881199,
-    "isize": 178865682
-  },
-  {
-    "base": "glmark2-git",
-    "name": "glmark2-git",
-    "arch": "aarch64",
-    "description": "An OpenGL 2.0 and ES 2.0 benchmark (X11, Wayland, DRM)",
-    "url": "https://github.com/glmark2/glmark2",
-    "license": [
-      "GPL",
-      "custom"
-    ],
-    "version": "r975.3f1104d",
-    "release": "1",
-    "builddate": "2022-07-01T07:01:51",
-    "depends": [
-      "libjpeg-turbo",
-      "libpng",
-      "libx11",
-      "mesa",
-      "systemd-libs",
-      "libgl",
-      "libgles",
-      "wayland",
-      "egl-wayland"
-    ],
-    "conflicts": [
-      "glmark2"
-    ],
-    "csize": 8222472,
-    "isize": 15077364
   }
 ]
