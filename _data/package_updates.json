@@ -6,9 +6,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.2.0_devel.156486.e082b26458c",
+    "version": "22.2.0_devel.156495.4822058b1c2",
     "release": "1",
-    "builddate": "2022-07-11T16:01:18",
+    "builddate": "2022-07-11T20:41:32",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,8 +45,52 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 32045680,
-    "isize": 101246182
+    "csize": 32047047,
+    "isize": 101262566
+  },
+  {
+    "base": "linux-odroid-518",
+    "name": "linux-odroid-518-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.18.y",
+    "license": "GPL2",
+    "version": "5.18.8",
+    "release": "2",
+    "builddate": "2022-07-11T19:01:10",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 26886000,
+    "isize": 88958500
+  },
+  {
+    "base": "linux-odroid-518",
+    "name": "linux-odroid-518",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-5.18.y",
+    "license": "GPL2",
+    "version": "5.18.8",
+    "release": "2",
+    "builddate": "2022-07-11T19:01:10",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 47129836,
+    "isize": 133754816
   },
   {
     "base": "linux-amlogic-519",
@@ -279,59 +323,5 @@
     ],
     "csize": 2416999,
     "isize": 5447346
-  },
-  {
-    "base": "retux",
-    "name": "retux",
-    "arch": "aarch64",
-    "description": "Action platformer loosely inspired by the Mario games, utilizing the art assets from the SuperTux project.",
-    "url": "https://retux-game.github.io/",
-    "license": "GPL3",
-    "version": "1.6.1",
-    "release": "2",
-    "builddate": "2022-07-01T18:22:14",
-    "depends": [
-      "python-pygame",
-      "sdl",
-      "sdl_image",
-      "sdl_mixer"
-    ],
-    "csize": 43125270,
-    "isize": 60660365
-  },
-  {
-    "base": "waybar-git",
-    "name": "waybar-git",
-    "arch": "aarch64",
-    "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
-    "url": "https://github.com/Alexays/Waybar/",
-    "license": "MIT",
-    "version": "r2003.5128a5d",
-    "release": "1",
-    "builddate": "2022-07-01T07:10:16",
-    "depends": [
-      "gtkmm3",
-      "libjsoncpp.so=25-64",
-      "libinput",
-      "libsigc++",
-      "fmt",
-      "wayland",
-      "chrono-date",
-      "libspdlog.so=1-64",
-      "gtk-layer-shell",
-      "libpulse",
-      "libnl",
-      "libappindicator-gtk3",
-      "libdbusmenu-gtk3",
-      "libmpdclient"
-    ],
-    "optdepends": [
-      "otf-font-awesome: Icons in the default configuration"
-    ],
-    "conflicts": [
-      "waybar"
-    ],
-    "csize": 651941,
-    "isize": 1658776
   }
 ]
