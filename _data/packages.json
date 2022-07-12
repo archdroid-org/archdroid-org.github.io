@@ -186,13 +186,13 @@
     "description": "An OpenGL 2.0 and ES 2.0 benchmark (X11, Wayland, DRM)",
     "url": "https://github.com/glmark2/glmark2",
     "license": ["GPL", "custom"],
-    "version": "r975.3f1104d",
+    "version": "r978.9057c05",
     "release": "1",
-    "builddate": "2022-07-01T07:01:51",
+    "builddate": "2022-07-12T10:04:17",
     "depends": ["libjpeg-turbo", "libpng", "libx11", "mesa", "systemd-libs", "libgl", "libgles", "wayland", "egl-wayland"],
     "conflicts": ["glmark2"],
-    "csize": 8222472,
-    "isize": 15077364
+    "csize": 8257271,
+    "isize": 15171572
   },
   {
     "base": "kodi",
@@ -564,14 +564,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.2.0_devel.156498.a07919edebf",
+    "version": "22.2.0_devel.156500.d528289c748",
     "release": "1",
-    "builddate": "2022-07-12T01:01:11",
+    "builddate": "2022-07-12T10:00:58",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 32050323,
+    "csize": 32050288,
     "isize": 101221606
   },
   {

@@ -1,14 +1,44 @@
 [
   {
+    "base": "glmark2-git",
+    "name": "glmark2-git",
+    "arch": "aarch64",
+    "description": "An OpenGL 2.0 and ES 2.0 benchmark (X11, Wayland, DRM)",
+    "url": "https://github.com/glmark2/glmark2",
+    "license": [
+      "GPL",
+      "custom"
+    ],
+    "version": "r978.9057c05",
+    "release": "1",
+    "builddate": "2022-07-12T10:04:17",
+    "depends": [
+      "libjpeg-turbo",
+      "libpng",
+      "libx11",
+      "mesa",
+      "systemd-libs",
+      "libgl",
+      "libgles",
+      "wayland",
+      "egl-wayland"
+    ],
+    "conflicts": [
+      "glmark2"
+    ],
+    "csize": 8257271,
+    "isize": 15171572
+  },
+  {
     "base": "mesa-devel-git",
     "name": "mesa-devel-git",
     "arch": "aarch64",
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.2.0_devel.156498.a07919edebf",
+    "version": "22.2.0_devel.156500.d528289c748",
     "release": "1",
-    "builddate": "2022-07-12T01:01:11",
+    "builddate": "2022-07-12T10:00:58",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -45,7 +75,7 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 32050323,
+    "csize": 32050288,
     "isize": 101221606
   },
   {
@@ -244,84 +274,5 @@
     ],
     "csize": 315962,
     "isize": 1006313
-  },
-  {
-    "base": "mpv-sdl",
-    "name": "mpv-sdl",
-    "arch": "aarch64",
-    "description": "a free, open source, and cross-platform media player",
-    "url": "https://mpv.io/",
-    "license": "GPL3",
-    "version": "1:0.34.1",
-    "release": "4",
-    "builddate": "2022-07-01T23:11:30",
-    "depends": [
-      "alsa-lib",
-      "libasound.so=2-64",
-      "desktop-file-utils",
-      "ffmpeg",
-      "libavcodec.so=59-64",
-      "libavdevice.so=59-64",
-      "libavfilter.so=8-64",
-      "libavformat.so=59-64",
-      "libavutil.so=57-64",
-      "libswresample.so=4-64",
-      "libswscale.so=6-64",
-      "glibc",
-      "hicolor-icon-theme",
-      "jack",
-      "libjack.so=0-64",
-      "lcms2",
-      "liblcms2.so=2-64",
-      "libarchive",
-      "libarchive.so=13-64",
-      "libass",
-      "libass.so=9-64",
-      "libbluray",
-      "libbluray.so=2-64",
-      "libcdio",
-      "libcdio-paranoia",
-      "libdrm",
-      "libdvdnav",
-      "libdvdread",
-      "libegl",
-      "libgl",
-      "libglvnd",
-      "libjpeg",
-      "libjpeg.so=8-64",
-      "libpulse",
-      "libpulse.so=0-64",
-      "libvdpau",
-      "libx11",
-      "libxext",
-      "libxinerama",
-      "libxkbcommon",
-      "libxkbcommon.so=0-64",
-      "libxrandr",
-      "libxss",
-      "libxv",
-      "lua52",
-      "mesa",
-      "mujs",
-      "rubberband",
-      "librubberband.so=2-64",
-      "shaderc",
-      "libshaderc_shared.so=1-64",
-      "uchardet",
-      "vulkan-icd-loader",
-      "wayland",
-      "xdg-utils",
-      "zlib",
-      "sdl2"
-    ],
-    "optdepends": [
-      "yt-dlp: for video-sharing websites playback",
-      "youtube-dl: for video-sharing websites playback"
-    ],
-    "conflicts": [
-      "mpv"
-    ],
-    "csize": 2416999,
-    "isize": 5447346
   }
 ]
