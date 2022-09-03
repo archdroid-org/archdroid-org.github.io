@@ -549,12 +549,12 @@
     "description": "A lightweight text editor written in Lua",
     "url": "https://lite-xl.github.io/",
     "license": "MIT",
-    "version": "testing.2.0.4.r760.gc25f83da",
+    "version": "testing.2.0.4.r761.g4f17667d",
     "release": "1",
-    "builddate": "2022-08-21T19:01:28",
+    "builddate": "2022-09-03T01:01:32",
     "depends": ["lua", "sdl2", "freetype2", "pcre2", "hicolor-icon-theme"],
     "conflicts": ["lite-xl"],
-    "csize": 413172,
+    "csize": 413226,
     "isize": 1119425
   },
   {
@@ -564,14 +564,14 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.3.0_devel.159237.2a2766ce18f",
+    "version": "22.3.0_devel.159239.723ae2368f6",
     "release": "1",
-    "builddate": "2022-09-02T22:01:45",
+    "builddate": "2022-09-03T01:01:56",
     "depends": ["libdrm", "libxxf86vm", "libxdamage", "libxshmfence", "libelf", "libomxil-bellagio", "libunwind", "libglvnd", "llvm", "lm_sensors", "libclc", "glslang", "vulkan-icd-loader", "wayland", "zstd"],
     "optdepends": ["clang: opencl", "compiler-rt: opencl"],
     "replaces": ["mesa-dri", "mesa-libgl", "mesa-arm-git"],
     "conflicts": ["vulkan-mesa-layers", "opencl-mesa", "vulkan-swrast", "libva-mesa-driver", "mesa-vdpau", "mesa", "mesa-dri", "mesa-libgl"],
-    "csize": 32848278,
+    "csize": 32851630,
     "isize": 104483165
   },
   {
