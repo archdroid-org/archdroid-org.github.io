@@ -6,9 +6,9 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r2126.03ca8de",
+    "version": "r2128.e58f1fd",
     "release": "1",
-    "builddate": "2022-09-07T10:06:05",
+    "builddate": "2022-09-07T16:05:49",
     "depends": [
       "gtkmm3",
       "libjsoncpp.so=25-64",
@@ -31,8 +31,8 @@
     "conflicts": [
       "waybar"
     ],
-    "csize": 678506,
-    "isize": 1806374
+    "csize": 677776,
+    "isize": 1810485
   },
   {
     "base": "mesa-devel-git",
@@ -41,9 +41,9 @@
     "description": "Open-source implementation of the OpenGL specification (development version)",
     "url": "https://www.mesa3d.org/",
     "license": "custom",
-    "version": "22.3.0_devel.159374.0704926a9cb",
+    "version": "22.3.0_devel.159378.9cbc609db34",
     "release": "1",
-    "builddate": "2022-09-07T10:01:23",
+    "builddate": "2022-09-07T16:01:00",
     "depends": [
       "libdrm",
       "libxxf86vm",
@@ -80,8 +80,8 @@
       "mesa-dri",
       "mesa-libgl"
     ],
-    "csize": 32878476,
-    "isize": 104532317
+    "csize": 32877696,
+    "isize": 104499549
   },
   {
     "base": "lite-xl-git",
