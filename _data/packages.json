@@ -948,13 +948,13 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r2254.242e19a0",
+    "version": "r2256.bd567800",
     "release": "1",
-    "builddate": "2022-11-04T16:01:01",
+    "builddate": "2022-11-04T22:00:55",
     "depends": ["gtkmm3", "libjsoncpp.so=25-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 1386966,
+    "csize": 1387370,
     "isize": 5302730
   },
   {
