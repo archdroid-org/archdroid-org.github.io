@@ -1,37 +1,14 @@
 [
   {
-    "base": "lite-xl-git",
-    "name": "lite-xl-git",
-    "arch": "aarch64",
-    "description": "A lightweight text editor written in Lua",
-    "url": "https://lite-xl.github.io/",
-    "license": "MIT",
-    "version": "2.1.0.r6.g4a5851af",
-    "release": "1",
-    "builddate": "2022-11-07T04:00:39",
-    "depends": [
-      "lua",
-      "sdl2",
-      "freetype2",
-      "pcre2",
-      "hicolor-icon-theme"
-    ],
-    "conflicts": [
-      "lite-xl"
-    ],
-    "csize": 420562,
-    "isize": 1148728
-  },
-  {
     "base": "waybar-git",
     "name": "waybar-git",
     "arch": "aarch64",
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r2258.af1668df",
+    "version": "r2263.d2b22c6e",
     "release": "1",
-    "builddate": "2022-11-06T10:00:53",
+    "builddate": "2022-11-07T10:00:55",
     "depends": [
       "gtkmm3",
       "libjsoncpp.so=25-64",
@@ -54,8 +31,31 @@
     "conflicts": [
       "waybar"
     ],
-    "csize": 1386833,
-    "isize": 5302758
+    "csize": 1387660,
+    "isize": 5302806
+  },
+  {
+    "base": "lite-xl-git",
+    "name": "lite-xl-git",
+    "arch": "aarch64",
+    "description": "A lightweight text editor written in Lua",
+    "url": "https://lite-xl.github.io/",
+    "license": "MIT",
+    "version": "2.1.0.r6.g4a5851af",
+    "release": "1",
+    "builddate": "2022-11-07T04:00:39",
+    "depends": [
+      "lua",
+      "sdl2",
+      "freetype2",
+      "pcre2",
+      "hicolor-icon-theme"
+    ],
+    "conflicts": [
+      "lite-xl"
+    ],
+    "csize": 420562,
+    "isize": 1148728
   },
   {
     "base": "mesa-devel-git",
