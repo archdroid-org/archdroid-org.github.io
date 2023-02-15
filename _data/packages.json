@@ -186,13 +186,13 @@
     "description": "An OpenGL 2.0 and ES 2.0 benchmark (X11, Wayland, DRM)",
     "url": "https://github.com/glmark2/glmark2",
     "license": ["GPL", "custom"],
-    "version": "r978.9057c05",
+    "version": "r1012.42e3d8f",
     "release": "1",
-    "builddate": "2022-07-12T10:04:17",
+    "builddate": "2023-02-15T01:14:00",
     "depends": ["libjpeg-turbo", "libpng", "libx11", "mesa", "systemd-libs", "libgl", "libgles", "wayland", "egl-wayland"],
     "conflicts": ["glmark2"],
-    "csize": 8257271,
-    "isize": 15171572
+    "csize": 8281262,
+    "isize": 15370315
   },
   {
     "base": "kodi",
@@ -549,13 +549,13 @@
     "description": "A lightweight text editor written in Lua",
     "url": "https://lite-xl.github.io/",
     "license": "MIT",
-    "version": "2.1.0.r8.gacebbfd8",
+    "version": "2.1.1.r48.ga07a4e37",
     "release": "1",
-    "builddate": "2022-11-07T19:00:42",
+    "builddate": "2023-02-15T01:13:24",
     "depends": ["lua", "sdl2", "freetype2", "pcre2", "hicolor-icon-theme"],
     "conflicts": ["lite-xl"],
-    "csize": 420610,
-    "isize": 1148962
+    "csize": 430097,
+    "isize": 1179898
   },
   {
     "base": "mesa-devel-git",
@@ -948,14 +948,14 @@
     "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)",
     "url": "https://github.com/Alexays/Waybar/",
     "license": "MIT",
-    "version": "r2265.8be5bab8",
+    "version": "r2426.ea38eec2",
     "release": "1",
-    "builddate": "2022-11-07T13:00:58",
-    "depends": ["gtkmm3", "libjsoncpp.so=25-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
+    "builddate": "2023-02-15T01:16:57",
+    "depends": ["gtkmm3", "libjsoncpp.so=25-64", "libinput", "libsigc++", "fmt", "wayland", "chrono-date", "libspdlog.so=1.11-64", "gtk-layer-shell", "libpulse", "libnl", "libappindicator-gtk3", "libdbusmenu-gtk3", "libmpdclient"],
     "optdepends": ["otf-font-awesome: Icons in the default configuration"],
     "conflicts": ["waybar"],
-    "csize": 1387423,
-    "isize": 5302806
+    "csize": 1408937,
+    "isize": 5350579
   },
   {
     "base": "wayfire",
