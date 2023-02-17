@@ -1,5 +1,49 @@
 [
   {
+    "base": "linux-odroid-600",
+    "name": "linux-odroid-600-headers",
+    "arch": "aarch64",
+    "description": "Header files and scripts for building modules for linux kernel - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-6.0.y",
+    "license": "GPL2",
+    "version": "6.0.16",
+    "release": "1",
+    "builddate": "2023-02-17T01:00:37",
+    "conflicts": [
+      "linux-headers"
+    ],
+    "csize": 53883517,
+    "isize": 159443818
+  },
+  {
+    "base": "linux-odroid-600",
+    "name": "linux-odroid-600",
+    "arch": "aarch64",
+    "description": "The Linux Kernel and modules - Tobetter Odroid Branch",
+    "url": "https://github.com/tobetter/linux/tree/odroid-6.0.y",
+    "license": "GPL2",
+    "version": "6.0.16",
+    "release": "1",
+    "builddate": "2023-02-17T01:00:37",
+    "depends": [
+      "coreutils",
+      "linux-firmware",
+      "kmod",
+      "mkinitcpio>=0.7"
+    ],
+    "optdepends": [
+      "crda: to set the correct wireless channels of your country"
+    ],
+    "replaces": [
+      "linux-armv8"
+    ],
+    "conflicts": [
+      "linux"
+    ],
+    "csize": 62475979,
+    "isize": 206852965
+  },
+  {
     "base": "lite-xl-git",
     "name": "lite-xl-git",
     "arch": "aarch64",
@@ -223,52 +267,5 @@
     ],
     "csize": 47566777,
     "isize": 135174995
-  },
-  {
-    "base": "xonotic",
-    "name": "xonotic",
-    "arch": "aarch64",
-    "description": "A free, fast-paced crossplatform first-person shooter",
-    "url": "https://xonotic.org",
-    "license": "GPL",
-    "version": "0.8.5",
-    "release": "1",
-    "builddate": "2022-07-04T19:30:03",
-    "depends": [
-      "alsa-lib",
-      "curl",
-      "libjpeg-turbo",
-      "libmodplug",
-      "libvorbis",
-      "libxpm",
-      "libxxf86vm",
-      "sdl2",
-      "libpng>=1.4.0",
-      "hicolor-icon-theme",
-      "gtk-update-icon-cache",
-      "desktop-file-utils"
-    ],
-    "repodepends": [
-      "xonotic-data"
-    ],
-    "csize": 4853396,
-    "isize": 11281551
-  },
-  {
-    "base": "xonotic-data",
-    "name": "xonotic-data",
-    "arch": "any",
-    "description": "A free, fast-paced crossplatform first-person shooter (data files)",
-    "url": "http://xonotic.org",
-    "license": "GPL",
-    "version": "0.8.5",
-    "release": "1",
-    "builddate": "2022-07-04T19:14:15",
-    "depends": [
-      "bash",
-      "perl"
-    ],
-    "csize": 1163343204,
-    "isize": 1170008386
   }
 ]
