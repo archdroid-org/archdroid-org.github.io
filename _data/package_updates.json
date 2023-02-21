@@ -1,5 +1,27 @@
 [
   {
+    "base": "astromenace",
+    "name": "astromenace",
+    "arch": "aarch64",
+    "description": "Hardcore 3D space shooter with spaceship upgrade possibilities",
+    "url": "http://www.viewizard.com/astromenace/index_linux.php",
+    "license": "GPL3",
+    "version": "1.4.2",
+    "release": "1",
+    "builddate": "2023-02-21T04:00:38",
+    "depends": [
+      "sdl2",
+      "freealut",
+      "libjpeg",
+      "libvorbis",
+      "glu",
+      "freetype2",
+      "libxinerama"
+    ],
+    "csize": 64199735,
+    "isize": 117711017
+  },
+  {
     "base": "linux-odroid-600",
     "name": "linux-odroid-600-headers",
     "arch": "aarch64",
@@ -239,33 +261,5 @@
     ],
     "csize": 27130550,
     "isize": 89869511
-  },
-  {
-    "base": "linux-amlogic-519",
-    "name": "linux-amlogic-519",
-    "arch": "aarch64",
-    "description": "The Linux Kernel and modules - Chewitt Amlogic Branch",
-    "url": "https://github.com/chewitt/linux/tree/amlogic-5.19.y",
-    "license": "GPL2",
-    "version": "5.19.1",
-    "release": "0",
-    "builddate": "2022-08-15T16:01:17",
-    "depends": [
-      "coreutils",
-      "linux-firmware",
-      "kmod",
-      "mkinitcpio>=0.7"
-    ],
-    "optdepends": [
-      "crda: to set the correct wireless channels of your country"
-    ],
-    "replaces": [
-      "linux-armv8"
-    ],
-    "conflicts": [
-      "linux"
-    ],
-    "csize": 47566777,
-    "isize": 135174995
   }
 ]

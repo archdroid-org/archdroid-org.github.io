@@ -20,12 +20,12 @@
     "description": "Hardcore 3D space shooter with spaceship upgrade possibilities",
     "url": "http://www.viewizard.com/astromenace/index_linux.php",
     "license": "GPL3",
-    "version": "1.4.1",
-    "release": "2",
-    "builddate": "2021-09-01T04:02:16",
+    "version": "1.4.2",
+    "release": "1",
+    "builddate": "2023-02-21T04:00:38",
     "depends": ["sdl2", "freealut", "libjpeg", "libvorbis", "glu", "freetype2", "libxinerama"],
-    "csize": 64197199,
-    "isize": 117621488
+    "csize": 64199735,
+    "isize": 117711017
   },
   {
     "base": "cendric-git",
