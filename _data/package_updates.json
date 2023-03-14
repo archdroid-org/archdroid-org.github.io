@@ -1,5 +1,28 @@
 [
   {
+    "base": "lite-xl-git",
+    "name": "lite-xl-git",
+    "arch": "aarch64",
+    "description": "A lightweight text editor written in Lua",
+    "url": "https://lite-xl.github.io/",
+    "license": "MIT",
+    "version": "2.1.1.r55.g18720665",
+    "release": "1",
+    "builddate": "2023-03-14T16:01:09",
+    "depends": [
+      "lua",
+      "sdl2",
+      "freetype2",
+      "pcre2",
+      "hicolor-icon-theme"
+    ],
+    "conflicts": [
+      "lite-xl"
+    ],
+    "csize": 430225,
+    "isize": 1184137
+  },
+  {
     "base": "waybar-git",
     "name": "waybar-git",
     "arch": "aarch64",
@@ -33,29 +56,6 @@
     ],
     "csize": 1420437,
     "isize": 5380202
-  },
-  {
-    "base": "lite-xl-git",
-    "name": "lite-xl-git",
-    "arch": "aarch64",
-    "description": "A lightweight text editor written in Lua",
-    "url": "https://lite-xl.github.io/",
-    "license": "MIT",
-    "version": "2.1.1.r54.ged9bb3c8",
-    "release": "1",
-    "builddate": "2023-03-09T16:01:10",
-    "depends": [
-      "lua",
-      "sdl2",
-      "freetype2",
-      "pcre2",
-      "hicolor-icon-theme"
-    ],
-    "conflicts": [
-      "lite-xl"
-    ],
-    "csize": 430074,
-    "isize": 1180041
   },
   {
     "base": "astromenace",
