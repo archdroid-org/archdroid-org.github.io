@@ -6,9 +6,9 @@
     "description": "A lightweight text editor written in Lua",
     "url": "https://lite-xl.github.io/",
     "license": "MIT",
-    "version": "2.1.1.r55.g18720665",
+    "version": "2.1.1.r56.gd1510830",
     "release": "1",
-    "builddate": "2023-03-14T16:01:09",
+    "builddate": "2023-03-16T22:00:45",
     "depends": [
       "lua",
       "sdl2",
@@ -19,8 +19,8 @@
     "conflicts": [
       "lite-xl"
     ],
-    "csize": 430225,
-    "isize": 1184137
+    "csize": 431087,
+    "isize": 1187471
   },
   {
     "base": "waybar-git",
